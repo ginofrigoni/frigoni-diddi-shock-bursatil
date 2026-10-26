@@ -35,13 +35,24 @@ Cada carpeta tiene su propio README con el detalle.
 
 ## Archivos que no están en el repositorio
 
-GitHub no acepta archivos de más de 100 MB. Estos cinco quedaron afuera por su tamaño:
+### Un archivo comprimido
+
+`Lado Noticias/sentimiento_finbert/beto_oraciones_finetuned.csv` (169 MB) es el sentimiento FinBETO de las 408.939 oraciones del corpus, y lo leen el cruce con el NER y la unión. Está comprimido en `beto_oraciones_finetuned.csv.gz` (30 MB). Antes de correr esos pasos hay que descomprimirlo en la misma carpeta:
+
+```bash
+gzip -dk "Lado Noticias/sentimiento_finbert/beto_oraciones_finetuned.csv.gz"
+```
+
+El archivo descomprimido tiene sha256 `f4b9c10f…`, el mismo del original.
+
+### Archivos excluidos
+
+GitHub no acepta archivos de más de 100 MB. Estos cuatro quedaron afuera por su tamaño:
 
 | Archivo | Tamaño | Cómo se obtiene |
 |---|---:|---|
 | `Lado Noticias/sentimiento_finbert/beto_further_pretrained/model.safetensors` | 419 MB | Pesos de BETO con preentrenamiento continuado sobre el corpus; copia de los autores (sha256 `b4ff46aa…`). Solo lo usa la medición de calidad (Fase 3) |
 | `Lado Noticias/sentimiento_finbert/baseline_finiteautomata/pytorch_model.bin` | 419 MB | Modelo de referencia, de Hugging Face: [`finiteautomata/beto-sentiment-analysis`](https://huggingface.co/finiteautomata/beto-sentiment-analysis), revisión `9384c7f3…` |
-| `Lado Noticias/sentimiento_finbert/beto_oraciones_finetuned.csv` | 169 MB | Sentimiento FinBETO de las 408.939 oraciones del corpus; copia de los autores (sha256 `f4b9c10f…`). Lo leen el cruce con el NER y la unión |
 | `Lado Noticias/ner_entidades/resultados_ner/ner_oraciones.csv` | 221 MB | Se regenera con `Lado Noticias/ner_entidades/ner_analisis.ipynb` |
 | `Lado Noticias/ner_entidades/resultados_ner/ner_articulos.csv` | 79 MB | Ídem |
 
