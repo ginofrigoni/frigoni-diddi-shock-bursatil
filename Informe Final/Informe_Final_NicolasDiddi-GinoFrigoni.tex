@@ -3,10 +3,9 @@
 %  de empresas argentinas
 %  Gino Frigoni · Nicolás Diddi
 %
-%  Versión de entrega, con el formato de la versión completa (92 páginas).
 %  Foco: los cuatro instrumentos (corpus, FinBETO, VIX argentino, HMM) y el
 %  experimento que los usa (VAR y Granger).
-%  Compilar desde esta carpeta:  python compilar_reducida.py
+%  Compilar desde esta carpeta:  python compilar_tesina.py
 % =====================================================================
 \documentclass[11pt,a4paper,oneside]{report}
 
@@ -254,14 +253,14 @@ VIX argentino & Volatilidad realizada del S\&P~Merval en 20 ruedas, anualizada. 
 % =====================================================================
 %  CUERPO
 % =====================================================================
-\input{capitulos_reducida/01_introduccion}
-\input{capitulos_reducida/02_marco_teorico}
-\input{capitulos_reducida/03_corpus}
-\input{capitulos_reducida/04_finbeto}
-\input{capitulos_reducida/05_vix}
-\input{capitulos_reducida/06_hmm}
-\input{capitulos_reducida/07_var_granger}
-\input{capitulos_reducida/08_conclusiones}
+\input{capitulos/01_introduccion}
+\input{capitulos/02_marco_teorico}
+\input{capitulos/03_corpus}
+\input{capitulos/04_finbeto}
+\input{capitulos/05_vix}
+\input{capitulos/06_hmm}
+\input{capitulos/07_var_granger}
+\input{capitulos/08_conclusiones}
 
 % =====================================================================
 %  BIBLIOGRAFÍA
@@ -274,11 +273,11 @@ archivo PDF descargado, con su ruta dentro de la carpeta del proyecto; en el PDF
 la ruta es un enlace que abre el archivo. Los trabajos sin copia gratuita oficial se citan con
 su enlace y el motivo por el que no se descargaron.
 \renewcommand{\bibsection}{}
-{\setstretch{1.0}\raggedright\input{bibliografia_reducida}}
+{\setstretch{1.0}\raggedright\input{bibliografia}}
 
 % =====================================================================
 %  ANEXO
 % =====================================================================
-\input{capitulos_reducida/09_anexo}
+\input{capitulos/09_anexo}
 
 \end{document}

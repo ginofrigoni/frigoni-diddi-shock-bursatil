@@ -59,7 +59,7 @@ Para responder la pregunta hubo que construir cuatro instrumentos que no existí
 Con ellos, el experimento —modelos **VAR** con pruebas de **causalidad de Granger**, estudios de eventos y doce variantes de robustez— contrasta la hipótesis.
 
 <div align="center">
-<img src="Informe%20Final/figuras/vix_arg_reducida.png" alt="S&P Merval y VIX argentino, con la salida del cepo y las elecciones de 2025" width="85%">
+<img src="Informe%20Final/figuras/vix_arg.png" alt="S&P Merval y VIX argentino, con la salida del cepo y las elecciones de 2025" width="85%">
 <br><sub>S&P Merval y VIX argentino entre enero de 2025 y abril de 2026. Las líneas punteadas marcan la salida del cepo y las dos elecciones.</sub>
 </div>
 
@@ -94,7 +94,7 @@ Cada carpeta tiene su propio README con el detalle. En los PDF de la tesina, deb
 | **Lado de noticias** | Entorno Python 3.13 desde `Lado Noticias/requirements.txt` (ver `Lado Noticias/README.md`). La recolección usa credenciales de Internet Archive en `Lado Noticias/noticias/.env`, que no se sube: copiar `.env.example` y completarlo |
 | **Lado bursátil** | Cada carpeta tiene un script de Python; los PDF de documentación se generan con Node desde `Lado Bursatil/99_generadores_documentacion` (`npm install`) |
 | **Unión** | Desde `Unión/09_entrega_final`, `python correr_todo.py` rehace todos los pasos, verifica los 66 controles automáticos y compara los 64 archivos de resultados con la corrida anterior |
-| **Tesina** | Desde `Informe Final`, `python compilar_reducida.py` genera `Informe_Final_NicolasDiddi-GinoFrigoni.pdf`, con [tectonic](https://tectonic-typesetting.github.io/) en `~/tools/tectonic/tectonic.exe` |
+| **Tesina** | Desde `Informe Final`, `python compilar_tesina.py` genera `Informe_Final_NicolasDiddi-GinoFrigoni.pdf`, con [tectonic](https://tectonic-typesetting.github.io/) en `~/tools/tectonic/tectonic.exe` |
 
 ### Un archivo comprimido
 

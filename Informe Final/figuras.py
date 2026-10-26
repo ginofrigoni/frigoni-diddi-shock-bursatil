@@ -1,14 +1,14 @@
-"""Figuras propias de la versión reducida de la tesina.
+"""Figuras que la tesina rehace a partir de los CSV de cada carpeta.
 
 Rehace tres figuras a partir de los CSV que ya generan sus carpetas, con los mismos colores y
-el mismo estilo, y con los cambios pedidos para la versión reducida. No toca los scripts ni las
-figuras originales: escribe en figuras/ con el sufijo _reducida.
+el mismo estilo que las originales y algunos agregados de lectura. No toca los scripts ni las
+figuras de cada carpeta: escribe en figuras/.
 
-  u1_alineacion_reducida.png  como u1_alineacion.png, sin la marca de abril de 2026
-  u2_serie_reducida.png       como u2_serie.png, con la atención explicada (leyenda y escala)
-  vix_arg_reducida.png        como vix_arg.png, con la salida del cepo y las elecciones marcadas
+  u1_alineacion.png  alineación de las notas con las ruedas
+  u2_serie.png       tono y atención por rueda, con leyenda y escala de la atención
+  vix_arg.png        S&P Merval y VIX argentino, con la salida del cepo y las elecciones marcadas
 
-Uso:  python figuras_reducida.py   (desde "Informe Final"; lo llama compilar_reducida.py)
+Uso:  python figuras.py   (desde "Informe Final"; lo llama compilar_tesina.py)
 """
 from pathlib import Path
 
@@ -60,7 +60,7 @@ def figura_u1():
     for ax in (a1, a2):
         ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
-    fig.savefig(DESTINO / "u1_alineacion_reducida.png", dpi=160, facecolor="white")
+    fig.savefig(DESTINO / "u1_alineacion.png", dpi=160, facecolor="white")
     plt.close(fig)
 
 
@@ -113,7 +113,7 @@ def figura_u2():
         ax.spines[["top"]].set_visible(False)
     a1.spines[["right"]].set_visible(False)
     fig.tight_layout()
-    fig.savefig(DESTINO / "u2_serie_reducida.png", dpi=160, facecolor="white")
+    fig.savefig(DESTINO / "u2_serie.png", dpi=160, facecolor="white")
     plt.close(fig)
 
 
@@ -149,7 +149,7 @@ def figura_vix():
     ax2.legend(loc="upper right")
 
     plt.tight_layout()
-    plt.savefig(DESTINO / "vix_arg_reducida.png", dpi=150)
+    plt.savefig(DESTINO / "vix_arg.png", dpi=150)
     plt.close(fig)
 
 
@@ -158,7 +158,7 @@ def main():
     figura_u1()
     figura_u2()
     figura_vix()
-    print("3 figuras de la versión reducida generadas")
+    print("3 figuras generadas")
 
 
 if __name__ == "__main__":

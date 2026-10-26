@@ -8,22 +8,21 @@ El documento de la tesina, en LaTeX, con el contenido de todas las carpetas del 
 |---|---|
 | `Informe_Final_NicolasDiddi-GinoFrigoni.pdf` | La tesina compilada (46 páginas) |
 | `Informe_Final_NicolasDiddi-GinoFrigoni.tex` | Archivo principal: formato, portada, resumen, índice, siglas, bibliografía |
-| `capitulos_reducida/` | Un archivo por capítulo (01 Introducción a 08 Conclusiones) y el anexo (09) |
-| `bibliografia_reducida.tex` | Las referencias citadas en la tesina, tomadas de `bibliografia.tex`: no editar a mano |
-| `figuras/` | Copias de las figuras de cada carpeta, más las tres que rehace `figuras_reducida.py` |
+| `capitulos/` | Un archivo por capítulo (01 Introducción a 08 Conclusiones) y el anexo (09) |
+| `bibliografia.tex` | Las referencias citadas en la tesina, con la ruta del PDF de cada paper |
+| `figuras/` | Copias de las figuras de cada carpeta, más las tres que rehace `figuras.py` |
 | `logo_ugr.png` | Logo de la Universidad del Gran Rosario (portada) |
-| `capitulos/`, `tablas/`, `bibliografia.tex` | Fuentes de la versión completa de 92 páginas, de las que sale la bibliografía |
 
 ## Cómo compilar
 
 ```bash
-python compilar_reducida.py
+python compilar_tesina.py
 ```
 
 El script hace cuatro cosas:
 
-1. Copia las figuras de cada carpeta y genera las tres que la tesina rehace (`figuras_reducida.py`): la alineación de las notas, la serie de tono y atención, y el VIX con la salida del cepo y las elecciones marcadas.
-2. Arma `bibliografia_reducida.tex` con las referencias que cita el texto.
+1. Copia las figuras de cada carpeta y genera las tres que la tesina rehace (`figuras.py`): la alineación de las notas, la serie de tono y atención, y el VIX con la salida del cepo y las elecciones marcadas.
+2. Verifica que cada cita del texto tenga su referencia en `bibliografia.tex`.
 3. Compila con [tectonic](https://tectonic-typesetting.github.io/), que tiene que estar en `~/tools/tectonic/tectonic.exe`.
 4. Verifica que cada enlace a un paper apunte a un archivo que existe.
 

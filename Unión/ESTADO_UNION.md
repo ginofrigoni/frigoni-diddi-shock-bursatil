@@ -59,7 +59,7 @@ Actualizado: 24/10/2026
 
 | Qué | Estado |
 |---|---|
-| Documento de la tesina | Primera versión completa en `Informe Final/Tesina_Final.pdf` (92 págs., estructura del esqueleto, 118 referencias con su PDF enlazado). Falta completar la fecha y confirmar si la cátedra pide formato o plantilla |
+| Documento de la tesina | Versión final en `Informe Final/Informe_Final_NicolasDiddi-GinoFrigoni.pdf` (46 págs.). Falta completar la fecha de la portada |
 | Presentación con los resultados | Falta definir el formato |
 | Papers de PeerJ (Pan et al. 2023) e IEEE Access (García-Díaz et al. 2023) | De acceso abierto, pero hay que bajarlos a mano (bloquean la descarga automática) |
 | Disertación de la UFPB (Brasil) | No se pudo bajar porque el servidor estaba caído (error 502); el link está en `10_papers_union/referencias_papers.md` |

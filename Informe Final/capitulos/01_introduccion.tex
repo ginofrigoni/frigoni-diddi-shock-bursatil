@@ -5,42 +5,139 @@
 Los mercados financieros se mueven con la información. Un dato de inflación, un anuncio del
 Banco Central o el resultado de una elección cambian lo que los inversores esperan de las
 empresas, y esas expectativas se trasladan a los precios y al volumen operado. Los medios
-económicos son uno de los canales por los que esa información circula: cada día publican
-decenas de notas sobre el tipo de cambio, la política económica y las empresas que cotizan en
-bolsa. Desde hace casi dos décadas, la literatura financiera estudia si el contenido de esas
-notas, y en particular su tono, ayuda a anticipar el comportamiento de las acciones o si se
-limita a contar lo que el mercado ya hizo \citep{tetlock2007,garcia2013,verma2026}.
+económicos son uno de los canales por los que esa información circula. Desde hace casi dos
+décadas, la literatura financiera estudia si el tono de esas notas ayuda a anticipar el
+comportamiento de las acciones o si se limita a contar lo que el mercado ya hizo
+\citep{tetlock2007,garcia2013,verma2026}.
 
-Este trabajo lleva esa pregunta al mercado argentino. Se recolectaron 14.012 notas de las
-secciones de economía y finanzas de siete portales (Clarín, La Nación, Infobae, Ámbito
-Financiero, TN, El Economista e iProfesional) y se midió su tono con un modelo de lenguaje en
-español adaptado a la prensa económica. Del lado del mercado se armó un panel de 47 acciones
-de Bolsas y Mercados Argentinos (BYMA), que incluye a las 20 que componen el S\&P~Merval, con
-su precio, su volumen, su volatilidad y el régimen de mercado de cada día. Los dos lados se
-unieron en una ventana común de 244 ruedas, del 5 de mayo de 2025 al 30 de abril de 2026,
-asignando cada nota a la primera rueda en la que el mercado pudo reaccionar a ella. El período
-empieza semanas después de la salida del cepo cambiario, todavía dentro de la turbulencia
-global por los aranceles de Estados Unidos, e incluye el anuncio de apoyo financiero del
-Tesoro de Estados Unidos, las elecciones bonaerenses del 7 de septiembre y las legislativas
-nacionales del 26 de octubre de 2025: un año con shocks informativos grandes y frecuentes.
+% ---------------------------------------------------------------------
+\section{Problemática observada}
 
-La pregunta importa por tres motivos. Para los inversores, si el tono de los medios anticipa
-los precios, es una señal que se puede usar; si no lo hace, es ruido que conviene no seguir.
-Para la teoría de los mercados eficientes, Argentina es un caso de interés: un mercado chico,
-con acciones poco líquidas y alta volatilidad macroeconómica, donde la información podría
-tardar más en incorporarse a los precios \citep{fama1970,zablotsky2002}. Y para la ciencia
-de datos en español, casi no existen trabajos que crucen el tono de la prensa económica con
-precios de acciones: hay modelos de sentimiento financiero en español
-\citep{brana2016,rodriguezgarcia2023,pan2023peerj}, pero el cruce con el mercado se hizo,
-en la región, en Brasil y Colombia \citep{galdi2018,cruzmontana2025}, no en Argentina.
+En la conversación cotidiana sobre la bolsa argentina está muy extendida la idea de que «las
+noticias mueven las acciones». La observación tiene sustento intuitivo, porque los días de
+noticias grandes, como los posteriores a una elección, son también días de movimientos fuertes
+del S\&P~Merval. Pero esa coincidencia no dice qué vino primero: es posible que las noticias
+muevan al mercado, y también que los medios cuenten lo que el mercado ya hizo. El problema de
+este trabajo es separar esas dos posibilidades con datos, ordenando en el tiempo el tono y la
+cantidad de las noticias económicas y el precio y el volumen de las acciones. Para el mercado
+argentino no había con qué responderlo: ni un corpus de prensa económica, ni un modelo de
+sentimiento entrenado para ese lenguaje, ni un índice de volatilidad como el VIX de Chicago, ni
+una clasificación de los días según el estado del mercado.
 
-El documento sigue el orden del trabajo. El capítulo~\ref{cap:objetivos} presenta el
-problema, la hipótesis, los objetivos, los antecedentes y la metodología. El
-capítulo~\ref{cap:marco} desarrolla el marco teórico y describe el mercado argentino en la
-ventana de estudio. El capítulo~\ref{cap:tecnicas} define las técnicas de ciencia de datos
-utilizadas. El capítulo~\ref{cap:desarrollo} detalla los datos, su limpieza, el análisis
-exploratorio y la especificación de los modelos. El capítulo~\ref{cap:resultados} presenta
-los resultados y los discute con la literatura, y el capítulo~\ref{cap:conclusiones} cierra
-con las conclusiones, las limitaciones y las líneas futuras. Los anexos reúnen el diccionario
-de variables, el detalle de las pruebas y las especificaciones escritas antes de correr los
-análisis.
+% ---------------------------------------------------------------------
+\section{Hipótesis de investigación}
+
+El plan de trabajo define el \textit{shock informativo} como un aumento anormal del volumen
+de noticias publicadas por medios digitales argentinos sobre temas económico-financieros, y
+plantea las siguientes hipótesis:
+
+\begin{quote}
+\textbf{Hipótesis alternativa (H1).} «El shock informacional tiene un impacto medible y
+estadísticamente significativo sobre el comportamiento bursátil —precio y/o volumen de
+transacciones— de las empresas argentinas que cotizan en bolsa.»
+
+\textbf{Hipótesis nula (H0).} «El shock informacional no tiene un impacto estadísticamente
+significativo sobre el comportamiento bursátil de las empresas argentinas.»
+\end{quote}
+
+El shock se midió de dos maneras complementarias: por su \textit{tono} (ruedas en que las
+noticias son mucho más positivas o negativas que lo habitual) y por su \textit{cantidad}
+(ruedas con muchas más notas que lo habitual, la definición literal del plan). La dirección que
+interesa es noticias \flecha{} mercado. Si los datos muestran la dirección contraria, o
+ninguna, la hipótesis no se sostiene, y ese también es un resultado.
+
+% ---------------------------------------------------------------------
+\section{Objetivos}
+
+\textbf{Objetivo general.} Modelar y cuantificar el impacto de shocks informativos
+provenientes de portales de noticias argentinos sobre el comportamiento bursátil —precio y
+volumen de transacciones— de empresas argentinas que cotizan en bolsa. La
+tabla~\ref{tab:objetivos} resume los seis objetivos específicos y cómo se cumplió cada uno.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}C{0.6cm}L{4.6cm}YL{1.6cm}@{}}
+\toprule
+\textbf{Obj.} & \textbf{Objetivo del plan} & \textbf{Qué se hizo} & \textbf{Dónde} \\
+\midrule
+1 & Corpus de noticias económicas como serie temporal & 14.012 notas de 7 portales, depuradas y asignadas a ruedas & Cap.~\ref{cap:corpus} \\
+2 & Modelo de sentimiento financiero en español (BETO) & FinBETO, 4 clases; F1 macro de 0,685 en noticias no vistas & Cap.~\ref{cap:finbeto} \\
+3 & \textit{Trending topics} de X/Twitter & No realizado: los datos no llegaron a integrarse & Cap.~\ref{cap:conclusiones} \\
+4 & Variables de shock: volumetría, temperatura del sentimiento, entidades & Tono anormal, atención, ruedas de tono extremo, tono propio por empresa (NER) y shock de cantidad & Caps.~\ref{cap:finbeto} y~\ref{cap:var} \\
+5 & Agrupar las empresas & Clustering de las 47 acciones: no hay familias de comportamiento (el único grupo se explica por la baja liquidez); el análisis se hizo por empresa y por sector & Cap.~\ref{cap:vix} \\
+6 & Relación con desfases temporales & VAR, Granger e impulso-respuesta, por mercado, empresa, sector y régimen; el DLM queda como trabajo futuro & Cap.~\ref{cap:var} \\
+\bottomrule
+\end{tabularx}
+\caption{Objetivos específicos y su cumplimiento. Fuente: elaboración propia.}
+\label{tab:objetivos}
+\end{table}
+
+% ---------------------------------------------------------------------
+\section{Antecedentes}
+\label{sec:antecedentes}
+
+\textbf{Noticias y precios.} \citet{tetlock2007} encontró, con una columna del \textit{Wall
+Street Journal}, que la relación existe en las dos direcciones: el pesimismo anticipa bajas que
+se revierten, y los retornos bajos anticipan más pesimismo. \citet{garcia2013} mostró que el
+tono anticipa los retornos casi solo en las recesiones. La cobertura importa por sí misma
+\citep{fang2009,engelberg2011}, y trabajos recientes preguntan si las noticias influyen en el
+precio o reflejan lo que ya tiene \citep{verma2026}, en qué momento lo incorpora
+\citep{kargarzadeh2026} y si las notas de la noche explican el salto de apertura
+\citep{glasserman2025}.
+
+\textbf{Medición del sentimiento.} Se pasó de los diccionarios \citep{loughran2011} a los modelos
+de lenguaje: FinBERT en inglés \citep{araci2019finbert} y, en español, BETO
+\citep{canete2020beto}, MarIA \citep{gutierrez2022maria} y los modelos evaluados en titulares
+económicos \citep{pan2023peerj}. A nivel de empresa, se clasifica el
+sentimiento hacia cada entidad de la nota \citep{tang2023finentity}.
+
+\textbf{Argentina y la región.} \citet{brana2016} clasificaron frases de noticias financieras
+argentinas sin cruzarlas con precios; \citet{galdi2018} y \citet{cruzmontana2025} cruzaron tono y
+bolsa en Brasil y Colombia; \citet{coronado2022} probaron causalidad desde la cantidad de noticias
+del COVID-19 hacia las bolsas de la región, y \citet{calandroni2026} estudió el efecto de las
+elecciones sobre el Merval. No se encontró un trabajo que cruce el tono de la prensa económica
+argentina con el precio y el volumen de las acciones de BYMA: ese es el vacío que cubre esta
+tesina.
+
+% ---------------------------------------------------------------------
+\section{Metodología}
+\label{sec:metodologia}
+
+Es un estudio observacional, longitudinal y correlacional: sigue las variables en el tiempo (244
+ruedas) y analiza su relación y su orden temporal. La muestra son 47 acciones de BYMA que cumplen
+criterios de cobertura y liquidez, 17 de ellas con noticias suficientes para medir su tono
+propio; el corpus son las notas de economía de siete portales nacionales. Se siguieron las fases
+de CRISP-DM \citep{wirth2000crispdm}, en Python con \texttt{statsmodels} \citep{seabold2010},
+\texttt{transformers} y \texttt{spaCy}. Los precios vienen de Yahoo Finance; las notas, de
+Internet Archive y de los mapas del sitio de los portales. El trabajo se organizó en tres partes
+(figura~\ref{fig:mapa}): el \textbf{lado de noticias} (corpus, sentimiento y entidades), a cargo
+de Gino Frigoni; el \textbf{lado bursátil} (panel, clustering, volatilidad, estacionariedad y
+régimen), a cargo de Nicolás Diddi; y la \textbf{unión}, que integra el trabajo de ambos. Cada
+lado cerró sus resultados durante octubre de 2026 y la unión se hizo entre el 17 y el 24 de
+octubre; un solo comando la rehace y verifica 66 controles automáticos. El impacto esperado es
+triple: científico, por la evidencia sobre medios y mercado en un mercado emergente y en español;
+práctico, porque indica si el tono de los medios se adelanta al mercado o lo refleja; y
+metodológico, por un \textit{pipeline} reproducible de punta a punta.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{mapa_tesis.png}
+\caption{Mapa de la tesina: el lado bursátil (azul), el lado de noticias (verde), la unión
+(violeta) y el resultado (rojo). Fuente: elaboración propia
+(\carpeta{Unión/09_entrega_final/mapa_tesis.py}).}
+\label{fig:mapa}
+\end{figure}
+
+% ---------------------------------------------------------------------
+\section{Cuatro instrumentos y un experimento}
+
+Los capítulos~\ref{cap:corpus} a~\ref{cap:hmm} presentan los cuatro instrumentos de medición que
+hubo que construir: \textbf{el corpus de noticias} (capítulo~\ref{cap:corpus}); \textbf{FinBETO,
+el termómetro emocional} de las noticias, con el reconocimiento de entidades que da el tono de
+cada empresa (capítulo~\ref{cap:finbeto}); \textbf{el VIX argentino}, que mide la tensión del
+mercado, junto con el panel de acciones (capítulo~\ref{cap:vix}); y \textbf{los regímenes de
+mercado} estimados con un modelo oculto de Markov (capítulo~\ref{cap:hmm}). El
+capítulo~\ref{cap:var} usa los cuatro en el experimento que contrasta la hipótesis: modelos VAR y
+pruebas de causalidad de Granger en las dos direcciones. Que los instrumentos estén validados es
+lo que permite leer con confianza el resultado: si el termómetro mide bien y aun así el tono no
+anticipa al mercado, la ausencia de efecto es un hallazgo y no una falla de medición.
