@@ -1,0 +1,72 @@
+{
+  "dataset": {
+    "n_oraciones": 720,
+    "clases": {
+      "NEU": 240,
+      "POS": 240,
+      "NEG": 240
+    },
+    "referencia": {
+      "f1_macro": 0.6201,
+      "accuracy": 0.6208,
+      "f1_POS": 0.5337,
+      "f1_NEG": 0.7181,
+      "f1_NEU": 0.6086,
+      "predicciones": {
+        "POS": 131,
+        "NEG": 175,
+        "NEU": 414
+      }
+    },
+    "finbeto": {
+      "f1_macro_por_semilla": [
+        0.7732,
+        0.7641,
+        0.7822
+      ],
+      "f1_macro_media": 0.7731,
+      "f1_macro_desvio": 0.0091,
+      "accuracy_media": 0.7519,
+      "f1_por_clase_media": [
+        0.7728,
+        0.7856,
+        0.761
+      ]
+    }
+  },
+  "dataset_v2": {
+    "n_oraciones": 662,
+    "clases": {
+      "POS": 240,
+      "NEU": 240,
+      "NEG": 182
+    },
+    "referencia": {
+      "f1_macro": 0.5462,
+      "accuracy": 0.5529,
+      "f1_POS": 0.4318,
+      "f1_NEG": 0.6231,
+      "f1_NEU": 0.5837,
+      "predicciones": {
+        "POS": 112,
+        "NEG": 139,
+        "NEU": 411
+      }
+    },
+    "finbeto": {
+      "f1_macro_por_semilla": [
+        0.7228,
+        0.7327,
+        0.7152
+      ],
+      "f1_macro_media": 0.7236,
+      "f1_macro_desvio": 0.0088,
+      "accuracy_media": 0.7004,
+      "f1_por_clase_media": [
+        0.7198,
+        0.7224,
+        0.7285
+      ]
+    }
+  }
+}

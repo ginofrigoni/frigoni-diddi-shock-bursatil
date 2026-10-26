@@ -1,0 +1,24 @@
+# Secretos: nunca se suben
+.env
+*.env
+!.env.example
+
+# Entornos y dependencias (se reinstalan desde requirements.txt y package.json)
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Archivos de más de 100 MB, el límite de GitHub (ver "Archivos que no están en el repositorio" en README.md)
+Lado Noticias/sentimiento_finbert/beto_further_pretrained/model.safetensors
+Lado Noticias/sentimiento_finbert/baseline_finiteautomata/pytorch_model.bin
+Lado Noticias/sentimiento_finbert/beto_oraciones_finetuned.csv
+Lado Noticias/ner_entidades/resultados_ner/ner_oraciones.csv
+Lado Noticias/ner_entidades/resultados_ner/ner_articulos.csv
+
+# Temporales del sistema y de Office
+desktop.ini
+Thumbs.db
+~$*
+*.tmp.pdf

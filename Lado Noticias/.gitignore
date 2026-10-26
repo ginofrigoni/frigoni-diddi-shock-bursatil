@@ -1,0 +1,11 @@
+# Secretos - nunca commitear
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Datos pesados / generados (agregar mas a medida que se copien otras fases)

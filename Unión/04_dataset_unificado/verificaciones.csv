@@ -1,0 +1,9 @@
+control,pasa
+"Mercado: 244 ruedas, sin repetidas, las mismas del calendario bursátil",True
+"Merval, retorno y VIX idénticos a la carpeta 03",True
+"Panel: 47 acciones × 244 ruedas, sin repetidos",True
+Sin valores faltantes en las variables principales (salvo atención en las 20 primeras ruedas),True
+Las notas suman lo mismo que en U1,True
+Sentimiento de la empresa presente ⇔ hubo noticia,True
+Cada rueda del panel tiene el mismo tono de mercado que el dataset de mercado,True
+Todas las columnas de los dos datasets están en el diccionario,True

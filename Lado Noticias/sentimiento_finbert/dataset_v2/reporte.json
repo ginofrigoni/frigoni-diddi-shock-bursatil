@@ -1,0 +1,86 @@
+{
+  "entrada_filas": 10855,
+  "entrada_noticias": 408,
+  "noticias_por_conjunto": {
+    "train": 330,
+    "val": 39,
+    "test": 39
+  },
+  "oraciones_disponibles_por_conjunto": {
+    "train": 8957,
+    "val": 951,
+    "test": 947
+  },
+  "oraciones_seleccionadas": {
+    "train": 6528,
+    "val": 754,
+    "test": 786
+  },
+  "clases_por_conjunto": {
+    "train": {
+      "NEU": 1920,
+      "POS": 1920,
+      "NEG": 1892,
+      "MIXTO": 796
+    },
+    "val": {
+      "NEU": 240,
+      "NEG": 240,
+      "POS": 199,
+      "MIXTO": 75
+    },
+    "test": {
+      "POS": 240,
+      "NEU": 240,
+      "NEG": 182,
+      "MIXTO": 124
+    }
+  },
+  "fuentes_en_test": {
+    "tn_economia": 139,
+    "clarin_economia": 110,
+    "infobae_economia": 94,
+    "clarin_sitemap": 89,
+    "iprofesional_sitemap": 82,
+    "lanacion_economia": 78,
+    "ambito_economia": 72,
+    "ambito_finanzas": 63,
+    "eleconomista_sitemap": 59
+  },
+  "clases_con_menos_de_lo_pedido": {
+    "train/NEG": {
+      "pedidas": 1920,
+      "disponibles": 1892
+    },
+    "val/POS": {
+      "pedidas": 240,
+      "disponibles": 199
+    },
+    "test/NEG": {
+      "pedidas": 240,
+      "disponibles": 182
+    }
+  },
+  "noticias_compartidas": {
+    "train-val": 0,
+    "train-test": 0,
+    "val-test": 0
+  },
+  "textos_compartidos": {
+    "train-val": 0,
+    "train-test": 0,
+    "val-test": 0
+  },
+  "textos_repetidos_dentro": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+  },
+  "class_weights": {
+    "POS": 1.8439,
+    "NEG": 1.8575,
+    "NEU": 1.8439,
+    "MIXTO": 2.8637
+  },
+  "seed": 42
+}

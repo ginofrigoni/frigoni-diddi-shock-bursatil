@@ -1,0 +1,127 @@
+Analisis,Periodo,Metodo,k,Silueta
+Precio,1 ano,K-Means,2,0.107
+Precio,1 ano,K-Means,3,0.065
+Precio,1 ano,K-Means,4,0.102
+Precio,1 ano,K-Means,5,0.04
+Precio,1 ano,K-Means,6,0.048
+Precio,1 ano,K-Means,7,0.068
+Precio,1 ano,K-Means,8,0.05
+Precio,1 ano,Jerarquico,2,0.357
+Precio,1 ano,Jerarquico,3,0.321
+Precio,1 ano,Jerarquico,4,0.311
+Precio,1 ano,Jerarquico,5,0.297
+Precio,1 ano,Jerarquico,6,0.315
+Precio,1 ano,Jerarquico,7,0.249
+Precio,1 ano,Jerarquico,8,0.223
+Precio,1 ano,MST,2,0.357
+Precio,1 ano,MST,3,0.321
+Precio,1 ano,MST,4,0.311
+Precio,1 ano,MST,5,0.297
+Precio,1 ano,MST,6,0.315
+Precio,1 ano,MST,7,0.225
+Precio,1 ano,MST,8,0.223
+Volumen,1 ano,K-Means,2,0.046
+Volumen,1 ano,K-Means,3,0.04
+Volumen,1 ano,K-Means,4,0.048
+Volumen,1 ano,K-Means,5,0.056
+Volumen,1 ano,K-Means,6,0.045
+Volumen,1 ano,K-Means,7,0.036
+Volumen,1 ano,K-Means,8,0.033
+Volumen,1 ano,Jerarquico,2,0.242
+Volumen,1 ano,Jerarquico,3,0.189
+Volumen,1 ano,Jerarquico,4,0.156
+Volumen,1 ano,Jerarquico,5,0.139
+Volumen,1 ano,Jerarquico,6,0.123
+Volumen,1 ano,Jerarquico,7,0.113
+Volumen,1 ano,Jerarquico,8,0.108
+Volumen,1 ano,MST,2,0.201
+Volumen,1 ano,MST,3,0.187
+Volumen,1 ano,MST,4,0.16
+Volumen,1 ano,MST,5,0.104
+Volumen,1 ano,MST,6,0.104
+Volumen,1 ano,MST,7,0.115
+Volumen,1 ano,MST,8,0.106
+13 features,1 ano,K-Means,2,0.219
+13 features,1 ano,K-Means,3,0.231
+13 features,1 ano,K-Means,4,0.215
+13 features,1 ano,K-Means,5,0.243
+13 features,1 ano,K-Means,6,0.249
+13 features,1 ano,K-Means,7,0.232
+13 features,1 ano,K-Means,8,0.217
+13 features,1 ano,Jerarquico,2,0.182
+13 features,1 ano,Jerarquico,3,0.221
+13 features,1 ano,Jerarquico,4,0.222
+13 features,1 ano,Jerarquico,5,0.235
+13 features,1 ano,Jerarquico,6,0.246
+13 features,1 ano,Jerarquico,7,0.201
+13 features,1 ano,Jerarquico,8,0.147
+13 features,1 ano,MST,2,0.383
+13 features,1 ano,MST,3,0.313
+13 features,1 ano,MST,4,0.315
+13 features,1 ano,MST,5,0.3
+13 features,1 ano,MST,6,0.251
+13 features,1 ano,MST,7,0.259
+13 features,1 ano,MST,8,0.189
+Precio,3 anos,K-Means,2,0.04
+Precio,3 anos,K-Means,3,0.041
+Precio,3 anos,K-Means,4,0.044
+Precio,3 anos,K-Means,5,0.054
+Precio,3 anos,K-Means,6,0.025
+Precio,3 anos,K-Means,7,0.034
+Precio,3 anos,K-Means,8,0.035
+Precio,3 anos,Jerarquico,2,0.33
+Precio,3 anos,Jerarquico,3,0.31
+Precio,3 anos,Jerarquico,4,0.305
+Precio,3 anos,Jerarquico,5,0.234
+Precio,3 anos,Jerarquico,6,0.218
+Precio,3 anos,Jerarquico,7,0.212
+Precio,3 anos,Jerarquico,8,0.194
+Precio,3 anos,MST,2,0.327
+Precio,3 anos,MST,3,0.312
+Precio,3 anos,MST,4,0.305
+Precio,3 anos,MST,5,0.219
+Precio,3 anos,MST,6,0.213
+Precio,3 anos,MST,7,0.212
+Precio,3 anos,MST,8,0.194
+Volumen,3 anos,K-Means,2,0.091
+Volumen,3 anos,K-Means,3,0.077
+Volumen,3 anos,K-Means,4,0.059
+Volumen,3 anos,K-Means,5,0.068
+Volumen,3 anos,K-Means,6,0.039
+Volumen,3 anos,K-Means,7,0.027
+Volumen,3 anos,K-Means,8,0.044
+Volumen,3 anos,Jerarquico,2,0.213
+Volumen,3 anos,Jerarquico,3,0.144
+Volumen,3 anos,Jerarquico,4,0.121
+Volumen,3 anos,Jerarquico,5,0.113
+Volumen,3 anos,Jerarquico,6,0.098
+Volumen,3 anos,Jerarquico,7,0.087
+Volumen,3 anos,Jerarquico,8,0.084
+Volumen,3 anos,MST,2,0.142
+Volumen,3 anos,MST,3,0.052
+Volumen,3 anos,MST,4,0.034
+Volumen,3 anos,MST,5,0.028
+Volumen,3 anos,MST,6,0.007
+Volumen,3 anos,MST,7,0.01
+Volumen,3 anos,MST,8,0.037
+13 features,3 anos,K-Means,2,0.406
+13 features,3 anos,K-Means,3,0.276
+13 features,3 anos,K-Means,4,0.192
+13 features,3 anos,K-Means,5,0.193
+13 features,3 anos,K-Means,6,0.178
+13 features,3 anos,K-Means,7,0.184
+13 features,3 anos,K-Means,8,0.182
+13 features,3 anos,Jerarquico,2,0.43
+13 features,3 anos,Jerarquico,3,0.41
+13 features,3 anos,Jerarquico,4,0.156
+13 features,3 anos,Jerarquico,5,0.165
+13 features,3 anos,Jerarquico,6,0.136
+13 features,3 anos,Jerarquico,7,0.131
+13 features,3 anos,Jerarquico,8,0.138
+13 features,3 anos,MST,2,0.567
+13 features,3 anos,MST,3,0.426
+13 features,3 anos,MST,4,0.358
+13 features,3 anos,MST,5,0.326
+13 features,3 anos,MST,6,0.299
+13 features,3 anos,MST,7,0.315
+13 features,3 anos,MST,8,0.289

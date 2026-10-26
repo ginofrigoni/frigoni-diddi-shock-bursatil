@@ -1,0 +1,6 @@
+control,pasa
+Todos los eventos del mercado tienen ventana de estimación y de evento completas,True
+Se usan los 18 eventos de U2 (shocks del mismo signo en ruedas seguidas = un evento),True
+Ningún evento por empresa se solapa con el anterior de la misma empresa,True
+El sorteo de fechas al azar usa solo ruedas con ventanas completas,True
+Retornos anormales de una fecha al azar promedian cerca de 0 (control del modelo),True

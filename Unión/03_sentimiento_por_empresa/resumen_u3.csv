@@ -1,0 +1,23 @@
+metrica,valor,detalle
+oraciones_con_entidades,242312,
+oraciones_unidas,240811,
+cobertura_cruce_pct,99.38,
+filas_entidad_rueda,19083,
+filas_empresa_rueda,3489,
+notas_con_mencion_fuera_de_ventana,75,
+ruedas,244,
+empresas_con_sentimiento_propio,17,al menos 90 ruedas con noticias
+empresas_sin_mencion,3,"LONG, CAPX, FIPL"
+empresas_menos_10_ruedas,16,
+empresas_con_cobertura_distinta_al_diagnostico,22,YPFD 236→237; BBAR 227→229; SUPV 222→223; EDN 207→213; GGAL 201→195; CEPU 194→193; IRSA 176→186; BMA 189→184; PAMP 169→164; CRES 156→163; BYMA 148→141; METR 110→112; TXAR 101→105; ALUA 97→94; TGNO4 80→75; COME 70→74; TECO2 54→52; VALO 47→50; MIRG 29→27; CELU 12→13; LEDE 12→11; AUSO 9→7
+cambio_lista_sentimiento_propio,no,entran: [] · salen: []
+top_YPFD,237,1025
+top_BBAR,229,685
+top_SUPV,223,632
+top_EDN,213,456
+top_GGAL,195,420
+sent_empresa_mas_negativa,-5.2,EDN
+sent_empresa_mas_positiva,42.9,PAMP
+mediana_oraciones_por_rueda_empresa,2,"en ruedas con noticia, empresas con sentimiento propio"
+pct_ruedas_empresa_una_oracion,37.0,"en esas ruedas, una sola oración menciona a la empresa"
+controles_ok,7,de 7

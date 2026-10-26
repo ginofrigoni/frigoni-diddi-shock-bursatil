@@ -1,0 +1,3405 @@
+{
+  "prefijo": 160,
+  "grupo_plantilla": 11,
+  "resumen": {
+    "ambito_economia.jsonl": {
+      "antes": 500,
+      "despues": 498,
+      "eliminadas": 2
+    },
+    "ambito_finanzas.jsonl": {
+      "antes": 256,
+      "despues": 240,
+      "eliminadas": 16
+    },
+    "clarin_economia.jsonl": {
+      "antes": 294,
+      "despues": 294,
+      "eliminadas": 0
+    },
+    "clarin_sitemap.jsonl": {
+      "antes": 3739,
+      "despues": 3737,
+      "eliminadas": 2
+    },
+    "eleconomista_sitemap.jsonl": {
+      "antes": 3051,
+      "despues": 2695,
+      "eliminadas": 356
+    },
+    "infobae_economia.jsonl": {
+      "antes": 500,
+      "despues": 500,
+      "eliminadas": 0
+    },
+    "iprofesional_sitemap.jsonl": {
+      "antes": 5497,
+      "despues": 5455,
+      "eliminadas": 42
+    },
+    "lanacion_economia.jsonl": {
+      "antes": 491,
+      "despues": 491,
+      "eliminadas": 0
+    },
+    "tn_economia.jsonl": {
+      "antes": 103,
+      "despues": 102,
+      "eliminadas": 1
+    }
+  },
+  "eliminadas": [
+    {
+      "archivo": "ambito_economia.jsonl",
+      "url": "https://www.ambito.com/economia/inflacion-31-enero-caba-que-dato-se-espera-el-ipc-del-indec-n6243934",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Inflación de 3,1% de enero en CABA: qué dato se espera para el IPC del INDEC",
+      "fecha_publicacion": "2026-02-09T12:58:00-03:00"
+    },
+    {
+      "archivo": "ambito_economia.jsonl",
+      "url": "https://www.ambito.com/economia/esta-billetera-virtual-ofrece-descuentos-todos-los-dias-febrero-2026-distintos-supermercados-y-asi-se-puede-aprovechar-n6243899",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Esta billetera virtual ofrece descuentos todos los días de febrero 2026 en distintos supermercados y así se puede aprovechar",
+      "fecha_publicacion": "2026-02-10T14:00:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/euro-hoy-y-euro-blue-hoy-cuanto-cerraron-este-viernes-29-agosto-n6184483",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Euro hoy y Euro blue hoy: a cuánto cerraron este viernes 29 de agosto",
+      "fecha_publicacion": "2025-08-29T18:58:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-1-noviembre-n6208844",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Dólar hoy: a cuánto cotiza este sábado 1 de noviembre",
+      "fecha_publicacion": "2025-11-01T00:00:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-jueves-17-julio-n6168498",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Dólar hoy: a cuánto cerró este jueves 17 de julio",
+      "fecha_publicacion": "2025-07-17T21:22:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-28-febrero-n6250538",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Dólar hoy: a cuánto cotiza este sábado 28 de febrero",
+      "fecha_publicacion": "2026-02-28T23:48:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-1-marzo-n6250715",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Dólar hoy: a cuánto cotiza este domingo 1 de marzo",
+      "fecha_publicacion": "2026-03-01T23:55:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-1-marzo-n6250716",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Dólar blue hoy: a cuánto opera este domingo 1 de marzo",
+      "fecha_publicacion": "2026-03-01T23:55:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-cotizo-este-sabado-27-diciembre-n6228480",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Dólar Blue hoy: a cuánto cotizó este sábado 27 de diciembre",
+      "fecha_publicacion": "2025-12-27T00:00:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-cotizo-este-domingo-28-diciembre-n6228482",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Dólar Blue hoy: a cuánto cotizó este domingo 28 de diciembre",
+      "fecha_publicacion": "2025-12-28T00:00:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-lunes-21-julio-n6169562",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Dólar hoy: a cuánto cerró este lunes 21 de julio",
+      "fecha_publicacion": "2025-07-21T17:57:39-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/euro-hoy-y-euro-blue-hoy-cuanto-cerraron-este-martes-23-diciembre-n6227485",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Euro hoy y Euro blue hoy: a cuánto cerraron este martes 23 de diciembre",
+      "fecha_publicacion": "2025-12-23T17:15:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-martes-30-septiembre-n6196781",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Dólar hoy: a cuánto cerró este martes 30 de septiembre",
+      "fecha_publicacion": "2025-09-30T16:56:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/el-dolar-blue-acelero-escalada-contramano-del-oficial-mep-y-ccl-y-se-consolido-arriba-1300-n6169580",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "El dólar blue aceleró escalada a contramano del oficial, MEP y CCL, y se consolidó arriba de $1.300",
+      "fecha_publicacion": "2025-07-21T18:37:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-5-julio-n6164016",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Dólar hoy: a cuánto cotiza este sábado 5 de julio",
+      "fecha_publicacion": "2025-07-05T00:00:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/euro-hoy-y-euro-blue-hoy-cuanto-cerraron-este-miercoles-8-octubre-n6199940",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Euro hoy y Euro blue hoy: a cuánto cerraron este miércoles 8 de octubre",
+      "fecha_publicacion": "2025-10-08T18:51:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-5-octubre-n6198227",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Dólar hoy: a cuánto cotiza este domingo 5 de octubre",
+      "fecha_publicacion": "2025-10-05T00:00:00-03:00"
+    },
+    {
+      "archivo": "ambito_finanzas.jsonl",
+      "url": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-1-noviembre-n6208846",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Dólar blue hoy: a cuánto opera este sábado 1 de noviembre",
+      "fecha_publicacion": "2025-11-01T00:00:00-03:00"
+    },
+    {
+      "archivo": "clarin_sitemap.jsonl",
+      "url": "https://www.clarin.com/economia/buscan-destronar-historico-dirigente-bolsa-comercio-portena_0_A5fyNqMelY.html",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Buscan \"destronar\" a histórico dirigente de la Bolsa de Comercio porteña",
+      "fecha_publicacion": "2026-04-06T12:22:05.000Z"
+    },
+    {
+      "archivo": "clarin_sitemap.jsonl",
+      "url": "https://www.clarin.com/economia/primera-prueba-fuego-post-elecciones-gobierno-dio-senales-aflojar-apreton-monetario_0_FYC7dApg7X.html",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Licitación de deuda: en su primer test post elecciones, el Gobierno bajó tasas y renovó el 57% de los vencimientos",
+      "fecha_publicacion": "2025-10-29T21:00:17.000Z"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-5-mayo-n84404",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 5 de mayo",
+      "fecha_publicacion": "2025-05-05T08:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-6-mayo-n84446",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 6 de mayo",
+      "fecha_publicacion": "2025-05-06T09:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-7-mayo-n84470",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 7 de mayo",
+      "fecha_publicacion": "2025-05-07T08:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-8-mayo-n84527",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 8 de mayo",
+      "fecha_publicacion": "2025-05-08T10:25:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-9-mayo-n84562",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 9 de mayo",
+      "fecha_publicacion": "2025-05-09T09:04:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-12-mayo-n84651",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 12 de mayo",
+      "fecha_publicacion": "2025-05-12T14:05:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-13-mayo-n84672",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 13 de mayo",
+      "fecha_publicacion": "2025-05-13T09:18:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-14-mayo-n84715",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 14 de mayo",
+      "fecha_publicacion": "2025-05-14T09:29:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-15-mayo-n84754",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 15 de mayo",
+      "fecha_publicacion": "2025-05-15T08:55:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-19-mayo-n84874",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 19 de mayo",
+      "fecha_publicacion": "2025-05-19T11:48:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-20-mayo-n84899",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 20 de mayo",
+      "fecha_publicacion": "2025-05-20T08:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-21-mayo-n84942",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 21 de mayo",
+      "fecha_publicacion": "2025-05-21T09:09:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-22-mayo-n84979",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 22 de mayo",
+      "fecha_publicacion": "2025-05-22T09:49:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-23-mayo-n85019",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 23 de mayo",
+      "fecha_publicacion": "2025-05-23T09:51:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-27-mayo-n85098",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 27 de mayo",
+      "fecha_publicacion": "2025-05-27T09:11:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-28-mayo-n85137",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 28 de mayo",
+      "fecha_publicacion": "2025-05-28T08:59:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-29-mayo-n85192",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 29 de mayo",
+      "fecha_publicacion": "2025-05-29T12:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-2-junio-n85279",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 2 de junio",
+      "fecha_publicacion": "2025-06-02T09:33:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-3-junio-n85324",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 3 de junio",
+      "fecha_publicacion": "2025-06-03T09:10:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-4-junio-n85378",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 4 de junio",
+      "fecha_publicacion": "2025-06-04T09:08:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-5-junio-n85417",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 5 de junio",
+      "fecha_publicacion": "2025-06-05T09:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-6-junio-n85463",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 6 de junio",
+      "fecha_publicacion": "2025-06-06T09:07:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-9-junio-n85515",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 9 de junio",
+      "fecha_publicacion": "2025-06-09T08:43:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-10-junio-n85561",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 10 de junio",
+      "fecha_publicacion": "2025-06-10T08:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-12-junio-n85627",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 12 de junio",
+      "fecha_publicacion": "2025-06-12T08:39:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-17-junio-n85766",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 17 de junio",
+      "fecha_publicacion": "2025-06-17T11:18:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-18-junio-n85809",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 18 de junio",
+      "fecha_publicacion": "2025-06-18T11:57:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-19-junio-n85838",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 19 de junio",
+      "fecha_publicacion": "2025-06-19T09:48:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-23-junio-n85900",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 23 de junio",
+      "fecha_publicacion": "2025-06-23T09:08:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-25-junio-n85984",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 25 de junio",
+      "fecha_publicacion": "2025-06-25T09:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-26-junio-n86028",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 26 de junio",
+      "fecha_publicacion": "2025-06-26T10:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-27-junio-n86074",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 27 de junio",
+      "fecha_publicacion": "2025-06-27T09:14:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-30-junio-n86127",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 30 de junio",
+      "fecha_publicacion": "2025-06-30T09:43:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-1-julio-n86200",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 1 de julio",
+      "fecha_publicacion": "2025-07-01T13:51:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-2-julio-n86220",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 2 de julio",
+      "fecha_publicacion": "2025-07-02T09:39:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-3-julio-n86255",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 3 de julio",
+      "fecha_publicacion": "2025-07-03T09:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-7-julio-n86348",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 7 de julio",
+      "fecha_publicacion": "2025-07-07T10:11:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-10-julio-n86442",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 10 de julio",
+      "fecha_publicacion": "2025-07-10T09:07:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-11-julio-n86505",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 11 de julio",
+      "fecha_publicacion": "2025-07-11T13:08:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-14-julio-n86570",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 14 de julio",
+      "fecha_publicacion": "2025-07-14T11:43:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-15-julio-n86601",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 15 de julio",
+      "fecha_publicacion": "2025-07-15T09:05:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-16-julio-n86649",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 16 de julio",
+      "fecha_publicacion": "2025-07-16T09:36:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-18-julio-n86756",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 18 de julio",
+      "fecha_publicacion": "2025-07-18T09:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-21-julio-n86824",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 21 de julio",
+      "fecha_publicacion": "2025-07-21T09:13:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-22-julio-n86863",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 22 de julio",
+      "fecha_publicacion": "2025-07-22T09:25:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-23-julio-n86900",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 23 de julio",
+      "fecha_publicacion": "2025-07-23T09:04:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-24-julio-n86934",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 24 de julio",
+      "fecha_publicacion": "2025-07-24T10:06:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-25-julio-n86980",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 25 de julio",
+      "fecha_publicacion": "2025-07-25T10:12:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-28-julio-n87029",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 28 de julio",
+      "fecha_publicacion": "2025-07-28T09:19:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-30-julio-n87106",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 30 de julio",
+      "fecha_publicacion": "2025-07-30T09:07:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-31-julio-n87145",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 31 de julio",
+      "fecha_publicacion": "2025-07-31T08:58:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-5-agosto-n87278",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 5 de agosto",
+      "fecha_publicacion": "2025-08-05T09:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-6-agosto-n87307",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 6 de agosto",
+      "fecha_publicacion": "2025-08-06T08:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-7-agosto-n87342",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 7 de agosto",
+      "fecha_publicacion": "2025-08-07T10:50:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-11-agosto-n87429",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 11 de agosto",
+      "fecha_publicacion": "2025-08-11T09:23:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-12-agosto-n87463",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 12 de agosto",
+      "fecha_publicacion": "2025-08-12T09:22:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-13-agosto-n87515",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 13 de agosto",
+      "fecha_publicacion": "2025-08-13T09:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-14-agosto-n87554",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 14 de agosto",
+      "fecha_publicacion": "2025-08-14T10:57:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-18-agosto-n87643",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 18 de agosto",
+      "fecha_publicacion": "2025-08-18T12:57:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-19-agosto-n87675",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 19 de agosto",
+      "fecha_publicacion": "2025-08-19T08:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-20-agosto-n87709",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 20 de agosto",
+      "fecha_publicacion": "2025-08-20T08:55:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-22-agosto-n87807",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 22 de agosto",
+      "fecha_publicacion": "2025-08-22T12:08:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-25-agosto-n87833",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 25 de agosto",
+      "fecha_publicacion": "2025-08-25T09:25:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-26-agosto-n87877",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 26 de agosto",
+      "fecha_publicacion": "2025-08-26T09:15:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-27-agosto-n87916",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 27 de agosto",
+      "fecha_publicacion": "2025-08-27T09:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-28-agosto-n87958",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 28 de agosto",
+      "fecha_publicacion": "2025-08-28T09:38:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-1-septiembre-n88062",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 1 de septiembre",
+      "fecha_publicacion": "2025-09-01T09:21:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-2-septiembre-n88106",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 2 de septiembre",
+      "fecha_publicacion": "2025-09-02T10:17:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-3-septiembre-n88158",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 3 de septiembre",
+      "fecha_publicacion": "2025-09-03T12:42:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-4-septiembre-n88198",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 4 de septiembre",
+      "fecha_publicacion": "2025-09-04T11:07:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-5-septiembre-n88246",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 5 de septiembre",
+      "fecha_publicacion": "2025-09-05T12:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-8-septiembre-n88313",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 8 de septiembre",
+      "fecha_publicacion": "2025-09-08T09:49:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-9-septiembre-n88358",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 9 de septiembre",
+      "fecha_publicacion": "2025-09-09T09:26:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-11-septiembre-n88448",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 11 de septiembre",
+      "fecha_publicacion": "2025-09-11T10:09:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-12-septiembre-n88488",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 12 de septiembre",
+      "fecha_publicacion": "2025-09-12T09:39:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-15-septiembre-n88540",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 15 de septiembre",
+      "fecha_publicacion": "2025-09-15T08:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-16-septiembre-n88583",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 16 de septiembre",
+      "fecha_publicacion": "2025-09-16T09:51:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-17-septiembre-n88615",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 17 de septiembre",
+      "fecha_publicacion": "2025-09-17T09:39:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-18-septiembre-n88647",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 18 de septiembre",
+      "fecha_publicacion": "2025-09-18T08:46:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-19-septiembre-n88692",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 19 de septiembre",
+      "fecha_publicacion": "2025-09-19T08:42:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-22-septiembre-n88747",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 22 de septiembre",
+      "fecha_publicacion": "2025-09-22T08:38:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-23-septiembre-n88791",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 23 de septiembre",
+      "fecha_publicacion": "2025-09-23T08:35:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-24-septiembre-n88842",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 24 de septiembre",
+      "fecha_publicacion": "2025-09-24T08:47:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-25-septiembre-n88901",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 25 de septiembre",
+      "fecha_publicacion": "2025-09-25T13:06:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-29-septiembre-n88977",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 29 de septiembre",
+      "fecha_publicacion": "2025-09-29T07:37:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-30-septiembre-n89024",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 30 de septiembre",
+      "fecha_publicacion": "2025-09-30T07:58:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-1-octubre-n89068",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 1 de octubre",
+      "fecha_publicacion": "2025-10-01T07:46:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-2-octubre-n89109",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 2 de octubre",
+      "fecha_publicacion": "2025-10-02T07:58:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-3-octubre-n89152",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 3 de octubre",
+      "fecha_publicacion": "2025-10-03T07:47:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-6-octubre-n89187",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 6 de octubre",
+      "fecha_publicacion": "2025-10-06T07:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-7-octubre-n89260",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 7 de octubre",
+      "fecha_publicacion": "2025-10-07T07:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-8-octubre-n89297",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 8 de octubre",
+      "fecha_publicacion": "2025-10-08T07:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-9-octubre-n89339",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 9 de octubre",
+      "fecha_publicacion": "2025-10-09T07:53:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-10-octubre-n89398",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 10 de octubre",
+      "fecha_publicacion": "2025-10-10T12:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-13-octubre-n89417",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 13 de octubre",
+      "fecha_publicacion": "2025-10-13T07:57:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-14-octubre-n89452",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 14 de octubre",
+      "fecha_publicacion": "2025-10-14T08:28:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-15-octubre-n89489",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 15 de octubre",
+      "fecha_publicacion": "2025-10-15T08:12:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-16-octubre-n89514",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 16 de octubre",
+      "fecha_publicacion": "2025-10-16T10:01:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-17-octubre-n89554",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 17 de octubre",
+      "fecha_publicacion": "2025-10-17T08:38:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-20-octubre-n89612",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 20 de octubre",
+      "fecha_publicacion": "2025-10-20T08:05:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-21-octubre-n89653",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 21 de octubre",
+      "fecha_publicacion": "2025-10-21T08:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-22-octubre-n89697",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 22 de octubre",
+      "fecha_publicacion": "2025-10-22T08:09:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-23-octubre-n89746",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 23 de octubre",
+      "fecha_publicacion": "2025-10-23T08:35:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-24-octubre-n89783",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 24 de octubre",
+      "fecha_publicacion": "2025-10-24T07:42:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-27-octubre-n89853",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 27 de octubre",
+      "fecha_publicacion": "2025-10-27T08:21:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-28-octubre-n89903",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 28 de octubre",
+      "fecha_publicacion": "2025-10-28T09:15:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-29-octubre-n89932",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 29 de octubre",
+      "fecha_publicacion": "2025-10-29T08:02:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-30-octubre-n89974",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 30 de octubre",
+      "fecha_publicacion": "2025-10-30T08:50:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-31-octubre-n90020",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 31 de octubre",
+      "fecha_publicacion": "2025-10-31T09:04:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-3-noviembre-n90082",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 3 de noviembre",
+      "fecha_publicacion": "2025-11-03T08:23:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-4-noviembre-n90128",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 4 de noviembre",
+      "fecha_publicacion": "2025-11-04T08:39:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-5-noviembre-n90171",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 5 de noviembre",
+      "fecha_publicacion": "2025-11-05T08:48:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-6-noviembre-n90214",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 6 de noviembre",
+      "fecha_publicacion": "2025-11-06T08:36:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-7-noviembre-n90267",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 7 de noviembre",
+      "fecha_publicacion": "2025-11-07T08:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-10-noviembre-n90331",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 10 de noviembre",
+      "fecha_publicacion": "2025-11-10T08:02:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-11-noviembre-n90375",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 11 de noviembre",
+      "fecha_publicacion": "2025-11-11T08:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-12-noviembre-n90414",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 12 de noviembre",
+      "fecha_publicacion": "2025-11-12T07:14:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-13-noviembre-n90460",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 13 de noviembre",
+      "fecha_publicacion": "2025-11-13T08:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-14-noviembre-n90518",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 14 de noviembre",
+      "fecha_publicacion": "2025-11-14T08:19:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-17-noviembre-n90581",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 17 de noviembre",
+      "fecha_publicacion": "2025-11-17T08:05:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-18-noviembre-n90630",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 18 de noviembre",
+      "fecha_publicacion": "2025-11-18T08:09:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-19-noviembre-n90659",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 19 de noviembre",
+      "fecha_publicacion": "2025-11-19T08:12:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-20-noviembre-n90697",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 20 de noviembre",
+      "fecha_publicacion": "2025-11-20T08:02:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-21-noviembre-n90736",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 21 de noviembre",
+      "fecha_publicacion": "2025-11-21T09:36:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-25-noviembre-n90776",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 25 de noviembre",
+      "fecha_publicacion": "2025-11-25T07:49:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-26-noviembre-n90821",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 26 de noviembre",
+      "fecha_publicacion": "2025-11-26T08:18:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-27-noviembre-n90852",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 27 de noviembre",
+      "fecha_publicacion": "2025-11-27T08:07:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-28-noviembre-n90879",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 28 de noviembre",
+      "fecha_publicacion": "2025-11-28T08:10:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-1-diciembre-n90935",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 1 de diciembre",
+      "fecha_publicacion": "2025-12-01T08:01:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-2-diciembre-n90983",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 2 de diciembre",
+      "fecha_publicacion": "2025-12-02T08:20:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-3-diciembre-n91026",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 3 de diciembre",
+      "fecha_publicacion": "2025-12-03T08:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-4-diciembre-n91061",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 4 de diciembre",
+      "fecha_publicacion": "2025-12-04T07:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-5-diciembre-n91104",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 5 de diciembre",
+      "fecha_publicacion": "2025-12-05T09:19:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-9-diciembre-n91167",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 9 de diciembre",
+      "fecha_publicacion": "2025-12-09T08:07:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-10-diciembre-n91201",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 10 de diciembre",
+      "fecha_publicacion": "2025-12-10T08:22:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-15-diciembre-n91291",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 15 de diciembre",
+      "fecha_publicacion": "2025-12-15T08:28:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-16-diciembre-n91329",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 16 de diciembre",
+      "fecha_publicacion": "2025-12-16T08:38:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-17-diciembre-n91357",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 17 de diciembre",
+      "fecha_publicacion": "2025-12-17T08:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-18-diciembre-n91383",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 18 de diciembre",
+      "fecha_publicacion": "2025-12-18T08:06:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-19-diciembre-n91411",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 19 de diciembre",
+      "fecha_publicacion": "2025-12-19T08:35:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-22-diciembre-n91460",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 22 de diciembre",
+      "fecha_publicacion": "2025-12-22T08:01:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-23-diciembre-n91508",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 23 de diciembre",
+      "fecha_publicacion": "2025-12-23T07:57:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-24-diciembre-n91539",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 24 de diciembre",
+      "fecha_publicacion": "2025-12-24T08:59:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-26-diciembre-n91556",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 26 de diciembre",
+      "fecha_publicacion": "2025-12-26T08:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-29-diciembre-n91591",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 29 de diciembre",
+      "fecha_publicacion": "2025-12-29T07:58:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-30-diciembre-n91627",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 30 de diciembre",
+      "fecha_publicacion": "2025-12-30T08:29:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-2-enero-n91663",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 147,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 2 de enero",
+      "fecha_publicacion": "2026-01-02T08:59:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/finanzas/tras-informe-explosivo-jp-morgan-aclara-su-postura-sobre-milei-su-programa-economico-n86218",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Tras un informe explosivo, JP Morgan aclara su postura sobre Milei y su programa económico",
+      "fecha_publicacion": "2025-07-02T06:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ultima-oportunidad-30-descuento-supermercados-miercoles-25-junio-n85771",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 4,
+      "titulo": "¡Última oportunidad! 30% de descuento en supermercados este miércoles 25 de junio",
+      "fecha_publicacion": "2025-06-24T08:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/increible-oportunidad-30-descuento-supermercados-miercoles-2-julio-n86186",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 4,
+      "titulo": "¡Increible oportunidad! 30% de descuento en supermercados este miércoles 2 de julio",
+      "fecha_publicacion": "2025-07-01T20:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/oferton-supermercados-aprovecha-30-descuento-miercoles-9-julio-n86390",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 4,
+      "titulo": "Oferton en supermercados. Aprovechá un 30% de descuento este miércoles 9 de julio",
+      "fecha_publicacion": "2025-07-08T20:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/finanzas/fuerte-baja-dolar-cayo-22-blue-volvio-ser-mas-caro-n85786",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Fuerte baja del dólar: cayó $22 y el blue volvió a ser el más caro",
+      "fecha_publicacion": "2025-06-17T18:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/finanzas/subas-wall-street-caida-adr-argentinos-n85748",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Subas en Wall Street y caída de los ADR argentinos",
+      "fecha_publicacion": "2025-06-16T17:40:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/descuentazo-carrefour-pagando-mercado-pago-jueves-12-junio-n85558",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Descuentazo en Carrefour pagando con Mercado Pago este Jueves 12 de junio",
+      "fecha_publicacion": "2025-06-11T20:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/increible-promocion-ahorra-20000-supermercados-dia-esta-tarjeta-martes-1-julio-n86174",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "¡Increible promoción! Ahorrá hasta $20.000 en Supermercados DIA con esta tarjeta este martes 1 de julio.",
+      "fecha_publicacion": "2025-07-01T06:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/increible-promocion-ahorra-20000-supermercados-dia-esta-tarjeta-martes-15-julio-n86394",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "¡Increible promoción! Ahorrá hasta $20.000 en Supermercados DIA con esta tarjeta este martes 15 de julio.",
+      "fecha_publicacion": "2025-07-14T11:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/cual-es-mejor-app-pagar-pix-brasil-n86462",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Cuál es la mejor app para pagar con Pix en Brasil (Julio 2025)",
+      "fecha_publicacion": "2025-07-10T16:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-app-preferida-argentinos-brasil-n86495",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Descubrí por qué Pix es la app preferida por los argentinos en Brasil",
+      "fecha_publicacion": "2025-07-11T10:06:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/olvidate-dolar-turista-pix-alternativa-pagar-cualquier-local-brasil-n86534",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Olvidate del dólar turista: Pix, la alternativa para pagar en cualquier local de Brasil",
+      "fecha_publicacion": "2025-07-12T10:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/como-conviene-pagar-en-brasil-pix-mejor-opcion-n86561",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Cómo conviene pagar en Brasil: por qué Pix es la mejor opción para los argentinos este lunes 14 de julio",
+      "fecha_publicacion": "2025-07-14T10:07:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/descubri-pix-app-preferida-argentinos-brasil-n86615",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Descubrí por qué Pix es la app preferida por los argentinos en Brasil",
+      "fecha_publicacion": "2025-07-15T11:26:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/como-ahorrar-brasil-pagando-pix-miercoles-16-julio-n86659",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Cómo ahorrar en Brasil pagando con Pix este miércoles 16 de julio",
+      "fecha_publicacion": "2025-07-16T12:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-paga-brasil-misma-app-asi-funciona-pix-n86702",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí y pagá en Brasil con la misma app: así funciona Pix",
+      "fecha_publicacion": "2025-07-17T10:25:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-tus-pesos-paga-brasil-pix-mejor-tipo-cambio-viernes-18-julio-n86764",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí tus pesos y pagá en Brasil con Pix al mejor tipo de cambio este viernes 18 de julio",
+      "fecha_publicacion": "2025-07-18T10:14:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-mientras-pagas-asi-te-conviene-usar-pix-brasil-sabado-19-julio-n86799",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí mientras pagás: así te conviene usar Pix en Brasil este sábado 19 de julio",
+      "fecha_publicacion": "2025-07-19T10:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/el-auge-pix-menos-comisiones-mejor-cambio-argentinos-brasil-n86808",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "El auge de Pix: menos comisiones y mejor cambio para argentinos en Brasil",
+      "fecha_publicacion": "2025-07-20T11:18:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/viaja-brasil-usar-dolar-pix-ya-tendencia-argentinos-n86833",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Viajá a Brasil sin usar dólar: Pix ya es tendencia entre los argentinos",
+      "fecha_publicacion": "2025-07-21T11:36:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-brasil-tarjetas-ni-dolares-boom-pix-argentinos-n86877",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Pagá en Brasil sin tarjetas ni dólares: el boom de Pix entre argentinos",
+      "fecha_publicacion": "2025-07-22T12:19:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conviene-usar-pix-brasil-alternativa-reduce-costos-mejora-tus-finanzas-durante-viaje-n86905",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "¿Conviene usar Pix en Brasil? La alternativa que reduce costos y mejora tus finanzas durante el viaje",
+      "fecha_publicacion": "2025-07-23T11:22:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conoce-mejor-billetera-virtual-pagar-pix-brasil-jueves-24-julio-n86952",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Conocé la mejor billetera virtual para pagar con Pix en Brasil este jueves 24 de julio",
+      "fecha_publicacion": "2025-07-24T15:15:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-viajes-brasil-pix-sistema-pago-te-permite-ahorrar-evitar-dolar-turista-n86973",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "No viajes a Brasil sin Pix: el sistema de pago que te permite ahorrar y evitar el dólar turista",
+      "fecha_publicacion": "2025-07-25T09:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/guia-completa-sobre-pix-como-funciona-te-conviene-usarlo-brasil-n87013",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Guía completa sobre Pix: cómo funciona y por qué te conviene usarlo en Brasil",
+      "fecha_publicacion": "2025-07-26T12:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-viajes-brasil-pix-billetera-virtual-te-permite-ahorrar-miles-pesos-n87015",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "No viajes a Brasil sin Pix: la billetera virtual que te permite ahorrar miles de pesos",
+      "fecha_publicacion": "2025-07-27T10:40:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/asi-funciona-pix-metodo-pago-usan-argentinos-evitar-dolar-turista-brasil-n87037",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Así funciona Pix, el método de pago que usan los argentinos para evitar el dólar turista en Brasil",
+      "fecha_publicacion": "2025-07-28T10:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/deja-tarjeta-esta-nueva-forma-pagar-brasil-comisiones-n87069",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Dejá la tarjeta: esta es la nueva forma de pagar en Brasil sin comisiones",
+      "fecha_publicacion": "2025-07-29T08:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/como-funciona-pix-todos-brasil-lo-usan-pagar-n87116",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "¿Cómo funciona Pix y por qué todos en Brasil lo usan para pagar?",
+      "fecha_publicacion": "2025-07-30T11:11:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/enterate-pix-app-n1-pagar-brasil-n87162",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Enterate por qué Pix es la app N°1 para pagar en Brasil",
+      "fecha_publicacion": "2025-07-31T11:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/como-pagar-brasil-mejor-cambio-dolar-turista-usar-efectivo-n87206",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Cómo pagar en Brasil con mejor cambio que el dólar turista y sin usar efectivo",
+      "fecha_publicacion": "2025-08-01T11:08:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-brasil-n87256",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix en Brasil",
+      "fecha_publicacion": "2025-08-04T13:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/como-ahorrar-brasil-pagando-pix-martes-5-agosto-n87285",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Cómo ahorrar en Brasil pagando con Pix este martes 5 de agosto",
+      "fecha_publicacion": "2025-08-05T10:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-tus-pesos-paga-brasil-pix-mejor-tipo-cambio-miercoles-6-agosto-n87314",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí tus pesos y pagá en Brasil con Pix al mejor tipo de cambio este miércoles 6 de agosto",
+      "fecha_publicacion": "2025-08-06T10:45:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-paga-brasil-misma-app-asi-funciona-pix-n87344",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí y pagá en Brasil con la misma app: así funciona Pix",
+      "fecha_publicacion": "2025-08-07T11:08:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/descubri-pix-app-preferida-argentinos-brasil-n87385",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Descubrí por qué Pix es la app preferida por los argentinos en Brasil",
+      "fecha_publicacion": "2025-08-08T10:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/guia-completa-sobre-pix-como-funciona-te-conviene-usarlo-brasil-n87436",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Guía completa sobre Pix: cómo funciona y por qué te conviene usarlo en Brasil",
+      "fecha_publicacion": "2025-08-11T11:02:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/esta-app-argentina-revoluciona-pagos-brasil-deja-atras-efectivo-n87476",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Esta app argentina revoluciona los pagos en Brasil y deja atrás al efectivo",
+      "fecha_publicacion": "2025-08-12T11:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-n87526",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con PIX",
+      "fecha_publicacion": "2025-08-13T13:51:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conoce-pix-app-preferida-argentinos-brasil-n87560",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Conocé por qué Pix es la app preferida por los argentinos en Brasil",
+      "fecha_publicacion": "2025-08-14T12:12:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-viajes-brasil-pix-billetera-virtual-te-permite-ahorrar-miles-pesos-n87684",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "No viajes a Brasil sin Pix: la billetera virtual que te permite ahorrar miles de pesos",
+      "fecha_publicacion": "2025-08-19T11:03:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conviene-usar-pix-brasil-alternativa-reduce-costos-mejora-tus-finanzas-durante-viaje-n87720",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "¿Conviene usar Pix en Brasil? La alternativa que reduce costos y mejora tus finanzas durante el viaje",
+      "fecha_publicacion": "2025-08-20T10:35:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-tus-pesos-paga-brasil-pix-mejor-tipo-cambio-jueves-21-agosto-n87764",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí tus pesos y pagá en Brasil con Pix al mejor tipo de cambio este jueves 21 de agosto",
+      "fecha_publicacion": "2025-08-21T11:21:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/como-pagar-brasil-pix-opcion-mas-barata-argentinos-n87963",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Cómo pagar en Brasil con Pix: la opción más barata para argentinos",
+      "fecha_publicacion": "2025-08-28T10:21:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-alternativa-mas-barata-dolar-turista-argentinos-n88017",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Pix en Brasil: la alternativa más barata al dólar turista para argentinos",
+      "fecha_publicacion": "2025-08-29T11:19:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/como-usar-pix-brasil-hoy-guia-argentinos-n88105",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Cómo usar Pix en Brasil hoy: guía para argentinos",
+      "fecha_publicacion": "2025-09-02T10:03:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-n88152",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix",
+      "fecha_publicacion": "2025-09-03T10:56:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-tus-pesos-paga-brasil-pix-mejor-tipo-cambio-jueves-4-septiembre-n88197",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí tus pesos y pagá en Brasil con Pix al mejor tipo de cambio este jueves 4 de septiembre",
+      "fecha_publicacion": "2025-09-04T10:59:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-alternativa-mas-barata-argentinos-viernes-5-septiembre-n88243",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Pix en Brasil: la alternativa más barata para argentinos este viernes 5 de septiembre",
+      "fecha_publicacion": "2025-09-05T11:59:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-lunes-8-septiembre-n88324",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este lunes 8 de septiembre",
+      "fecha_publicacion": "2025-09-08T11:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conoce-pix-app-preferida-argentinos-brasil-martes-9-septiembre-n88368",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Conocé por qué Pix es la app preferida por los argentinos en Brasil este martes 9 de septiembre",
+      "fecha_publicacion": "2025-09-09T10:49:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-viajes-brasil-pix-billetera-virtual-te-permite-ahorrar-miles-pesos-n88411",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "No viajes a Brasil sin Pix: la billetera virtual que te permite ahorrar miles de pesos",
+      "fecha_publicacion": "2025-09-10T10:45:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conviene-usar-pix-brasil-alternativa-reduce-costos-mejora-tus-finanzas-durante-viaje-n88443",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "¿Conviene usar Pix en Brasil? La alternativa que reduce costos y mejora tus finanzas durante el viaje",
+      "fecha_publicacion": "2025-09-11T09:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-tus-pesos-paga-brasil-pix-mejor-tipo-cambio-viernes-12-septiembre-n88487",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí tus pesos y pagá en Brasil con Pix al mejor tipo de cambio este viernes 12 de septiembre",
+      "fecha_publicacion": "2025-09-12T09:35:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-brasil-n88586",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix en Brasil",
+      "fecha_publicacion": "2025-09-16T10:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-alternativa-mas-barata-argentinos-miercoles-17-septiembre-n88629",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Pix en Brasil: la alternativa más barata para argentinos este miércoles 17 de septiembre",
+      "fecha_publicacion": "2025-09-17T14:11:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-viernes-19-septiembre-n88706",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este viernes 19 de septiembre",
+      "fecha_publicacion": "2025-09-19T12:29:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conoce-pix-app-preferida-argentinos-brasil-martes-23-septiembre-n88796",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Conocé por qué Pix es la app preferida por los argentinos en Brasil este martes 23 de septiembre",
+      "fecha_publicacion": "2025-09-23T09:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-viajes-brasil-pix-billetera-virtual-te-permite-ahorrar-miles-pesos-n88850",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "No viajes a Brasil sin Pix: la billetera virtual que te permite ahorrar miles de pesos",
+      "fecha_publicacion": "2025-09-24T10:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conviene-usar-pix-brasil-alternativa-reduce-costos-mejora-tus-finanzas-durante-viaje-n88888",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "¿Conviene usar Pix en Brasil? La alternativa que reduce costos y mejora tus finanzas durante el viaje",
+      "fecha_publicacion": "2025-09-25T10:43:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-tus-pesos-paga-brasil-pix-mejor-tipo-cambio-viernes-26-septiembre-n88937",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí tus pesos y pagá en Brasil con Pix al mejor tipo de cambio este viernes 26 de septiembre",
+      "fecha_publicacion": "2025-09-26T10:05:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-brasil-n88992",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix en Brasil",
+      "fecha_publicacion": "2025-09-29T11:18:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-alternativa-mas-barata-argentinos-viernes-3-octubre-n89169",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Pix en Brasil: la alternativa más barata para argentinos este viernes 3 de octubre",
+      "fecha_publicacion": "2025-10-03T13:40:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-lunes-6-octubre-n89203",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este lunes 6 de octubre",
+      "fecha_publicacion": "2025-10-06T08:56:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conoce-pix-app-preferida-argentinos-brasil-martes-7-octubre-n89264",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Conocé por qué Pix es la app preferida por los argentinos en Brasil este martes 7 de octubre",
+      "fecha_publicacion": "2025-10-07T09:10:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-viajes-brasil-pix-billetera-virtual-te-permite-ahorrar-miles-pesos-n89323",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "No viajes a Brasil sin Pix: la billetera virtual que te permite ahorrar miles de pesos",
+      "fecha_publicacion": "2025-10-08T12:50:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conviene-usar-pix-brasil-alternativa-reduce-costos-mejora-tus-finanzas-durante-viaje-n89357",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "¿Conviene usar Pix en Brasil? La alternativa que reduce costos y mejora tus finanzas durante el viaje",
+      "fecha_publicacion": "2025-10-09T12:45:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-tus-pesos-paga-brasil-pix-mejor-tipo-cambio-martes-14-octubre-n89462",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí tus pesos y pagá en Brasil con Pix al mejor tipo de cambio este martes 14 de octubre",
+      "fecha_publicacion": "2025-10-14T11:13:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-brasil-n89496",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix en Brasil",
+      "fecha_publicacion": "2025-10-15T10:02:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-alternativa-mas-barata-argentinos-jueves-16-octubre-n89526",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Pix en Brasil: la alternativa más barata para argentinos este jueves 16 de octubre",
+      "fecha_publicacion": "2025-10-16T11:57:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-viernes-17-octubre-n89573",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este viernes 17 de octubre",
+      "fecha_publicacion": "2025-10-17T11:58:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conoce-pix-app-preferida-argentinos-brasil-lunes-20-octubre-n89620",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Conocé por qué Pix es la app preferida por los argentinos en Brasil este lunes 20 de octubre",
+      "fecha_publicacion": "2025-10-20T11:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-viajes-brasil-pix-billetera-virtual-te-permite-ahorrar-miles-pesos-n89664",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "No viajes a Brasil sin Pix: la billetera virtual que te permite ahorrar miles de pesos",
+      "fecha_publicacion": "2025-10-21T10:38:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conviene-usar-pix-brasil-alternativa-reduce-costos-mejora-tus-finanzas-durante-viaje-n89733",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "¿Conviene usar Pix en Brasil? La alternativa que reduce costos y mejora tus finanzas durante el viaje",
+      "fecha_publicacion": "2025-10-22T16:25:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-brasil-n89756",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix en Brasil",
+      "fecha_publicacion": "2025-10-23T11:03:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/inverti-tus-pesos-paga-brasil-pix-mejor-tipo-cambio-viernes-24-octubre-n89790",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Invertí tus pesos y pagá en Brasil con Pix al mejor tipo de cambio este viernes 24 de octubre",
+      "fecha_publicacion": "2025-10-24T09:24:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-brasil-n89865",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix en Brasil",
+      "fecha_publicacion": "2025-10-27T10:37:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-alternativa-mas-barata-argentinos-miercoles-29-octubre-n89948",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Pix en Brasil: la alternativa más barata para argentinos este miércoles 29 de octubre",
+      "fecha_publicacion": "2025-10-29T11:14:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-jueves-30-octubre-n89986",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este jueves 30 de octubre",
+      "fecha_publicacion": "2025-10-30T10:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conoce-pix-app-preferida-argentinos-brasil-viernes-31-octubre-n90027",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Conocé por qué Pix es la app preferida por los argentinos en Brasil este viernes 31 de octubre",
+      "fecha_publicacion": "2025-10-31T12:06:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-viajes-brasil-pix-billetera-virtual-te-permite-ahorrar-miles-pesos-n90090",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "No viajes a Brasil sin Pix: la billetera virtual que te permite ahorrar miles de pesos",
+      "fecha_publicacion": "2025-11-03T09:48:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/conviene-usar-pix-brasil-alternativa-reduce-costos-mejora-tus-finanzas-durante-viaje-n90141",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "¿Conviene usar Pix en Brasil? La alternativa que reduce costos y mejora tus finanzas durante el viaje",
+      "fecha_publicacion": "2025-11-04T10:56:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-brasil-n90172",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix en Brasil",
+      "fecha_publicacion": "2025-11-05T09:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-alternativa-mas-barata-argentinos-jueves-6-noviembre-n90240",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Pix en Brasil: la alternativa más barata para argentinos este jueves 6 de noviembre",
+      "fecha_publicacion": "2025-11-06T12:43:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-viernes-7-noviembre-n90281",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 76,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este viernes 7 de noviembre",
+      "fecha_publicacion": "2025-11-07T12:58:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/increible-descuento-30-estos-supermercados-miercoles-23-julio-n86839",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Increíble descuento del 30% en estos supermercados este miércoles 23 de julio",
+      "fecha_publicacion": "2025-07-22T20:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/increible-promocion-307-tenes-30-descuento-7-supermercados-esta-tarjeta-n87053",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "¡Increíble promoción! Este 30/7 tenés un 30% de descuento en 7 supermercados con esta tarjeta",
+      "fecha_publicacion": "2025-07-29T19:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/descuento-dia-cuenta-dni-n86521",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Impresionante descuento en Supermercados DIA pagando con Cuenta DNI este lunes 21 de julio",
+      "fecha_publicacion": "2025-07-20T19:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/descuento-cuenta-dni-dia-supermercado-n86523",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Tremendo descuento en Supermercados DIA pagando con Cuenta DNI este lunes 28 de julio",
+      "fecha_publicacion": "2025-07-27T19:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/imperdible-descuento-carrefour-pagando-mercado-pago-jueves-24-julio-n86840",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Imperdible descuento en Carrefour pagando con Mercado Pago este jueves 24 de julio",
+      "fecha_publicacion": "2025-07-23T21:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/increible-beneficio-25-descuento-carrefour-express-pagando-tu-celular-lunes-21-julio-n86798",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "¡Increíble beneficio! 25% de descuento en Carrefour Express pagando con tu celular este lunes 21 de julio",
+      "fecha_publicacion": "2025-07-20T21:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/asi-ve-economista-javier-milei-siempre-visita-cuando-viaja-nueva-york-n92795",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Así la ve el economista que Javier Milei siempre visita cuando viaja a Nueva York",
+      "fecha_publicacion": "2026-02-23T09:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/increible-oportunidad-ahorra-17000-supermercados-dia-pagando-tu-celular-jueves-24-julio-n86460",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "¡Increíble oportunidad! Ahorrá hasta $17.000 en Supermercados DIA pagando con tu celular este jueves 24 de julio",
+      "fecha_publicacion": "2025-07-23T21:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/lacha-la-plata-tapa-agujeros-agranda-agujeros-financieros-tapan-decisiones-n89146",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Lacha: \"La plata no tapa agujeros, los agranda. Los agujeros financieros se tapan con decisiones\"",
+      "fecha_publicacion": "2025-10-03T04:00:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/cual-billetera-virtual-mas-paga-argentina-hoy-n88594",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "¿Cuál es la billetera virtual que más paga en Argentina hoy?",
+      "fecha_publicacion": "2025-09-16T11:29:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/uno-economistas-mas-solicitados-mercado-habla-todo-acuerdo-eeuu-inflacion-noviembre-no-compra-reservas-n90595",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Uno de los economistas más solicitados del mercado habla de todo: acuerdo con EEUU, la inflación de noviembre y (no) compra de reservas",
+      "fecha_publicacion": "2025-11-17T10:24:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-paso-paso-como-pagar-brasil-pesos-una-app-n91752",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pix paso a paso: cómo pagar en Brasil con pesos desde una app",
+      "fecha_publicacion": "2026-01-06T10:28:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/las-mejores-apps-pagar-pix-brasil-evitar-cambiar-dolares-n91770",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Las mejores apps para pagar con Pix en Brasil y evitar cambiar dólares",
+      "fecha_publicacion": "2026-01-07T10:54:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/que-necesitas-usar-pix-brasil-n91793",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Qué necesitás para usar Pix en Brasil",
+      "fecha_publicacion": "2026-01-08T10:27:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-viernes-9-enero-n91831",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este viernes 9 de enero",
+      "fecha_publicacion": "2026-01-09T11:21:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pagar-pix-brasil-pix-forma-pago-mas-eligen-argentinos-n91864",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagar con Pix en Brasil: por qué Pix es la forma de pago que más eligen los argentinos",
+      "fecha_publicacion": "2026-01-12T10:24:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pagar-brasil-pix-una-alternativa-mas-barata-practica-efectivo-n91895",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagar en Brasil con Pix: una alternativa más barata y práctica que el efectivo",
+      "fecha_publicacion": "2026-01-13T12:05:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-como-usar-billeteras-virtuales-ahorrar-pagos-n91927",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil: cómo usar billeteras virtuales y ahorrar en pagos",
+      "fecha_publicacion": "2026-01-14T11:50:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-e-inverti-como-pagar-dejar-generar-rendimientos-n92011",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil e invertí: cómo pagar sin dejar de generar rendimientos",
+      "fecha_publicacion": "2026-01-16T13:02:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/como-pagar-brasi-guia-pix-paso-paso-n92035",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Cómo pagar en Brasi: guía Pix paso a paso",
+      "fecha_publicacion": "2026-01-19T09:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-mejores-apps-pagar-brasil-evitar-cambiar-dolares-n92064",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil: las mejores apps para pagar en Brasil y evitar cambiar dólares",
+      "fecha_publicacion": "2026-01-20T14:36:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-miercoles-21-enero-n92083",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este miércoles 21 de enero",
+      "fecha_publicacion": "2026-01-21T11:42:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pagar-brasil-pix-una-alternativa-mejor-efectivo-n92098",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagar en Brasil con Pix: una alternativa mejor que el efectivo",
+      "fecha_publicacion": "2026-01-22T10:45:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-como-pagar-celular-ahorrar-cada-compra-n92118",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pix en Brasil: cómo pagar desde el celular y ahorrar en cada compra",
+      "fecha_publicacion": "2026-01-23T08:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-necesitas-lunes-26-enero-n92171",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil: qué necesitás este lunes 26 de enero",
+      "fecha_publicacion": "2026-01-26T10:46:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/con-app-me-conviene-usar-pix-guia-elegir-mejor-aplicacion-n92194",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "¿Con qué app me conviene usar Pix? Guía para elegir la mejor aplicación",
+      "fecha_publicacion": "2026-01-27T09:39:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-como-funciona-sistema-pagos-mas-usado-turistas-n92219",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pix en Brasil: cómo funciona el sistema de pagos más usado por los turistas",
+      "fecha_publicacion": "2026-01-28T10:42:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-paso-paso-como-pagar-brasil-pesos-una-app-n92242",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pix paso a paso: cómo pagar en Brasil con pesos desde una app",
+      "fecha_publicacion": "2026-01-29T12:46:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-viernes-30-enero-n92264",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este viernes 30 de enero",
+      "fecha_publicacion": "2026-01-30T12:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-como-usar-billeteras-virtuales-ahorrar-pagos-n92301",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil: cómo usar billeteras virtuales y ahorrar en pagos",
+      "fecha_publicacion": "2026-02-02T09:37:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-mejores-apps-pagar-brasil-evitar-cambiar-dolares-n92349",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil: las mejores apps para pagar en Brasil y evitar cambiar dólares",
+      "fecha_publicacion": "2026-02-03T12:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/guia-pix-brasil-como-pagar-facil-rapido-n92382",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Guía Pix en Brasil: cómo pagar fácil y rápido",
+      "fecha_publicacion": "2026-02-04T12:21:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pagar-brasil-pix-una-alternativa-mejor-efectivo-n92411",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagar en Brasil con Pix: una alternativa mejor que el efectivo",
+      "fecha_publicacion": "2026-02-05T11:47:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-como-pagar-celular-ahorrar-cada-compra-n92443",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pix en Brasil: cómo pagar desde el celular y ahorrar en cada compra",
+      "fecha_publicacion": "2026-02-06T11:13:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-necesitas-lunes-9-febrero-n92508",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil: qué necesitás este lunes 9 de febrero",
+      "fecha_publicacion": "2026-02-09T12:53:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/con-app-me-conviene-usar-pix-guia-elegir-mejor-aplicacion-n92578",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "¿Con qué app me conviene usar Pix? Guía para elegir la mejor aplicación",
+      "fecha_publicacion": "2026-02-11T09:43:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-brasil-como-funciona-sistema-pagos-mas-usado-turistas-n92615",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pix en Brasil: cómo funciona el sistema de pagos más usado por los turistas",
+      "fecha_publicacion": "2026-02-12T13:15:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/pix-paso-paso-como-pagar-brasil-pesos-una-app-n92636",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pix paso a paso: cómo pagar en Brasil con pesos desde una app",
+      "fecha_publicacion": "2026-02-13T11:10:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/ranking-billeteras-virtuales-pagar-pix-miercoles-18-febrero-n92691",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Ranking de billeteras virtuales para pagar con Pix este miércoles 18 de febrero",
+      "fecha_publicacion": "2026-02-18T13:02:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-como-usar-billeteras-virtuales-ahorrar-pagos-n92719",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil: cómo usar billeteras virtuales y ahorrar en pagos",
+      "fecha_publicacion": "2026-02-19T11:43:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/paga-pix-brasil-mejores-apps-pagar-brasil-evitar-cambiar-dolares-n92752",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Pagá con Pix en Brasil: las mejores apps para pagar en Brasil y evitar cambiar dólares",
+      "fecha_publicacion": "2026-02-20T10:51:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/guia-pix-brasil-como-pagar-facil-rapido-n92796",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 31,
+      "titulo": "Guía Pix en Brasil: cómo pagar fácil y rápido",
+      "fecha_publicacion": "2026-02-23T09:47:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-5-enero-n91700",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 5 de enero",
+      "fecha_publicacion": "2026-01-05T08:08:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-6-enero-n91735",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 6 de enero",
+      "fecha_publicacion": "2026-01-06T08:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-7-enero-n91760",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 7 de enero",
+      "fecha_publicacion": "2026-01-07T08:40:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-8-enero-n91788",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 8 de enero",
+      "fecha_publicacion": "2026-01-08T09:06:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-9-enero-n91820",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 9 de enero",
+      "fecha_publicacion": "2026-01-09T08:05:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-12-enero-n91855",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 12 de enero",
+      "fecha_publicacion": "2026-01-12T07:55:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-13-enero-n91887",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 13 de enero",
+      "fecha_publicacion": "2026-01-13T08:30:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-14-enero-n91916",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 14 de enero",
+      "fecha_publicacion": "2026-01-14T09:11:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-15-enero-n91947",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 15 de enero",
+      "fecha_publicacion": "2026-01-15T08:03:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-16-enero-n91987",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 16 de enero",
+      "fecha_publicacion": "2026-01-16T08:04:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-2-febrero-n92290",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 2 de febrero",
+      "fecha_publicacion": "2026-02-02T07:53:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-3-febrero-n92330",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 3 de febrero",
+      "fecha_publicacion": "2026-02-03T07:59:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-4-febrero-n92368",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 4 de febrero",
+      "fecha_publicacion": "2026-02-04T08:06:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-5-febrero-n92396",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 5 de febrero",
+      "fecha_publicacion": "2026-02-05T08:26:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-6-febrero-n92433",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 6 de febrero",
+      "fecha_publicacion": "2026-02-06T08:23:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-9-febrero-n92490",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 9 de febrero",
+      "fecha_publicacion": "2026-02-09T08:23:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-10-febrero-n92536",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 10 de febrero",
+      "fecha_publicacion": "2026-02-10T08:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-11-febrero-n92572",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 11 de febrero",
+      "fecha_publicacion": "2026-02-11T08:22:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-12-febrero-n92600",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 12 de febrero",
+      "fecha_publicacion": "2026-02-12T08:29:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-13-febrero-n92628",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 13 de febrero",
+      "fecha_publicacion": "2026-02-13T08:26:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-17-febrero-n92655",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 17 de febrero",
+      "fecha_publicacion": "2026-02-17T08:49:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-18-febrero-n92668",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 18 de febrero",
+      "fecha_publicacion": "2026-02-18T08:19:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-19-febrero-n92708",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 19 de febrero",
+      "fecha_publicacion": "2026-02-19T08:38:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-20-febrero-n92748",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 20 de febrero",
+      "fecha_publicacion": "2026-02-20T10:21:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-23-febrero-n92789",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 23 de febrero",
+      "fecha_publicacion": "2026-02-23T08:10:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-24-febrero-n92835",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 24 de febrero",
+      "fecha_publicacion": "2026-02-24T09:06:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-25-febrero-n92869",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 25 de febrero",
+      "fecha_publicacion": "2026-02-25T08:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-26-febrero-n92902",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 26 de febrero",
+      "fecha_publicacion": "2026-02-26T08:20:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-27-febrero-n92934",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 27 de febrero",
+      "fecha_publicacion": "2026-02-27T08:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-2-marzo-n92985",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 2 de marzo",
+      "fecha_publicacion": "2026-03-02T08:19:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-3-marzo-n93033",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 3 de marzo",
+      "fecha_publicacion": "2026-03-03T08:16:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-4-marzo-n93074",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 4 de marzo",
+      "fecha_publicacion": "2026-03-04T08:09:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-5-marzo-n93112",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 5 de marzo",
+      "fecha_publicacion": "2026-03-05T08:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-6-marzo-n93146",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 6 de marzo",
+      "fecha_publicacion": "2026-03-06T08:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-9-marzo-n93188",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 9 de marzo",
+      "fecha_publicacion": "2026-03-09T08:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-10-marzo-n93237",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 10 de marzo",
+      "fecha_publicacion": "2026-03-10T08:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-11-marzo-n93265",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 11 de marzo",
+      "fecha_publicacion": "2026-03-11T08:24:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-12-marzo-n93301",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 12 de marzo",
+      "fecha_publicacion": "2026-03-12T08:27:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-13-marzo-n93340",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 13 de marzo",
+      "fecha_publicacion": "2026-03-13T09:40:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-16-marzo-n93373",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 16 de marzo",
+      "fecha_publicacion": "2026-03-16T08:56:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-17-marzo-n93408",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 17 de marzo",
+      "fecha_publicacion": "2026-03-17T09:10:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-18-marzo-n93431",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 18 de marzo",
+      "fecha_publicacion": "2026-03-18T08:24:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-19-marzo-n93467",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 19 de marzo",
+      "fecha_publicacion": "2026-03-19T08:34:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-20-marzo-n93491",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 20 de marzo",
+      "fecha_publicacion": "2026-03-20T08:12:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-25-marzo-n93566",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 25 de marzo",
+      "fecha_publicacion": "2026-03-25T07:37:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-26-marzo-n93601",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 26 de marzo",
+      "fecha_publicacion": "2026-03-26T08:09:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-27-marzo-n93642",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 27 de marzo",
+      "fecha_publicacion": "2026-03-27T08:57:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-30-marzo-n93686",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 30 de marzo",
+      "fecha_publicacion": "2026-03-30T08:19:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-31-marzo-n93722",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 31 de marzo",
+      "fecha_publicacion": "2026-03-31T08:16:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-1-abril-n93765",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 1 de abril",
+      "fecha_publicacion": "2026-04-01T08:27:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-2-abril-n93809",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 2 de abril",
+      "fecha_publicacion": "2026-04-02T09:11:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-6-abril-n93859",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 6 de abril",
+      "fecha_publicacion": "2026-04-06T08:28:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-7-abril-n93904",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 7 de abril",
+      "fecha_publicacion": "2026-04-07T08:36:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-8-abril-n93940",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 8 de abril",
+      "fecha_publicacion": "2026-04-08T08:41:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-9-abril-n93982",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 9 de abril",
+      "fecha_publicacion": "2026-04-09T08:46:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-10-abril-n94011",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 10 de abril",
+      "fecha_publicacion": "2026-04-10T08:24:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-13-abril-n94058",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 13 de abril",
+      "fecha_publicacion": "2026-04-13T08:37:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-14-abril-n94113",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 14 de abril",
+      "fecha_publicacion": "2026-04-14T08:38:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-15-abril-n94144",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 15 de abril",
+      "fecha_publicacion": "2026-04-15T08:42:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-16-abril-n94172",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 16 de abril",
+      "fecha_publicacion": "2026-04-16T08:36:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-17-abril-n94208",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 17 de abril",
+      "fecha_publicacion": "2026-04-17T08:40:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-20-abril-n94261",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 20 de abril",
+      "fecha_publicacion": "2026-04-20T08:51:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-21-abril-n94294",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 21 de abril",
+      "fecha_publicacion": "2026-04-21T08:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-22-abril-n94334",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 22 de abril",
+      "fecha_publicacion": "2026-04-22T07:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-23-abril-n94358",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 23 de abril",
+      "fecha_publicacion": "2026-04-23T08:45:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-24-abril-n94389",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 24 de abril",
+      "fecha_publicacion": "2026-04-24T08:44:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-27-abril-n94441",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este lunes 27 de abril",
+      "fecha_publicacion": "2026-04-27T08:43:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-28-abril-n94470",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este martes 28 de abril",
+      "fecha_publicacion": "2026-04-28T08:31:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-29-abril-n94506",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este miércoles 29 de abril",
+      "fecha_publicacion": "2026-04-29T08:32:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-30-abril-n94538",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este jueves 30 de abril",
+      "fecha_publicacion": "2026-04-30T08:36:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-1-mayo-n94577",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 71,
+      "titulo": "Dólar hoy: a cuánto cotiza este viernes 1 de mayo",
+      "fecha_publicacion": "2026-05-01T09:42:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/el-ceo-ypf-le-hablo-directo-argentinos-ahora-te-voy-ayudar-despues-te-toca-vos-n93818",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "El CEO de YPF le habló directo a los argentinos: \"Ahora te voy a ayudar, después te toca a vos\"",
+      "fecha_publicacion": "2026-04-02T11:04:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/caputo-pide-apurarse-sacar-creditos-hipotecarios-es-una-mega-oportunidad-n93870",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "Caputo pide apurarse a sacar créditos hipotecarios: \"Es una mega oportunidad\"",
+      "fecha_publicacion": "2026-04-06T11:13:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/el-ceo-cocos-pidio-argentinos-cambiar-mentalidad-deja-pensar-gastar-menos-n93878",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "El CEO de Cocos pidió a los argentinos cambiar la mentalidad: \"Dejá de pensar en gastar menos\"",
+      "fecha_publicacion": "2026-04-06T12:27:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/hernan-lacunza-el-70-pymes-ahoga-n93915",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "Hernán Lacunza: \"El 70% de las pymes se ahoga\"",
+      "fecha_publicacion": "2026-04-07T11:23:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/crisis-flores-comerciantes-acumulan-11-meses-repunte-alertan-escenario-critico-n94087",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "Crisis en Flores: comerciantes acumulan 11 meses sin repunte y alertan un escenario crítico",
+      "fecha_publicacion": "2026-04-13T14:07:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/majul-se-viene-nuevo-ajuste-todos-ministerios-n94088",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "Majul: \"Se viene un nuevo ajuste en todos los ministerios\"",
+      "fecha_publicacion": "2026-04-13T14:14:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dueno-peabody-no-puedo-dormir-depresion-tengo-muy-grave-n94186",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "Dueño de Peabody: \"No puedo dormir, la depresión que tengo es muy grave\"",
+      "fecha_publicacion": "2026-04-16T12:03:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/no-deficit-javier-timerman-revelo-verdadero-miedo-hoy-recorre-wall-street-n94283",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "No solo es el déficit: Javier Timerman reveló cuál es el verdadero miedo que hoy recorre Wall Street",
+      "fecha_publicacion": "2026-04-20T14:25:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/daza-lanza-pronostico-clave-18-meses-espectaculares-n94408",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "Daza lanza pronóstico clave: \"18 meses espectaculares\"",
+      "fecha_publicacion": "2026-04-24T12:52:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/dura-advertencia-maslaton-en-argentina-estan-todos-empomados-n94453",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "Dura advertencia de Maslatón: \"En Argentina están todos empomados\"",
+      "fecha_publicacion": "2026-04-27T12:38:00-03:00"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/es-desastre-benito-fernandez-estallo-gobierno-hablo-crisis-textil-dijo-lo-volveria-votar-n94548",
+      "motivo": "contenido_plantilla",
+      "tamano_grupo": 11,
+      "titulo": "\"Es un desastre\": Benito Fernández estalló contra el Gobierno, habló de la crisis textil y dijo que no lo volvería a votar",
+      "fecha_publicacion": "2026-04-30T11:14:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/447522-credito-a-tasa-0-de-mercado-pago-febrero-2026-que-requisitos-plazos-y-montos-ofrece",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Crédito a tasa 0% de Mercado Pago febrero 2026: qué requisitos, plazos de devolución y montos ofrece",
+      "fecha_publicacion": "2026-02-04T12:00:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/450147-credito-a-tasa-0-de-mercado-pago-marzo-2026-requisitos-montos-y-plazos-de-devolucion",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Crédito a tasa 0% de Mercado Pago marzo 2026: requisitos, montos y plazos de devolución",
+      "fecha_publicacion": "2026-03-13T10:32:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/450054-empleado-de-seguridad-privada-que-sueldo-cobrara-por-lo-trabajado-en-marzo-con-el-aumento",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Empleado de seguridad privada: qué sueldo cobrará por lo trabajado en marzo 2026 con el aumento",
+      "fecha_publicacion": "2026-03-14T10:40:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/450502-sueldo-empleado-de-seguridad-privada-cuanto-ganaran-con-aumentos-de-abril-mayo-y-junio",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Sueldo empleado de Seguridad Privada: cuánto ganarán con aumentos de abril, mayo y junio",
+      "fecha_publicacion": "2026-03-29T11:06:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/446246-cuanto-sube-el-salario-minimo-vital-y-movil-en-febrero-2026",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 4,
+      "titulo": "Sube el Salario Mínimo Vital y Móvil en febrero 2026: cómo impactará en los planes sociales",
+      "fecha_publicacion": "2026-01-29T23:59:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/447418-sube-el-salario-minimo-vital-y-movil-febrero-2026-como-impacta-en-prestaciones-de-anses",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 4,
+      "titulo": "Salario Mínimo Vital y Móvil febrero 2026: cuándo aumenta y cómo impacta en planes sociales de ANSES",
+      "fecha_publicacion": "2026-02-03T09:14:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/449064-sube-el-salario-minimo-vital-y-movil-en-marzo-2026-como-impacta-en-prestaciones-de-anses",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 4,
+      "titulo": "Sube el Salario Mínimo Vital y Móvil en marzo 2026: cómo impacta en prestaciones de ANSES",
+      "fecha_publicacion": "2026-02-27T09:13:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/448255-cuantos-dolares-se-pueden-depositar-en-una-cuenta-sin-problemas-con-arca-en-febrero-2026",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Los dólares que se pueden depositar en una cuenta sin problemas con ARCA en febrero 2026",
+      "fecha_publicacion": "2026-02-24T10:22:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/444816-cuantos-dolares-se-pueden-depositar-en-el-banco-sin-alertar-a-arca-este-2026",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Los dólares que se pueden depositar en el banco sin alertar a ARCA en 2026",
+      "fecha_publicacion": "2026-02-12T09:31:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/445685-telepase-2026-que-tener-en-cuenta-para-evitar-multas-en-algunas-autopistas-y-como-adherir",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "TelePASE 2026: qué tener en cuenta para evitar multas en algunas autopistas y cómo adherirse",
+      "fecha_publicacion": "2026-01-09T10:53:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/446193-banco-central-argentino-suma-reservas-y-mercado-anticipa-como-impactara-en-precio-dolar",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "El BCRA recibe una lluvia de reservas y la City anticipa cómo impactará en el precio del dólar",
+      "fecha_publicacion": "2026-01-16T17:20:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/446478-boom-de-emisiones-de-deuda-entre-provincias-y-empresas-sumaran-b8500-millones-de-dolares",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Boom de emisiones de deuda: entre provincias y empresas sumarán u$s8.500 millones",
+      "fecha_publicacion": "2026-01-20T16:52:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/443164-esto-debe-saber-un-jubilado-que-quiere-tener-una-prepaga-en-vez-de-pami-en-diciembre-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Esto debe saber un jubilado que quiere elegir una prepaga en vez de PAMI en diciembre 2025",
+      "fecha_publicacion": "2025-12-03T10:20:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/440509-mercado-pago-ofrece-creditos-a-tasa-0-requisitos-plazo-para-devolucion-y-como-pedirlo",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Mercado Pago ofrece créditos a tasa 0%: requisitos, plazo para devolución y cómo soiicitarlo",
+      "fecha_publicacion": "2025-10-27T12:02:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/443479-creditos-a-tasa-0-de-mercado-pago-en-diciembre-2025-requisitos-plazos-y-como-pedirlo",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Créditos a tasa 0% de Mercado Pago en diciembre 2025: requisitos, plazos y cómo pedirlo",
+      "fecha_publicacion": "2025-12-05T14:40:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/443554-oportunidad-para-invertir-por-que-recomiendan-nuevo-bono-en-dolares-luis-caputo",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Oportunidad para invertir: por qué operadores recomiendan nuevo bono en dólares que lanzará Caputo",
+      "fecha_publicacion": "2025-12-09T06:50:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/442034-empleado-de-seguridad-privada-que-sueldo-cobran-por-noviembre-y-donde-hacer-el-curso",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Empleado de seguridad privada: qué sueldo cobran por noviembre y dónde hacer el curso",
+      "fecha_publicacion": "2025-11-28T00:01:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/443633-empleado-de-seguridad-privada-cual-sera-el-sueldo-por-lo-trabajado-en-diciembre-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Empleado de seguridad privada: cuál será el sueldo por lo trabajado en diciembre 2025",
+      "fecha_publicacion": "2025-12-09T10:21:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/444805-sueldo-empleados-de-comercio-cuanto-cobraran-por-diciembre-2025-y-enero-2026",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Sueldo empleados de comercio: cuánto cobrarán por diciembre 2025 y enero 2026 con bono",
+      "fecha_publicacion": "2025-12-26T11:14:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/436481-sueldo-empleado-de-comercio-tras-suba-de-agosto-cuanto-cobraran-por-septiembre-y-octubre",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 7,
+      "titulo": "Empleado de comercio: tras suba de agosto, de cuánto serán los sueldos de septiembre y hasta fin de año",
+      "fecha_publicacion": "2025-09-02T10:46:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/437818-sueldo-empleado-de-comercio-cuanto-recibira-de-aumento-en-septiembre-y-hasta-fin-de-ano",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 7,
+      "titulo": "Sueldo empleado de comercio: cuánto recibirá de aumento en septiembre y hasta fin de año",
+      "fecha_publicacion": "2025-09-19T13:43:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/438895-empleado-de-comercio-como-sera-el-aumento-de-octubre-y-noviembre-para-cada-categoria",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 7,
+      "titulo": "Empleado de Comercio: cómo será el aumento de octubre y noviembre para cada categoría",
+      "fecha_publicacion": "2025-10-04T10:34:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/439921-empleado-de-comercio-cuanto-sube-sueldo-cada-categoria-octubre-noviembre-diciembre",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 7,
+      "titulo": "Empleado de comercio: suba de sueldo de cada categoría en octubre, noviembre y diciembre",
+      "fecha_publicacion": "2025-10-20T10:21:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/440935-empleado-de-comercio-como-sera-el-aumento-de-noviembre-y-diciembre-para-cada-categoria",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 7,
+      "titulo": "Empleado de Comercio: cómo será el aumento de noviembre y diciembre para cada categoría",
+      "fecha_publicacion": "2025-11-01T10:14:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/442185-sueldo-empleados-de-comercio-como-sera-el-aumento-de-noviembre-diciembre-y-enero",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 7,
+      "titulo": "Empleados de Comercio: así serán los aumentos de noviembre, diciembre y enero",
+      "fecha_publicacion": "2025-11-26T12:21:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/436986-cuanto-cobrara-un-chofer-de-colectivo-en-septiembre-de-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 5,
+      "titulo": "Cuánto cobrará un chofer de colectivo por lo trabajado en septiembre de 2025",
+      "fecha_publicacion": "2025-09-11T08:14:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/438044-sueldo-chofer-colectivo-cuanto-cobrara-septiembre-octubre-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 5,
+      "titulo": "Sueldo chofer colectivo: cuánto cobrará por septiembre y octubre de 2025",
+      "fecha_publicacion": "2025-09-23T10:41:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/438894-cuanto-aumenta-el-sueldo-de-un-chofer-de-colectivo-por-lo-trabajado-en-octubre-y-noviembre",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 5,
+      "titulo": "Cuánto aumenta el sueldo de un chofer de colectivo por lo trabajado en octubre y noviembre",
+      "fecha_publicacion": "2025-10-04T10:13:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/441126-sueldo-cuanto-cobrara-un-chofer-de-colectivo-en-noviembre-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 5,
+      "titulo": "Sueldo: cuánto cobrará un chofer de colectivo en noviembre 2025",
+      "fecha_publicacion": "2025-11-13T14:07:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/439412-adelanto-de-sueldo-como-solicitar-y-que-tener-en-cuenta-con-este-salvavidas-financiero",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Adelanto de sueldo: cómo solicitar y qué tener en cuenta con este \"salvavidas financiero\"",
+      "fecha_publicacion": "2025-10-13T13:55:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/439768-visa-mastercard-transforman-compras-online-como-funciona-nuevo-sistema-tarjetas",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Visa y Mastercard transforman las compras online: cómo funciona el nuevo sistema",
+      "fecha_publicacion": "2025-10-16T21:41:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/440327-prestamos-para-jubilados-a-tasa-fija-que-se-debe-saber-antes-de-pedirlo-en-octubre-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Préstamos para jubilados a tasa fija: qué se debe saber antes de pedirlo en octubre 2025",
+      "fecha_publicacion": "2025-10-24T10:33:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/434842-mercado-pago-ofrece-creditos-a-tasa-0-que-requisitos-debes-cumplir-en-agosto-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Los requisitos que debés cumplir para sacar un crédito a tasa 0 en Mercado Pago en agosto 2025",
+      "fecha_publicacion": "2025-08-09T09:53:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/435894-creditos-a-tasa-0-de-mercado-pago-que-requisitos-se-deben-cumplir-en-agosto-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Créditos a tasa 0 de Mercado Pago: qué requisitos se deben cumplir en agosto 2025",
+      "fecha_publicacion": "2025-08-25T11:38:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/432131-cuanto-aumentara-es-el-salario-minimo-en-julio-y-agosto-2025-y-en-que-impacta",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "El Salario Mínimo aumenta en julio y agosto e impactará en distintos programas de ANSES",
+      "fecha_publicacion": "2025-07-04T09:51:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/430645-empleados-de-comercio-cual-es-el-sueldo-por-lo-trabajado-en-junio-2025-segun-categoria",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Empleados de Comercio: cuál es el sueldo por lo trabajado en junio 2025, según categoría",
+      "fecha_publicacion": "2025-06-13T13:00:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/430991-empleada-domestica-cuando-se-paga-aguinaldo-y-como-se-calcula-plata-corresponde",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Empleada doméstica: cuándo se paga el aguinaldo y cómo se calcula la plata que corresponde",
+      "fecha_publicacion": "2025-06-18T20:05:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/428588-suba-de-sueldo-cuanto-cobra-un-empleado-de-seguridad-privada-en-argentina-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "Cuánto cobra un empleado de seguridad privada en Argentina 2025",
+      "fecha_publicacion": "2025-05-16T11:33:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/429529-empleado-de-seguridad-privada-cual-sera-el-sueldo-por-lo-trabajado-durante-mayo-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 3,
+      "titulo": "El sueldo para los empleados de seguridad vendrá con aumento por lo trabajado durante mayo 2025",
+      "fecha_publicacion": "2025-05-29T11:30:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/428434-aumento-sueldo-empleados-comercio-cuanto-cobra-vendedor-junio-2025",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Esto cobra un vendedor en junio con el nuevo aumento de sueldo empleados de comercio",
+      "fecha_publicacion": "2025-05-14T17:14:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/finanzas/427916-precio-dolar-cae-a-niveles-alarmantes-hasta-cuanto-puede-bajar",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Se desplomó el dólar y en el mercado explicaron los motivos: \"Desapareció la demanda\"",
+      "fecha_publicacion": "2025-05-07T19:01:00-03:00"
+    },
+    {
+      "archivo": "iprofesional_sitemap.jsonl",
+      "url": "https://www.iprofesional.com/economia/428744-a-cuanto-llegaran-las-jubilaciones-maximas-y-minimas-en-junio-de-2025-tras-aumento",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "A cuánto llegarán las jubilaciones máximas y mínimas en junio de 2025 tras aumento",
+      "fecha_publicacion": "2025-05-19T12:04:00-03:00"
+    },
+    {
+      "archivo": "tn_economia.jsonl",
+      "url": "https://tn.com.ar/economia/propiedades/2026/03/22/rematan-propiedades-sin-herederos-en-caba-desde-us19400-como-postularse-y-cuales-son-los-requisitos/",
+      "motivo": "contenido_duplicado",
+      "tamano_grupo": 2,
+      "titulo": "Rematan propiedades sin herederos en CABA desde US$19.400: cómo postularse y cuáles son los requisitos",
+      "fecha_publicacion": "2026-03-22T12:22:15-0300"
+    }
+  ]
+}

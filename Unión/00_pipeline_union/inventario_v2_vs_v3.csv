@@ -1,0 +1,231 @@
+﻿grupo,estado,archivo_v2,tamano,en_3_0,hace_falta,responsable,bytes
+A. Modelo de sentimiento,No pasó,analisis_complementarios/baseline_beto_sin_finetuning/analisis_beto.ipynb,452 KB,—,Para la tesis (comparación sin ajuste),Gino,462577
+A. Modelo de sentimiento,No pasó,analisis_complementarios/baseline_beto_sin_finetuning/analisis_beto.py,9 KB,—,Para la tesis (comparación sin ajuste),Gino,9138
+A. Modelo de sentimiento,No pasó,analisis_complementarios/baseline_beto_sin_finetuning/beto_articulos.csv,601 KB,—,Para la tesis (comparación sin ajuste),Gino,615915
+A. Modelo de sentimiento,No pasó,analisis_complementarios/baseline_beto_sin_finetuning/beto_oraciones.csv,24.3 MB,—,Para la tesis (comparación sin ajuste),Gino,25521736
+A. Modelo de sentimiento,No pasó,analisis_complementarios/baseline_beto_sin_finetuning/beto_serie_diaria.csv,59 KB,—,Para la tesis (comparación sin ajuste),Gino,60505
+A. Modelo de sentimiento,No pasó,analisis_complementarios/baseline_beto_sin_finetuning/muestra_prueba.json,326 KB,—,Para la tesis (comparación sin ajuste),Gino,334077
+A. Modelo de sentimiento,No pasó,analisis_complementarios/baseline_beto_sin_finetuning/serie_temporal_sentimiento.png,496 KB,—,Para la tesis (comparación sin ajuste),Gino,507897
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/04_learning_curve.ipynb,66 KB,—,Para la tesis (métricas del modelo),Gino,67688
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/05_evaluacion.ipynb,52 KB,—,Para la tesis (métricas del modelo),Gino,53742
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/06_inferencia.ipynb,12 KB,—,Para la tesis (métricas del modelo),Gino,11792
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/beto_oraciones_finetuned.csv,169.1 MB,—,Sí (paso U3 de la unión),Gino,177357379
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/confusion_matrix.png,49 KB,—,Para la tesis (métricas del modelo),Gino,50408
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/learning_curve.csv,0 KB,—,Para la tesis (métricas del modelo),Gino,285
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/learning_curve.png,49 KB,—,Para la tesis (métricas del modelo),Gino,50584
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/metricas.csv,0 KB,—,Para la tesis (métricas del modelo),Gino,99
+A. Modelo de sentimiento,No pasó,analisis_complementarios/finetuning_evaluacion/reporte.txt,1 KB,—,Para la tesis (métricas del modelo),Gino,555
+A. Modelo de sentimiento,No pasó,pipeline_productivo/03_data_preparation/sentimiento/02_preparar_dataset.ipynb,9 KB,—,Para la tesis (de dónde salieron las etiquetas),Gino,8902
+A. Modelo de sentimiento,No pasó,pipeline_productivo/03_data_preparation/sentimiento/dataset_etiquetado/checkpoint.jsonl,14.4 MB,—,Para la tesis (de dónde salieron las etiquetas),Gino,15124423
+A. Modelo de sentimiento,No pasó,pipeline_productivo/03_data_preparation/sentimiento/dataset_etiquetado/indice_procesados.json,50 KB,—,Para la tesis (de dónde salieron las etiquetas),Gino,51315
+A. Modelo de sentimiento,No pasó,pipeline_productivo/03_data_preparation/sentimiento/etiquetado_gemma.ipynb,467 KB,—,Para la tesis (de dónde salieron las etiquetas),Gino,477713
+A. Modelo de sentimiento,No pasó,pipeline_productivo/04_modeling/sentimiento_finbert/01_further_pretraining.ipynb,25 KB,—,Para la tesis (cómo se entrenó),Gino,25496
+A. Modelo de sentimiento,No pasó,pipeline_productivo/04_modeling/sentimiento_finbert/03_finetuning.ipynb,24 KB,—,Para la tesis (cómo se entrenó),Gino,25012
+A. Modelo de sentimiento,No pasó,pipeline_productivo/04_modeling/sentimiento_finbert/beto_finetuned/ (6 archivos),420.0 MB,—,Solo para analizar noticias nuevas,Gino,440413917
+A. Modelo de sentimiento,No pasó,pipeline_productivo/04_modeling/sentimiento_finbert/beto_further_pretrained/ (7 archivos),420.1 MB,—,No (paso intermedio del entrenamiento),Gino,440531645
+A. Modelo de sentimiento,Pasó,pipeline_productivo/04_modeling/sentimiento_finbert/checkpoint_finetuned.jsonl,7.0 MB,Lado Noticias/sentimiento_finbert/ (actualizado),—,Gino,7323425
+A. Modelo de sentimiento,Pasó,pipeline_productivo/04_modeling/sentimiento_finbert/finetuned_articulos.csv,4.0 MB,Lado Noticias/sentimiento_finbert/ (actualizado),—,Gino,4222220
+A. Modelo de sentimiento,Pasó,pipeline_productivo/04_modeling/sentimiento_finbert/finetuned_serie_diaria.csv,186 KB,Lado Noticias/sentimiento_finbert/ (actualizado),—,Gino,190553
+A. Modelo de sentimiento,Pasó,pipeline_productivo/04_modeling/sentimiento_finbert/serie_completa_finetuned.py,18 KB,Lado Noticias/sentimiento_finbert/ (actualizado),—,Gino,18025
+B. Sentimiento por empresa (versión vieja),Reemplazado en 3.0,pipeline_productivo/03_data_preparation/construccion_dataset/sentimiento_por_empresa.csv,208 KB,Lado Noticias/ner_entidades/resultados_ner/ner_sentimiento_diario.csv,No,Gino,212489
+B. Sentimiento por empresa (versión vieja),Reemplazado en 3.0,pipeline_productivo/03_data_preparation/sentimiento/construir_sentimiento_empresa.py,8 KB,"Lado Noticias/ner_entidades/ (47 empresas, por oración)",No,Gino,8441
+C. Corpus de noticias,No pasó,pipeline_productivo/02_data_understanding/noticias/resultados/circulo_resultado.png,6 KB,—,No (imágenes de formas geométricas sin uso; parecen de otro trabajo),Gino,6054
+C. Corpus de noticias,No pasó,pipeline_productivo/02_data_understanding/noticias/resultados/circulo_ruido_resultado.png,451 KB,—,No (imágenes de formas geométricas sin uso; parecen de otro trabajo),Gino,462122
+C. Corpus de noticias,No pasó,pipeline_productivo/02_data_understanding/noticias/resultados/cuadrado_resultado.png,6 KB,—,No (imágenes de formas geométricas sin uso; parecen de otro trabajo),Gino,6032
+C. Corpus de noticias,No pasó,pipeline_productivo/02_data_understanding/noticias/resultados/multiple_resultado.png,10 KB,—,No (imágenes de formas geométricas sin uso; parecen de otro trabajo),Gino,10699
+C. Corpus de noticias,No pasó,pipeline_productivo/02_data_understanding/noticias/resultados/rectangulo_resultado.png,5 KB,—,No (imágenes de formas geométricas sin uso; parecen de otro trabajo),Gino,5053
+C. Corpus de noticias,No pasó,pipeline_productivo/02_data_understanding/noticias/resultados/triangulo_resultado.png,8 KB,—,No (imágenes de formas geométricas sin uso; parecen de otro trabajo),Gino,8537
+C. Corpus de noticias,No pasó,pipeline_productivo/02_data_understanding/noticias/scraping_noticias/noticias_historico.py,20 KB,—,"No (versión obsoleta, reemplazada por v3)",Gino,20466
+C. Corpus de noticias,No pasó,pipeline_productivo/02_data_understanding/noticias/scraping_noticias/noticias_historico_v2.py,20 KB,—,"No (versión obsoleta, reemplazada por v3)",Gino,20102
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/ambito_economia.json,2.2 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,2343811
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/ambito_economia.jsonl,2.2 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,2278876
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/ambito_finanzas.json,942 KB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,964972
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/ambito_finanzas.jsonl,909 KB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,931294
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/clarin_economia.json,2.2 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,2263020
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/clarin_economia.jsonl,2.1 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,2160604
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/clarin_sitemap.json,16.8 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,17566849
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/clarin_sitemap.jsonl,16.0 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,16818632
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/eleconomista_sitemap.json,13.9 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,14535928
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/eleconomista_sitemap.jsonl,13.5 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,14134163
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/infobae_economia.json,3.2 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,3328198
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/infobae_economia.jsonl,3.1 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,3247722
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/iprofesional_sitemap.json,33.4 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,35020638
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/iprofesional_sitemap.jsonl,32.9 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,34491880
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/lanacion_economia.json,2.7 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,2851073
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/lanacion_economia.jsonl,2.7 MB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,2785459
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/tn_economia.json,676 KB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,692704
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/resultados/tn_economia.jsonl,665 KB,Lado Noticias/noticias/resultados/ (depurado),—,Gino,680695
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/scraping_noticias/diagnostico_ambito.py,5 KB,Lado Noticias/noticias/scripts/ (actualizado),—,Gino,5061
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/scraping_noticias/noticias_diario.py,21 KB,Lado Noticias/noticias/scripts/ (actualizado),—,Gino,21581
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/scraping_noticias/noticias_historico_v3.py,23 KB,Lado Noticias/noticias/scripts/ (actualizado),—,Gino,23402
+C. Corpus de noticias,Pasó,pipeline_productivo/02_data_understanding/noticias/scraping_noticias/noticias_sitemap.py,20 KB,Lado Noticias/noticias/scripts/ (actualizado),—,Gino,20215
+D. NER (entidades),Pasó,analisis_complementarios/ner_entidades/ner_analisis.ipynb,22 KB,"Lado Noticias/ner_entidades/ (rehecho, 47 empresas)",—,Gino,22972
+D. NER (entidades),Pasó,analisis_complementarios/ner_entidades/resultados_ner/ner_articulos.csv,99.1 MB,"Lado Noticias/ner_entidades/ (rehecho, 47 empresas)",—,Gino,103943462
+D. NER (entidades),Pasó,analisis_complementarios/ner_entidades/resultados_ner/ner_oraciones.csv,260.0 MB,"Lado Noticias/ner_entidades/ (rehecho, 47 empresas)",—,Gino,272583034
+D. NER (entidades),Pasó,analisis_complementarios/ner_entidades/resultados_ner/ner_resumen.csv,1.8 MB,"Lado Noticias/ner_entidades/ (rehecho, 47 empresas)",—,Gino,1898714
+D. NER (entidades),Pasó,analisis_complementarios/ner_entidades/resultados_ner/ner_sentimiento.csv,695 KB,"Lado Noticias/ner_entidades/ (rehecho, 47 empresas)",—,Gino,712151
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/clustering_acciones/clustering_merval.ipynb,1.3 MB,Lado Bursatil/02_clustering_acciones/,No,Nicolás,1349888
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/clustering_acciones/merval_precios.csv,3.5 MB,Lado Bursatil/02_clustering_acciones/,No,Nicolás,3630765
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/clustering_acciones/resumen_clustering_final.csv,13 KB,Lado Bursatil/02_clustering_acciones/,No,Nicolás,13399
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/adf_resultados.csv,2 KB,Lado Bursatil/04_adf/,No,Nicolás,2243
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/adf_resultados.png,94 KB,Lado Bursatil/04_adf/,No,Nicolás,96712
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/adf_test.py,6 KB,Lado Bursatil/04_adf/,No,Nicolás,5844
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/merval_precios.csv,3.5 MB,Lado Bursatil/01_scraping_acciones/ (copia repetida),No,Nicolás,3630765
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/ranking_volatilidad.png,147 KB,Lado Bursatil/05_volatilidad_ranking/,No,Nicolás,150456
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/ranking_volatilidad.py,4 KB,Lado Bursatil/05_volatilidad_ranking/,No,Nicolás,3834
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/vix_arg.csv,14 KB,Lado Bursatil/03_vix_argentino/ (copia repetida),No,Nicolás,14776
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/volatilidad_acciones.csv,81 KB,Lado Bursatil/05_volatilidad_ranking/,No,Nicolás,83172
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/volatilidad_acciones.png,830 KB,Lado Bursatil/05_volatilidad_ranking/,No,Nicolás,849589
+E. Lado bursátil,Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/volatilidad_por_accion.py,6 KB,Lado Bursatil/05_volatilidad_ranking/,No,Nicolás,6120
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/02_data_understanding/bursatil/calcular_vix_arg.py,4 KB,Lado Bursatil/03_vix_argentino/,No,Nicolás,4554
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/02_data_understanding/bursatil/descargar_merval.py,6 KB,Lado Bursatil/01_scraping_acciones/scraping_acciones.py,No,Nicolás,6471
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/02_data_understanding/bursatil/merval_precios.csv,1.6 MB,Lado Bursatil/01_scraping_acciones/precios_diarios_47_acciones.csv,No,Nicolás,1682946
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/02_data_understanding/bursatil/merval_resumen.csv,2 KB,Lado Bursatil/01_scraping_acciones/panel_acciones_final.csv,No,Nicolás,1572
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/02_data_understanding/bursatil/vix_arg.csv,14 KB,Lado Bursatil/03_vix_argentino/,No,Nicolás,14776
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/04_modeling/hmm_regimen_mercado/Cadenas_Markov_HMM.docx,11 KB,Lado Bursatil/06_hmm_regimen_mercado/,No,Nicolás,11614
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/04_modeling/hmm_regimen_mercado/Cadenas_Markov_HMM.md,5 KB,Lado Bursatil/06_hmm_regimen_mercado/,No,Nicolás,5378
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/04_modeling/hmm_regimen_mercado/hmm_mercado_general.csv,16 KB,Lado Bursatil/06_hmm_regimen_mercado/,No,Nicolás,16517
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/04_modeling/hmm_regimen_mercado/hmm_mercado_general.png,243 KB,Lado Bursatil/06_hmm_regimen_mercado/,No,Nicolás,249297
+E. Lado bursátil,Reemplazado en 3.0,pipeline_productivo/04_modeling/hmm_regimen_mercado/hmm_nivel1_mercado.py,7 KB,Lado Bursatil/06_hmm_regimen_mercado/,No,Nicolás,6715
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/hmm_acciones.csv,451 KB,—,Decidir: dejar afuera o rehacer,Nicolás,462234
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/hmm_acciones.png,1.8 MB,—,Decidir: dejar afuera o rehacer,Nicolás,1885985
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/hmm_acciones_resumen_dias.csv,1 KB,—,Decidir: dejar afuera o rehacer,Nicolás,739
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/hmm_bic_curva.png,44 KB,—,Decidir: dejar afuera o rehacer,Nicolás,45226
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/hmm_nivel2_sectores.py,7 KB,—,Decidir: dejar afuera o rehacer,Nicolás,7458
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/hmm_nivel3_acciones.py,8 KB,—,Decidir: dejar afuera o rehacer,Nicolás,8104
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/hmm_sectores.csv,117 KB,—,Decidir: dejar afuera o rehacer,Nicolás,120083
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/hmm_sectores.png,670 KB,—,Decidir: dejar afuera o rehacer,Nicolás,686554
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/merval_precios.csv,3.5 MB,—,No (copia repetida de precios),Nicolás,3630765
+F. HMM por sector y por acción,No pasó,analisis_complementarios/hmm_sectores_acciones/vix_arg.csv,14 KB,—,No (copia repetida del VIX),Nicolás,14776
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/03_data_preparation/construccion_dataset/construir_dataset_unificado.py,6 KB,Unión — paso U4 (datasets),No (se rehace con las reglas nuevas),Ambos,6020
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/03_data_preparation/construccion_dataset/dataset_panel_acciones.csv,1.2 MB,Unión — paso U4 (datasets),No (se rehace con las reglas nuevas),Ambos,1260868
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/03_data_preparation/construccion_dataset/dataset_unificado.csv,34 KB,Unión — paso U4 (datasets),No (se rehace con las reglas nuevas),Ambos,34545
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/event_study_comparativa.png,152 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,156095
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/event_study_heatmap.png,111 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,114118
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/event_study_resultados.csv,2 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,2265
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_empresa_ALUA_BA.png,87 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,88633
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_empresa_COME_BA.png,73 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,74802
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_empresa_CVH_BA.png,104 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,106327
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_empresa_GGAL_BA.png,79 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,81227
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_empresa_PAMP_BA.png,75 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,76799
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_empresa_TGNO4_BA.png,75 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,76437
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_empresa_VALO_BA.png,81 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,82928
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_general.png,91 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,93099
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_general_completo.png,243 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,248653
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_regimen_calmo.png,101 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,103357
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_regimen_moderado.png,77 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,78520
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_regimen_tenso.png,86 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,88294
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/irf_sector_comunicaciones.png,79 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,81360
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/resultados_adf.csv,3 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,2713
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/var_empresas_granger.csv,4 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,3686
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/var_general_coeficientes.csv,1 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,909
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/var_general_granger.csv,1 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,523
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/var_regimenes_granger.csv,1 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,772
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/resultados/var_sectores_granger.csv,2 KB,Unión — pasos U5 a U7,No (resultados viejos),Ambos,1617
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/script1_adf.py,4 KB,Unión — paso U5 (ADF),Como referencia,Ambos,3804
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/script2_var_general.py,4 KB,"Unión — paso U6 (VAR, Granger, IRF)",Como referencia,Ambos,3965
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/script3_var_empresas.py,6 KB,"Unión — paso U6 (VAR, Granger, IRF)",Como referencia,Ambos,6318
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/script4_var_regimenes.py,5 KB,"Unión — paso U6 (VAR, Granger, IRF)",Como referencia,Ambos,5622
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/script4_var_sectores.py,7 KB,"Unión — paso U6 (VAR, Granger, IRF)",Como referencia,Ambos,7520
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/04_modeling/var_econometria/script5_event_study.py,11 KB,Unión — paso U7 (event study),Como referencia,Ambos,11531
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/05_evaluation/exploracion_resultados/colab_visualizar_shocks.py,6 KB,Unión — pasos U2 y U9 (gráficos de shocks),Como referencia,Ambos,6452
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/05_evaluation/exploracion_resultados/eda_var_empresas.ipynb,2.5 MB,Unión — pasos U2 y U9 (gráficos de shocks),Como referencia,Ambos,2642686
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/05_evaluation/exploracion_resultados/explorar_shocks.ipynb,9 KB,Unión — pasos U2 y U9 (gráficos de shocks),Como referencia,Ambos,9463
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/05_evaluation/exploracion_resultados/shocks_noticias.png,476 KB,Unión — pasos U2 y U9 (gráficos de shocks),Como referencia,Ambos,487159
+G. Unión de la versión anterior,Rehacer en la unión,pipeline_productivo/05_evaluation/exploracion_resultados/shocks_por_mes.png,56 KB,Unión — pasos U2 y U9 (gráficos de shocks),Como referencia,Ambos,57166
+H. Plan y documentación,No pasó,00_documentacion/InformeFinal-GaunaPasinato.pdf,4.0 MB,—,Como referencia (tesis de ejemplo de otros autores),Ambos,4196037
+H. Plan y documentación,No pasó,00_documentacion/MEMORIA.md,23 KB,—,No (desactualizada),Ambos,23193
+H. Plan y documentación,No pasó,00_documentacion/TesinaIdeasyConceptos.txt,9 KB,—,Como referencia,Ambos,9384
+H. Plan y documentación,No pasó,pipeline_productivo/01_business_understanding/PlandeTesis-GaunaPasinato (1).pdf,453 KB,—,Como referencia (tesis de ejemplo de otros autores),Ambos,463549
+H. Plan y documentación,No pasó,pipeline_productivo/01_business_understanding/diccionario_variables.docx,13 KB,—,Sí (rehacer con las variables de la unión),Ambos,13761
+H. Plan y documentación,No pasó,pipeline_productivo/01_business_understanding/notas.txt,1 KB,—,Como referencia (ideas iniciales),Ambos,1385
+H. Plan y documentación,No pasó,pipeline_productivo/01_business_understanding/plan_de_trabajo_v2.pdf,388 KB,—,"Sí (objetivos de la tesis; corregir apellido ""Didi"")",Ambos,396975
+H. Plan y documentación,No pasó,pipeline_productivo/01_business_understanding/resumen_metodologico.docx,13 KB,—,"Revisar (dice ""etiquetado manual"": fue Gemma)",Ambos,13066
+H. Plan y documentación,No pasó,pipeline_productivo/01_business_understanding/~$an_de_trabajo_v2.docx,0 KB,—,No (archivo de bloqueo de Word),Ambos,162
+H. Plan y documentación,Reemplazado en 3.0,00_documentacion/Documentacion_Detallada_Lado_Bursatil.docx,17 KB,Lado Bursatil/ (un PDF por carpeta),No,Nicolás,17307
+H. Plan y documentación,Reemplazado en 3.0,00_documentacion/Documentacion_Detallada_Lado_Bursatil.pdf,177 KB,Lado Bursatil/ (un PDF por carpeta),No,Nicolás,181068
+H. Plan y documentación,Reemplazado en 3.0,00_documentacion/MAPA_PIPELINE.md,21 KB,Lado Bursatil/00_mapa_lado_bursatil/ + Unión/00_pipeline_union/,No,Ambos,21999
+H. Plan y documentación,Reemplazado en 3.0,00_documentacion/Mapa_Pipeline_Tesina.docx,14 KB,Lado Bursatil/00_mapa_lado_bursatil/ + Unión/00_pipeline_union/,No,Ambos,14076
+I. Presentación de avance e infografías,No pasó,00_infografias/01_business_understanding.png,168 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,171890
+I. Presentación de avance e infografías,No pasó,00_infografias/01_business_understanding.svg,102 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,104857
+I. Presentación de avance e infografías,No pasó,00_infografias/02_data_understanding.png,183 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,187585
+I. Presentación de avance e infografías,No pasó,00_infografias/02_data_understanding.svg,102 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,104104
+I. Presentación de avance e infografías,No pasó,00_infografias/03_data_preparation.png,208 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,213304
+I. Presentación de avance e infografías,No pasó,00_infografias/03_data_preparation.svg,122 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,124490
+I. Presentación de avance e infografías,No pasó,00_infografias/04_modeling.png,216 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,221109
+I. Presentación de avance e infografías,No pasó,00_infografias/04_modeling.svg,128 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,131078
+I. Presentación de avance e infografías,No pasó,00_infografias/05_evaluation.png,161 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,164386
+I. Presentación de avance e infografías,No pasó,00_infografias/05_evaluation.svg,92 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,94106
+I. Presentación de avance e infografías,No pasó,00_infografias/06_deployment.png,113 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,116122
+I. Presentación de avance e infografías,No pasó,00_infografias/06_deployment.svg,74 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,75681
+I. Presentación de avance e infografías,No pasó,00_infografias/07_analisis_complementarios.png,193 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,197553
+I. Presentación de avance e infografías,No pasó,00_infografias/07_analisis_complementarios.svg,110 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,112668
+I. Presentación de avance e infografías,No pasó,00_infografias/Infografias_Pipeline_Tesina.pdf,2.7 MB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,2845069
+I. Presentación de avance e infografías,No pasó,00_infografias/R00_portada.png,65 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,66834
+I. Presentación de avance e infografías,No pasó,00_infografias/R00_portada.svg,29 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,29695
+I. Presentación de avance e infografías,No pasó,00_infografias/R01_hmm_regimen.png,251 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,256628
+I. Presentación de avance e infografías,No pasó,00_infografias/R01_hmm_regimen.svg,236 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,241941
+I. Presentación de avance e infografías,No pasó,00_infografias/R02_finbert_confusion.png,188 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,192034
+I. Presentación de avance e infografías,No pasó,00_infografias/R02_finbert_confusion.svg,158 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,162152
+I. Presentación de avance e infografías,No pasó,00_infografias/R03_shocks.png,293 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,300406
+I. Presentación de avance e infografías,No pasó,00_infografias/R03_shocks.svg,285 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,292077
+I. Presentación de avance e infografías,No pasó,00_infografias/R04_irf_general.png,261 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,267650
+I. Presentación de avance e infografías,No pasó,00_infografias/R04_irf_general.svg,238 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,243671
+I. Presentación de avance e infografías,No pasó,00_infografias/R05_granger_empresa.png,176 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,180172
+I. Presentación de avance e infografías,No pasó,00_infografias/R05_granger_empresa.svg,136 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,139258
+I. Presentación de avance e infografías,No pasó,00_infografias/R06_event_study.png,218 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,222764
+I. Presentación de avance e infografías,No pasó,00_infografias/R06_event_study.svg,190 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,194916
+I. Presentación de avance e infografías,No pasó,00_infografias/R07_hmm_sectores.png,291 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,298212
+I. Presentación de avance e infografías,No pasó,00_infografias/R07_hmm_sectores.svg,276 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,282468
+I. Presentación de avance e infografías,No pasó,00_infografias/R08_ranking_volatilidad.png,190 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,194429
+I. Presentación de avance e infografías,No pasó,00_infografias/R08_ranking_volatilidad.svg,171 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,174663
+I. Presentación de avance e infografías,No pasó,00_infografias/build_infografias.py,14 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,14762
+I. Presentación de avance e infografías,No pasó,00_infografias/build_resultados.py,10 KB,—,Rehacer con resultados nuevos (R05 cuenta mal las empresas),Ambos,10387
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Guion_Presentacion_Avance.docx,27 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,27685
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Guion_Presentacion_Avance.pdf,236 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,241224
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Mapa_Lado_Bursatil.html,28 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,28504
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Mapa_Lado_Bursatil.pdf,331 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,338541
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Presentacion_Avance_Resumida.pdf,1.0 MB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,1092802
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Presentacion_Avance_Resumida.pptx,1.1 MB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,1176170
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Presentacion_Avance_Tesina.pdf,347 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,355773
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Presentacion_Avance_Tesina.pptx,620 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,634738
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Punteo_Proyecto.docx,16 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,16811
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/Punteo_Proyecto.pdf,173 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,176853
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/build_deck.js,54 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,55791
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/build_deck_corto.js,21 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,21144
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/build_guion.js,44 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,45319
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/build_punteo.js,20 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,20614
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/diagrama_flujo_datos.html,795 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,813684
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/figuras/hmm_recortado.png,149 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,152404
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/figuras/shocks_recortado.png,439 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,449441
+I. Presentación de avance e infografías,No pasó,pipeline_productivo/06_deployment/presentacion_avance/mapa_archivos.html,46 KB,—,Para la presentación final (rehacer con resultados nuevos),Ambos,46655
+J. Estructura vieja (README),Reemplazado en 3.0,00_infografias/README.md,2 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1768
+J. Estructura vieja (README),Reemplazado en 3.0,README.md,3 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,3155
+J. Estructura vieja (README),Reemplazado en 3.0,analisis_complementarios/README.md,3 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,2628
+J. Estructura vieja (README),Reemplazado en 3.0,analisis_complementarios/baseline_beto_sin_finetuning/README.md,2 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1592
+J. Estructura vieja (README),Reemplazado en 3.0,analisis_complementarios/clustering_acciones/README.md,1 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,900
+J. Estructura vieja (README),Reemplazado en 3.0,analisis_complementarios/finetuning_evaluacion/README.md,2 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1622
+J. Estructura vieja (README),Reemplazado en 3.0,analisis_complementarios/hmm_sectores_acciones/README.md,2 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1937
+J. Estructura vieja (README),Reemplazado en 3.0,analisis_complementarios/ner_entidades/README.md,1 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,975
+J. Estructura vieja (README),Reemplazado en 3.0,analisis_complementarios/volatilidad_ranking/README.md,1 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1202
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/01_business_understanding/README.md,1 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1092
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/02_data_understanding/bursatil/README.md,1 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1176
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/02_data_understanding/noticias/README.md,1 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1274
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/03_data_preparation/construccion_dataset/README.md,2 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,2345
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/03_data_preparation/sentimiento/README.md,2 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1588
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/04_modeling/hmm_regimen_mercado/README.md,1 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1376
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/04_modeling/sentimiento_finbert/README.md,2 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1840
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/04_modeling/var_econometria/README.md,3 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,2723
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/05_evaluation/exploracion_resultados/README.md,1 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,1342
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/06_deployment/README.md,0 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,283
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/06_deployment/presentacion_avance/README.md,3 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,2671
+J. Estructura vieja (README),Reemplazado en 3.0,pipeline_productivo/README.md,3 KB,Cada carpeta 3.0 tiene su propio README o PDF,No,Ambos,3403
+K. Bibliografía general,No pasó,00_bibliografia/Clasificación temporal del dengue en Argentina_ informe analítico.pdf,684 KB,—,Revisar (tema dengue: ¿antecedente metodológico?),Ambos,700463
+K. Bibliografía general,No pasó,00_bibliografia/FinBERT Financial Sentiment Analysis.pdf,868 KB,—,Sí (papers de noticias y bolsa para la unión),Ambos,889324
+K. Bibliografía general,No pasó,"00_bibliografia/Journalists and the Stock Market -- Dougal, Casey (author);Engelberg, Joseph (author);García, -- Review of Financial Studies, #3, 25, pages 639-679, -- doi 10_1093_rfs_hhr133 -- dcf03f7d14c2d6605d241edd9971becc -- Anna’s.pdf",363 KB,—,Sí (papers de noticias y bolsa para la unión),Ambos,371345
+K. Bibliografía general,No pasó,"00_bibliografia/Media Coverage and the Cross-section of Stock Returns -- LILY FANG; JOEL PERESS -- The Journal of Finance, #5, 64, pages 2023-2052, 2009 sep 28 -- doi 10_1111_j_1540-6261_2009_014.pdf",179 KB,—,Sí (papers de noticias y bolsa para la unión),Ambos,183113
+K. Bibliografía general,No pasó,00_bibliografia/Procesamiento del Lenguaje Natural en las Finanzas con FinBERT _ by Wiston Adrián Risso Charquero _ Medium.pdf,791 KB,—,"Revisar (artículo de Medium, no académico)",Ambos,809748
+K. Bibliografía general,No pasó,00_bibliografia/Spillover between investor sentiment and volatility The role of.pdf,2.0 MB,—,Sí (papers de noticias y bolsa para la unión),Ambos,2110909
+K. Bibliografía general,No pasó,00_bibliografia/Tendencias sociales y variables bursátiles_ ¿Paralelos con la propagación del dengue_.pdf,52 KB,—,Revisar (tema dengue: ¿antecedente metodológico?),Ambos,52865
+K. Bibliografía general,No pasó,"00_bibliografia/The Causal Impact of Media in Financial Markets_ -- JOSEPH E_ ENGELBERG;CHRISTOPHER A_ PARSONS(Engelberg and -- The Journal of Finance, #1, 66, pages -- doi 10_1111_j_1540-6261_2010_01626_x -- 8ba113a2c9f14652d33a527b823.pdf",199 KB,—,Sí (papers de noticias y bolsa para la unión),Ambos,203577
+K. Bibliografía general,No pasó,00_bibliografia/conversacion chat gpt.pdf,503 KB,—,No (no es una fuente citable),Ambos,515551

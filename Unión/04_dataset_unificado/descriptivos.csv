@@ -1,0 +1,14 @@
+variable,dataset,n,media,desvio,minimo,mediana,maximo
+ret_merval,mercado,244.0,0.0016,0.0279,-0.1325,0.0007,0.2177
+vix_arg,mercado,244.0,41.8747,17.0408,15.3954,36.1924,90.9942
+monto_anormal,mercado,244.0,-0.0024,0.4572,-2.2147,0.0067,1.4365
+sent_neto,mercado,244.0,3.9099,7.0011,-13.5367,3.5392,22.0955
+sent_neto_portal,mercado,244.0,-0.0739,6.8741,-15.3446,-0.4151,17.1481
+sent_anormal,mercado,224.0,-0.5084,6.0124,-16.9374,-0.752,20.9746
+n_notas,mercado,244.0,57.0697,22.8707,12.0,55.0,145.0
+atencion_anormal,mercado,224.0,-0.0136,0.3031,-1.0842,0.02,0.5131
+retorno,panel,11468.0,0.0012,0.0386,-0.3957,-0.0019,0.5396
+vol_anormal,panel,11468.0,-0.0164,0.7699,-12.6773,-0.0217,4.7883
+sent_neto_empresa,panel,3489.0,12.5708,62.3872,-100.0,0.0,100.0
+n_oraciones_empresa,panel,11468.0,0.9632,3.1302,0.0,0.0,185.0
+tono_propio,panel,4148.0,1.6695,9.1713,-40.6697,0.0,49.0471

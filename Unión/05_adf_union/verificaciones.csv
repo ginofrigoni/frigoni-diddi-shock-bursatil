@@ -1,0 +1,6 @@
+control,pasa
+Se probaron todas las series previstas,True
+"Las series de mercado tienen 244 datos (224 la atención y el tono anormal, sin sus 20 primeras ruedas)",True
+Retornos y volumen anormal de cada acción tienen 244 datos,True
+La versión completada del sentimiento por empresa no tiene huecos,True
+"Misma especificación que la carpeta 04 para retornos (ADF con constante, rezagos por AIC)",True

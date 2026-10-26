@@ -1,0 +1,14 @@
+{
+  "orden_label_id": [
+    "POS",
+    "NEG",
+    "NEU",
+    "MIXTO"
+  ],
+  "pesos": {
+    "POS": 1.8439,
+    "NEG": 1.8575,
+    "NEU": 1.8439,
+    "MIXTO": 2.8637
+  }
+}

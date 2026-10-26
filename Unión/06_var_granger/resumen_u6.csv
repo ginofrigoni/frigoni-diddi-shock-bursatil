@@ -1,0 +1,81 @@
+metrica,valor,detalle
+ruedas,224,2025-06-02 a 2026-04-30
+tests_granger,304,
+tests_regimen,12,
+modelos_var,75,
+rezagos_mercado,4,
+rezagos_empresas_mediana,1,
+mercado_nm_tests,4,
+mercado_nm_sin_corregir,0,
+mercado_nm_bh,0,
+mercado_mn_tests,4,
+mercado_mn_sin_corregir,1,
+mercado_mn_bh,1,Merval: retorno → tono (p_bh=0.000)
+empresa_nm_tests,94,
+empresa_nm_sin_corregir,7,
+empresa_nm_bh,2,LONG: tono → volumen (p_bh=0.013); SUPV: tono → volumen (p_bh=0.050)
+empresa_mn_tests,94,
+empresa_mn_sin_corregir,54,
+empresa_mn_bh,42,AGRO: retorno → tono (p_bh=0.001); AGRO: volumen → tono (p_bh=0.047); AUSO: retorno → tono (p_bh=0.002); BBAR: retorno → tono (p_bh=0.002); BHIP: retorno → tono (p_bh=0.000); BMA: retorno → tono (p_bh=0.003); BPAT: retorno → tono (p_bh=0.000); BYMA: retorno → tono (p_bh=0.004); CAPX: retorno → tono (p_bh=0.000); CEPU: retorno → tono (p_bh=0.000); CGPA2: retorno → tono (p_bh=0.000); COME: retorno → tono (p_bh=0.000); CTIO: retorno → tono (p_bh=0.001); CVH: retorno → tono (p_bh=0.004); CVH: volumen → tono (p_bh=0.024); DGCU2: retorno → tono (p_bh=0.000); EDN: retorno → tono (p_bh=0.000); FIPL: retorno → tono (p_bh=0.002); GARO: retorno → tono (p_bh=0.001); GBAN: retorno → tono (p_bh=0.000); GCDI: retorno → tono (p_bh=0.001); GGAL: retorno → tono (p_bh=0.000); LEDE: retorno → tono (p_bh=0.047); LOMA: retorno → tono (p_bh=0.014); LONG: retorno → tono (p_bh=0.003); LONG: volumen → tono (p_bh=0.002); METR: retorno → tono (p_bh=0.000); MIRG: retorno → tono (p_bh=0.002); MOLI: retorno → tono (p_bh=0.002); MORI: retorno → tono (p_bh=0.046); OEST: retorno → tono (p_bh=0.001); PAMP: retorno → tono (p_bh=0.002); RIGO: retorno → tono (p_bh=0.018); SAMI: retorno → tono (p_bh=0.025); SEMI: retorno → tono (p_bh=0.008); SUPV: retorno → tono (p_bh=0.003); TECO2: retorno → tono (p_bh=0.033); TGNO4: retorno → tono (p_bh=0.000); TGSU2: retorno → tono (p_bh=0.015); TRAN: retorno → tono (p_bh=0.000); VALO: retorno → tono (p_bh=0.004); YPFD: retorno → tono (p_bh=0.004)
+propio_nm_tests,34,
+propio_nm_sin_corregir,2,
+propio_nm_bh,1,IRSA: tono propio → volumen (p_bh=0.022)
+propio_mn_tests,34,
+propio_mn_sin_corregir,17,
+propio_mn_bh,15,BBAR: retorno → tono propio (p_bh=0.000); BMA: retorno → tono propio (p_bh=0.009); BYMA: retorno → tono propio (p_bh=0.000); CEPU: retorno → tono propio (p_bh=0.000); CRES: retorno → tono propio (p_bh=0.001); EDN: retorno → tono propio (p_bh=0.000); GGAL: retorno → tono propio (p_bh=0.000); IRSA: retorno → tono propio (p_bh=0.000); LOMA: retorno → tono propio (p_bh=0.000); METR: retorno → tono propio (p_bh=0.000); SUPV: retorno → tono propio (p_bh=0.000); TGSU2: retorno → tono propio (p_bh=0.000); TRAN: retorno → tono propio (p_bh=0.012); TXAR: retorno → tono propio (p_bh=0.026); YPFD: retorno → tono propio (p_bh=0.012)
+sector_nm_tests,20,
+sector_nm_sin_corregir,4,
+sector_nm_bh,1,Conglomerado (3): tono → volumen (p_bh=0.004)
+sector_mn_tests,20,
+sector_mn_sin_corregir,12,
+sector_mn_bh,11,Comunicaciones (2): retorno → tono (p_bh=0.009); Comunicaciones (2): volumen → tono (p_bh=0.022); Conglomerado (3): retorno → tono (p_bh=0.000); Consumo (9): retorno → tono (p_bh=0.000); Consumo (9): volumen → tono (p_bh=0.029); Energía (4): retorno → tono (p_bh=0.000); Financiero (8): retorno → tono (p_bh=0.000); Industrial (3): retorno → tono (p_bh=0.000); Materiales (6): retorno → tono (p_bh=0.004); Real Estate (3): retorno → tono (p_bh=0.001); Utilities (8): retorno → tono (p_bh=0.000)
+signo_mercado_retorno → tono,1+ / 0−,mediana 0.476 desvíos
+signo_empresa_retorno → tono,39+ / 0−,mediana 0.280 desvíos
+signo_empresa_tono → volumen,2+ / 0−,mediana 0.175 desvíos
+signo_empresa_volumen → tono,3+ / 0−,mediana 0.234 desvíos
+signo_propio_retorno → tono propio,15+ / 0−,mediana 0.285 desvíos
+signo_propio_tono propio → volumen,1+ / 0−,mediana 0.186 desvíos
+signo_sector_retorno → tono,9+ / 0−,mediana 0.358 desvíos
+signo_sector_tono → volumen,0+ / 1−,mediana -0.065 desvíos
+signo_sector_volumen → tono,2+ / 0−,mediana 0.178 desvíos
+placebo_pct_p05,6.9,1880 tests con el tono mezclado al azar
+esperados_por_azar_empresa,9.4,5% de los tests por empresa
+mercado_sent_anormal__ret_merval,0.2119,F=1.462; p_bh=0.4238
+mercado_ret_merval__sent_anormal,0.0,F=6.4262; p_bh=0.0003
+mercado_sent_anormal__monto_anormal,0.0632,F=2.2388; p_bh=0.2528
+mercado_monto_anormal__sent_anormal,0.3617,F=1.087; p_bh=0.4823
+mercado_atencion_anormal__ret_merval,0.9293,F=0.2164; p_bh=0.9293
+mercado_ret_merval__atencion_anormal,0.1479,F=1.7004; p_bh=0.3944
+mercado_atencion_anormal__monto_anormal,0.3377,F=1.137; p_bh=0.4823
+mercado_monto_anormal__atencion_anormal,0.5918,F=0.7004; p_bh=0.6764
+sd_ret_merval,2.84,"un desvío del retorno del Merval, en %"
+sd_sent_anormal,6.01,"un desvío del tono anormal, en puntos"
+irf_ret_merval__sent_anormal__h0,0.0,banda 0.0000 a 0.0000; incluye 0
+irf_ret_merval__sent_anormal__h1,1.8433,banda 1.0898 a 2.5969; distinto de 0
+irf_ret_merval__sent_anormal__h2,1.2293,banda 0.4419 a 2.0167; distinto de 0
+irf_ret_merval__sent_anormal__h3,0.559,banda -0.2423 a 1.3603; incluye 0
+irf_sent_anormal__ret_merval__h0,0.0053,banda 0.0016 a 0.0089; distinto de 0
+irf_sent_anormal__ret_merval__h1,-0.0026,banda -0.0064 a 0.0013; incluye 0
+irf_sent_anormal__ret_merval__h2,-0.001,banda -0.0048 a 0.0028; incluye 0
+irf_sent_anormal__ret_merval__h3,-0.0021,banda -0.0059 a 0.0017; incluye 0
+irf_sent_anormal__monto_anormal__h0,0.037,banda -0.0189 a 0.0928; incluye 0
+irf_sent_anormal__monto_anormal__h1,0.0607,banda 0.0016 a 0.1198; distinto de 0
+irf_sent_anormal__monto_anormal__h2,0.058,banda -0.0032 a 0.1192; incluye 0
+irf_sent_anormal__monto_anormal__h3,-0.0219,banda -0.0840 a 0.0402; incluye 0
+corr_mismo_dia_tono_retorno,0.187,correlación de las sorpresas del mismo día (residuos del VAR)
+corr_mismo_dia_tono_volumen,0.087,
+corr_mismo_dia_atencion_volumen,0.003,
+corr_mismo_dia_atencion_retorno,0.065,
+regimen_sent_anormal__ret_merval__en días Calmo,0.2721,p_bh=0.4214
+regimen_sent_anormal__ret_merval__en días Tenso,0.8436,p_bh=0.9203
+regimen_sent_anormal__ret_merval__diferencia Tenso − Calmo,0.9516,p_bh=0.9516
+regimen_sent_anormal__monto_anormal__en días Calmo,0.0498,p_bh=0.1196
+regimen_sent_anormal__monto_anormal__en días Tenso,0.2778,p_bh=0.4214
+regimen_sent_anormal__monto_anormal__diferencia Tenso − Calmo,0.281,p_bh=0.4214
+regimen_ret_merval__sent_anormal__en días Calmo,0.0011,p_bh=0.0066
+regimen_ret_merval__sent_anormal__en días Tenso,0.0006,p_bh=0.0066
+regimen_ret_merval__sent_anormal__diferencia Tenso − Calmo,0.6762,p_bh=0.8114
+regimen_monto_anormal__sent_anormal__en días Calmo,0.4521,p_bh=0.6027
+regimen_monto_anormal__sent_anormal__en días Tenso,0.0021,p_bh=0.0082
+regimen_monto_anormal__sent_anormal__diferencia Tenso − Calmo,0.0496,p_bh=0.1196
+controles_ok,6,de 6

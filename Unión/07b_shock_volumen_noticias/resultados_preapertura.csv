@@ -1,0 +1,7 @@
+nivel,medida,clave,n,promedio_eventos,promedio_dia_cualquiera,por_encima,p_t,p_signo,p_azar,p_bh,significativo_bh
+mercado,|salto de apertura anormal|,abs_salto,5,0.0095,0.00326,5,0.16153,0.0625,0.0036,0.0216,True
+mercado,|retorno anormal| del día [0],abs_ra_dia,5,0.0164,0.0183,3,0.71279,1.0,0.7902,0.8746,False
+mercado,volumen anormal día [0],vol_día [0],5,-0.05663,-0.02721,1,0.61632,0.375,0.8746,0.8746,False
+empresas,|salto de apertura anormal|,abs_salto,76,0.0082,0.00724,31,0.34718,0.13539,0.293,0.5442,False
+empresas,|retorno anormal| del día [0],abs_ra_dia,76,0.01767,0.01609,31,0.45025,0.13539,0.3628,0.5442,False
+empresas,volumen anormal día [0],vol_día [0],76,0.10496,-0.05437,47,0.16479,0.05045,0.0176,0.0528,False

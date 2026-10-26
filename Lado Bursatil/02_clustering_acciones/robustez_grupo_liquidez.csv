@@ -1,0 +1,4 @@
+prueba,descripcion,acciones,k,silueta,tamanos,grupo_chico,en_comun_con_grupo
+A,Como está hoy,47,2,0.406,8 / 39,"AGRO, CELU, FIPL, GARO, GCDI, GRIM, LONG, RIGO",8
+B,Días sin operación como dato faltante,47,2,0.4,7 / 40,"AGRO, CELU, FIPL, GARO, GCDI, LONG, RIGO",7
+C,"Sin las 4 acciones con más días sin operar (GCDI, RIGO, GRIM, GARO)",43,2,0.219,16 / 27,"AGRO, ALUA, BOLT, CAPX, CELU, CTIO, CVH, FIPL, GBAN, HAVA, LEDE, LONG, MIRG, OEST, SAMI, TXAR",4

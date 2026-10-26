@@ -1,0 +1,7 @@
+control,pasa
+"Todos los modelos usan las 224 ruedas, sin valores faltantes",True
+Se corrieron todos los tests previstos,True
+Todos los VAR son estables (raíces dentro del círculo unitario),True
+Rezagos entre 1 y 5 en todos los modelos,True
+La corrección BH nunca achica un p-valor,True
+"El test está calibrado: con el tono mezclado al azar, entre 2% y 9% de p < 0,05 (dio 6.9%)",True

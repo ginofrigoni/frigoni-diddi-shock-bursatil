@@ -1,0 +1,8 @@
+control,pasa
+"La serie tiene las 244 ruedas, sin huecos",True
+Las notas por rueda coinciden con U1,True
+Promediando por fecha calendario se reproduce la serie diaria de Gino,True
+El ajuste por portal deja en 0 el promedio de cada portal,True
+Solo hay shocks en ruedas con 20 ruedas previas de referencia,True
+La regla elegida tiene a lo sumo 20% de falsos esperados,True
+"La regla elegida marca más shocks que con las notas mezcladas al azar (p < 0,05)",True

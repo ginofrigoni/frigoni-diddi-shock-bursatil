@@ -1,0 +1,163 @@
+% =====================================================================
+\chapter{Tercer instrumento: el VIX argentino y el panel de acciones}
+\chaptermark{El VIX argentino y el panel de acciones}
+\label{cap:vix}
+
+El VIX de Chicago es el termómetro más conocido del miedo en los mercados: sube cuando los
+inversores esperan movimientos bruscos. Se calcula con precios de opciones, y en Argentina no
+existe un mercado de opciones con la liquidez necesaria para construir algo así. Por eso se
+construyó un \textit{VIX argentino} a partir de lo que sí está disponible todos los días: los
+retornos del S\&P~Merval. Es el instrumento que mide cuánta tensión hay en el mercado, y la
+base sobre la que se estiman los regímenes del capítulo~\ref{cap:hmm}. Este capítulo presenta
+también el panel de acciones del lado bursátil: cómo se eligió, cómo se depuraron sus precios,
+cuán volátil es cada acción y si las acciones forman familias de comportamiento.
+
+% ---------------------------------------------------------------------
+\section{El panel de acciones}
+\label{sec:panel}
+
+Los precios diarios (apertura, máximo, mínimo, cierre y volumen) se descargaron de Yahoo Finance
+con \texttt{yfinance}. Se partió de 53 candidatas del Panel General y del Panel Líderes de BYMA
+(las 20 del S\&P~Merval más 33 de sectores similares) y se exigieron dos condiciones en los tres
+años de datos (731 ruedas): cobertura completa del calendario y al menos 90\% de días con volumen
+real, porque un día sin operaciones no es un faltante sino una fila con el precio pegado. Pasaron
+47, incluidas las 20 del índice; quedaron afuera Carboclor, Holcim, Polledo, Instituto Rosenbusch
+y dos tickers sin datos (NII Holdings y TGLT, que hoy cotiza como GCDI). En la depuración se
+quitaron las filas que Yahoo agrega en los feriados (se usó como calendario de BYMA la lista de
+fechas del índice), se reintentaron los tickers con fallas intermitentes y se corrigieron dos
+eventos corporativos mal ajustados: el \textit{split} de SEMI del 16/12/2024 y el dividendo en
+acciones de AGRO de noviembre de 2023, que mostraba una caída falsa de 88\%.
+
+% ---------------------------------------------------------------------
+\section{Construcción del VIX argentino}
+
+El VIX argentino es la \textit{volatilidad realizada} del índice: el desvío estándar de sus
+retornos diarios en las últimas 20 ruedas, anualizado \citep{sakowski2023}:
+\begin{equation}
+\sigma_t = \sqrt{252}\cdot \operatorname{desv}\left(r_{t-19},\dots,r_t\right)\cdot 100,
+\qquad r_t = \frac{P_t - P_{t-1}}{P_{t-1}},
+\end{equation}
+donde $P_t$ es el cierre del S\&P~Merval (\texttt{\^{}MERV} en Yahoo Finance) en la rueda $t$.
+Veinte ruedas equivalen a un mes de operaciones, y el factor $\sqrt{252}$ es la convención
+internacional de ruedas por año, que lleva el desvío diario a una escala anual comparable con
+la de cualquier otro índice (BYMA tiene unas 244 ruedas por año por sus feriados; usar ese
+número bajaría todos los valores un 1,5\%, sin cambiar ninguna comparación). Se calculó para la ventana del corpus de noticias: del 2 de enero
+de 2025 al 30 de abril de 2026, 323 ruedas. El mismo cálculo, aplicado a cada acción, da su
+volatilidad propia. La lista de fechas del índice se usó, además, como calendario de ruedas de
+BYMA para todo el trabajo.
+
+% ---------------------------------------------------------------------
+\section{Cómo leer el gráfico}
+
+La figura~\ref{fig:vix} tiene dos paneles que se leen juntos, y las líneas punteadas marcan los
+tres hechos que dispararon la volatilidad del período: la salida del cepo y las dos elecciones. Arriba está el S\&P~Merval en
+pesos: como los precios son nominales, su tendencia de fondo incluye la inflación y el tipo de
+cambio, y lo que interesa son los saltos, no la pendiente. Abajo está el VIX argentino, con su
+promedio del período (44,0\%) como referencia; el sombreado marca los días en que estuvo por
+encima de ese promedio (136 de las 323 ruedas). Un VIX de 44\% quiere decir que, al ritmo del
+último mes, el índice se movería en un año alrededor de un 44\% hacia arriba o hacia abajo. El
+mínimo fue de 15,4\% el 30/04/2026 y el máximo, de 91,0\% el 21/11/2025.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\linewidth]{vix_arg_reducida.png}
+\caption{S\&P~Merval en pesos (arriba) y VIX argentino (abajo), del 2/1/2025 al 30/4/2026.
+El sombreado marca los días por encima del promedio; las líneas punteadas, la salida del cepo
+(14/04/2025) y las elecciones bonaerenses (07/09/2025) y legislativas (26/10/2025). Fuente:
+elaboración propia con datos de Yahoo Finance (\carpeta{Lado Bursatil/03_vix_argentino}).}
+\label{fig:vix}
+\end{figure}
+
+Hay una regla de lectura que conviene tener presente. Como el VIX argentino es un desvío de 20
+ruedas, un único día extremo queda dentro del cálculo durante exactamente 20 ruedas: el índice
+salta el día del shock y cae de golpe 20 ruedas después, aunque ese día el mercado no haga nada
+especial. Las subidas bruscas marcan el día del shock; las bajadas bruscas, que el shock cumplió
+20 ruedas. Por ejemplo, el VIX pasó de 91,0\% el 21/11/2025 a 52,1\% en la rueda siguiente,
+cuando salió de la ventana la suba del 27/10. Este artefacto de las medias móviles con pesos
+iguales está descrito en la literatura \citep{papaioannou2014}.
+
+% ---------------------------------------------------------------------
+\section{Cómo reacciona a los eventos}
+
+El período tuvo tres episodios de volatilidad alta, todos disparados por un hecho puntual
+(tabla~\ref{tab:episodios}).
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}L{3.1cm}C{1.1cm}L{2.6cm}L{2.2cm}Y@{}}
+\toprule
+\textbf{Período} & \textbf{Ruedas} & \textbf{Pico del VIX} & \textbf{Disparador} & \textbf{Contexto} \\
+\midrule
+09/04 al 14/05/2025 & 22 & 72,6\% (06/05) & 09/04: +9,7\% & Aranceles de EE.\,UU.; incluye la salida del cepo (14/04) \\
+08/09 al 03/10/2025 & 20 & 67,2\% (26/09) & 08/09: $-$13,3\% & Día hábil siguiente a las elecciones bonaerenses (07/09) \\
+27/10 al 21/11/2025 & 20 & 91,0\% (21/11) & 27/10: +21,8\% & Día hábil siguiente a las legislativas nacionales (26/10) \\
+\bottomrule
+\end{tabularx}
+\caption{Episodios con el VIX argentino por encima de 55\%. Fuente: elaboración propia
+(\carpeta{Lado Bursatil/03_vix_argentino}).}
+\label{tab:episodios}
+\end{table}
+
+\textbf{La salida del cepo.} El primer episodio es el único que se construye de a poco. A
+comienzos de abril de 2025, con la turbulencia global por los aranceles de Estados Unidos, el
+índice cayó varios días seguidos y el VIX subió de 46\% a 53\%. El 09/04, el día de la pausa
+de los aranceles, el Merval rebotó 9,7\% y el VIX pasó a 61\%. La salida del cepo cambiario, el
+lunes 14/04, llegó con el mercado ya alterado: ese día el índice subió 5,2\% y el VIX llegó a
+66\%. El pico del episodio (72,6\%) se alcanzó el 06/05, después de un mes de movimientos
+grandes en las dos direcciones.
+
+\textbf{Las elecciones.} Los otros dos episodios son lo contrario: un salto de un día. El
+viernes anterior a las elecciones bonaerenses el VIX estaba en 33,6\%; el lunes 08/09, con una
+caída de 13,3\% del índice, pasó a 55,5\% en una sola rueda. Antes de las legislativas
+nacionales estaba en 30,1\%; el lunes 27/10, con la suba de 21,8\%, saltó a 80,3\%. El máximo de
+toda la serie no vino entonces de una caída sino de una suba. Los dos episodios duran
+exactamente 20 ruedas: son, casi en su totalidad, el eco de un único día. Dentro del primero cae
+además el anuncio de apoyo financiero del Tesoro de Estados Unidos (24/09), con el VIX ya
+cerca de 66\%.
+
+% ---------------------------------------------------------------------
+\section{La volatilidad de cada acción}
+
+Aplicado a cada acción, el mismo cálculo muestra que cada una sola es más nerviosa que el
+índice, que diversifica: su volatilidad promedio fue de 55,1\%, contra 44,0\% del VIX
+(figura~\ref{fig:ranking}). La más calma fue Mirgor (36,2\%) y la más volátil, Celulosa
+Argentina (104,6\%); por sector, Real Estate fue el más calmo (42,5\%) y Utilities el más volátil
+(60,5\%). Se buscaron además \textit{picos propios}: tramos en que una acción está muy alterada
+con el mercado tranquilo. De 19 tramos, 12 eran el eco de 20 ruedas del VIX; quedan 7 genuinos,
+en CELU, SAMI, GARO y RIGO.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.48\linewidth]{ranking_volatilidad.png}
+\caption{Volatilidad promedio de las 47 acciones, coloreada por sector, con el VIX argentino
+como referencia (2/1/2025 al 30/4/2026). Fuente: elaboración propia
+(\carpeta{Lado Bursatil/05_volatilidad_ranking}).}
+\label{fig:ranking}
+\end{figure}
+
+El VIX argentino cumple su función de instrumento: identifica sin ambigüedad los días de shock
+del período y los ordena por tamaño. Su límite es que es simétrico —sube igual con una suba que
+con una caída, mientras que en el S\&P~Merval las caídas pesan más \citep{otuki2008}— y que
+hereda el eco de las 20 ruedas, que también afecta a las fechas de los regímenes.
+
+% ---------------------------------------------------------------------
+\section{¿Hay familias de acciones? Clustering}
+\label{sec:clustering}
+
+Si existieran grupos de acciones que reaccionan de forma parecida, las noticias podrían
+analizarse por familia, con más señal y menos ruido. El clustering agrupa elementos parecidos sin
+etiquetas previas, usando como distancia entre dos acciones $1-\rho$, con $\rho$ la correlación de
+sus retornos \citep{mantegna1999}. Se probaron tres algoritmos (K-Means, jerárquico y árbol de
+expansión mínima), tres representaciones (retornos, log-volumen y 13 características como
+volatilidad, asimetría y beta) y dos ventanas: 18 combinaciones, evaluadas con el índice de
+silueta \citep{rousseeuw1987}. Casi todas las mejores aíslan una o dos acciones contra el resto;
+la única que forma un grupo real es K-Means con las 13 características a tres años: 8 acciones,
+con silueta 0,406.
+
+Ese grupo no se explica por la volatilidad sino por la \textbf{liquidez}: sus acciones tienen
+volumen irregular y baja correlación con el panel, porque los días sin operaciones repiten el
+precio y bajan artificialmente la correlación \citep{nanyonga2025,lesmond1999}. Sacando las
+cuatro con más días sin operar (GCDI, RIGO, GRIM y GARO), la silueta cae a 0,219 y el grupo se
+deshace. No hay, entonces, familias de comportamiento: por eso el análisis con noticias se hizo
+acción por acción y por sector, y esas cuatro acciones se leen con cautela, porque un precio
+atrasado puede parecer una reacción con retraso \citep{lomackinlay1990}.

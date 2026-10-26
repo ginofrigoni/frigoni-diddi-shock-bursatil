@@ -1,0 +1,66 @@
+% =====================================================================
+\chapter{Marco teórico}
+\label{cap:marco}
+
+Que «las noticias mueven la bolsa» mezcla dos ideas: que el precio cambia cuando llega
+información nueva, y que los medios son el vehículo de esa información. Pero los medios también
+informan sobre el propio mercado: una nota que cuenta que «el Merval subió 5\%» tiene tono
+positivo, y su causa es el precio, no al revés. Este capítulo presenta los conceptos con los que
+se analiza esa doble relación.
+
+\textbf{Shock informativo y eficiencia.} Un \textit{shock informativo} es la llegada de
+información que se aparta de lo esperado. La cantidad de noticias capta la \textit{atención}
+\citep{da2011,fang2009}; el tono capta el \textit{contenido} \citep{tetlock2007,ardia2022}. La
+hipótesis de mercados eficientes \citep{fama1970} sostiene que la información pública se
+incorpora al precio tan rápido que no sirve para anticiparlo, y que el precio sigue un paseo
+aleatorio. La evidencia para Argentina y la región es mixta \citep{zablotsky2002}.
+
+\textbf{Sentimiento y tono de los medios.} El sentimiento del inversor es el optimismo o
+pesimismo que no se explica por los fundamentos. Un tono muy pesimista anticipa bajas
+transitorias \citep{tetlock2007}, sobre todo en las recesiones \citep{garcia2013}; pero el tono
+también puede ser un \textit{reflejo} del mercado \citep{verma2026}. La tabla~\ref{tab:mecanismos}
+resume cómo se reconoce cada dirección en los datos.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}L{2.8cm}YY@{}}
+\toprule
+ & \textbf{Noticias \flecha{} mercado} & \textbf{Mercado \flecha{} noticias} \\
+\midrule
+Mecanismo & La nota trae información nueva o mueve el ánimo de los inversores & La nota cuenta lo que el mercado ya hizo \\
+Qué se espera ver & El tono anticipa el retorno o el volumen de las ruedas siguientes & El retorno anticipa el tono de las notas siguientes \\
+En un estudio de eventos & El retorno anormal aparece el día del evento o después & El retorno anormal aparece antes del evento \\
+Con notas de la noche & El tono de la noche anticipa el salto de apertura & El tono de la noche refleja el cierre del día \\
+\bottomrule
+\end{tabularx}
+\caption{Las dos direcciones de la relación entre noticias y mercado y cómo se reconoce cada
+una en los datos. Fuente: elaboración propia.}
+\label{tab:mecanismos}
+\end{table}
+
+\textbf{Volatilidad y regímenes.} La volatilidad se agrupa en períodos de calma y de estrés, lo
+que para el S\&P~Merval está documentado con modelos GARCH \citep{segovia2022}; las caídas pesan
+más que las subas \citep{otuki2008}. Una forma de describir esa alternancia es suponer que el
+mercado pasa por unos pocos \textit{regímenes} y salta de uno a otro según una cadena de Markov
+\citep{hamilton1989,rabiner1989}, un enfoque aplicado también en Latinoamérica
+\citep{ataurima2016}. El régimen importa porque la relación entre noticias y precios podría
+cambiar según el mercado esté calmo o tenso \citep{garcia2013}.
+
+\textbf{Causalidad de Granger y VAR.} Con datos observacionales no se prueba una causa, pero sí
+qué variable se mueve antes. $X$ \textit{causa en sentido de Granger} a $Y$ si el pasado de $X$
+mejora la predicción de $Y$ más allá de su propio pasado \citep{granger1969}. La prueba se hace
+dentro de un vector autorregresivo (VAR), que explica cada variable con los rezagos de todas y
+trata las dos direcciones de forma simétrica \citep{sims1980,lutkepohl2005}.
+
+\textbf{Estudios de eventos.} Miden qué hace el precio alrededor de un hecho puntual, comparado
+con lo que habría sido normal \citep{mackinlay1997}: si la noticia mueve el mercado, el retorno
+anormal aparece el día del evento o después; si lo refleja, aparece antes.
+
+\textbf{Unidades de análisis.} Las 47 acciones del panel pertenecen a diez sectores: Consumo (9),
+Financiero (8), Utilities (8), Materiales (6), Energía (4), Conglomerado, Industrial y Real Estate
+(3 cada uno), Comunicaciones (2) y Tecnología (1). Para medir el tono propio de una empresa hace
+falta que tenga noticias en buena parte de las ruedas; con un corte de 90 de las 244 ruedas
+quedan 17: YPFD, BBAR, SUPV, EDN, GGAL, CEPU, TGSU2, IRSA, BMA, LOMA, PAMP, CRES, BYMA, TRAN,
+METR, TXAR y ALUA (cualquier corte entre 75 y 94 da las mismas). Las noticias vienen de siete
+portales nacionales, cada uno con su propio tono promedio (de +30,4 puntos en TN a 0,0 en Ámbito
+Finanzas), lo que obliga a controlar la composición por portal.

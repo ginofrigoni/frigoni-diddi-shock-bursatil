@@ -1,0 +1,46 @@
+% =====================================================================
+\chapter{Introducción}
+\label{cap:introduccion}
+
+Los mercados financieros se mueven con la información. Un dato de inflación, un anuncio del
+Banco Central o el resultado de una elección cambian lo que los inversores esperan de las
+empresas, y esas expectativas se trasladan a los precios y al volumen operado. Los medios
+económicos son uno de los canales por los que esa información circula: cada día publican
+decenas de notas sobre el tipo de cambio, la política económica y las empresas que cotizan en
+bolsa. Desde hace casi dos décadas, la literatura financiera estudia si el contenido de esas
+notas, y en particular su tono, ayuda a anticipar el comportamiento de las acciones o si se
+limita a contar lo que el mercado ya hizo \citep{tetlock2007,garcia2013,verma2026}.
+
+Este trabajo lleva esa pregunta al mercado argentino. Se recolectaron 14.012 notas de las
+secciones de economía y finanzas de siete portales (Clarín, La Nación, Infobae, Ámbito
+Financiero, TN, El Economista e iProfesional) y se midió su tono con un modelo de lenguaje en
+español adaptado a la prensa económica. Del lado del mercado se armó un panel de 47 acciones
+de Bolsas y Mercados Argentinos (BYMA), que incluye a las 20 que componen el S\&P~Merval, con
+su precio, su volumen, su volatilidad y el régimen de mercado de cada día. Los dos lados se
+unieron en una ventana común de 244 ruedas, del 5 de mayo de 2025 al 30 de abril de 2026,
+asignando cada nota a la primera rueda en la que el mercado pudo reaccionar a ella. El período
+empieza semanas después de la salida del cepo cambiario, todavía dentro de la turbulencia
+global por los aranceles de Estados Unidos, e incluye el anuncio de apoyo financiero del
+Tesoro de Estados Unidos, las elecciones bonaerenses del 7 de septiembre y las legislativas
+nacionales del 26 de octubre de 2025: un año con shocks informativos grandes y frecuentes.
+
+La pregunta importa por tres motivos. Para los inversores, si el tono de los medios anticipa
+los precios, es una señal que se puede usar; si no lo hace, es ruido que conviene no seguir.
+Para la teoría de los mercados eficientes, Argentina es un caso de interés: un mercado chico,
+con acciones poco líquidas y alta volatilidad macroeconómica, donde la información podría
+tardar más en incorporarse a los precios \citep{fama1970,zablotsky2002}. Y para la ciencia
+de datos en español, casi no existen trabajos que crucen el tono de la prensa económica con
+precios de acciones: hay modelos de sentimiento financiero en español
+\citep{brana2016,rodriguezgarcia2023,pan2023peerj}, pero el cruce con el mercado se hizo,
+en la región, en Brasil y Colombia \citep{galdi2018,cruzmontana2025}, no en Argentina.
+
+El documento sigue el orden del trabajo. El capítulo~\ref{cap:objetivos} presenta el
+problema, la hipótesis, los objetivos, los antecedentes y la metodología. El
+capítulo~\ref{cap:marco} desarrolla el marco teórico y describe el mercado argentino en la
+ventana de estudio. El capítulo~\ref{cap:tecnicas} define las técnicas de ciencia de datos
+utilizadas. El capítulo~\ref{cap:desarrollo} detalla los datos, su limpieza, el análisis
+exploratorio y la especificación de los modelos. El capítulo~\ref{cap:resultados} presenta
+los resultados y los discute con la literatura, y el capítulo~\ref{cap:conclusiones} cierra
+con las conclusiones, las limitaciones y las líneas futuras. Los anexos reúnen el diccionario
+de variables, el detalle de las pruebas y las especificaciones escritas antes de correr los
+análisis.

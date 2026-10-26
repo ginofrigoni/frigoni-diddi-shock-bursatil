@@ -1,0 +1,67 @@
+paso,control,pasa
+U1,Cada nota tiene una rueda o un motivo para no tenerla,True
+U1,Ninguna nota va a una rueda anterior a su publicación,True
+U1,Ninguna nota publicada tras el cierre queda en la rueda del mismo día,True
+U1,Las URLs coinciden una a una con finetuned_articulos.csv,True
+U1,El portal coincide con finetuned_articulos.csv,True
+U1,La fecha sin convertir reproduce la fecha de Gino,True
+U1,Todas las ruedas de la ventana tienen noticias,True
+U1,Cantidad de ruedas igual al diagnóstico,True
+U1,Mínimo y mediana de notas por rueda iguales al diagnóstico,True
+U1,Notas con hora sospechosa iguales al diagnóstico,True
+U2,"La serie tiene las 244 ruedas, sin huecos",True
+U2,Las notas por rueda coinciden con U1,True
+U2,Promediando por fecha calendario se reproduce la serie diaria de Gino,True
+U2,El ajuste por portal deja en 0 el promedio de cada portal,True
+U2,Solo hay shocks en ruedas con 20 ruedas previas de referencia,True
+U2,La regla elegida tiene a lo sumo 20% de falsos esperados,True
+U2,"La regla elegida marca más shocks que con las notas mezcladas al azar (p < 0,05)",True
+U3,"Agrupando por fecha se reproduce ner_sentimiento_diario.csv de Gino, fila por fila",True
+U3,La cobertura del cruce coincide con el reporte de Gino,True
+U3,Todas las notas con menciones están en U1,True
+U3,Ninguna oración se pierde al pasar de fecha a rueda (mismas notas de la ventana),True
+U3,El panel tiene 47 acciones × 244 ruedas sin repetidos,True
+U3,Sin noticia ⇔ sentimiento vacío,True
+U3,Todos los tickers de las menciones están entre las 47 acciones,True
+U4,"Mercado: 244 ruedas, sin repetidas, las mismas del calendario bursátil",True
+U4,"Merval, retorno y VIX idénticos a la carpeta 03",True
+U4,"Panel: 47 acciones × 244 ruedas, sin repetidos",True
+U4,Sin valores faltantes en las variables principales (salvo atención en las 20 primeras ruedas),True
+U4,Las notas suman lo mismo que en U1,True
+U4,Sentimiento de la empresa presente ⇔ hubo noticia,True
+U4,Cada rueda del panel tiene el mismo tono de mercado que el dataset de mercado,True
+U4,Todas las columnas de los dos datasets están en el diccionario,True
+U5,Se probaron todas las series previstas,True
+U5,"Las series de mercado tienen 244 datos (224 la atención y el tono anormal, sin sus 20 primeras ruedas)",True
+U5,Retornos y volumen anormal de cada acción tienen 244 datos,True
+U5,La versión completada del sentimiento por empresa no tiene huecos,True
+U5,"Misma especificación que la carpeta 04 para retornos (ADF con constante, rezagos por AIC)",True
+U6,"Todos los modelos usan las 224 ruedas, sin valores faltantes",True
+U6,Se corrieron todos los tests previstos,True
+U6,Todos los VAR son estables (raíces dentro del círculo unitario),True
+U6,Rezagos entre 1 y 5 en todos los modelos,True
+U6,La corrección BH nunca achica un p-valor,True
+U6,"El test está calibrado: con el tono mezclado al azar, entre 2% y 9% de p < 0,05 (dio 6.9%)",True
+U6b,Ninguna nota pre-apertura se publicó durante la sesión de su rueda (11:00 a 17:00),True
+U6b,Ninguna nota pre-apertura tiene hora sospechosa,True
+U6b,Todas las ruedas tienen notas pre-apertura,True
+U6b,Los modelos principales usan 224 ruedas (mercado) con todas las ruedas,True
+U6b,El panel tiene las 17 empresas,True
+U6b,"Calibración: con el tono mezclado al azar, entre 2% y 9% de p < 0,05 (dio 4.7%)",True
+U7,Todos los eventos del mercado tienen ventana de estimación y de evento completas,True
+U7,Se usan los 18 eventos de U2 (shocks del mismo signo en ruedas seguidas = un evento),True
+U7,Ningún evento por empresa se solapa con el anterior de la misma empresa,True
+U7,El sorteo de fechas al azar usa solo ruedas con ventanas completas,True
+U7,Retornos anormales de una fecha al azar promedian cerca de 0 (control del modelo),True
+U7b,El z de una rueda usa solo las 30 ruedas previas (recalculado a mano),True
+U7b,Todos los eventos tienen ventanas de estimación y de evento completas,True
+U7b,"Ruedas seguidas con shock cuentan como un solo evento (mercado, versión principal)",True
+U7b,Ningún evento de empresa se solapa con el anterior de la misma empresa,True
+U7b,Todos los eventos de empresa tienen al menos 3 artículos en la rueda,True
+U7b,Las notas pre-apertura nunca superan a las de la rueda (mercado y cada empresa),True
+U7b,Retornos anormales de fechas al azar promedian cerca de 0 (mercado y empresas),True
+U8,"La base reproduce el p corregido de U6 (mercado, retorno → tono), salvo el redondeo del CSV de U2",True
+U8,La base reproduce las 15 de 17 empresas de U6 (retorno → tono propio),True
+U8,La base reproduce las 39 de 47 empresas de U6 (retorno → tono),True
+U8,La base reproduce el event study de U7 (eventos positivos y retorno del día),True
+U8,Cada variante cambia una sola decisión,True

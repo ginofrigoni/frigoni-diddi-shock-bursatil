@@ -1,0 +1,16 @@
+metrica,valor,detalle
+series_probadas,156,
+no_estacionarias,0,
+inconclusas,3,sent_neto; sent_neto_portal; vix_arg
+estacionarias_solo_adf,7,n_notas; sent_neto_empresa BYMA.BA (completada); sent_neto_empresa BYMA.BA (solo días con noticia); tono_propio CRES.BA; vol_anormal RIGO.BA; tono_propio TRAN.BA; tono_propio YPFD.BA
+adf_p_max_retornos,0.025611,GCDI.BA
+mercado_ret_merval,Estacionaria,ADF p=0.0000; KPSS p=0.100
+mercado_monto_anormal,Estacionaria,ADF p=0.0000; KPSS p=0.100
+mercado_sent_neto,Inconclusa,ADF p=0.3492; KPSS p=0.100
+mercado_sent_neto_portal,Inconclusa,ADF p=0.2997; KPSS p=0.100
+mercado_n_notas,Estacionaria (ADF),ADF p=0.0044; KPSS p=0.010
+mercado_atencion_anormal,Estacionaria,ADF p=0.0014; KPSS p=0.077
+mercado_vix_arg,Inconclusa,ADF p=0.1545; KPSS p=0.095
+mercado_sent_anormal,Estacionaria,ADF p=0.000037; KPSS p=0.100
+carpeta04_retornos_estacionarios,47,"de 47, con 3 años"
+controles_ok,5,de 5

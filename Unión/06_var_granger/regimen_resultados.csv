@@ -1,0 +1,13 @@
+causa,efecto,prueba,direccion,cuando,rezagos,n,n_tenso,F,p,p_bh,signif_bh
+sent_anormal,ret_merval,tono → retorno,noticias → mercado,en días Calmo,4,206,40,1.2986,0.27205197591280833,0.4214278620820948,False
+sent_anormal,ret_merval,tono → retorno,noticias → mercado,en días Tenso,4,206,40,0.3503,0.8436026297265089,0.9202937778834643,False
+sent_anormal,ret_merval,tono → retorno,noticias → mercado,diferencia Tenso − Calmo,4,206,40,0.1738,0.9516187260110279,0.9516187260110279,False
+sent_anormal,monto_anormal,tono → volumen,noticias → mercado,en días Calmo,4,206,40,2.4207,0.04984455756884984,0.11962693816523962,False
+sent_anormal,monto_anormal,tono → volumen,noticias → mercado,en días Tenso,4,206,40,1.2839,0.27776294053786005,0.4214278620820948,False
+sent_anormal,monto_anormal,tono → volumen,noticias → mercado,diferencia Tenso − Calmo,4,206,40,1.2757,0.28095190805472986,0.4214278620820948,False
+ret_merval,sent_anormal,retorno → tono,mercado → noticias,en días Calmo,4,206,40,4.7605,0.001102957049472367,0.006617742296834202,True
+ret_merval,sent_anormal,retorno → tono,mercado → noticias,en días Tenso,4,206,40,5.146,0.0005843376173050344,0.006617742296834202,True
+ret_merval,sent_anormal,retorno → tono,mercado → noticias,diferencia Tenso − Calmo,4,206,40,0.5818,0.6761828424824627,0.8114194109789552,False
+monto_anormal,sent_anormal,volumen → tono,mercado → noticias,en días Calmo,4,206,40,0.9223,0.45205384457817854,0.6027384594375714,False
+monto_anormal,sent_anormal,volumen → tono,mercado → noticias,en días Tenso,4,206,40,4.382,0.0020579721089714754,0.008231888435885902,True
+monto_anormal,sent_anormal,volumen → tono,mercado → noticias,diferencia Tenso − Calmo,4,206,40,2.4239,0.0495880518076685,0.11962693816523962,False

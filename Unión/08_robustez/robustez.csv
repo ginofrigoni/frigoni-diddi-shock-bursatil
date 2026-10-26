@@ -1,0 +1,163 @@
+variante,resultado,valor,ruedas,mantiene
+base,A ret→tono,0.000344275454641446,224,
+base,A tono→ret,0.4237617443181648,224,
+base,A tono→vol,0.2528300413003489,224,
+base,B retorno→tono propio (de 17),15.0,224,
+base,B tono propio→retorno (de 17),0.0,224,
+base,B tono propio→volumen (de 17),1.0,224,
+base,C retorno→tono (de 47),39.0,224,
+base,C tono→retorno (de 47),0.0,224,
+base,D ret→tono en Calmo,0.0011029524632672643,224,
+base,D ret→tono en Tenso,0.0005844234477685135,224,
+base,D tono→ret en Calmo,0.2720476806982771,224,
+base,D tono→ret en Tenso,0.8436006096441572,224,
+base,E positivos: eventos,7.0,224,
+base,E positivos: día 0 (%),2.014736861257483,224,
+base,E positivos: p día 0,0.008463617952867318,224,
+base,E positivos: antes (%),3.1932035722999714,224,
+base,E negativos: eventos,9.0,224,
+base,E negativos: día 0 (%),-0.0070430693062835505,224,
+base,E negativos: p día 0,0.9878814978670715,224,
+base,E negativos: antes (%),-0.8376616611837535,224,
+portal,A ret→tono,0.00032592518468599303,224,sí
+portal,A tono→ret,0.4483477618218951,224,sí
+portal,A tono→vol,0.1715030350097727,224,sí
+portal,B retorno→tono propio (de 17),15.0,224,sí
+portal,B tono propio→retorno (de 17),0.0,224,sí
+portal,B tono propio→volumen (de 17),1.0,224,sí
+portal,C retorno→tono (de 47),39.0,224,sí
+portal,C tono→retorno (de 47),0.0,224,sí
+portal,D ret→tono en Calmo,0.0015529441817278085,224,sí
+portal,D ret→tono en Tenso,0.0002815799916823658,224,sí
+portal,D tono→ret en Calmo,0.28354823119917294,224,sí
+portal,D tono→ret en Tenso,0.8062307697469399,224,sí
+nivel,A ret→tono,0.00016099058973758777,224,sí
+nivel,A tono→ret,0.4752304522525029,224,sí
+nivel,A tono→vol,0.12663716734531386,224,sí
+nivel,B retorno→tono propio (de 17),11.0,224,sí
+nivel,B tono propio→retorno (de 17),0.0,224,sí
+nivel,B tono propio→volumen (de 17),1.0,224,sí
+nivel,C retorno→tono (de 47),34.0,224,sí
+nivel,C tono→retorno (de 47),0.0,224,sí
+nivel,D ret→tono en Calmo,0.0035875316383768866,224,sí
+nivel,D ret→tono en Tenso,0.0006248594290404291,224,sí
+nivel,D tono→ret en Calmo,0.12534771735675745,224,sí
+nivel,D tono→ret en Tenso,0.8236545003671254,224,sí
+sin_sospechosa,A ret→tono,0.00021967210096438195,224,sí
+sin_sospechosa,A tono→ret,0.49032719117709933,224,sí
+sin_sospechosa,A tono→vol,0.20916359182440594,224,sí
+sin_sospechosa,B retorno→tono propio (de 17),16.0,224,sí
+sin_sospechosa,B tono propio→retorno (de 17),0.0,224,sí
+sin_sospechosa,B tono propio→volumen (de 17),1.0,224,sí
+sin_sospechosa,C retorno→tono (de 47),40.0,224,sí
+sin_sospechosa,C tono→retorno (de 47),0.0,224,sí
+sin_sospechosa,D ret→tono en Calmo,0.0011905024885765444,224,sí
+sin_sospechosa,D ret→tono en Tenso,0.002469579475401016,224,sí
+sin_sospechosa,D tono→ret en Calmo,0.2371661408815706,224,sí
+sin_sospechosa,D tono→ret en Tenso,0.841707733633449,224,sí
+sin_sospechosa,E positivos: eventos,6.0,224,
+sin_sospechosa,E positivos: día 0 (%),1.9540639366339023,224,
+sin_sospechosa,E positivos: p día 0,0.024621607965667074,224,sí
+sin_sospechosa,E positivos: antes (%),4.815570908112971,224,
+sin_sospechosa,E negativos: eventos,11.0,224,
+sin_sospechosa,E negativos: día 0 (%),0.1868965535229785,224,
+sin_sospechosa,E negativos: p día 0,0.6619093020601304,224,sí
+sin_sospechosa,E negativos: antes (%),-1.1452889163170037,224,
+calendario,A ret→tono,0.3388982537117016,224,NO
+calendario,A tono→ret,0.4183334749885031,224,sí
+calendario,A tono→vol,0.3388982537117016,224,sí
+calendario,B retorno→tono propio (de 17),0.0,224,NO
+calendario,B tono propio→retorno (de 17),0.0,224,sí
+calendario,B tono propio→volumen (de 17),0.0,224,sí
+calendario,C retorno→tono (de 47),0.0,224,NO
+calendario,C tono→retorno (de 47),0.0,224,sí
+calendario,D ret→tono en Calmo,0.34376663601879764,224,NO
+calendario,D ret→tono en Tenso,0.05750655946347851,224,NO
+calendario,D tono→ret en Calmo,0.6547907803603854,224,sí
+calendario,D tono→ret en Tenso,0.4758633129171117,224,sí
+calendario,E positivos: eventos,2.0,224,
+calendario,E positivos: día 0 (%),0.4377230875444692,224,
+calendario,E positivos: p día 0,0.13333047533435716,224,NO
+calendario,E positivos: antes (%),0.3350756767416722,224,
+calendario,E negativos: eventos,6.0,224,
+calendario,E negativos: día 0 (%),-1.7776544029358152,224,
+calendario,E negativos: p día 0,0.04332042079788421,224,NO
+calendario,E negativos: antes (%),0.3386005957872272,224,
+mismo_dia,A ret→tono,0.7000242658842638,224,NO
+mismo_dia,A tono→ret,0.44499632370042175,224,sí
+mismo_dia,A tono→vol,0.44499632370042175,224,sí
+mismo_dia,B retorno→tono propio (de 17),0.0,224,NO
+mismo_dia,B tono propio→retorno (de 17),0.0,224,sí
+mismo_dia,B tono propio→volumen (de 17),0.0,224,sí
+mismo_dia,C retorno→tono (de 47),0.0,224,NO
+mismo_dia,C tono→retorno (de 47),0.0,224,sí
+mismo_dia,D ret→tono en Calmo,0.20211058539550827,224,NO
+mismo_dia,D ret→tono en Tenso,0.5912535865465642,224,NO
+mismo_dia,D tono→ret en Calmo,0.4027900034759812,224,sí
+mismo_dia,D tono→ret en Tenso,0.5694812141751215,224,sí
+mismo_dia,E positivos: eventos,2.0,224,
+mismo_dia,E positivos: día 0 (%),1.0897425968437024,224,
+mismo_dia,E positivos: p día 0,0.38178294206766766,224,NO
+mismo_dia,E positivos: antes (%),2.9291423976058226,224,
+mismo_dia,E negativos: eventos,2.0,224,
+mismo_dia,E negativos: día 0 (%),-1.10269766904277,224,
+mismo_dia,E negativos: p día 0,0.1736291108629948,224,sí
+mismo_dia,E negativos: antes (%),-1.0561438839799246,224,
+sin_abril,A ret→tono,0.00039764324257554183,204,sí
+sin_abril,A tono→ret,0.22388615148401705,204,sí
+sin_abril,A tono→vol,0.2013018431713835,204,sí
+sin_abril,B retorno→tono propio (de 17),16.0,204,sí
+sin_abril,B tono propio→retorno (de 17),0.0,204,sí
+sin_abril,B tono propio→volumen (de 17),1.0,204,sí
+sin_abril,C retorno→tono (de 47),39.0,204,sí
+sin_abril,C tono→retorno (de 47),0.0,204,sí
+sin_abril,D ret→tono en Calmo,0.0008433411831476335,204,sí
+sin_abril,D ret→tono en Tenso,0.0010176178407357787,204,sí
+sin_abril,D tono→ret en Calmo,0.4045868238647484,204,sí
+sin_abril,D tono→ret en Tenso,0.8313199649249106,204,sí
+sin_abril,E positivos: eventos,7.0,204,
+sin_abril,E positivos: día 0 (%),2.014736861257483,204,
+sin_abril,E positivos: p día 0,0.008463617952867318,204,sí
+sin_abril,E positivos: antes (%),3.1932035722999714,204,
+sin_abril,E negativos: eventos,9.0,204,
+sin_abril,E negativos: día 0 (%),-0.0070430693062835505,204,
+sin_abril,E negativos: p día 0,0.9878814978670715,204,sí
+sin_abril,E negativos: antes (%),-0.8376616611837535,204,
+electorales,A ret→tono,0.0003316412798212548,224,sí
+electorales,A tono→ret,0.5602387410088411,224,sí
+electorales,A tono→vol,0.21809420137245833,224,sí
+electorales,B retorno→tono propio (de 17),15.0,224,sí
+electorales,B tono propio→retorno (de 17),0.0,224,sí
+electorales,B tono propio→volumen (de 17),1.0,224,sí
+electorales,C retorno→tono (de 47),38.0,224,sí
+electorales,C tono→retorno (de 47),0.0,224,sí
+electorales,D ret→tono en Calmo,0.0011029524632672643,224,sí
+electorales,D ret→tono en Tenso,0.0005844234477685135,224,sí
+electorales,D tono→ret en Calmo,0.2720476806982771,224,sí
+electorales,D tono→ret en Tenso,0.8436006096441572,224,sí
+sin_iliquidas,C retorno→tono (de 43),36.0,224,sí
+sin_iliquidas,C tono→retorno (de 43),0.0,224,sí
+filtrado,D ret→tono en Calmo,0.0010363226713924608,224,sí
+filtrado,D ret→tono en Tenso,0.0007748156206634762,224,sí
+filtrado,D tono→ret en Calmo,0.2856753989442783,224,sí
+filtrado,D tono→ret en Tenso,0.7334437034273211,224,sí
+no_calmo,D ret→tono en Calmo,0.0010322854598259234,224,sí
+no_calmo,D ret→tono en No calmo,0.0001477530798678335,224,sí
+no_calmo,D tono→ret en Calmo,0.2668344473545199,224,sí
+no_calmo,D tono→ret en No calmo,0.3006914702868707,224,sí
+umbral_3,E positivos: eventos,4.0,224,
+umbral_3,E positivos: día 0 (%),1.5012780264301075,224,
+umbral_3,E positivos: p día 0,0.038275545456754406,224,sí
+umbral_3,E positivos: antes (%),5.207021031213403,224,
+umbral_3,E negativos: eventos,3.0,224,
+umbral_3,E negativos: día 0 (%),1.0776259976885285,224,
+umbral_3,E negativos: p día 0,0.42731931125525835,224,sí
+umbral_3,E negativos: antes (%),-2.5328070191973087,224,
+umbral_2,E positivos: eventos,9.0,224,
+umbral_2,E positivos: día 0 (%),2.419980522573205,224,
+umbral_2,E positivos: p día 0,0.008878127823129163,224,sí
+umbral_2,E positivos: antes (%),1.405976434062884,224,
+umbral_2,E negativos: eventos,15.0,224,
+umbral_2,E negativos: día 0 (%),-0.482207357295678,224,
+umbral_2,E negativos: p día 0,0.2588087740135607,224,sí
+umbral_2,E negativos: antes (%),-1.323580261925525,224,

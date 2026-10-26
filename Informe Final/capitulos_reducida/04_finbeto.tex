@@ -1,0 +1,223 @@
+% =====================================================================
+\chapter{Segundo instrumento: FinBETO, el termómetro emocional}
+\chaptermark{FinBETO, el termómetro emocional}
+\label{cap:finbeto}
+
+El corpus dice qué se publicó; falta saber con qué tono. Para eso se construyó FinBETO, un
+modelo de lenguaje que lee cada oración de una nota y la clasifica como positiva, negativa,
+neutra o mixta. Agregadas por rueda, esas clasificaciones dan una medida de la temperatura
+emocional de la prensa económica: cuán optimistas o pesimistas fueron las noticias de cada día.
+
+% ---------------------------------------------------------------------
+\section{De BERT a FinBETO}
+
+BERT \citep{devlin2019bert} es un modelo de lenguaje preentrenado con la tarea de adivinar
+palabras ocultas en un texto (\textit{masked language modeling}, MLM). BETO es su versión
+entrenada en español \citep{canete2020beto}. Para clasificar sentimiento se le agrega una capa
+de salida y se lo ajusta con oraciones etiquetadas (\textit{fine-tuning}), como hizo FinBERT en
+inglés \citep{araci2019finbert}. Antes del ajuste conviene seguir el preentrenamiento con texto
+del propio dominio, porque mejora el desempeño en la tarea final \citep{gururangan2020dapt}.
+FinBETO es el resultado de los dos pasos sobre la prensa económica argentina.
+
+\textbf{Clases.} Se trabajó con cuatro: positiva (POS), negativa (NEG), neutra (NEU) y mixta
+(MIXTO). Una parte de las oraciones de la prensa económica combina señales de ambos signos —por
+ejemplo, un dato de actividad que mejora mientras la inflación se acelera— y forzarlas a una
+sola clase habría sido arbitrario.
+
+% ---------------------------------------------------------------------
+\section{Etiquetado y entrenamiento}
+
+\textbf{Etiquetado con Gemma.} Para el ajuste fino hacen falta oraciones etiquetadas, y no
+existía un conjunto público de prensa económica argentina. Se usó un modelo de lenguaje como
+etiquetador, una práctica que puede igualar o superar a anotadores contratados
+\citep{gilardi2023chatgpt} y que también se evaluó en textos financieros
+\citep{aguda2024llmannot}. El etiquetador fue Gemma \citep{gemma2026gemma4}
+(\texttt{gemma4:26b}, temperatura 0,1), ejecutado localmente con Ollama, en dos pasos por
+noticia. Primero leyó el título, la bajada y los primeros 3.000 caracteres, y produjo un
+análisis de contexto (tema central, encuadre, actores y tono general). Después etiquetó cada
+oración de al menos 30 caracteres, con ese contexto como referencia y la instrucción de que el
+sentimiento surgiera de lo que la oración expresa por sí misma. Se tomó un artículo de cada una
+de las nueve fuentes por lote, hasta 408 noticias (45 o 46 por fuente) y 11.605 oraciones
+etiquetadas: 46,4\% NEU, 23,8\% POS, 20,8\% NEG y 8,9\% MIXTO.
+
+\textbf{Preentrenamiento continuado.} Se hizo con la tarea MLM (15\% de los tokens
+enmascarados) sobre el texto de los 14.667 artículos del corpus antes de su depuración final:
+3 épocas, segmentos de 128 tokens y tasa de aprendizaje $2\cdot10^{-5}$. La pérdida de
+evaluación bajó de 1,233 a 1,121, y ante la frase «La [MASK] llegó al 3\% mensual según el
+INDEC» el modelo propuso «inflación» con probabilidad 0,81: ya hablaba el idioma de la prensa
+económica argentina.
+
+\textbf{Ajuste fino.} Para que la clase neutra no dominara, se tomó una muestra balanceada de
+hasta 2.400 oraciones por clase (todas las de MIXTO), dividida en 80\% para entrenamiento,
+10\% para validación y 10\% para prueba (6.588, 824 y 824 oraciones). Como aun así la clase
+MIXTO tiene menos ejemplos que las demás, durante el entrenamiento un error en una clase escasa
+se penalizó algo más que un error en una clase abundante: cuanto más rara es la clase, más pesa
+cada uno de sus errores, aunque de forma moderada, para que el modelo no la ignore sin
+exagerar su importancia\footnote{Técnicamente, la pérdida se ponderó por la raíz cuadrada de la
+frecuencia inversa de cada clase.}. Se usaron 5 épocas, lotes de 32, tasa de aprendizaje
+$2\cdot10^{-5}$ con 10\% de calentamiento, decaimiento de pesos 0,01 y selección de la mejor
+época por F1 macro en validación. El F1 macro —el promedio simple del F1 de cada clase— es la
+métrica principal, porque no premia acertar solo la clase más frecuente.
+
+% ---------------------------------------------------------------------
+\section{Evaluación: cuánto mide bien el termómetro}
+
+La primera evaluación informó un F1 macro de 0,7296 en cuatro clases. Al revisarla se
+encontraron tres problemas: la división de los datos se había hecho por oración y no por
+noticia, de modo que las oraciones de prueba venían de noticias que también aportaban
+oraciones al entrenamiento; había textos repetidos (41 oraciones de prueba, el 5\%, estaban
+también en entrenamiento); y había restos del \textit{scraping} etiquetados como neutros
+(«PUBLICIDAD PUBLICIDAD PUBLICIDAD», «Sobre la firma Newsletter Clarín»). Es el problema de
+fuga de información descrito por \citet{kapoor2023leakage}: con noticias, la forma de dividir
+los datos cambia mucho el resultado \citep{xue2026temporal}.
+
+Para medir bien, sin modificar el modelo en uso, se limpió el conjunto etiquetado (se
+descartaron 750 filas de relleno o repetidas y quedaron 10.855 oraciones), se lo dividió
+\textit{por noticia} (330 noticias para entrenamiento, 39 para validación y 39 para prueba,
+sin textos compartidos) y se reentrenó solo para medir, con tres semillas por división. El
+código reproduce el resultado original (0,732 con la división por oración); con la división
+por noticia, el F1 macro es de \textbf{0,685} (tabla~\ref{tab:finbeto}). Esa es la estimación
+honesta, porque el 97\% de las noticias del corpus nunca se vio al entrenar.
+
+Para comparar en igualdad de condiciones con el modelo de referencia,
+\carpeta{finiteautomata/beto-sentiment-analysis} \citep{perez2021pysentimiento}, un BETO
+ajustado con tuits en tres clases, se usaron solo las oraciones POS, NEG y NEU, contando como
+error cada predicción MIXTO de FinBETO. Sobre noticias no vistas, FinBETO obtiene
+\textbf{0,724} y el de referencia \textbf{0,546}: 17,7 puntos de ventaja. El de referencia
+clasifica como neutras 411 de las 662 oraciones; el ajuste al dominio es lo que le permite a
+FinBETO leer el tono de la prensa económica.
+
+\begin{table}[H]
+\centering\footnotesize
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Medida (prueba, media de 3 semillas)} & \textbf{División por oración} & \textbf{División por noticia} \\
+\midrule
+F1 macro, 4 clases & 0,732 $\pm$ 0,012 & \textbf{0,685 $\pm$ 0,009} \\
+Exactitud & 0,743 & 0,691 \\
+F1 POS / NEG / NEU / MIXTO & 0,752 / 0,760 / 0,754 / 0,663 & 0,694 / 0,677 / 0,725 / 0,645 \\
+\midrule
+F1 macro, 3 clases: FinBETO & 0,773 & \textbf{0,724} \\
+F1 macro, 3 clases: modelo de referencia & 0,620 & 0,546 \\
+\bottomrule
+\end{tabular}
+\caption{Calidad de FinBETO según cómo se dividen los datos. La estimación que corresponde
+informar es la de la división por noticia. Fuente: elaboración propia a partir de
+\carpeta{Lado Noticias/sentimiento_finbert}.}
+\label{tab:finbeto}
+\end{table}
+
+% ---------------------------------------------------------------------
+
+\section{Del modelo a la temperatura de cada rueda}
+\label{sec:tono-rueda}
+
+El modelo se aplicó a todas las oraciones del corpus de entre 30 y 600 caracteres, incluido el
+título. Se excluyeron 2.438 oraciones de relleno (firmas de Clarín, marcas de publicidad de
+Infobae) y quedaron 399.803: 36,7\% neutras, 27,1\% positivas, 24,1\% negativas y 12,1\%
+mixtas. Para cada nota se calculó el \textit{sentimiento neto}: el porcentaje de oraciones
+positivas menos el de negativas; las mixtas y las neutras no suman ni restan. Con cada nota ya
+asignada a su rueda (sección~\ref{sec:alineacion}) se armaron cuatro medidas:
+
+\begin{itemize}
+  \item \textbf{Tono:} el promedio del sentimiento neto de las notas de la rueda, también en una
+        versión \textit{ajustada por portal} (correlación 0,995 con la original).
+  \item \textbf{Tono anormal:} el tono de la rueda menos el promedio de las 20 ruedas previas.
+        Mide la sorpresa en lugar del clima de fondo, y es la variable de tono de los modelos.
+  \item \textbf{Atención:} la cantidad de notas de la rueda comparada con lo habitual, primero
+        con las ruedas que cubren los mismos días (un lunes junta el fin de semana) y después
+        con las 20 previas. En la \textit{atención anormal}, 0 es lo habitual, $+0{,}69$ el doble
+        de notas y $-0{,}69$ la mitad.
+  \item \textbf{Ruedas de tono extremo:} se compararon dos familias de reglas contra el azar,
+        mezclando las notas entre las ruedas. La regla por desvío de los días previos marca casi
+        lo mismo que el azar (15 shocks contra 16,1 con umbral 2). La regla \textit{por
+        muestreo}, que tiene en cuenta cuántas notas tiene cada rueda, marca con umbral 2,5
+        \textbf{19 ruedas} (10 positivas y 9 negativas) contra 3,5 del azar, y fue la elegida.
+        La regla de la serie diaria original incluía al propio día en su ventana, lo que acota
+        el desvío máximo a 2,27 \citep{shiffler1988}; por eso la unión la redefinió.
+\end{itemize}
+
+El termómetro tiene una lectura clara (figura~\ref{fig:u2}). El tono medio de las 244 ruedas
+fue de 3,9 puntos, con un desvío de 7,0: las noticias económicas son, en promedio, levemente
+positivas. La rueda más negativa fue la del 15/04/2026 ($-13{,}5$) y la más positiva, la del
+14/11/2025 ($+22{,}1$). El tono de una rueda se parece al de la anterior: la correlación entre el
+tono de cada rueda y el de la rueda previa es de 0,47. Si un día las noticias son más positivas
+que lo habitual, al día siguiente tienden a seguir siéndolo, aunque en menor medida: el clima de
+las noticias cambia de a poco, porque los temas se sostienen varios días en los medios.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.74\linewidth]{u2_serie_reducida.png}
+\caption{Arriba: tono de cada rueda (ajustado por portal), su media de las 20 ruedas previas y
+las ruedas de tono extremo (verde, positivas; rojo, negativas); las líneas punteadas son los
+días electorales. Abajo: atención de los medios, es decir, cuántas notas recibió cada rueda
+respecto de lo habitual. Las barras naranjas son ruedas con más notas que lo habitual y las
+violetas, con menos; el eje derecho traduce la escala a veces lo habitual ($\times 1{,}5$ es un
+50\% más de notas, $\times 0{,}5$ la mitad). Las primeras 20 ruedas no tienen referencia previa.
+Fuente: elaboración propia (\carpeta{Unión/02_sentimiento_por_rueda}).}
+\label{fig:u2}
+\end{figure}
+
+% ---------------------------------------------------------------------
+\section{Reconocimiento de entidades: el tono de cada empresa}
+\label{sec:ner-modelo}
+
+El termómetro mide el tono de las noticias en general. Para saber de qué empresa habla cada
+oración se usó el reconocimiento de entidades nombradas (NER), que identifica nombres de
+personas, organizaciones y lugares en un texto \citep{tjongkimsang2002conll}.
+
+\textbf{Un NER híbrido.} Se combinó el modelo \texttt{es\_core\_news\_lg} de spaCy
+\citep{honnibal2020spacy} con dos \textit{gazetteers} (diccionarios curados): 160 indicadores
+económicos en seis categorías y las 47 empresas del panel, \textit{canonicalizadas}: cada alias
+se resuelve al ticker, para que «Banco Galicia», «Grupo Financiero Galicia» y «GGAL» cuenten como
+una sola entidad. Los alias en mayúsculas se buscan respetando mayúsculas (sin esa regla, AGRO
+coincidía con «agro» en 920 artículos) y se excluyeron los que son palabras comunes
+(«Hipotecario», «Molinos»). La limpieza quitó el relleno del \textit{scraping}, las
+autorreferencias de cada medio y los fragmentos sin valor que detecta el modelo
+(tabla~\ref{tab:ner}).
+
+\begin{table}[H]
+\centering\footnotesize
+\begin{tabular}{@{}lll@{}}
+\toprule
+ & \textbf{Antes del filtrado} & \textbf{Después} \\
+\midrule
+Entidades únicas & 65.352 & 17.894 \\
+«PUBLICIDAD» como entidad & 2.258 menciones (primera del ranking) & 0 \\
+Empresas del panel & 20, fragmentadas en variantes & 47, canonicalizadas por ticker \\
+Falsos positivos del alias AGRO & 920 artículos & 0 \\
+\bottomrule
+\end{tabular}
+\caption{Efecto de la limpieza del reconocimiento de entidades. Fuente: elaboración propia a
+partir de \carpeta{Lado Noticias/ner_entidades}.}
+\label{tab:ner}
+\end{table}
+
+\textbf{Cruce con el sentimiento.} Cada mención se unió con el sentimiento FinBETO de su oración,
+exigiendo que el texto coincida: se cruzaron el 99,37\% de las oraciones con entidades del corpus
+(243.265 de 244.809). Antes de agregar, 24 variantes de indicadores se unificaron («PIB» y
+«producto bruto interno» en «PBI»). YPF es la empresa más mencionada (237 de las 244 ruedas),
+seguida por BBVA, Supervielle, Edenor y Galicia; tres empresas del panel no tienen ninguna
+mención (CAPX, FIPL y LONG). El sentimiento de las oraciones que nombran a una empresa es el tono
+del contexto en que aparece, no una opinión sobre ella.
+
+\textbf{El tono propio.} El tono de una empresa en una rueda es (oraciones positivas $-$
+negativas) / oraciones que la mencionan $\times$ 100. Como la mediana es de dos oraciones por
+rueda, y en el 37\% de las ruedas hay una sola, ese valor sale muchas veces todo o nada. Por eso
+se lo \textit{encoge} hacia el tono del mercado según la cantidad de oraciones $n$
+\citep{efron1975}:
+\begin{equation}
+\text{tono propio}_{i,t} = \frac{n_{i,t}}{n_{i,t} + 10{,}9}\,\bigl(\text{tono}_{i,t} - \text{tono}_{M,t}\bigr),
+\end{equation}
+de modo que con una oración pesa un 8\%, con diez un 48\% y con treinta un 73\%. El tono propio
+mide cuánto mejor o peor se habla de la empresa que del mercado, vale 0 si no hay noticias de
+ella y se calcula para las 17 empresas con noticias frecuentes (figura~\ref{fig:u3}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\linewidth]{u3_cobertura.png}
+\caption{Arriba: ruedas con al menos una noticia de cada empresa (en azul, las 17 con tono
+propio). Abajo: tono propio de esas 17 empresas en cada rueda. Fuente: elaboración propia
+(\carpeta{Unión/03_sentimiento_por_empresa}).}
+\label{fig:u3}
+\end{figure}

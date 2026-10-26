@@ -1,0 +1,157 @@
+ambito,serie,forma,ticker,n,adf_estadistico,adf_p,adf_rezagos,kpss_estadistico,kpss_p,conclusion
+mercado,ret_merval,,,244,-6.1869,0.0,3,0.1092,0.1,Estacionaria
+mercado,monto_anormal,,,244,-7.6605,0.0,1,0.0667,0.1,Estacionaria
+mercado,sent_neto,,,244,-1.864,0.3492,9,0.3151,0.1,Inconclusa
+mercado,sent_neto_portal,,,244,-1.9704,0.299683,9,0.3136,0.1,Inconclusa
+mercado,n_notas,,,244,-3.683,0.004359,4,0.7864,0.01,Estacionaria (ADF)
+mercado,atencion_anormal,,,224,-3.9931,0.001447,3,0.4002,0.077,Estacionaria
+mercado,vix_arg,,,244,-2.3562,0.154494,0,0.3594,0.0946,Inconclusa
+mercado,sent_anormal,,,224,-4.884,3.7e-05,3,0.1741,0.1,Estacionaria
+mercado,sent_portal_anormal,,,224,-4.8379,4.6e-05,3,0.1503,0.1,Estacionaria
+mercado,sent_neto,cambio de tono,,243,-8.9246,0.0,8,0.2397,0.1,Estacionaria
+mercado,sent_neto_portal,cambio de tono,,243,-8.9357,0.0,8,0.1324,0.1,Estacionaria
+panel,retorno,,AGRO.BA,244,-9.6346,0.0,2,0.0848,0.1,Estacionaria
+panel,vol_anormal,,AGRO.BA,244,-6.2085,0.0,1,0.1446,0.1,Estacionaria
+panel,retorno,,ALUA.BA,244,-9.4214,0.0,2,0.0474,0.1,Estacionaria
+panel,vol_anormal,,ALUA.BA,244,-5.1385,1.2e-05,7,0.0723,0.1,Estacionaria
+panel,sent_neto_empresa,completada,ALUA.BA,244,-13.5597,0.0,0,0.1421,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,ALUA.BA,94,-9.1566,0.0,0,0.0788,0.1,Estacionaria
+panel,tono_propio,,ALUA.BA,244,-12.8582,0.0,0,0.2763,0.1,Estacionaria
+panel,retorno,,AUSO.BA,244,-10.347,0.0,1,0.0982,0.1,Estacionaria
+panel,vol_anormal,,AUSO.BA,244,-5.4697,2e-06,15,0.0566,0.1,Estacionaria
+panel,retorno,,BBAR.BA,244,-6.645,0.0,3,0.1314,0.1,Estacionaria
+panel,vol_anormal,,BBAR.BA,244,-5.4229,3e-06,3,0.044,0.1,Estacionaria
+panel,sent_neto_empresa,completada,BBAR.BA,244,-6.6632,0.0,6,0.1238,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,BBAR.BA,229,-14.567,0.0,0,0.1359,0.1,Estacionaria
+panel,tono_propio,,BBAR.BA,244,-6.4447,0.0,6,0.1351,0.1,Estacionaria
+panel,retorno,,BHIP.BA,244,-3.5295,0.00726,10,0.1298,0.1,Estacionaria
+panel,vol_anormal,,BHIP.BA,244,-5.8107,0.0,2,0.14,0.1,Estacionaria
+panel,retorno,,BMA.BA,244,-6.0642,0.0,3,0.1594,0.1,Estacionaria
+panel,vol_anormal,,BMA.BA,244,-8.6516,0.0,1,0.0933,0.1,Estacionaria
+panel,sent_neto_empresa,completada,BMA.BA,244,-14.5015,0.0,0,0.2256,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,BMA.BA,184,-12.6298,0.0,0,0.3376,0.1,Estacionaria
+panel,tono_propio,,BMA.BA,244,-4.4083,0.000287,6,0.334,0.1,Estacionaria
+panel,retorno,,BOLT.BA,244,-11.9218,0.0,1,0.1067,0.1,Estacionaria
+panel,vol_anormal,,BOLT.BA,244,-7.1487,0.0,1,0.0879,0.1,Estacionaria
+panel,retorno,,BPAT.BA,244,-4.4819,0.000212,7,0.1294,0.1,Estacionaria
+panel,vol_anormal,,BPAT.BA,244,-7.0213,0.0,1,0.0995,0.1,Estacionaria
+panel,retorno,,BYMA.BA,244,-3.6993,0.004123,15,0.1105,0.1,Estacionaria
+panel,vol_anormal,,BYMA.BA,244,-5.3992,3e-06,12,0.0555,0.1,Estacionaria
+panel,sent_neto_empresa,completada,BYMA.BA,244,-3.6272,0.005261,9,0.4961,0.0425,Estacionaria (ADF)
+panel,sent_neto_empresa,solo días con noticia,BYMA.BA,141,-5.9183,0.0,2,0.5401,0.0326,Estacionaria (ADF)
+panel,tono_propio,,BYMA.BA,244,-6.9515,0.0,3,0.4223,0.0675,Estacionaria
+panel,retorno,,CAPX.BA,244,-3.9573,0.001651,9,0.0958,0.1,Estacionaria
+panel,vol_anormal,,CAPX.BA,244,-12.9659,0.0,0,0.0594,0.1,Estacionaria
+panel,retorno,,CELU.BA,244,-17.4772,0.0,0,0.115,0.1,Estacionaria
+panel,vol_anormal,,CELU.BA,244,-8.1816,0.0,0,0.091,0.1,Estacionaria
+panel,retorno,,CEPU.BA,244,-4.312,0.000424,9,0.1175,0.1,Estacionaria
+panel,vol_anormal,,CEPU.BA,244,-6.3144,0.0,2,0.0587,0.1,Estacionaria
+panel,sent_neto_empresa,completada,CEPU.BA,244,-14.7063,0.0,0,0.1519,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,CEPU.BA,193,-13.0178,0.0,0,0.1651,0.1,Estacionaria
+panel,tono_propio,,CEPU.BA,244,-7.7524,0.0,2,0.1011,0.1,Estacionaria
+panel,retorno,,CGPA2.BA,244,-5.1828,1e-05,7,0.0744,0.1,Estacionaria
+panel,vol_anormal,,CGPA2.BA,244,-6.8609,0.0,1,0.065,0.1,Estacionaria
+panel,retorno,,COME.BA,244,-11.2897,0.0,0,0.0837,0.1,Estacionaria
+panel,vol_anormal,,COME.BA,244,-6.4101,0.0,1,0.196,0.1,Estacionaria
+panel,retorno,,CRES.BA,244,-5.3956,3e-06,5,0.0926,0.1,Estacionaria
+panel,vol_anormal,,CRES.BA,244,-14.2875,0.0,0,0.0324,0.1,Estacionaria
+panel,sent_neto_empresa,completada,CRES.BA,244,-4.097,0.00098,8,0.4062,0.0745,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,CRES.BA,163,-4.1425,0.000823,4,0.4185,0.0692,Estacionaria
+panel,tono_propio,,CRES.BA,244,-14.5686,0.0,0,0.7356,0.0103,Estacionaria (ADF)
+panel,retorno,,CTIO.BA,244,-14.5725,0.0,0,0.1326,0.1,Estacionaria
+panel,vol_anormal,,CTIO.BA,244,-7.8861,0.0,1,0.0839,0.1,Estacionaria
+panel,retorno,,CVH.BA,244,-13.7884,0.0,0,0.1038,0.1,Estacionaria
+panel,vol_anormal,,CVH.BA,244,-8.5572,0.0,1,0.0451,0.1,Estacionaria
+panel,retorno,,DGCU2.BA,244,-13.9376,0.0,0,0.1545,0.1,Estacionaria
+panel,vol_anormal,,DGCU2.BA,244,-10.3556,0.0,0,0.0466,0.1,Estacionaria
+panel,retorno,,EDN.BA,244,-13.8439,0.0,0,0.0807,0.1,Estacionaria
+panel,vol_anormal,,EDN.BA,244,-12.2877,0.0,0,0.0619,0.1,Estacionaria
+panel,sent_neto_empresa,completada,EDN.BA,244,-14.318,0.0,0,0.354,0.097,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,EDN.BA,213,-13.4143,0.0,0,0.3103,0.1,Estacionaria
+panel,tono_propio,,EDN.BA,244,-14.0607,0.0,0,0.2987,0.1,Estacionaria
+panel,retorno,,FIPL.BA,244,-14.0403,0.0,0,0.0988,0.1,Estacionaria
+panel,vol_anormal,,FIPL.BA,244,-7.0564,0.0,1,0.0384,0.1,Estacionaria
+panel,retorno,,GARO.BA,244,-13.421,0.0,0,0.0571,0.1,Estacionaria
+panel,vol_anormal,,GARO.BA,244,-8.4516,0.0,1,0.1197,0.1,Estacionaria
+panel,retorno,,GBAN.BA,244,-13.4612,0.0,0,0.0905,0.1,Estacionaria
+panel,vol_anormal,,GBAN.BA,244,-5.915,0.0,2,0.078,0.1,Estacionaria
+panel,retorno,,GCDI.BA,244,-3.1129,0.025611,12,0.0989,0.1,Estacionaria
+panel,vol_anormal,,GCDI.BA,244,-12.419,0.0,0,0.0576,0.1,Estacionaria
+panel,retorno,,GGAL.BA,244,-4.6103,0.000124,8,0.1132,0.1,Estacionaria
+panel,vol_anormal,,GGAL.BA,244,-10.6908,0.0,0,0.0888,0.1,Estacionaria
+panel,sent_neto_empresa,completada,GGAL.BA,244,-15.6835,0.0,0,0.135,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,GGAL.BA,195,-13.8225,0.0,0,0.0805,0.1,Estacionaria
+panel,tono_propio,,GGAL.BA,244,-14.9996,0.0,0,0.2245,0.1,Estacionaria
+panel,retorno,,GRIM.BA,244,-15.8086,0.0,0,0.315,0.1,Estacionaria
+panel,vol_anormal,,GRIM.BA,244,-4.4338,0.000258,3,0.0727,0.1,Estacionaria
+panel,retorno,,HAVA.BA,244,-9.4052,0.0,1,0.1181,0.1,Estacionaria
+panel,vol_anormal,,HAVA.BA,244,-10.9399,0.0,0,0.1157,0.1,Estacionaria
+panel,retorno,,IRSA.BA,244,-16.2216,0.0,0,0.1373,0.1,Estacionaria
+panel,vol_anormal,,IRSA.BA,244,-13.4141,0.0,0,0.1049,0.1,Estacionaria
+panel,sent_neto_empresa,completada,IRSA.BA,244,-15.7958,0.0,0,0.0477,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,IRSA.BA,186,-14.7952,0.0,0,0.0505,0.1,Estacionaria
+panel,tono_propio,,IRSA.BA,244,-14.7674,0.0,0,0.1021,0.1,Estacionaria
+panel,retorno,,LEDE.BA,244,-7.3636,0.0,5,0.1091,0.1,Estacionaria
+panel,vol_anormal,,LEDE.BA,244,-6.6537,0.0,1,0.0678,0.1,Estacionaria
+panel,retorno,,LOMA.BA,244,-15.396,0.0,0,0.0953,0.1,Estacionaria
+panel,vol_anormal,,LOMA.BA,244,-5.3469,4e-06,4,0.0537,0.1,Estacionaria
+panel,sent_neto_empresa,completada,LOMA.BA,244,-16.3796,0.0,0,0.1293,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,LOMA.BA,175,-14.0919,0.0,0,0.1587,0.1,Estacionaria
+panel,tono_propio,,LOMA.BA,244,-16.2949,0.0,0,0.2668,0.1,Estacionaria
+panel,retorno,,LONG.BA,244,-13.5922,0.0,0,0.0871,0.1,Estacionaria
+panel,vol_anormal,,LONG.BA,244,-5.0542,1.7e-05,5,0.0752,0.1,Estacionaria
+panel,retorno,,METR.BA,244,-13.526,0.0,0,0.0843,0.1,Estacionaria
+panel,vol_anormal,,METR.BA,244,-6.7319,0.0,2,0.1226,0.1,Estacionaria
+panel,sent_neto_empresa,completada,METR.BA,244,-13.7561,0.0,0,0.162,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,METR.BA,112,-8.8232,0.0,0,0.2096,0.1,Estacionaria
+panel,tono_propio,,METR.BA,244,-8.9073,0.0,1,0.1529,0.1,Estacionaria
+panel,retorno,,MIRG.BA,244,-12.7461,0.0,0,0.1113,0.1,Estacionaria
+panel,vol_anormal,,MIRG.BA,244,-7.0355,0.0,1,0.0625,0.1,Estacionaria
+panel,retorno,,MOLI.BA,244,-14.3747,0.0,0,0.1105,0.1,Estacionaria
+panel,vol_anormal,,MOLI.BA,244,-4.5749,0.000144,4,0.0972,0.1,Estacionaria
+panel,retorno,,MORI.BA,244,-11.4378,0.0,1,0.1018,0.1,Estacionaria
+panel,vol_anormal,,MORI.BA,244,-6.3297,0.0,1,0.0976,0.1,Estacionaria
+panel,retorno,,OEST.BA,244,-11.9624,0.0,0,0.1103,0.1,Estacionaria
+panel,vol_anormal,,OEST.BA,244,-7.7673,0.0,1,0.0282,0.1,Estacionaria
+panel,retorno,,PAMP.BA,244,-15.9201,0.0,0,0.0948,0.1,Estacionaria
+panel,vol_anormal,,PAMP.BA,244,-5.0138,2.1e-05,3,0.0845,0.1,Estacionaria
+panel,sent_neto_empresa,completada,PAMP.BA,244,-14.4696,0.0,0,0.0607,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,PAMP.BA,164,-12.1221,0.0,0,0.0708,0.1,Estacionaria
+panel,tono_propio,,PAMP.BA,244,-14.5158,0.0,0,0.0742,0.1,Estacionaria
+panel,retorno,,RIGO.BA,244,-13.6675,0.0,1,0.0449,0.1,Estacionaria
+panel,vol_anormal,,RIGO.BA,244,-6.2065,0.0,3,0.5829,0.0242,Estacionaria (ADF)
+panel,retorno,,SAMI.BA,244,-12.764,0.0,0,0.099,0.1,Estacionaria
+panel,vol_anormal,,SAMI.BA,244,-6.2892,0.0,1,0.1228,0.1,Estacionaria
+panel,retorno,,SEMI.BA,244,-3.4151,0.010455,9,0.1251,0.1,Estacionaria
+panel,vol_anormal,,SEMI.BA,244,-6.8587,0.0,1,0.1826,0.1,Estacionaria
+panel,retorno,,SUPV.BA,244,-4.5855,0.000137,7,0.1332,0.1,Estacionaria
+panel,vol_anormal,,SUPV.BA,244,-4.5803,0.00014,4,0.2039,0.1,Estacionaria
+panel,sent_neto_empresa,completada,SUPV.BA,244,-13.6266,0.0,0,0.2288,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,SUPV.BA,223,-13.1376,0.0,0,0.2584,0.1,Estacionaria
+panel,tono_propio,,SUPV.BA,244,-12.266,0.0,0,0.1977,0.1,Estacionaria
+panel,retorno,,TECO2.BA,244,-14.9854,0.0,0,0.078,0.1,Estacionaria
+panel,vol_anormal,,TECO2.BA,244,-8.4759,0.0,1,0.0445,0.1,Estacionaria
+panel,retorno,,TGNO4.BA,244,-13.0581,0.0,0,0.0843,0.1,Estacionaria
+panel,vol_anormal,,TGNO4.BA,244,-5.8519,0.0,2,0.0877,0.1,Estacionaria
+panel,retorno,,TGSU2.BA,244,-12.2581,0.0,1,0.0713,0.1,Estacionaria
+panel,vol_anormal,,TGSU2.BA,244,-4.2948,0.000453,4,0.0428,0.1,Estacionaria
+panel,sent_neto_empresa,completada,TGSU2.BA,244,-15.4885,0.0,0,0.074,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,TGSU2.BA,189,-13.7651,0.0,0,0.0961,0.1,Estacionaria
+panel,tono_propio,,TGSU2.BA,244,-9.9155,0.0,1,0.1819,0.1,Estacionaria
+panel,retorno,,TRAN.BA,244,-12.8403,0.0,0,0.0698,0.1,Estacionaria
+panel,vol_anormal,,TRAN.BA,244,-5.2364,7e-06,11,0.0387,0.1,Estacionaria
+panel,sent_neto_empresa,completada,TRAN.BA,244,-4.0784,0.001051,7,0.2909,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,TRAN.BA,116,-10.0691,0.0,0,0.3424,0.1,Estacionaria
+panel,tono_propio,,TRAN.BA,244,-15.2227,0.0,0,0.8781,0.01,Estacionaria (ADF)
+panel,retorno,,TXAR.BA,244,-14.7676,0.0,0,0.0525,0.1,Estacionaria
+panel,vol_anormal,,TXAR.BA,244,-5.5676,1e-06,4,0.0708,0.1,Estacionaria
+panel,sent_neto_empresa,completada,TXAR.BA,244,-13.8946,0.0,0,0.2507,0.1,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,TXAR.BA,105,-3.8369,0.002552,5,0.3781,0.0866,Estacionaria
+panel,tono_propio,,TXAR.BA,244,-14.619,0.0,0,0.1173,0.1,Estacionaria
+panel,retorno,,VALO.BA,244,-12.7527,0.0,0,0.0753,0.1,Estacionaria
+panel,vol_anormal,,VALO.BA,244,-7.8492,0.0,1,0.1636,0.1,Estacionaria
+panel,retorno,,YPFD.BA,244,-15.7183,0.0,0,0.0553,0.1,Estacionaria
+panel,vol_anormal,,YPFD.BA,244,-7.5684,0.0,1,0.0703,0.1,Estacionaria
+panel,sent_neto_empresa,completada,YPFD.BA,244,-5.6502,1e-06,3,0.3721,0.0892,Estacionaria
+panel,sent_neto_empresa,solo días con noticia,YPFD.BA,237,-6.7179,0.0,2,0.3515,0.0981,Estacionaria
+panel,tono_propio,,YPFD.BA,244,-6.7045,0.0,2,0.5065,0.0402,Estacionaria (ADF)

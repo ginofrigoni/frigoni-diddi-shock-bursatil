@@ -1,0 +1,6 @@
+control,pasa
+"La base reproduce el p corregido de U6 (mercado, retorno → tono), salvo el redondeo del CSV de U2",True
+La base reproduce las 15 de 17 empresas de U6 (retorno → tono propio),True
+La base reproduce las 39 de 47 empresas de U6 (retorno → tono),True
+La base reproduce el event study de U7 (eventos positivos y retorno del día),True
+Cada variante cambia una sola decisión,True

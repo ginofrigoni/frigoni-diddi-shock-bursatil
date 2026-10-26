@@ -1,0 +1,172 @@
+{
+  "ventana_desde": "2025-01-01",
+  "ventana_hasta": "2026-05-03",
+  "resumen": {
+    "ambito_economia.jsonl": {
+      "antes": 500,
+      "despues": 500,
+      "eliminadas": 0
+    },
+    "ambito_finanzas.jsonl": {
+      "antes": 256,
+      "despues": 256,
+      "eliminadas": 0
+    },
+    "clarin_economia.jsonl": {
+      "antes": 294,
+      "despues": 294,
+      "eliminadas": 0
+    },
+    "clarin_sitemap.jsonl": {
+      "antes": 3744,
+      "despues": 3739,
+      "eliminadas": 5
+    },
+    "eleconomista_sitemap.jsonl": {
+      "antes": 3054,
+      "despues": 3051,
+      "eliminadas": 3
+    },
+    "infobae_economia.jsonl": {
+      "antes": 500,
+      "despues": 500,
+      "eliminadas": 0
+    },
+    "iprofesional_sitemap.jsonl": {
+      "antes": 5497,
+      "despues": 5497,
+      "eliminadas": 0
+    },
+    "lanacion_economia.jsonl": {
+      "antes": 500,
+      "despues": 491,
+      "eliminadas": 9
+    },
+    "tn_economia.jsonl": {
+      "antes": 103,
+      "despues": 103,
+      "eliminadas": 0
+    }
+  },
+  "eliminadas": [
+    {
+      "archivo": "clarin_sitemap.jsonl",
+      "url": "https://www.clarin.com/economia/cierran-proveedora-varias-centrales-nucleares_0_rJyxHgu5wml.html",
+      "motivo": "fecha_fuera_de_ventana",
+      "titulo": "Cierran una planta proveedora de varias centrales nucleares ",
+      "fecha_publicacion": "2014-11-17T10:23:00.000Z"
+    },
+    {
+      "archivo": "clarin_sitemap.jsonl",
+      "url": "https://www.clarin.com/economia/llegan-electrodomesticos-neumaticos-plasticos-importados-dudas-ayudaran-bajar-precios_0_69DX7KmxgX.html",
+      "motivo": "fecha_fuera_de_ventana",
+      "titulo": "Llegan electrodomésticos, neumáticos y plásticos importados, pero hay dudas si ayudarán a bajar los precios",
+      "fecha_publicacion": "2024-05-05T22:01:04.000Z"
+    },
+    {
+      "archivo": "clarin_sitemap.jsonl",
+      "url": "https://www.clarin.com/economia/mindlin-sielecki-quieren-20-anos-privatizacion-tgs-hacer-negocios-vaca-muerta-intervencion-estatal_0_IHmWKhtRFR.html",
+      "motivo": "fecha_fuera_de_ventana",
+      "titulo": "Con el gas de Vaca Muerta y el RIGI, Mindlin y Sielecki analizan inversiones por US$ 3.000 millones",
+      "fecha_publicacion": "2024-10-15T17:54:00.000Z"
+    },
+    {
+      "archivo": "clarin_sitemap.jsonl",
+      "url": "https://www.clarin.com/economia/domingo-cavallo-recomendo-javier-milei-apurar-privatizaciones_0_0h67ZxbTG4.html",
+      "motivo": "fecha_fuera_de_ventana",
+      "titulo": "Domingo Cavallo le recomendó a Javier Milei no apurar las privatizaciones",
+      "fecha_publicacion": "2024-10-15T22:22:00.000Z"
+    },
+    {
+      "archivo": "clarin_sitemap.jsonl",
+      "url": "https://www.clarin.com/economia/mindlin-optimista-apoya-milei-declara-fanatico-equilibrio-fiscal_0_wi0OjdcCge.html",
+      "motivo": "fecha_fuera_de_ventana",
+      "titulo": "Marcelo Mindlin: \"Aceptaría postergar aumento de tarifas a cambio de que baje la inflación\"",
+      "fecha_publicacion": "2024-10-17T09:01:00.000Z"
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/",
+      "motivo": "no_articulo",
+      "titulo": "Economía - El Economista",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/finanzas/",
+      "motivo": "no_articulo",
+      "titulo": "Finanzas - El Economista",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/el-argentino-que-resolvio-un-problema-que-sacude-a-la-industria-automotriz-nid20012026/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/de-administrar-campos-a-trabajar-con-comunidades-originarias-de-formosa-nid13022026/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/brindis-y-karaoke-la-formula-para-hacer-negocios-en-el-mayor-exportador-del-mundo-nid04112025/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/estrellas-en-duda-que-tan-confiables-son-las-resenas-en-internet-nid13092025/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/el-argentino-que-convirtio-una-crisis-en-un-negocio-regional-del-fitness-nid03122025/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/impuestos-al-consumo-en-el-mundo-no-existe-la-superposicion-que-hay-en-la-argentina-nid29042026/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/el-nuevo-sueno-nordico-la-promesa-de-altos-ingresos-que-exige-mas-de-lo-que-parece-nid06052025/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/riesgo-kuka-el-terremoto-economico-de-las-elecciones-argentinas-nid27092025/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "lanacion_economia.jsonl",
+      "url": "https://www.lanacion.com.ar/economia/negocios/estabilidad-certidumbre-y-reglas-el-pais-que-pone-en-shock-a-los-argentinos-en-el-arranque-nid27102025/",
+      "motivo": "paywall",
+      "titulo": "Suscribite a LA NACION y disfrutá del acceso digital",
+      "fecha_publicacion": null
+    },
+    {
+      "archivo": "eleconomista_sitemap.jsonl",
+      "url": "https://eleconomista.com.ar/economia/categorias-monotributo-cuales-son-y-cuanto-se-paga-n59754",
+      "motivo": "fecha_posterior_a_recoleccion",
+      "titulo": "Categorías del monotributo 2026 en ARCA (Ex AFIP): Cómo quedan en abril y cuánto se paga",
+      "fecha_publicacion": "2026-08-03T10:27:00-03:00"
+    }
+  ]
+}

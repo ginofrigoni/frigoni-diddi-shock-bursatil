@@ -1,0 +1,49 @@
+metrica,valor,detalle
+eventos_mercado_original,12.0,"13 en total, 1 con elección en la ventana; 13 tras un día sin mercado"
+eventos_empresa_original,105.0,17 empresas; 51 tras un día sin mercado
+eventos_mercado_principal,6.0,"7 en total, 1 con elección en la ventana; 0 tras un día sin mercado"
+eventos_empresa_principal,105.0,17 empresas; 1 tras un día sin mercado
+eventos_mercado_pre-apertura,5.0,"6 en total, 1 con elección en la ventana; 0 tras un día sin mercado"
+eventos_empresa_pre-apertura,76.0,17 empresas; 0 tras un día sin mercado
+ruedas_tras_dia_sin_mercado,56.0,de 244 ruedas
+ruedas_para_sorteo,221.0,
+pares_para_sorteo,3757.0,
+principal_mercado_abs_ra_dia,0.0211,día cualquiera 0.01830; azar p=0.642; p BH=0.956; n=6
+"principal_mercado_vol_antes [−3, −1]",0.00542,día cualquiera -0.01579; azar p=0.859; p BH=0.956; n=6
+principal_mercado_vol_día [0],-0.00309,día cualquiera -0.02721; azar p=0.886; p BH=0.956; n=6
+"principal_mercado_vol_después [+1, +5]",-0.04213,día cualquiera -0.03487; azar p=0.956; p BH=0.956; n=6
+"principal_mercado_car_antes [−3, −1]",0.00936,día cualquiera -0.00175; azar p=0.517; p BH=0.956; n=6
+principal_mercado_car_día [0],-0.01498,día cualquiera -0.00073; azar p=0.127; p BH=0.443; n=6
+"principal_mercado_car_después [+1, +5]",0.00855,día cualquiera -0.00449; azar p=0.600; p BH=0.956; n=6
+principal_empresas_abs_ra_dia,0.02018,día cualquiera 0.01609; azar p=0.008; p BH=0.059; n=105
+"principal_empresas_vol_antes [−3, −1]",0.03759,día cualquiera -0.04330; azar p=0.051; p BH=0.237; n=105
+principal_empresas_vol_día [0],0.13878,día cualquiera -0.05437; azar p=0.001; p BH=0.017; n=105
+"principal_empresas_vol_después [+1, +5]",-0.04493,día cualquiera -0.05240; azar p=0.849; p BH=0.956; n=105
+"principal_empresas_car_antes [−3, −1]",0.00049,día cualquiera 0.00028; azar p=0.952; p BH=0.956; n=105
+principal_empresas_car_día [0],0.00125,día cualquiera 0.00008; azar p=0.591; p BH=0.956; n=105
+"principal_empresas_car_después [+1, +5]",-0.00018,día cualquiera 0.00055; azar p=0.905; p BH=0.956; n=105
+original_mercado_abs_ra_dia,0.01402,día cualquiera 0.01830; azar p=0.294; p BH=0.515; n=12
+"original_mercado_vol_antes [−3, −1]",-0.16504,día cualquiera -0.01579; azar p=0.098; p BH=0.229; n=12
+original_mercado_vol_día [0],-0.09513,día cualquiera -0.02721; azar p=0.560; p BH=0.560; n=12
+"original_mercado_vol_después [+1, +5]",-0.16662,día cualquiera -0.03487; azar p=0.061; p BH=0.171; n=12
+"original_mercado_car_antes [−3, −1]",-0.02588,día cualquiera -0.00175; azar p=0.055; p BH=0.171; n=12
+original_mercado_car_día [0],-0.00898,día cualquiera -0.00073; azar p=0.212; p BH=0.424; n=12
+"original_mercado_car_después [+1, +5]",-0.01571,día cualquiera -0.00449; azar p=0.503; p BH=0.560; n=12
+original_empresas_abs_ra_dia,0.0215,día cualquiera 0.01609; azar p=0.001; p BH=0.011; n=105
+"original_empresas_vol_antes [−3, −1]",0.03911,día cualquiera -0.04330; azar p=0.055; p BH=0.171; n=105
+original_empresas_vol_día [0],0.12459,día cualquiera -0.05437; azar p=0.003; p BH=0.021; n=105
+"original_empresas_vol_después [+1, +5]",-0.03267,día cualquiera -0.05240; azar p=0.559; p BH=0.560; n=105
+"original_empresas_car_antes [−3, −1]",-0.00213,día cualquiera 0.00028; azar p=0.553; p BH=0.560; n=105
+original_empresas_car_día [0],0.00186,día cualquiera 0.00008; azar p=0.406; p BH=0.560; n=105
+"original_empresas_car_después [+1, +5]",-0.00274,día cualquiera 0.00055; azar p=0.534; p BH=0.560; n=105
+preapertura_mercado_abs_salto,0.0095,día cualquiera 0.00326; azar p=0.004; p BH=0.022; n=5
+preapertura_mercado_abs_ra_dia,0.0164,día cualquiera 0.01830; azar p=0.790; p BH=0.875; n=5
+preapertura_mercado_vol_día [0],-0.05663,día cualquiera -0.02721; azar p=0.875; p BH=0.875; n=5
+preapertura_empresas_abs_salto,0.0082,día cualquiera 0.00724; azar p=0.293; p BH=0.544; n=76
+preapertura_empresas_abs_ra_dia,0.01767,día cualquiera 0.01609; azar p=0.363; p BH=0.544; n=76
+preapertura_empresas_vol_día [0],0.10496,día cualquiera -0.05437; azar p=0.018; p BH=0.053; n=76
+apoya_h1,1.0,empresas: volumen anormal día [0]
+significativo_solo_antes,0.0,
+salto_apertura_significativo,1.0,mercado
+sensibilidad_salto_mercado,0.0059,sin 2025-09-24: azar p=0.093; el máximo p sacando un evento por vez
+controles_ok,7.0,de 7

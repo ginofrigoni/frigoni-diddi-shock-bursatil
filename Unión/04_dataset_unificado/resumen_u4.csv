@@ -1,0 +1,28 @@
+metrica,valor,detalle
+ruedas,244.0,
+filas_panel,11468.0,
+columnas_mercado,29.0,
+columnas_panel,39.0,
+variables_diccionario,40.0,
+ruedas_calmo,177.0,
+ruedas_moderado,18.0,
+ruedas_tenso,49.0,
+ruedas_eco_electoral,40.0,
+ruedas_abril_2026,20.0,
+ruedas_atencion_vacia,20.0,"primeras 20 ruedas, sin referencia previa"
+ruedas_tono_anormal_vacio,20.0,"primeras 20 ruedas, sin referencia previa"
+ruedas_shock,19.0,
+cuatro_iliquidas_sin_operar,3.0,GARO 0; GCDI 1; GRIM 0; RIGO 2
+cuatro_iliquidas_precio_quieto,79.0,GARO 30; GCDI 20; GRIM 18; RIGO 11
+cuatro_iliquidas_sin_operar_3anos,113.0,GCDI 37; RIGO 31; GRIM 23; GARO 22
+precio_quieto_max,30.0,GARO
+precio_quieto_mediana,6.0,
+filas_con_noticia,3489.0,
+k_peso_tono_propio,10.9,varianza de una oración 5491 / varianza entre días 504
+peso_con_1_oraciones,0.084,
+peso_con_2_oraciones,0.155,
+peso_con_5_oraciones,0.314,
+peso_con_10_oraciones,0.479,
+peso_con_30_oraciones,0.734,
+filas_sentimiento_propio_con_noticia,2919.0,de 4148
+controles_ok,8.0,de 8

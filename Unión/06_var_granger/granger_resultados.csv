@@ -1,0 +1,305 @@
+nivel,unidad,causa,efecto,direccion,prueba,rezagos,F,p,efecto_desvios,signo,p_bh,signif_sin_corregir,signif_bh
+mercado,Merval,sent_anormal,ret_merval,noticias → mercado,tono → retorno,4,1.462,0.21188202289338903,-0.1582,−,0.42376404578677807,False,False
+mercado,Merval,ret_merval,sent_anormal,mercado → noticias,retorno → tono,4,6.4262,4.3032386126946285e-05,0.4765,+,0.0003442590890155703,True,True
+mercado,Merval,sent_anormal,monto_anormal,noticias → mercado,tono → volumen,4,2.2388,0.06320821898827184,-0.0739,−,0.25283287595308734,False,False
+mercado,Merval,monto_anormal,sent_anormal,mercado → noticias,volumen → tono,4,1.087,0.36171853063763,0.0964,+,0.48229137418350665,False,False
+mercado,Merval,atencion_anormal,ret_merval,noticias → mercado,atención → retorno,4,0.2164,0.9293320914325384,-0.0109,−,0.9293320914325384,False,False
+mercado,Merval,ret_merval,atencion_anormal,mercado → noticias,retorno → atención,4,1.7004,0.14788307932128328,-0.2264,−,0.39435487819008874,False,False
+mercado,Merval,atencion_anormal,monto_anormal,noticias → mercado,atención → volumen,4,1.137,0.3377416195343211,0.0328,+,0.48229137418350665,False,False
+mercado,Merval,monto_anormal,atencion_anormal,mercado → noticias,volumen → atención,4,0.7004,0.5918076375944443,0.0397,+,0.6763515858222221,False,False
+empresa,AGRO.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,2,1.2918,0.2754772581781775,-0.152,−,0.4426472182692082,False,False
+empresa,AGRO.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,2,0.8148,0.4432049887747059,0.0182,+,0.5936052451648693,False,False
+empresa,AGRO.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,2,9.894,5.8571719958815146e-05,0.3885,+,0.0006117490751254026,True,True
+empresa,AGRO.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,2,4.5617,0.010783644395803583,0.2496,+,0.0471470964281645,True,True
+empresa,ALUA.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.1279,0.7207197405654203,-0.0237,−,0.7962098201157446,False,False
+empresa,ALUA.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.4106,0.5218728041740217,0.0397,+,0.649530468758097,False,False
+empresa,ALUA.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,3.8275,0.050841345087604586,0.1288,+,0.151784764961768,False,False
+empresa,ALUA.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,1.8094,0.17904619657883183,0.0879,+,0.35063213496687906,False,False
+propio,ALUA.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.7,0.40302075489396694,0.0565,+,0.6272263797918745,False,False
+propio,ALUA.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,0.0022,0.9626446771585856,-0.003,−,0.9767784087892967,False,False
+propio,ALUA.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,5.8597,0.015694962858219995,0.1631,+,0.05929208190883109,True,False
+propio,ALUA.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,1.8165,0.17807645457125174,0.0901,+,0.4127233005147397,False,False
+empresa,AUSO.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,4,1.2947,0.270717561330152,-0.0094,−,0.4426472182692082,False,False
+empresa,AUSO.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,4,1.9824,0.09561375192062145,-0.2243,−,0.23045365847534402,False,False
+empresa,AUSO.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,4,5.3844,0.00028818490556313195,0.3727,+,0.002355598358516035,True,True
+empresa,AUSO.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,4,1.0404,0.3855210770038273,0.0692,+,0.5449470862911243,False,False
+empresa,BBAR.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,4,1.6812,0.15264806560596408,-0.1086,−,0.31193300362957876,False,False
+empresa,BBAR.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,4,2.1993,0.0676725406209634,-0.1943,−,0.1817491090963017,False,False
+empresa,BBAR.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,4,5.4756,0.0002452180019310446,0.472,+,0.002305049218151819,True,True
+empresa,BBAR.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,4,0.7319,0.5703516792756331,0.1653,+,0.6873468955373014,False,False
+propio,BBAR.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.9049,0.3417452606057312,0.0652,+,0.5968935414942367,False,False
+propio,BBAR.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,0.1091,0.7412306787711777,-0.0216,−,0.9000658242221443,False,False
+propio,BBAR.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,24.6915,8.097875930847564e-07,0.329,+,1.1013111265952687e-05,True,True
+propio,BBAR.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.198,0.6564872204679015,-0.0291,−,0.8505083302528513,False,False
+empresa,BHIP.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,4,2.1095,0.07814431002647718,-0.17,−,0.2069173279574325,False,False
+empresa,BHIP.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,4,1.6001,0.1726540369802324,-0.2281,−,0.341673252129302,False,False
+empresa,BHIP.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,4,8.2797,1.6476116733895274e-06,0.5381,+,5.6961584390526556e-05,True,True
+empresa,BHIP.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,4,0.4775,0.7522962583876285,0.0527,+,0.8127161008642185,False,False
+empresa,BMA.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,2.3619,0.12481172671632143,-0.1047,−,0.2765321226757938,False,False
+empresa,BMA.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.0001,0.9943476180567076,0.0005,+,0.9943476180567076,False,False
+empresa,BMA.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,12.2018,0.0005094616582632602,0.226,+,0.0034206711340533185,True,True
+empresa,BMA.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.8915,0.3454127882109734,0.0599,+,0.5033922804935116,False,False
+propio,BMA.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.3672,0.5446724335003933,-0.0418,−,0.7880367122984414,False,False
+propio,BMA.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,3.7786,0.05223395670340311,0.1314,+,0.17759545279157057,False,False
+propio,BMA.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,10.0067,0.0016137415628900847,0.2159,+,0.009144535523043814,True,True
+propio,BMA.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.0586,0.8087265709616179,0.0159,+,0.9205502916169801,False,False
+empresa,BOLT.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,2,3.449,0.0323648618767647,0.071,+,0.11701142370830313,True,False
+empresa,BOLT.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,2,0.6095,0.5439275168056087,0.049,+,0.6640154101263275,False,False
+empresa,BOLT.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,2,3.1459,0.04369038574285803,0.2228,+,0.14161711240788466,True,False
+empresa,BOLT.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,2,0.1025,0.9026197912809427,0.0245,+,0.9375277390100399,False,False
+empresa,BPAT.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,2.7352,0.09863849463016815,-0.1125,−,0.23473464544900774,False,False
+empresa,BPAT.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,1.6836,0.19489723795861894,0.0805,+,0.3627790171903006,False,False
+empresa,BPAT.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,18.7345,1.7365524943612797e-05,0.2799,+,0.00027257320130970965,True,True
+empresa,BPAT.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,4.8133,0.02858999852843854,0.1413,+,0.10539058281071463,True,False
+empresa,BYMA.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,3,0.231,0.8748172199442321,-0.0321,−,0.9188024432933835,False,False
+empresa,BYMA.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,3,2.8164,0.03842917011824808,-0.1491,−,0.12932708785398828,True,False
+empresa,BYMA.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,3,5.8724,0.0005874337728191687,0.3441,+,0.0038081913548277144,True,True
+empresa,BYMA.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,3,1.5224,0.20749831985296818,0.1592,+,0.3691305459669003,False,False
+propio,BYMA.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.0008,0.9767784087892967,0.0019,+,0.9767784087892967,False,False
+propio,BYMA.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,0.0636,0.8009104618212186,0.0157,+,0.9205502916169801,False,False
+propio,BYMA.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,23.3554,1.5908147612165562e-06,0.3257,+,1.545362910896083e-05,True,True
+propio,BYMA.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,1.1898,0.2756751384617126,-0.0724,−,0.5642537882405904,False,False
+empresa,CAPX.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,2,0.9413,0.3906732516780124,-0.113,−,0.5481087411601966,False,False
+empresa,CAPX.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,2,0.736,0.47941132236614303,-0.0719,−,0.6258981153113534,False,False
+empresa,CAPX.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,2,11.5134,1.2217279899420277e-05,0.4204,+,0.00027257320130970965,True,True
+empresa,CAPX.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,2,0.067,0.9351778990149153,0.0004,+,0.9607292077311698,False,False
+empresa,CELU.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.1657,0.6841221545515682,-0.0274,−,0.7655652681886597,False,False
+empresa,CELU.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.0041,0.9487482826493379,0.0037,+,0.9672232872178369,False,False
+empresa,CELU.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,0.2704,0.60323893949918,0.0349,+,0.700055065591641,False,False
+empresa,CELU.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,5.8906,0.015489995106122506,0.166,+,0.0633069365206746,True,False
+empresa,CEPU.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,4,2.0958,0.07987103929999353,-0.1223,−,0.20855215817220535,False,False
+empresa,CEPU.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,4,1.5439,0.18788159390594672,-0.0746,−,0.3627790171903006,False,False
+empresa,CEPU.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,4,6.9622,1.7398289445300615e-05,0.3347,+,0.00027257320130970965,True,True
+empresa,CEPU.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,4,1.5248,0.19332002793358521,0.0312,+,0.3627790171903006,False,False
+propio,CEPU.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.6557,0.41830410678253094,0.0553,+,0.6321039835824912,False,False
+propio,CEPU.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,2.1977,0.1385794437252237,0.0995,+,0.34901489530797086,False,False
+propio,CEPU.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,40.5493,3.097593639754678e-10,0.4214,+,7.021212250110603e-09,True,True
+propio,CEPU.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.0081,0.928363428052753,0.0058,+,0.9564956531452606,False,False
+empresa,CGPA2.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,3,1.52,0.20812679719410335,-0.0959,−,0.3691305459669003,False,False
+empresa,CGPA2.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,3,1.1942,0.31110859350706255,-0.0336,−,0.4716807708010303,False,False
+empresa,CGPA2.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,3,9.7335,2.7580518262992727e-06,0.3431,+,7.407339190632333e-05,True,True
+empresa,CGPA2.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,3,1.7687,0.15187385584377877,0.174,+,0.31193300362957876,False,False
+empresa,COME.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,2.2595,0.1332763883085111,-0.0984,−,0.2847268295681828,False,False
+empresa,COME.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.764,0.3824071432762514,0.05,+,0.5446404767873884,False,False
+empresa,COME.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,19.102,1.4400514231222097e-05,0.2857,+,0.00027257320130970965,True,True
+empresa,COME.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,4.8534,0.027938827925443565,0.1434,+,0.1050499929996678,True,False
+empresa,CRES.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.424,0.5151629693839623,-0.0444,−,0.649530468758097,False,False
+empresa,CRES.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.5322,0.46595580205879605,0.0491,+,0.6125852502591165,False,False
+empresa,CRES.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,2.9968,0.08389612952473637,0.1148,+,0.21071758912956798,False,False
+empresa,CRES.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.2984,0.585050865889836,-0.036,−,0.6917582565238313,False,False
+propio,CRES.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,1.7881,0.18150210004625034,-0.091,−,0.4127233005147397,False,False
+propio,CRES.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,2.6713,0.1025355477578757,-0.1095,−,0.31692805670616125,False,False
+propio,CRES.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,15.4341,9.218736138049888e-05,0.261,+,0.0005698855067158112,True,True
+propio,CRES.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,5.9895,0.014587603626748527,-0.1616,−,0.05835041450699411,True,False
+empresa,CTIO.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,2,1.1772,0.3087894885467215,-0.0526,−,0.4716807708010303,False,False
+empresa,CTIO.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,2,1.3004,0.273145797542724,-0.1268,−,0.4426472182692082,False,False
+empresa,CTIO.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,2,10.3582,3.7342862768867446e-05,0.4085,+,0.0005014613000390772,True,True
+empresa,CTIO.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,2,0.2793,0.7563938837809986,0.0401,+,0.8127161008642185,False,False
+empresa,CVH.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.6215,0.4307763089278641,0.0551,+,0.5875252228283313,False,False
+empresa,CVH.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,4.4237,0.035822538932057627,0.1433,+,0.12471550591160802,True,False
+empresa,CVH.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,11.6776,0.0006716154788353389,0.223,+,0.00420879033403479,True,True
+empresa,CVH.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,8.0218,0.004763363141297877,0.1828,+,0.023566112383263182,True,True
+empresa,DGCU2.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,1.3457,0.24645335898763843,-0.0798,−,0.4252370395515148,False,False
+empresa,DGCU2.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.1492,0.6993973229890278,0.0249,+,0.7780277912540664,False,False
+empresa,DGCU2.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,23.1958,1.8179229060806346e-06,0.3145,+,5.6961584390526556e-05,True,True
+empresa,DGCU2.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.5788,0.4470685155381495,0.0481,+,0.5936052451648693,False,False
+empresa,EDN.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.6241,0.429827940129664,-0.0535,−,0.5875252228283313,False,False
+empresa,EDN.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,1.3172,0.251512624110759,0.0761,+,0.4298579393892972,False,False
+empresa,EDN.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,18.9039,1.5929356620309e-05,0.281,+,0.00027257320130970965,True,True
+empresa,EDN.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.1917,0.6616210373434191,0.0279,+,0.7448188923386994,False,False
+propio,EDN.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.25,0.6172161088149452,0.0348,+,0.8505083302528513,False,False
+propio,EDN.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,4.2176,0.040304727509512014,0.1385,+,0.14424849845509563,True,False
+propio,EDN.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,62.7796,7.0360371555410935e-15,0.4978,+,2.392252632883972e-13,True,True
+propio,EDN.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.2056,0.6503177541852092,-0.0274,−,0.8505083302528513,False,False
+empresa,FIPL.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.0888,0.7658325372612735,-0.0206,−,0.8180483920745422,False,False
+empresa,FIPL.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.6802,0.40980623991236137,0.0531,+,0.5706931341001773,False,False
+empresa,FIPL.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,13.1373,0.0003118538468674585,0.24,+,0.0024089792079462847,True,True
+empresa,FIPL.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,2.9936,0.08406286800381702,0.1138,+,0.21071758912956798,False,False
+empresa,GARO.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.3297,0.5660535748726774,-0.0387,−,0.6865682069423441,False,False
+empresa,GARO.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.0101,0.9198796694079583,-0.0067,−,0.9502053727950338,False,False
+empresa,GARO.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,16.9537,4.3187010419630584e-05,0.2621,+,0.0005412771972593699,True,True
+empresa,GARO.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.2506,0.616835579898359,-0.0317,−,0.7100313356235537,False,False
+empresa,GBAN.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,1.6689,0.19685379686360122,-0.0899,−,0.3628285667682062,False,False
+empresa,GBAN.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,2.8947,0.0893446159786375,0.1145,+,0.21814010135043962,False,False
+empresa,GBAN.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,25.4777,5.801404867389457e-07,0.3325,+,3.7589517367072295e-05,True,True
+empresa,GBAN.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,1.9717,0.16073973578442102,0.0908,+,0.32493624008033495,False,False
+empresa,GCDI.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.9709,0.32480766044157866,0.0696,+,0.48081763907887237,False,False
+empresa,GCDI.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,6.3418,0.01202877896791092,0.1724,+,0.050253565465938954,True,False
+empresa,GCDI.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,16.4044,5.727492983113823e-05,0.2634,+,0.0006117490751254026,True,True
+empresa,GCDI.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,2.2743,0.13201634382575797,0.0961,+,0.2847268295681828,False,False
+empresa,GGAL.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,2.3592,0.12502782142256635,-0.1038,−,0.2765321226757938,False,False
+empresa,GGAL.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,2.6325,0.1051752114719181,0.1036,+,0.24716174695900756,False,False
+empresa,GGAL.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,17.5012,3.261327799388349e-05,0.2658,+,0.00047163817406539196,True,True
+empresa,GGAL.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,3.9924,0.04611820202964149,0.1245,+,0.14244599247071585,True,False
+propio,GGAL.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,1.1582,0.2821268941202952,-0.072,−,0.5642537882405904,False,False
+propio,GGAL.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,1.5944,0.20703012809080526,0.0798,+,0.45413060355402446,False,False
+propio,GGAL.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,18.0339,2.4031082607387027e-05,0.2816,+,0.00018156817970025753,True,True
+propio,GGAL.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.1191,0.7300605268992293,0.0224,+,0.9000658242221443,False,False
+empresa,GRIM.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.02,0.8876169073451234,0.0097,+,0.9270665476715734,False,False
+empresa,GRIM.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,3.7007,0.054822503196673984,0.1257,+,0.15383030747723447,False,False
+empresa,GRIM.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,4.1092,0.043053538803014525,0.1355,+,0.14161711240788466,True,False
+empresa,GRIM.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.4518,0.5017386032900605,0.0461,+,0.637343631206293,False,False
+empresa,HAVA.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.0382,0.8450778555009364,0.0134,+,0.8925541395178429,False,False
+empresa,HAVA.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,3.3502,0.06765140459177053,0.1173,+,0.1817491090963017,False,False
+empresa,HAVA.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,5.4272,0.02012810995555263,0.1546,+,0.07840031704834773,True,False
+empresa,HAVA.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.8407,0.3595415497943047,0.0599,+,0.5159832928345747,False,False
+empresa,IRSA.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.306,0.5803520762689306,-0.0377,−,0.6905455084718921,False,False
+empresa,IRSA.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,3.9887,0.04621917840805142,0.1336,+,0.14244599247071585,True,False
+empresa,IRSA.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,1.6996,0.19279480974150034,0.086,+,0.3627790171903006,False,False
+empresa,IRSA.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.4659,0.49512476859971655,0.0448,+,0.6332207924948756,False,False
+propio,IRSA.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.9434,0.3316832289445686,0.0662,+,0.5968935414942367,False,False
+propio,IRSA.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,8.0155,0.004744641738169926,0.1863,+,0.021509042546370333,True,True
+propio,IRSA.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,18.5721,1.822242758656166e-05,0.2853,+,0.00015489063448577412,True,True
+propio,IRSA.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.694,0.40502219227617775,-0.0548,−,0.6272263797918745,False,False
+empresa,LEDE.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.0741,0.785498089696001,0.0188,+,0.8343143551573343,False,False
+empresa,LEDE.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,2.0742,0.15028826560238873,0.0916,+,0.31193300362957876,False,False
+empresa,LEDE.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,6.5404,0.010768877313854045,0.1721,+,0.0471470964281645,True,True
+empresa,LEDE.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,1.2239,0.269009102620961,0.0732,+,0.4426472182692082,False,False
+empresa,LOMA.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,2,0.8048,0.4476065733592956,-0.0386,−,0.5936052451648693,False,False
+empresa,LOMA.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,2,0.6513,0.521716637551292,0.0919,+,0.649530468758097,False,False
+empresa,LOMA.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,2,6.0399,0.0025185928673890504,0.3183,+,0.013528441687689756,True,True
+empresa,LOMA.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,2,1.1354,0.3219276146199163,0.1236,+,0.48081763907887237,False,False
+propio,LOMA.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.3462,0.5564459092800232,-0.0402,−,0.7882983714800329,False,False
+propio,LOMA.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,2.4313,0.11929336280128809,0.1001,+,0.32509434251409264,False,False
+propio,LOMA.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,32.9804,1.285252639160996e-08,0.3687,+,2.1849294865736932e-07,True,True
+propio,LOMA.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.0194,0.8893956030612186,-0.0089,−,0.9449828282525448,False,False
+empresa,LONG.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.4042,0.5251522938895251,0.0453,+,0.649530468758097,False,False
+empresa,LONG.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,9.3885,0.002272936413600244,0.1924,+,0.012568001345789583,True,True
+empresa,LONG.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,12.5707,0.00041967549589275464,0.2248,+,0.002963991328740106,True,True
+empresa,LONG.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,13.086,0.00032034297978009103,0.2338,+,0.0024089792079462847,True,True
+empresa,METR.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,4,1.2691,0.28080247227353383,-0.1591,−,0.44738021006291834,False,False
+empresa,METR.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,4,2.0709,0.08310277165089641,-0.19,−,0.21071758912956798,False,False
+empresa,METR.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,4,11.5655,4.608932588813855e-09,0.6004,+,8.664793266970047e-07,True,True
+empresa,METR.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,4,0.1419,0.9665112193264126,0.0599,+,0.9769038130826105,False,False
+propio,METR.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.7776,0.3781082643721228,-0.0585,−,0.62710638969035,False,False
+propio,METR.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,2.3826,0.1230559175738294,0.1016,+,0.32509434251409264,False,False
+propio,METR.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,23.9883,1.1549945900254663e-06,0.3246,+,1.3089938686955284e-05,True,True
+propio,METR.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.1902,0.6628961985794283,0.0282,+,0.8505083302528513,False,False
+empresa,MIRG.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,2,1.4032,0.24654700697401657,-0.1015,−,0.4252370395515148,False,False
+empresa,MIRG.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,2,1.1339,0.3224148574329824,0.0895,+,0.48081763907887237,False,False
+empresa,MIRG.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,2,8.7617,0.00017604566233282845,0.304,+,0.0017419255009774605,True,True
+empresa,MIRG.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,2,2.9354,0.05381947770531464,0.1565,+,0.15383030747723447,False,False
+empresa,MOLI.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,1.0467,0.30664447602310096,-0.0698,−,0.4716807708010303,False,False
+empresa,MOLI.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,1.2646,0.2611950698125784,0.0695,+,0.44238444256544807,False,False
+empresa,MOLI.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,13.3386,0.000280704501224787,0.2336,+,0.002355598358516035,True,True
+empresa,MOLI.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,5.799,0.016309524258111975,0.155,+,0.0652380970324479,True,False
+empresa,MORI.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,2,2.1218,0.12065000239763989,-0.1559,−,0.2749667212855475,False,False
+empresa,MORI.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,2,0.8421,0.431268514629307,0.0215,+,0.5875252228283313,False,False
+empresa,MORI.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,2,4.6298,0.010083680292951458,0.2468,+,0.04623736329450912,True,True
+empresa,MORI.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,2,1.1783,0.30847109503363374,0.126,+,0.4716807708010303,False,False
+empresa,OEST.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.3897,0.5326488094609124,-0.042,−,0.6544965763310558,False,False
+empresa,OEST.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.106,0.7448882417969035,0.0212,+,0.8127161008642185,False,False
+empresa,OEST.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,16.6517,5.043526283664338e-05,0.278,+,0.0005926143383305597,True,True
+empresa,OEST.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,1.2197,0.26982621683299884,0.0743,+,0.4426472182692082,False,False
+empresa,PAMP.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,1.4711,0.22560799963975964,-0.0819,−,0.3963953638530356,False,False
+empresa,PAMP.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,3.7037,0.05472210379484373,0.1204,+,0.15383030747723447,False,False
+empresa,PAMP.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,13.2985,0.00028665214529069926,0.2329,+,0.002355598358516035,True,True
+empresa,PAMP.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,1.045,0.3070410800176404,0.065,+,0.4716807708010303,False,False
+propio,PAMP.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.6916,0.40585236339474234,0.0564,+,0.6272263797918745,False,False
+propio,PAMP.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,0.0127,0.9102731436199709,-0.0071,−,0.9522857502485849,False,False
+propio,PAMP.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,0.0439,0.8340677000915928,-0.0142,−,0.9205502916169801,False,False
+propio,PAMP.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.9679,0.3254857821642975,0.0666,+,0.5968935414942367,False,False
+empresa,RIGO.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,2.9344,0.08718295448318722,0.1124,+,0.2156630979320947,False,False
+empresa,RIGO.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.8562,0.3551461862381575,0.0601,+,0.5135960231751816,False,False
+empresa,RIGO.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,8.5187,0.0036354540064788094,0.1868,+,0.018472036573459895,True,True
+empresa,RIGO.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,1.6298,0.20217486162973483,0.0817,+,0.3690181940426228,False,False
+empresa,SAMI.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,2,0.5471,0.5789156988274088,-0.0863,−,0.6905455084718921,False,False
+empresa,SAMI.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,2,0.451,0.6371695785152638,0.0754,+,0.7259871561264825,False,False
+empresa,SAMI.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,2,5.3243,0.005088344108243532,0.1791,+,0.02452842800896882,True,True
+empresa,SAMI.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,2,2.9924,0.05086404357761374,0.2009,+,0.151784764961768,False,False
+empresa,SEMI.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,3,0.5566,0.6438388318635109,0.0211,+,0.7291668698213256,False,False
+empresa,SEMI.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,3,1.5339,0.20451344506109181,-0.062,−,0.3691305459669003,False,False
+empresa,SEMI.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,3,5.2663,0.001358413937180732,0.4056,+,0.007738843036059928,True,True
+empresa,SEMI.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,3,1.1436,0.3307093464848443,0.0871,+,0.4857293526496151,False,False
+empresa,SUPV.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,2.1464,0.1433793644733077,-0.1008,−,0.30286876989867245,False,False
+empresa,SUPV.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,6.397,0.011664247564571602,0.1584,+,0.04983814868498775,True,True
+empresa,SUPV.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,12.5436,0.00042567960572331313,0.2288,+,0.002963991328740106,True,True
+empresa,SUPV.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,1.1946,0.27480078385389156,0.0696,+,0.4426472182692082,False,False
+propio,SUPV.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,1.2734,0.25943310384476875,0.0786,+,0.5512953456701336,False,False
+propio,SUPV.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,1.7834,0.18208380905062047,0.0846,+,0.4127233005147397,False,False
+propio,SUPV.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,74.7775,2.5018981443645396e-17,0.5134,+,1.7012907381678869e-15,True,True
+propio,SUPV.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.0691,0.7926878102694409,-0.0151,−,0.9205502916169801,False,False
+empresa,TECO2.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.0037,0.9517888730601055,0.0042,+,0.9672232872178369,False,False
+empresa,TECO2.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.2712,0.6027139598132549,0.0358,+,0.700055065591641,False,False
+empresa,TECO2.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,7.3303,0.006956556929020673,0.1786,+,0.03269581756639716,True,True
+empresa,TECO2.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,4.0378,0.04489992690202433,0.1289,+,0.14244599247071585,True,False
+empresa,TGNO4.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.4723,0.49218142846843316,-0.0463,−,0.6332207924948756,False,False
+empresa,TGNO4.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.0962,0.7565176470810545,-0.0195,−,0.8127161008642185,False,False
+empresa,TGNO4.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,24.8915,7.773977351137501e-07,0.3138,+,3.7589517367072295e-05,True,True
+empresa,TGNO4.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,0.484,0.48685984145334515,0.0438,+,0.6312389668498544,False,False
+empresa,TGSU2.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,2.4996,0.11435961349564772,-0.1069,−,0.26542725107631815,False,False
+empresa,TGSU2.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.5755,0.4483614085819758,0.0493,+,0.5936052451648693,False,False
+empresa,TGSU2.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,8.9083,0.0029442062620545317,0.1897,+,0.015375299368507,True,True
+empresa,TGSU2.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,4.4651,0.034970914746218794,0.1356,+,0.12404777306205912,True,False
+propio,TGSU2.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.1148,0.7347840514639926,0.0228,+,0.9000658242221443,False,False
+propio,TGSU2.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,0.8771,0.34924386006229063,0.0604,+,0.5968935414942367,False,False
+propio,TGSU2.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,17.8119,2.6941054898135244e-05,0.2751,+,0.00018319917330731966,True,True
+propio,TGSU2.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,1.0185,0.31314977767846264,-0.0665,−,0.5968935414942367,False,False
+empresa,TRAN.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.1246,0.7242121236159166,-0.0241,−,0.7962098201157446,False,False
+empresa,TRAN.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,0.2844,0.5940119836075832,0.034,+,0.6979640807389103,False,False
+empresa,TRAN.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,24.8348,7.997769652568573e-07,0.3125,+,3.7589517367072295e-05,True,True
+empresa,TRAN.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,2.4055,0.1213948822696832,0.0961,+,0.2749667212855475,False,False
+propio,TRAN.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,2.7918,0.0951071611414151,0.1121,+,0.3079660456007727,False,False
+propio,TRAN.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,0.8704,0.35111384793778627,0.0585,+,0.5968935414942367,False,False
+propio,TRAN.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,9.4164,0.00221700277838497,0.2077,+,0.011596629917705997,True,True
+propio,TRAN.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.2094,0.6473301129048588,0.0306,+,0.8505083302528513,False,False
+empresa,TXAR.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.247,0.6193890374588448,-0.0337,−,0.7100313356235537,False,False
+empresa,TXAR.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,2.2846,0.13114067530798024,0.0859,+,0.2847268295681828,False,False
+empresa,TXAR.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,5.4006,0.020434125188133184,0.1508,+,0.07840031704834773,True,False
+empresa,TXAR.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,3.3837,0.06629496667413544,0.1198,+,0.1817491090963017,False,False
+propio,TXAR.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.5762,0.4480201338256074,0.051,+,0.6622906326117675,False,False
+propio,TXAR.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,2.3668,0.12430077802009423,-0.0863,−,0.32509434251409264,False,False
+propio,TXAR.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,7.5291,0.006195644518715274,0.1844,+,0.026331489204539916,True,True
+propio,TXAR.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,0.0418,0.8379891478976876,0.0138,+,0.9205502916169801,False,False
+empresa,VALO.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,0.0007,0.9796212241448036,0.0017,+,0.9848598403167009,False,False
+empresa,VALO.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,1.7107,0.1913462120126934,0.087,+,0.3627790171903006,False,False
+empresa,VALO.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,11.4694,0.000749715482453533,0.2198,+,0.004426733124354036,True,True
+empresa,VALO.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,4.299,0.038522962339485864,0.1328,+,0.12932708785398828,True,False
+empresa,YPFD.BA,sent_anormal,retorno,noticias → mercado,tono → retorno,1,1.0378,0.3087190054171135,-0.0698,−,0.4716807708010303,False,False
+empresa,YPFD.BA,sent_anormal,vol_anormal,noticias → mercado,tono → volumen,1,3.763,0.052825224801911756,0.1229,+,0.15383030747723447,False,False
+empresa,YPFD.BA,retorno,sent_anormal,mercado → noticias,retorno → tono,1,11.4599,0.0007534864892517508,0.2184,+,0.004426733124354036,True,True
+empresa,YPFD.BA,vol_anormal,sent_anormal,mercado → noticias,volumen → tono,1,1.8728,0.1716273486821706,0.0876,+,0.341673252129302,False,False
+propio,YPFD.BA,tono_propio,retorno,noticias → mercado,tono propio → retorno,1,0.0283,0.86638671501847,0.0113,+,0.9351475654167613,False,False
+propio,YPFD.BA,tono_propio,vol_anormal,noticias → mercado,tono propio → volumen,1,0.0411,0.83932526588607,0.0126,+,0.9205502916169801,False,False
+propio,YPFD.BA,retorno,tono_propio,mercado → noticias,retorno → tono propio,1,9.22,0.0024650785127155084,0.1999,+,0.01197323849033247,True,True
+propio,YPFD.BA,vol_anormal,tono_propio,mercado → noticias,volumen → tono propio,1,2.3921,0.12230903086487731,-0.101,−,0.32509434251409264,False,False
+sector,Comunicaciones (2),sent_anormal,ret_sector,noticias → mercado,tono → retorno,1,0.2534,0.6148252019993461,0.0353,+,0.7026573737135384,False,False
+sector,Comunicaciones (2),sent_anormal,vol_sector,noticias → mercado,tono → volumen,1,2.4835,0.11552491529039985,0.1082,+,0.2200474576959997,False,False
+sector,Comunicaciones (2),ret_sector,sent_anormal,mercado → noticias,retorno → tono,1,9.4243,0.002229568650354645,0.2056,+,0.00891827460141858,True,True
+sector,Comunicaciones (2),vol_sector,sent_anormal,mercado → noticias,volumen → tono,1,7.6218,0.005927773735579904,0.1794,+,0.021555540856654194,True,True
+sector,Conglomerado (3),sent_anormal,ret_sector,noticias → mercado,tono → retorno,3,0.2955,0.8286341979693018,0.0106,+,0.8722465241782125,False,False
+sector,Conglomerado (3),sent_anormal,vol_sector,noticias → mercado,tono → volumen,3,5.6001,0.0008563573962001242,-0.0651,−,0.003806032872000552,True,True
+sector,Conglomerado (3),ret_sector,sent_anormal,mercado → noticias,retorno → tono,3,11.503,2.3741754404862737e-07,0.4777,+,4.748350880972547e-06,True,True
+sector,Conglomerado (3),vol_sector,sent_anormal,mercado → noticias,volumen → tono,3,1.883,0.1311567655572497,0.1015,+,0.2384668464677267,False,False
+sector,Consumo (9),sent_anormal,ret_sector,noticias → mercado,tono → retorno,1,1.3507,0.24558492177865568,-0.0805,−,0.3638295137461565,False,False
+sector,Consumo (9),sent_anormal,vol_sector,noticias → mercado,tono → volumen,1,4.7459,0.029723777147332996,0.1318,+,0.08492507756380857,True,False
+sector,Consumo (9),ret_sector,sent_anormal,mercado → noticias,retorno → tono,1,16.6289,5.102926993505128e-05,0.2692,+,0.00040823415948041026,True,True
+sector,Consumo (9),vol_sector,sent_anormal,mercado → noticias,volumen → tono,1,6.9066,0.008788473242540515,0.177,+,0.029294910808468386,True,True
+sector,Energía (4),sent_anormal,ret_sector,noticias → mercado,tono → retorno,1,1.0207,0.31273438042874097,-0.0691,−,0.43135776610860826,False,False
+sector,Energía (4),sent_anormal,vol_sector,noticias → mercado,tono → volumen,1,0.3441,0.557680295020846,0.0373,+,0.6560944647304071,False,False
+sector,Energía (4),ret_sector,sent_anormal,mercado → noticias,retorno → tono,1,20.2011,8.238747000908061e-06,0.29,+,0.00010984996001210749,True,True
+sector,Energía (4),vol_sector,sent_anormal,mercado → noticias,volumen → tono,1,1.4203,0.23379161360349343,0.0767,+,0.35967940554383604,False,False
+sector,Financiero (8),sent_anormal,ret_sector,noticias → mercado,tono → retorno,4,1.8985,0.10908727790970138,-0.2053,−,0.2200474576959997,False,False
+sector,Financiero (8),sent_anormal,vol_sector,noticias → mercado,tono → volumen,4,1.8899,0.110569514583446,-0.1484,−,0.2200474576959997,False,False
+sector,Financiero (8),ret_sector,sent_anormal,mercado → noticias,retorno → tono,4,7.1885,1.1611219682536552e-05,0.492,+,0.00011611219682536551,True,True
+sector,Financiero (8),vol_sector,sent_anormal,mercado → noticias,volumen → tono,4,0.8284,0.5073473539848828,0.1455,+,0.6546417470772682,False,False
+sector,Industrial (3),sent_anormal,ret_sector,noticias → mercado,tono → retorno,4,1.278,0.27725719667779686,-0.008,−,0.39608170953970984,False,False
+sector,Industrial (3),sent_anormal,vol_sector,noticias → mercado,tono → volumen,4,2.277,0.05970334490608038,-0.2418,−,0.14047845860254207,False,False
+sector,Industrial (3),ret_sector,sent_anormal,mercado → noticias,retorno → tono,4,6.2373,6.339716561452786e-05,0.4366,+,0.0004226477707635191,True,True
+sector,Industrial (3),vol_sector,sent_anormal,mercado → noticias,volumen → tono,4,0.9116,0.45667778035792894,0.147,+,0.6089037071439053,False,False
+sector,Materiales (6),sent_anormal,ret_sector,noticias → mercado,tono → retorno,2,0.1918,0.8255574796044627,0.003,+,0.8722465241782125,False,False
+sector,Materiales (6),sent_anormal,vol_sector,noticias → mercado,tono → volumen,2,0.616,0.5404106574904518,-0.0141,−,0.6560944647304071,False,False
+sector,Materiales (6),ret_sector,sent_anormal,mercado → noticias,retorno → tono,2,7.3337,0.0007090484479999829,0.3578,+,0.0035452422399999146,True,True
+sector,Materiales (6),vol_sector,sent_anormal,mercado → noticias,volumen → tono,2,2.2823,0.10287014959170021,0.1432,+,0.2200474576959997,False,False
+sector,Real Estate (3),sent_anormal,ret_sector,noticias → mercado,tono → retorno,1,0.0186,0.8915999776975922,-0.0096,−,0.9026197912809427,False,False
+sector,Real Estate (3),sent_anormal,vol_sector,noticias → mercado,tono → volumen,1,5.5397,0.01888306359003299,0.1624,+,0.05810173412317843,True,False
+sector,Real Estate (3),ret_sector,sent_anormal,mercado → noticias,retorno → tono,1,14.0612,0.00019256252400751982,0.2437,+,0.0011003572800429705,True,True
+sector,Real Estate (3),vol_sector,sent_anormal,mercado → noticias,volumen → tono,1,1.9779,0.16008334900818633,0.0905,+,0.26680558168031054,False,False
+sector,Tecnología (1),sent_anormal,ret_sector,noticias → mercado,tono → retorno,2,3.449,0.0323648618767647,0.071,+,0.0863062983380392,True,False
+sector,Tecnología (1),sent_anormal,vol_sector,noticias → mercado,tono → volumen,2,0.6095,0.5439275168056087,0.049,+,0.6560944647304071,False,False
+sector,Tecnología (1),ret_sector,sent_anormal,mercado → noticias,retorno → tono,2,3.1459,0.04369038574285803,0.2228,+,0.10922596435714507,True,False
+sector,Tecnología (1),vol_sector,sent_anormal,mercado → noticias,volumen → tono,2,0.1025,0.9026197912809427,0.0245,+,0.9026197912809427,False,False
+sector,Utilities (8),sent_anormal,ret_sector,noticias → mercado,tono → retorno,4,1.4614,0.21239179096288285,-0.1312,−,0.3398268655406126,False,False
+sector,Utilities (8),sent_anormal,vol_sector,noticias → mercado,tono → volumen,4,1.7407,0.13935823846000542,-0.1457,−,0.2423621538434877,False,False
+sector,Utilities (8),ret_sector,sent_anormal,mercado → noticias,retorno → tono,4,10.5028,3.07719430423262e-08,0.5201,+,1.230877721693048e-06,True,True
+sector,Utilities (8),vol_sector,sent_anormal,mercado → noticias,volumen → tono,4,0.5122,0.726831138629187,0.102,+,0.80759015403243,False,False

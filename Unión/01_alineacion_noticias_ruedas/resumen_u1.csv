@@ -1,0 +1,21 @@
+metrica,valor,detalle
+notas,14012,
+notas_en_ventana_union,13925,ruedas 2025-05-05 a 2026-04-30
+notas_antes_de_la_ventana,10,ruedas de enero a abril de 2025
+notas_despues_del_calendario,77,después del cierre del 30/04/2026
+en_ventana_rueda_del_dia,8332,
+en_ventana_tras_el_cierre,3451,
+en_ventana_dia_sin_rueda,2142,
+pct_en_ventana_cambia_de_dia,40.2,
+notas_cambia_por_huso,95,UTC → hora argentina cambia la fecha
+notas_hora_sospechosa,1881,ambito 00:00; ambito 07:00; clarin 04:00; clarin 06:01; clarin 07:00; clarin 07:05; clarin 07:08; clarin 09:00; iprofesional 07:00; lanacion 01:05; lanacion 02:00; tn 05:44; tn 05:48; tn 05:55
+pct_hora_sospechosa,13.4,
+ruedas_ventana,244,
+notas_por_rueda_min,12,
+notas_por_rueda_mediana,55,
+notas_por_rueda_max,145,
+rueda_mas_notas,2025-08-18,145
+notas_mediana_lunes,85,los lunes reciben el fin de semana
+notas_mediana_resto,50,
+max_dias_hasta_rueda,5,2026-02-13
+controles_ok,10,de 10

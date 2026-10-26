@@ -1,0 +1,7 @@
+ticker,empresa,sector,oficial,dias,fecha_inicio,fecha_fin,pct_dias_con_volumen,vol_prom,estado
+CARC.BA,Carboclor,Materiales,False,462,2024-06-10,2026-04-30,39.0,16248.0,descargada
+HARG.BA,Holcim Argentina,Materiales,False,731,2023-05-03,2026-04-30,67.2,26464.0,descargada
+NQNO.BA,NII Holdings (Nextel),Comunicaciones,False,0,,,,,sin_datos
+POLL.BA,Polledo,Conglomerado,False,731,2023-05-03,2026-04-30,50.2,977.0,descargada
+ROSE.BA,Instituto Rosenbusch,Salud,False,731,2023-05-03,2026-04-30,87.3,55772.0,descargada
+TGLT.BA,TGLT SA (hoy GCDI),Real Estate,False,0,,,,,sin_datos

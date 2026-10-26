@@ -1,0 +1,29 @@
+version,nivel,medida,clave,n,promedio_eventos,promedio_dia_cualquiera,por_encima,p_t,p_signo,p_azar,p_bh,significativo_bh
+principal (por día de calendario),mercado,|retorno anormal| del día [0],abs_ra_dia,6,0.0211,0.0183,4,0.58975,0.6875,0.6416,0.956,False
+principal (por día de calendario),mercado,"volumen anormal antes [−3, −1]","vol_antes [−3, −1]",6,0.00542,-0.01579,3,0.9622,1.0,0.8588,0.956,False
+principal (por día de calendario),mercado,volumen anormal día [0],vol_día [0],6,-0.00309,-0.02721,3,0.98391,1.0,0.8862,0.956,False
+principal (por día de calendario),mercado,"volumen anormal después [+1, +5]","vol_después [+1, +5]",6,-0.04213,-0.03487,3,0.66144,1.0,0.956,0.956,False
+principal (por día de calendario),mercado,"CAR antes [−3, −1]","car_antes [−3, −1]",6,0.00936,-0.00175,4,0.74606,0.6875,0.517,0.956,False
+principal (por día de calendario),mercado,CAR día [0],car_día [0],6,-0.01498,-0.00073,1,0.12832,0.21875,0.1266,0.4431,False
+principal (por día de calendario),mercado,"CAR después [+1, +5]","car_después [+1, +5]",6,0.00855,-0.00449,3,0.74715,1.0,0.6004,0.956,False
+principal (por día de calendario),empresas,|retorno anormal| del día [0],abs_ra_dia,105,0.02018,0.01609,52,0.02695,1.0,0.0084,0.0588,False
+principal (por día de calendario),empresas,"volumen anormal antes [−3, −1]","vol_antes [−3, −1]",105,0.03759,-0.0433,55,0.38543,0.69647,0.0508,0.23707,False
+principal (por día de calendario),empresas,volumen anormal día [0],vol_día [0],105,0.13878,-0.05437,66,0.04381,0.01082,0.0012,0.0168,True
+principal (por día de calendario),empresas,"volumen anormal después [+1, +5]","vol_después [+1, +5]",105,-0.04493,-0.0524,49,0.23769,0.55839,0.849,0.956,False
+principal (por día de calendario),empresas,"CAR antes [−3, −1]","car_antes [−3, −1]",105,0.00049,0.00028,54,0.92413,0.84537,0.9516,0.956,False
+principal (por día de calendario),empresas,CAR día [0],car_día [0],105,0.00125,8e-05,52,0.64227,1.0,0.5906,0.956,False
+principal (por día de calendario),empresas,"CAR después [+1, +5]","car_después [+1, +5]",105,-0.00018,0.00055,54,0.97505,0.84537,0.9052,0.956,False
+especificación original (por rueda),mercado,|retorno anormal| del día [0],abs_ra_dia,12,0.01402,0.0183,4,0.31848,0.3877,0.2942,0.51485,False
+especificación original (por rueda),mercado,"volumen anormal antes [−3, −1]","vol_antes [−3, −1]",12,-0.16504,-0.01579,4,0.16813,0.3877,0.098,0.22867,False
+especificación original (por rueda),mercado,volumen anormal día [0],vol_día [0],12,-0.09513,-0.02721,2,0.38178,0.03857,0.5604,0.5604,False
+especificación original (por rueda),mercado,"volumen anormal después [+1, +5]","vol_después [+1, +5]",12,-0.16662,-0.03487,3,0.02531,0.146,0.0612,0.17136,False
+especificación original (por rueda),mercado,"CAR antes [−3, −1]","car_antes [−3, −1]",12,-0.02588,-0.00175,3,0.03991,0.146,0.0554,0.17136,False
+especificación original (por rueda),mercado,CAR día [0],car_día [0],12,-0.00898,-0.00073,3,0.11348,0.146,0.2122,0.4244,False
+especificación original (por rueda),mercado,"CAR después [+1, +5]","car_después [+1, +5]",12,-0.01571,-0.00449,7,0.40134,0.77441,0.5026,0.5604,False
+especificación original (por rueda),empresas,|retorno anormal| del día [0],abs_ra_dia,105,0.0215,0.01609,49,0.00731,0.55839,0.0008,0.0112,True
+especificación original (por rueda),empresas,"volumen anormal antes [−3, −1]","vol_antes [−3, −1]",105,0.03911,-0.0433,52,0.34377,1.0,0.0548,0.17136,False
+especificación original (por rueda),empresas,volumen anormal día [0],vol_día [0],105,0.12459,-0.05437,65,0.05335,0.01874,0.003,0.021,True
+especificación original (por rueda),empresas,"volumen anormal después [+1, +5]","vol_después [+1, +5]",105,-0.03267,-0.0524,52,0.37754,1.0,0.5592,0.5604,False
+especificación original (por rueda),empresas,"CAR antes [−3, −1]","car_antes [−3, −1]",105,-0.00213,0.00028,49,0.6471,0.55839,0.5526,0.5604,False
+especificación original (por rueda),empresas,CAR día [0],car_día [0],105,0.00186,8e-05,55,0.52118,0.69647,0.4056,0.5604,False
+especificación original (por rueda),empresas,"CAR después [+1, +5]","car_después [+1, +5]",105,-0.00274,0.00055,45,0.68665,0.17156,0.5338,0.5604,False

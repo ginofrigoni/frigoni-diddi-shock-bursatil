@@ -1,0 +1,68 @@
+{
+  "division": "dataset_v2",
+  "seed": 2,
+  "minutos": 1.36,
+  "historial_val": [
+    {
+      "epoca": 1,
+      "val_f1_macro": 0.7119,
+      "val_loss": 0.7075
+    },
+    {
+      "epoca": 2,
+      "val_f1_macro": 0.7324,
+      "val_loss": 0.6469
+    },
+    {
+      "epoca": 3,
+      "val_f1_macro": 0.7508,
+      "val_loss": 0.6743
+    },
+    {
+      "epoca": 4,
+      "val_f1_macro": 0.7197,
+      "val_loss": 0.8426
+    },
+    {
+      "epoca": 5,
+      "val_f1_macro": 0.7356,
+      "val_loss": 0.9189
+    }
+  ],
+  "mejor_epoca": 3,
+  "test": {
+    "f1_macro": 0.6953,
+    "accuracy": 0.6997,
+    "f1_POS": 0.696,
+    "f1_NEG": 0.6978,
+    "f1_NEU": 0.7237,
+    "f1_MIXTO": 0.6638,
+    "n": 786
+  },
+  "matriz_confusion": [
+    [
+      166,
+      27,
+      33,
+      14
+    ],
+    [
+      12,
+      142,
+      15,
+      13
+    ],
+    [
+      43,
+      28,
+      165,
+      4
+    ],
+    [
+      16,
+      28,
+      3,
+      77
+    ]
+  ]
+}

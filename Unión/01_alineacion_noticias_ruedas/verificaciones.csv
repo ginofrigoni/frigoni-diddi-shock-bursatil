@@ -1,0 +1,11 @@
+control,pasa
+Cada nota tiene una rueda o un motivo para no tenerla,True
+Ninguna nota va a una rueda anterior a su publicación,True
+Ninguna nota publicada tras el cierre queda en la rueda del mismo día,True
+Las URLs coinciden una a una con finetuned_articulos.csv,True
+El portal coincide con finetuned_articulos.csv,True
+La fecha sin convertir reproduce la fecha de Gino,True
+Todas las ruedas de la ventana tienen noticias,True
+Cantidad de ruedas igual al diagnóstico,True
+Mínimo y mediana de notas por rueda iguales al diagnóstico,True
+Notas con hora sospechosa iguales al diagnóstico,True

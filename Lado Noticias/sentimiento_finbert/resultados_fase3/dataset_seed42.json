@@ -1,0 +1,86 @@
+{
+  "division": "dataset",
+  "seed": 42,
+  "minutos": 1.38,
+  "historial_val": [
+    {
+      "epoca": 1,
+      "val_f1_macro": 0.7108,
+      "val_loss": 0.7398
+    },
+    {
+      "epoca": 2,
+      "val_f1_macro": 0.7099,
+      "val_loss": 0.7163
+    },
+    {
+      "epoca": 3,
+      "val_f1_macro": 0.7162,
+      "val_loss": 0.7758
+    },
+    {
+      "epoca": 4,
+      "val_f1_macro": 0.7321,
+      "val_loss": 0.8648
+    },
+    {
+      "epoca": 5,
+      "val_f1_macro": 0.7316,
+      "val_loss": 0.924
+    }
+  ],
+  "mejor_epoca": 4,
+  "test": {
+    "f1_macro": 0.7421,
+    "accuracy": 0.7524,
+    "f1_POS": 0.7578,
+    "f1_NEG": 0.7737,
+    "f1_NEU": 0.7531,
+    "f1_MIXTO": 0.6839,
+    "n": 824
+  },
+  "matriz_confusion": [
+    [
+      183,
+      13,
+      33,
+      11
+    ],
+    [
+      17,
+      188,
+      26,
+      9
+    ],
+    [
+      29,
+      25,
+      183,
+      3
+    ],
+    [
+      14,
+      20,
+      4,
+      66
+    ]
+  ],
+  "test_sin_textos_de_train": {
+    "f1_macro": 0.7326,
+    "accuracy": 0.7433,
+    "f1_POS": 0.7526,
+    "f1_NEG": 0.7709,
+    "f1_NEU": 0.733,
+    "f1_MIXTO": 0.6739,
+    "n": 783
+  },
+  "test_solo_textos_de_train": {
+    "f1_macro": 0.9214,
+    "accuracy": 0.9268,
+    "f1_POS": 1.0,
+    "f1_NEG": 0.8421,
+    "f1_NEU": 0.9545,
+    "f1_MIXTO": 0.8889,
+    "n": 41
+  }
+}

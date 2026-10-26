@@ -1,0 +1,471 @@
+[
+  {
+    "carpeta": "01_scraping_acciones",
+    "clave": "nanyonga2025",
+    "archivo": "papers/2025_Illiquid_stock_prices_correlation.pdf",
+    "cita": "Nanyonga, E., Kasozi, J., Mayambala, F., Kayondo, H. W. y Davison, M. (2025). A Stochastic Model for Illiquid Stock Prices and its Conclusion about Correlation Measurement. Research in Mathematics, 13(1), 2026. arXiv:2509.10553.",
+    "enlace": "https://arxiv.org/abs/2509.10553",
+    "idioma": "inglés",
+    "sobre": "Modela los precios de la bolsa de Uganda, que pasan gran parte del tiempo sin cambiar por falta de operaciones. Muestra que cuantos más días \"quietos\" tiene una acción, más baja sale su correlación medida con otras, aunque la relación de fondo sea alta.",
+    "relacion": "Respalda el criterio de ≥ 90% de días con volumen real: los días con Volume = 0 (precio pegado) no solo ensucian la serie de esa acción, también achican artificialmente sus correlaciones con las demás — justo la medida que usan el clustering (02) y el VAR."
+  },
+  {
+    "carpeta": "01_scraping_acciones",
+    "clave": "lesmond1999",
+    "archivo": null,
+    "cita": "Lesmond, D. A., Ogden, J. P. y Trzcinka, C. A. (1999). A New Estimate of Transaction Costs. Review of Financial Studies, 12(5), 1113–1141.",
+    "enlace": "https://ideas.repec.org/a/oup/rfinst/v12y1999i5p1113-41.html",
+    "idioma": "inglés",
+    "no_descargado": "acceso por suscripción (Oxford University Press / JSTOR)",
+    "sobre": "Usa la frecuencia de días con retorno cero como medida de iliquidez y de costos de transacción de una acción.",
+    "relacion": "Es la referencia clásica para medir liquidez a partir de días sin movimiento de precio — la misma lógica del criterio de porcentaje de días con volumen real."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "mantegna1999",
+    "archivo": "papers/1999_Mantegna_hierarchical_structure.pdf",
+    "cita": "Mantegna, R. N. (1999). Hierarchical Structure in Financial Markets. European Physical Journal B, 11, 193–197. arXiv:cond-mat/9802256.",
+    "enlace": "https://arxiv.org/abs/cond-mat/9802256",
+    "idioma": "inglés",
+    "sobre": "Construye el árbol de expansión mínima (MST) a partir de las correlaciones entre los retornos de todas las acciones y muestra que el árbol agrupa a las empresas por sector económico.",
+    "relacion": "Es el origen del método MST que usamos. Mantegna usa la distancia √(2(1 − ρ)) y nosotros 1 − ρ; el árbol resultante es el mismo, porque el MST solo depende del orden de las distancias y una es función creciente de la otra."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "rousseeuw1987",
+    "archivo": null,
+    "cita": "Rousseeuw, P. J. (1987). Silhouettes: a graphical aid to the interpretation and validation of cluster analysis. Journal of Computational and Applied Mathematics, 20, 53–65.",
+    "enlace": "https://ftp.math.utah.edu/pub/tex/bib/idx/jcomputapplmath1980/20/z/53_65.html",
+    "idioma": "inglés",
+    "no_descargado": "acceso por suscripción (Elsevier)",
+    "sobre": "Introduce el índice de silueta: para cada elemento compara qué tan cerca está de su propio grupo y qué tan lejos del grupo más cercano; el promedio sirve para evaluar un agrupamiento y elegir la cantidad de grupos.",
+    "relacion": "Es la medida con la que se elige el k de cada combinación y se ordena el ranking de la sección 3."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "onnela2003",
+    "archivo": "papers/2003_Onnela_dynamic_asset_trees.pdf",
+    "cita": "Onnela, J.-P., Chakraborti, A., Kaski, K. y Kertész, J. (2003). Dynamic asset trees and Black Monday. Physica A, 324, 247. arXiv:cond-mat/0212037.",
+    "enlace": "https://arxiv.org/abs/cond-mat/0212037",
+    "idioma": "inglés",
+    "sobre": "Sigue el árbol MST en el tiempo y muestra que se \"encoge\" durante una crisis (el Lunes Negro de 1987): en los días de pánico todas las acciones pasan a moverse juntas.",
+    "relacion": "Ayuda a entender por qué en un período con shocks fuertes, como 2025 en Argentina, la estructura de grupos se vuelve difusa: en los días extremos todo el panel se correlaciona y las familias se desdibujan."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "marti2021",
+    "archivo": "papers/2017_Marti_review_correlations_clustering.pdf",
+    "cita": "Marti, G., Nielsen, F., Bińkowski, M. y Donnat, P. (2021). A review of two decades of correlations, hierarchies, networks and clustering in financial markets. En Progress in Information Geometry, 245–274. arXiv:1703.00485.",
+    "enlace": "https://arxiv.org/abs/1703.00485",
+    "idioma": "inglés",
+    "sobre": "Revisión de veinte años de investigación sobre clustering de series financieras: distancias basadas en correlación, métodos jerárquicos, árboles y redes.",
+    "relacion": "Marco general del paso: documenta las decisiones que tomamos (distancia 1 − correlación, linkage jerárquico, MST) y sus limitaciones conocidas."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "pharasi2020",
+    "archivo": "papers/2020_Market_states_UNAM.pdf",
+    "cita": "Pharasi, H. K., Seligman, E. y Seligman, T. H. (2020). Market states: A new understanding. arXiv:2003.07058.",
+    "enlace": "https://arxiv.org/abs/2003.07058",
+    "idioma": "inglés",
+    "sobre": "Agrupa períodos (no acciones) del S&P 500 y del Nikkei 225 según la estructura de sus matrices de correlación, y llama \"estados de mercado\" a los grupos resultantes. Autores de la UNAM.",
+    "relacion": "Es el puente entre este paso y el HMM (06): usa clustering para encontrar regímenes de mercado, la misma idea que el régimen Calmo / Moderado / Tenso pero por otro camino."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "ghosh2025",
+    "archivo": "papers/2025_Kmeans_49_stocks_India.pdf",
+    "cita": "Ghosh, D. (2025). Polyspectral Mean based Time Series Clustering of Indian Stock Market. Discover Data, 3, 10. arXiv:2504.07021.",
+    "enlace": "https://arxiv.org/abs/2504.07021",
+    "idioma": "inglés",
+    "sobre": "Aplica K-Means sobre 49 acciones del mercado indio, describiendo cada serie con información espectral.",
+    "relacion": "Panel de tamaño casi igual al nuestro (47 acciones) en un mercado emergente: referencia directa para comparar el uso de K-Means sobre una representación resumida de cada acción, como nuestras 13 features."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "arratia2013",
+    "archivo": "papers/2011_Temporal_evolution_clusters.pdf",
+    "cita": "Arratia, A. y Cabaña, A. (2013). Tracing the temporal evolution of clusters in a financial stock market. Computational Economics, 41, 213–231. arXiv:1111.3127.",
+    "enlace": "https://arxiv.org/abs/1111.3127",
+    "idioma": "inglés",
+    "sobre": "Agrupa 34 acciones del IBEX 35 (Bolsa de Madrid) en 2008-2009 y propone una forma de seguir cómo cambian los clusters a lo largo del tiempo.",
+    "relacion": "Muestra que los grupos de acciones no son fijos sino que cambian entre períodos — consistente con que nuestros resultados difieran entre la ventana de 1 año y la de 3 años."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "ramirez2025",
+    "archivo": "papers/2025_HRP_NUAM_Latinoamerica.pdf",
+    "cita": "Ramírez-Carrillo, G., Ortiz-Mora, D. y Aguilar-Larrotta, A. (2025). Hierarchical Risk Parity for Portfolio Allocation in the Latin American NUAM Market. arXiv:2509.03712.",
+    "enlace": "https://arxiv.org/abs/2509.03712",
+    "idioma": "inglés",
+    "sobre": "Aplica clustering jerárquico de acciones para armar carteras en el mercado regional NUAM (Chile, Colombia y Perú). Universidad del Rosario.",
+    "relacion": "Antecedente latinoamericano de clustering jerárquico sobre correlaciones de acciones, en mercados emergentes de tamaño comparable al argentino."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "alexandre2021",
+    "archivo": "papers/2021_Risk_centrality_Brasil.pdf",
+    "cita": "Alexandre, M., Lopes de Moraes, K. y Rodrigues, F. A. (2021). Risk-dependent centrality in the Brazilian stock market. arXiv:2103.09059.",
+    "enlace": "https://arxiv.org/abs/2103.09059",
+    "idioma": "inglés",
+    "sobre": "Calcula qué acciones son más \"centrales\" en la red de la bolsa brasileña (2008-2020) y muestra que ese orden cambia según el nivel de riesgo externo y las crisis.",
+    "relacion": "En el mercado vecino, la estructura de relaciones entre acciones es inestable y depende de los shocks — otra razón por la que un grupo encontrado en una ventana puede no repetirse en otra."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "huth2011",
+    "archivo": "papers/2011_Lead_lag_relationships.pdf",
+    "cita": "Huth, N. y Abergel, F. (2011). High Frequency Lead/lag Relationships — Empirical facts. arXiv:1111.7103.",
+    "enlace": "https://arxiv.org/abs/1111.7103",
+    "idioma": "inglés",
+    "sobre": "Con datos tick a tick, muestra que algunos activos siguen a otros con un pequeño retraso: los más líquidos tienden a adelantarse a las acciones más chicas, y las acciones más correlacionadas entre sí son las que tienen niveles de liquidez parecidos.",
+    "relacion": "Respalda los dos puntos de la sección 4 y la conclusión: que la liquidez arma grupos por sí misma (las acciones se parecen en correlación cuando se parecen en liquidez) y que en el VAR las acciones poco líquidas pueden parecer reaccionar con retraso respecto de las más operadas."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "busca2023",
+    "archivo": "papers/2023_Epps_effect_momentum_traders.pdf",
+    "cita": "Busca, J. y Thomir, L. (2023). Epps Effect and the Signature of Short-Term Momentum Traders. arXiv:2309.06711.",
+    "enlace": "https://arxiv.org/abs/2309.06711",
+    "idioma": "inglés",
+    "sobre": "Parte del efecto Epps (Epps, 1979): la correlación entre los retornos de dos activos relacionados baja cuando se mide en horizontes cortos, porque no se actualizan al mismo tiempo. El paper estudia una excepción en divisas y criptomonedas.",
+    "relacion": "Es el mismo mecanismo que separa a las acciones poco líquidas: si una acción tarda en actualizar su precio, su correlación diaria con el resto sale más baja que la real. Medido a horizontes más largos (semanal), la diferencia se achicaría."
+  },
+  {
+    "carpeta": "02_clustering_acciones",
+    "clave": "lomackinlay1990",
+    "archivo": null,
+    "cita": "Lo, A. W. y MacKinlay, A. C. (1990). An econometric analysis of nonsynchronous trading. Journal of Econometrics, 45(1–2), 181–211.",
+    "enlace": "https://www.nber.org/papers/w2960",
+    "idioma": "inglés",
+    "no_descargado": "acceso por suscripción (Elsevier); la versión de trabajo del MIT bloquea la descarga automática",
+    "sobre": "Modela qué pasa con las estadísticas de los retornos cuando las acciones no operan todos los días: los precios atrasados generan correlaciones y adelantos/retrasos espurios entre acciones.",
+    "relacion": "Es la referencia clásica de la advertencia para la etapa siguiente: en las acciones de baja liquidez (GCDI, RIGO, GRIM, GARO), un test de Granger puede detectar un retraso que es efecto del precio atrasado y no una reacción real."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "segovia2022",
+    "archivo": "papers/2022_Segovia_Favata_VaR_GARCH_Argentina.pdf",
+    "cita": "Segovia, M. y Favata, F. (2022). Estimación del Valor a Riesgo del mercado accionario argentino mediante modelos GARCH. Revista de la Facultad de Ciencias Económicas (UNNE), 29(2), 7–27. https://doi.org/10.30972/rfce.2926286",
+    "enlace": "https://revistas.unne.edu.ar/index.php/rfce/article/view/6286",
+    "idioma": "español",
+    "sobre": "Modela la volatilidad diaria del S&P Merval con GARCH, GJR-GARCH y E-GARCH, para estimar el Valor a Riesgo. El mejor modelo resulta un E-GARCH(1,1) con distribución t de Student.",
+    "relacion": "Confirma sobre el mismo índice que la volatilidad del Merval se agrupa en períodos de alta y baja volatilidad — la base para que tengan sentido un VIX realizado y, después, un HMM de regímenes. Es también una alternativa más elaborada (volatilidad condicional) a nuestro desvío móvil."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "segovia2022wp",
+    "archivo": "papers/2022_AAEP_4562_VaR_GARCH_Argentina_wp.pdf",
+    "cita": "Segovia, M. y Favata, F. (2022). Estimación del Valor a Riesgo del mercado accionario argentino mediante modelos GARCH. Anales de la Asociación Argentina de Economía Política, documento 4562.",
+    "enlace": "https://ideas.repec.org/p/aep/anales/4562.html",
+    "idioma": "español",
+    "sobre": "Versión de trabajo, presentada en la AAEP, del artículo anterior.",
+    "relacion": "Mismo contenido que la versión publicada; se conserva como respaldo. Para citar, usar la versión de la revista."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "larre2019",
+    "archivo": "papers/2019_Larre_Auza_ARIMA-GARCH_Merval_UNL.pdf",
+    "cita": "Larre, T. F. y Auza, J. (2019). Modelización financiera mediante modelos híbridos Arima–Garch: evidencia para Argentina. Ciencias Económicas (UNL), 16(2), 29–45.",
+    "enlace": "https://bibliotecavirtual.unl.edu.ar/publicaciones/index.php/CE/article/view/9268",
+    "idioma": "español",
+    "sobre": "Modela la volatilidad de los retornos del Merval entre enero de 2013 y junio de 2016 con modelos ARIMA–GARCH. Confirma asimetría y efecto apalancamiento, y el mejor modelo resulta un E–GARCH con distribución t de Student. Autores de la UBA.",
+    "relacion": "Segundo antecedente argentino, sobre otro período, que llega a la misma conclusión que Segovia y Favata (2022): la volatilidad del Merval se agrupa y responde más a las caídas. Refuerza las dos ideas de este paso — que medir el nerviosismo del mercado día a día tiene sentido, y que nuestro VIX realizado, al ser simétrico, no captura el efecto apalancamiento."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "otuki2008",
+    "archivo": "papers/2008_Otuki_asimetria_volatilidad_Ibovespa_Merval_Inmex.pdf",
+    "cita": "Otuki, T. F., Radavelli, C. H., Seabra, F. y da Costa Jr., N. C. A. (2008). Assimetria na volatilidade dos retornos revisitada: Ibovespa, Merval e Inmex. Revista de Gestão USP, 15(4), 71–84.",
+    "enlace": "https://revistas.usp.br/rege/article/view/36654",
+    "idioma": "portugués",
+    "sobre": "Con modelos de la familia ARCH, encuentra que en el Merval, el Ibovespa y el Inmex (2000-2005) las caídas aumentan la volatilidad más que las subas de igual tamaño, y que los shocks persisten varios períodos.",
+    "relacion": "Marca una limitación de nuestro VIX realizado: es simétrico por construcción (sube igual con una suba que con una caída — el máximo de 91% vino de una suba del 21,8%), mientras que la evidencia para el Merval indica que las caídas pesan más."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "calandroni2026",
+    "archivo": "papers/2026_Calandroni_elecciones_Merval_UTDT.pdf",
+    "cita": "Calandroni, S. (2026). Impacto de las elecciones sobre el MERVAL (2011-2023). Tesis de maestría, Universidad Torcuato Di Tella.",
+    "enlace": "https://repositorio.utdt.edu/handle/20.500.13098/14461",
+    "idioma": "español",
+    "sobre": "Estudio de eventos sobre el Merval en dólares (CCL) alrededor de las PASO, generales y balotajes de 2011 a 2023, con el S&P 500 como referencia. La reacción del mercado no es uniforme entre elecciones y se concentra en pocos episodios; las PASO tienen un rol informativo especial. Usa datos de Yahoo Finance.",
+    "relacion": "Da el contexto de los picos del VIX de la sección 4: los dos episodios del segundo semestre de 2025 arrancan el día hábil siguiente a una elección (08/09 y 27/10). Confirma que en Argentina las elecciones operan como shocks de información sobre el mercado — aunque su período termina en 2023 y no cubre las de 2025."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "sakowski2023",
+    "archivo": "papers/2023_Implied_realized_volatility_systemic_risk.pdf",
+    "cita": "Sakowski, P., Sieradzki, R. y Ślepaczuk, R. (2023). Systemic risk indicator based on implied and realized volatility. arXiv:2307.05719.",
+    "enlace": "https://arxiv.org/abs/2307.05719",
+    "idioma": "inglés",
+    "sobre": "Propone un indicador de riesgo sistémico que combina volatilidad implícita y realizada, aplicado a Estados Unidos, Europa, Brasil y Japón entre 2000 y 2023.",
+    "relacion": "Usa la volatilidad realizada como componente de un índice de riesgo de mercado, incluido un emergente latinoamericano — respalda medir el nerviosismo con volatilidad realizada cuando no hay un mercado de opciones líquido para la implícita."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "papaioannou2014",
+    "archivo": "papers/2014_Ghost_features_moving_average.pdf",
+    "cita": "Papaioannou, G., Papaioannou, P. y Parliaris, N. (2014). Modeling the stylized facts of wholesale system marginal price (SMP) and the impacts of regulatory reforms on the Greek Electricity Market. arXiv:1401.5452.",
+    "enlace": "https://arxiv.org/abs/1401.5452",
+    "idioma": "inglés",
+    "sobre": "Al modelar la volatilidad de precios eléctricos, señala que la media móvil con pesos iguales genera \"ghost features\" (rasgos fantasma) en la serie de volatilidad, y la reemplaza por una media exponencial (EWMA) que los elimina.",
+    "relacion": "Es la referencia directa del \"eco de la ventana de 20 días\" de la sección 3: el mismo artefacto, con nombre propio en la literatura. También señala la mejora posible: una EWMA, que olvida los shocks de a poco en vez de soltarlos de golpe a las 20 ruedas."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "riskmetrics1996",
+    "archivo": "papers/1996_RiskMetrics_Technical_Document.pdf",
+    "cita": "J.P. Morgan y Reuters (1996). RiskMetrics — Technical Document (4.ª edición). Nueva York: J.P. Morgan.",
+    "enlace": "https://www.msci.com/documents/10199/5915b101-4206-4ba0-aee2-3449d5c7e95a",
+    "idioma": "inglés",
+    "sobre": "El documento técnico que estandarizó la medición de riesgo de mercado con la media móvil exponencial (EWMA): cada día pesa un poco menos que el siguiente, con un factor de decaimiento de 0,94 para datos diarios.",
+    "relacion": "Es la fuente de la mejora posible al eco de 20 días: con una EWMA, un shock como el del 27/10/2025 se iría olvidando de a poco en lugar de salir de golpe del cálculo 20 ruedas después."
+  },
+  {
+    "carpeta": "03_vix_argentino",
+    "clave": "xenofontos2014",
+    "archivo": null,
+    "cita": "Xenofontos, A. (2014). Modelling and Forecasting Volatility of Stock Index Return Using GARCH Models: an Empirical Evidence of Argentina. Tesis de maestría, University of Nottingham.",
+    "enlace": "https://eprints.nottingham.ac.uk/27379",
+    "idioma": "inglés",
+    "no_descargado": "acceso restringido a usuarios de la University of Nottingham",
+    "sobre": "Modela la volatilidad del Merval (2002-2014) con GARCH simétricos y asimétricos: la encuentra variable en el tiempo, persistente, predecible y asimétrica.",
+    "relacion": "Antecedente directo de la medición de volatilidad del Merval; coincide en la persistencia que después captura el HMM."
+  },
+  {
+    "carpeta": "04_adf",
+    "clave": "dickeyfuller1979",
+    "archivo": null,
+    "cita": "Dickey, D. A. y Fuller, W. A. (1979). Distribution of the Estimators for Autoregressive Time Series with a Unit Root. Journal of the American Statistical Association, 74(366), 427–431. https://doi.org/10.2307/2286348",
+    "enlace": "https://www.jstor.org/stable/2286348",
+    "idioma": "inglés",
+    "no_descargado": "acceso por suscripción (JSTOR)",
+    "sobre": "El artículo original del test de Dickey-Fuller para detectar raíz unitaria (no estacionariedad) en una serie temporal.",
+    "relacion": "Es el test que se aplica en este paso, en su versión aumentada (ADF)."
+  },
+  {
+    "carpeta": "04_adf",
+    "clave": "zablotsky2002",
+    "archivo": "papers/2002_Zablotsky_eficiencia_mercado_argentino.pdf",
+    "cita": "Zablotsky, E. E. (2002). Consideraciones sobre la eficiencia del mercado de capitales argentino. Documento de trabajo 213, Universidad del CEMA.",
+    "enlace": "https://www.ucema.edu.ar/publicaciones/download/documentos/213.pdf",
+    "idioma": "español",
+    "sobre": "Discute la hipótesis de que los precios del mercado argentino siguen un paseo aleatorio (random walk), comparando su comportamiento con el de mercados internacionales.",
+    "relacion": "Si el precio sigue un paseo aleatorio, tiene raíz unitaria y su retorno es estacionario — exactamente el patrón que da nuestro ADF (precios no estacionarios, retornos estacionarios). Es el antecedente argentino del paso."
+  },
+  {
+    "carpeta": "04_adf",
+    "clave": "worthington2003",
+    "archivo": null,
+    "cita": "Worthington, A. y Higgs, H. (2003). An empirical note on the random walk behaviour and market efficiency of Latin American stock markets. Empirical Economics Letters, 2(5), 183–197.",
+    "enlace": "https://ro.uow.edu.au/commpapers/298",
+    "idioma": "inglés",
+    "no_descargado": "el repositorio no ofrece el PDF de forma pública",
+    "sobre": "Aplica ADF, Phillips-Perron, KPSS y pruebas de razón de varianza a los retornos diarios de siete mercados latinoamericanos, Argentina incluida, y rechaza el paseo aleatorio en todos.",
+    "relacion": "Aplica el mismo test al mercado argentino. Aclara además un límite: que el precio tenga raíz unitaria (lo que confirmamos) no alcanza para hablar de eficiencia, porque los retornos pueden tener autocorrelación."
+  },
+  {
+    "carpeta": "04_adf",
+    "clave": "medina2013",
+    "archivo": "papers/2013_Medina_caminata_aleatoria_Latinoamerica_UIS.pdf",
+    "cita": "Medina Pérez, A. (2013). Comprobación de la existencia de la caminata aleatoria en los principales mercados de valores latinoamericanos. Trabajo de grado, Universidad Industrial de Santander (Colombia).",
+    "enlace": "https://noesis.uis.edu.co/handle/20.500.14071/28168",
+    "idioma": "español",
+    "sobre": "Aplica el ADF y otras pruebas de paseo aleatorio al índice principal y a las acciones más grandes de Brasil, Chile, Colombia, México y Perú (2002–2012), en el período total y en cinco subperíodos de dos años. Rechaza el paseo aleatorio en todos los mercados, y encuentra que los índices lo rechazan más que las acciones individuales (\"micro-eficiente pero macro-ineficiente\"). No incluye a Argentina.",
+    "relacion": "Es el antecedente regional más parecido al diseño de este paso: ADF sobre acciones individuales, no solo sobre el índice. Además muestra que el resultado cambia entre subperíodos, lo que respalda correr el test sobre la ventana exacta del análisis final."
+  },
+  {
+    "carpeta": "04_adf",
+    "clave": "jain2020",
+    "archivo": "papers/2020_Efficiency_Indian_stock_market.pdf",
+    "cita": "Jain, D., Patel, M., Narsaria, A. y Malik, S. (2020). A Study on the Efficiency of the Indian Stock Market. arXiv:2012.01160.",
+    "enlace": "https://arxiv.org/abs/2012.01160",
+    "idioma": "inglés",
+    "sobre": "Usa el ADF para verificar la estacionariedad de los índices Sensex y Nifty antes de modelarlos con ARMA y GARCH.",
+    "relacion": "Mismo uso del ADF que el nuestro: como paso previo obligatorio para decidir con qué serie se puede modelar."
+  },
+  {
+    "carpeta": "04_adf",
+    "clave": "malafeyev2017",
+    "archivo": "papers/2017_Random_walks_China_India.pdf",
+    "cita": "Malafeyev, O., Awasthi, A. y Kambekar, K. S. (2017). Random walks and market efficiency in Chinese and Indian equity markets. arXiv:1709.04059.",
+    "enlace": "https://arxiv.org/abs/1709.04059",
+    "idioma": "inglés",
+    "sobre": "Testea si los mercados de China e India siguen un paseo aleatorio, con atención al efecto de la crisis de 2008.",
+    "relacion": "Antecedente en mercados emergentes del mismo tipo de prueba sobre precios y retornos."
+  },
+  {
+    "carpeta": "04_adf",
+    "clave": "kulikova2024",
+    "archivo": "papers/2024_Evolving_efficiency_BRICS.pdf",
+    "cita": "Kulikova, M. V., Taylor, D. R. y Kulikov, G. Yu. (2024). Evolving efficiency of the BRICS markets. Economic Systems, 48(1), 101166. arXiv:2403.05233.",
+    "enlace": "https://arxiv.org/abs/2403.05233",
+    "idioma": "inglés",
+    "sobre": "Mide la eficiencia de los mercados BRICS con una ventana móvil y muestra que cambia a lo largo del tiempo.",
+    "relacion": "Si las propiedades de las series cambian con el período, el resultado del ADF depende de la ventana elegida — por eso el test se corre sobre la ventana exacta del análisis final y no sobre otra."
+  },
+  {
+    "carpeta": "04_adf",
+    "clave": "rochafilho2019",
+    "archivo": "papers/2019_Inefficiency_Brazilian_market.pdf",
+    "cita": "Rocha Filho, T. M. y Rocha, P. M. M. (2019). Inefficiency of the Brazilian Stock Market: the IBOVESPA Future Contracts. arXiv:1904.09214.",
+    "enlace": "https://arxiv.org/abs/1904.09214",
+    "idioma": "inglés",
+    "sobre": "Encuentra indicios de ineficiencia en la bolsa brasileña por su fuerte dependencia de largo plazo con índices extranjeros.",
+    "relacion": "Antecedente en el mercado latinoamericano vecino sobre las propiedades estadísticas de los retornos."
+  },
+  {
+    "carpeta": "05_volatilidad_ranking",
+    "clave": "kalnina2024",
+    "archivo": "papers/2024_Idiosyncratic_volatility_dependence.pdf",
+    "cita": "Kalnina, I. y Tewou, K. (2024). Cross-sectional Dependence in Idiosyncratic Volatility. arXiv:2408.13437.",
+    "enlace": "https://arxiv.org/abs/2408.13437",
+    "idioma": "inglés",
+    "sobre": "Estudia la dependencia entre las volatilidades idiosincráticas (propias) de distintos activos, es decir, la parte de la volatilidad que no explica el mercado.",
+    "relacion": "Matiza los \"picos propios\" de la sección 4: que la volatilidad de una acción se despegue del VIX no significa que su causa sea exclusiva de esa empresa — las volatilidades propias de distintas acciones también pueden moverse juntas."
+  },
+  {
+    "carpeta": "05_volatilidad_ranking",
+    "clave": "papaioannou2014",
+    "archivo": "../03_vix_argentino/papers/2014_Ghost_features_moving_average.pdf",
+    "cita": "Papaioannou, G., Papaioannou, P. y Parliaris, N. (2014). Modeling the stylized facts of wholesale system marginal price (SMP) and the impacts of regulatory reforms on the Greek Electricity Market. arXiv:1401.5452.",
+    "enlace": "https://arxiv.org/abs/1401.5452",
+    "idioma": "inglés",
+    "sobre": "Documenta los \"ghost features\" que genera la media móvil con pesos iguales en una serie de volatilidad (el PDF está en la carpeta 03).",
+    "relacion": "Es el mismo efecto que separa los picos genuinos de los que son eco de la ventana: la volatilidad por acción usa la misma ventana de 20 días que el VIX."
+  },
+  {
+    "carpeta": "05_volatilidad_ranking",
+    "clave": "otuki2008",
+    "archivo": "../03_vix_argentino/papers/2008_Otuki_asimetria_volatilidad_Ibovespa_Merval_Inmex.pdf",
+    "cita": "Otuki, T. F., Radavelli, C. H., Seabra, F. y da Costa Jr., N. C. A. (2008). Assimetria na volatilidade dos retornos revisitada: Ibovespa, Merval e Inmex. Revista de Gestão USP, 15(4), 71–84.",
+    "enlace": "https://revistas.usp.br/rege/article/view/36654",
+    "idioma": "portugués",
+    "sobre": "Las caídas aumentan la volatilidad del Merval más que las subas de igual tamaño (el PDF está en la carpeta 03).",
+    "relacion": "La misma limitación de simetría del VIX vale para la volatilidad por acción: el ranking no distingue si una acción es nerviosa por caídas o por subas."
+  },
+  {
+    "carpeta": "06_hmm_regimen_mercado",
+    "clave": "hamilton1989",
+    "archivo": null,
+    "cita": "Hamilton, J. D. (1989). A New Approach to the Economic Analysis of Nonstationary Time Series and the Business Cycle. Econometrica, 57(2), 357–384.",
+    "enlace": "https://ideas.repec.org/a/ecm/emetrp/v57y1989i2p357-84.html",
+    "idioma": "inglés",
+    "no_descargado": "acceso por suscripción (JSTOR / Econometric Society)",
+    "sobre": "El artículo original del modelo de cambio de régimen de Markov (Markov-Switching): los parámetros de una serie dependen de un estado oculto que salta según una cadena de Markov.",
+    "relacion": "Es el modelo que implementa MarkovRegression de statsmodels, el que se usa en este paso."
+  },
+  {
+    "carpeta": "06_hmm_regimen_mercado",
+    "clave": "schwarz1978",
+    "archivo": null,
+    "cita": "Schwarz, G. (1978). Estimating the Dimension of a Model. Annals of Statistics, 6(2), 461–464. https://doi.org/10.1214/aos/1176344136",
+    "enlace": "https://www.projecteuclid.org/euclid.aos/1176344136",
+    "idioma": "inglés",
+    "no_descargado": "es de acceso libre en Project Euclid, pero el sitio bloquea la descarga automática (se puede bajar a mano)",
+    "sobre": "Deriva el criterio de información bayesiano (BIC): una forma de elegir entre modelos de distinta complejidad que penaliza la cantidad de parámetros.",
+    "relacion": "Es el criterio con el que se elige k = 3 en el barrido de la sección 2."
+  },
+  {
+    "carpeta": "06_hmm_regimen_mercado",
+    "clave": "kim1994",
+    "archivo": null,
+    "cita": "Kim, C.-J. (1994). Dynamic linear models with Markov-switching. Journal of Econometrics, 60(1–2), 1–22.",
+    "enlace": "https://ideas.repec.org/a/eee/econom/v60y1994i1-2p1-22.html",
+    "idioma": "inglés",
+    "no_descargado": "acceso por suscripción (Elsevier)",
+    "sobre": "Desarrolla el algoritmo para calcular las probabilidades suavizadas de un modelo de cambio de régimen, es decir, el régimen de cada día usando toda la serie.",
+    "relacion": "Es el método detrás del régimen oficial (suavizado) de este paso; la diferencia con el régimen filtrado, que solo usa el pasado, está explicada en la sección 5."
+  },
+  {
+    "carpeta": "06_hmm_regimen_mercado",
+    "clave": "ataurima2016",
+    "archivo": "papers/2016_Ataurima_MS-GARCH_Latinoamerica_PUCP.pdf",
+    "cita": "Ataurima Arellano, M. (2016). Empirical Modeling of Latin American Stock Markets Returns and Volatility Using Markov-Switching GARCH Models. Tesis de maestría, Pontificia Universidad Católica del Perú.",
+    "enlace": "https://tesis.pucp.edu.pe/repositorio/handle/20.500.12404/8096",
+    "idioma": "inglés",
+    "sobre": "Estima modelos de cambio de régimen sobre los retornos semanales de seis bolsas latinoamericanas, Argentina incluida, comparando un Markov-Switching simple con un Markov-Switching GARCH.",
+    "relacion": "Antecedente más directo del paso para el mercado argentino. Trae una advertencia importante: para Argentina, el modelo de cambio de régimen simple (sin GARCH, como el nuestro) estima un régimen de alta volatilidad de aproximadamente el doble que el MS-GARCH, y con más persistencia. Los regímenes Tenso y su persistencia de 95-98% deben leerse con esa cautela."
+  },
+  {
+    "carpeta": "06_hmm_regimen_mercado",
+    "clave": "caballero2016",
+    "archivo": "papers/2016_Caballero_MS-GARCH_tipo_de_cambio_Mexico_Brasil.pdf",
+    "cita": "Caballero Martínez, R. y Caballero Claure, B. (2016). Estimación de la volatilidad del tipo de cambio en México y Brasil. Un enfoque con modelos Markov Switching GARCH. Latin American Journal of Economic Development (LAJED), 25, 127–170.",
+    "enlace": "https://lajed.ucb.edu.bo/a/article/download/a155/60/78",
+    "idioma": "español",
+    "sobre": "Aplica modelos de cambio de régimen a la volatilidad cambiaria de México y Brasil (1994-2014) y encuentra una persistencia alta: los shocks de volatilidad no se disipan rápido.",
+    "relacion": "Ejemplo en español y en la región de la misma familia de modelos; su hallazgo de alta persistencia coincide con la diagonal de 95-98% de nuestra matriz de transición."
+  },
+  {
+    "carpeta": "06_hmm_regimen_mercado",
+    "clave": "blake2025",
+    "archivo": "papers/2025_Regime_switching_SP500_volatility.pdf",
+    "cita": "Blake, A. C., Gandhi, N. A. y Jakkula, A. R. (2025). Improving S&P 500 Volatility Forecasting through Regime-Switching Methods. arXiv:2510.03236.",
+    "enlace": "https://arxiv.org/abs/2510.03236",
+    "idioma": "inglés",
+    "sobre": "Aplica modelos de cambio de régimen a la volatilidad realizada diaria del S&P 500 (2014-2025) para mejorar su pronóstico.",
+    "relacion": "Mismo enfoque que el nuestro: regímenes detectados sobre una serie de volatilidad realizada, no sobre los precios."
+  },
+  {
+    "carpeta": "06_hmm_regimen_mercado",
+    "clave": "ataei2025",
+    "archivo": "papers/2025_Regime_structure_volatility.pdf",
+    "cita": "Ataei, M. (2025). Modeling Regime Structure and Informational Drivers of Stock Market Volatility via the Financial Chaos Index. arXiv:2504.18958.",
+    "enlace": "https://arxiv.org/abs/2504.18958",
+    "idioma": "inglés",
+    "sobre": "Construye un índice de volatilidad realizada del mercado y le aplica un modelo de cambio de régimen para estudiar qué información mueve cada régimen.",
+    "relacion": "Combina las dos piezas de este trabajo — un índice de volatilidad realizada (03) y regímenes sobre él (06) — y además los vincula con información de mercado, el paso que sigue con las noticias."
+  },
+  {
+    "carpeta": "06_hmm_regimen_mercado",
+    "clave": "majumder2023",
+    "archivo": "papers/2024_Multivariate_HMM_bull_bear.pdf",
+    "cita": "Majumder, R., Ji, Q. y Neerchal, N. K. (2023). Optimal Stock Portfolio Selection with a Multivariate Hidden Markov Model. Sankhya B, 85 (Suppl 1), 177–198. arXiv:2406.02297.",
+    "enlace": "https://arxiv.org/abs/2406.02297",
+    "idioma": "inglés",
+    "sobre": "Usa un HMM para identificar estados alcistas y bajistas en acciones del S&P 500, y señala que esos estados no se observan: solo se pueden asignar en forma retrospectiva.",
+    "relacion": "Es el mismo punto de nuestras probabilidades suavizadas: el régimen de cada día se asigna usando toda la serie, incluido el futuro. Sirve para describir el período, no para saber en tiempo real en qué régimen está el mercado."
+  },
+  {
+    "carpeta": "00_mapa_lado_bursatil",
+    "clave": "verma2026",
+    "archivo": "papers/2026_Media_bias_stock_prices.pdf",
+    "cita": "Verma, S., Tulsyan, S., Dhanuka, S. y Sen, A. (2026). Quantitative Analysis of Media Bias and Stock Price Dynamics: The 2020 Shock. arXiv:2608.05899.",
+    "enlace": "https://arxiv.org/abs/2608.05899",
+    "idioma": "inglés",
+    "sobre": "Revisa, con la pandemia de 2020 como caso, si las noticias financieras influyen sobre los precios o si solo reflejan información que los precios ya incorporaron.",
+    "relacion": "Es la misma pregunta de fondo de la tesis para la próxima etapa — y la del hallazgo de causalidad inversa (los medios siguen a los precios)."
+  },
+  {
+    "carpeta": "00_mapa_lado_bursatil",
+    "clave": "calandroni2026",
+    "archivo": "../03_vix_argentino/papers/2026_Calandroni_elecciones_Merval_UTDT.pdf",
+    "cita": "Calandroni, S. (2026). Impacto de las elecciones sobre el MERVAL (2011-2023). Tesis de maestría, Universidad Torcuato Di Tella.",
+    "enlace": "https://repositorio.utdt.edu/handle/20.500.13098/14461",
+    "idioma": "español",
+    "sobre": "Estudio de eventos de las elecciones nacionales sobre el Merval en dólares, 2011-2023 (el PDF está en la carpeta 03).",
+    "relacion": "Antecedente argentino directo del event study de la próxima etapa: misma bolsa, mismo tipo de shock y la misma fuente de datos (Yahoo Finance)."
+  },
+  {
+    "carpeta": "00_mapa_lado_bursatil",
+    "clave": "mukherjee2025",
+    "archivo": "papers/2025_Investor_sentiment_Granger.pdf",
+    "cita": "Mukherjee, T. (2025). Investor Sentiment and Market Movements: A Granger Causality Perspective. arXiv:2510.15915.",
+    "enlace": "https://arxiv.org/abs/2510.15915",
+    "idioma": "inglés",
+    "sobre": "Aplica el test de causalidad de Granger para ver si los cambios de sentimiento preceden a los cambios de precio.",
+    "relacion": "Método de la próxima etapa (VAR + Granger) aplicado a la misma relación entre sentimiento y precios."
+  },
+  {
+    "carpeta": "00_mapa_lado_bursatil",
+    "clave": "amburgey2025",
+    "archivo": "papers/2025_Election_shocks_sectoral_prices.pdf",
+    "cita": "Amburgey, A. J. (2025). How Election Shocks Impact Markets: Evidence from Sectoral Stock Prices. arXiv:2504.02731.",
+    "enlace": "https://arxiv.org/abs/2504.02731",
+    "idioma": "inglés",
+    "sobre": "Construye una serie de \"shocks electorales\" para las elecciones presidenciales de Estados Unidos y muestra que mueven de forma distinta a cada sector según las plataformas de los partidos.",
+    "relacion": "Modelo para el VAR por sector de la próxima etapa: un mismo shock (electoral o de noticias) puede afectar a los sectores en direcciones opuestas, algo que un análisis de todo el mercado promediaría."
+  }
+]

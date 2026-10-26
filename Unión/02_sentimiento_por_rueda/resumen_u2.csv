@@ -1,0 +1,39 @@
+metrica,valor,detalle
+ruedas,244,
+notas,13925,
+ruedas_evaluables_shock,224,desde 2025-06-02
+sent_neto_media,3.91,
+sent_neto_desvio,7.0,
+sent_neto_min,-13.54,2026-04-15
+sent_neto_max,22.1,2025-11-14
+correlacion_simple_vs_portal,0.995,
+autocorrelacion_sentimiento,0.47,
+sd_nota_ajustada,31.5,desvío del sentimiento de una nota
+portal_ambito_economia,5.4,497
+portal_ambito_finanzas,-0.0,240
+portal_clarin_economia,3.2,294
+portal_clarin_sitemap,2.3,3668
+portal_eleconomista_sitemap,0.6,2688
+portal_infobae_economia,4.8,497
+portal_iprofesional_sitemap,6.2,5455
+portal_lanacion_economia,4.9,486
+portal_tn_economia,30.4,100
+notas_mediana_por_dias_cubiertos,1: 50; 2: 60; 3: 83; 4: 111,
+atencion_max,0.51,2026-03-12
+atencion_min,-1.08,2026-04-15
+regla_elegida,"por muestreo, 20 ruedas, 2.5",serie ajustada por portal
+shocks,19,azar: 3.5
+shocks_pos,10,
+shocks_neg,9,
+eventos,18,
+falsos_esperados_pct,18.2,
+p_valor_regla,0.0033,
+desvio_z,1.46,1 si los días solo variaran por la cantidad de notas
+desvio_robusto_z,1.46,desvío sin dejarse llevar por los extremos (MAD)
+shocks_esperados_sobredispersion,19.2,si z fuera normal con el desvío robusto
+curtosis_z,0.95,0 en una normal
+shocks_coinciden_gino,7,de 19
+shocks_dia_electoral,1,2025-10-27
+gino_rueda_simple,30,azar: 26.1; falsos 87.0%
+gino_rueda_portal,33,azar: 25.8; falsos 78.2%
+controles_ok,7,de 7

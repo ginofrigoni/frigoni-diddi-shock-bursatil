@@ -1,0 +1,20 @@
+metrica,valor,detalle
+notas_preapertura,8069.0,de 13925 notas de la ventana; 1855 pre-apertura excluidas por hora sospechosa
+notas_pre_por_rueda_min,7.0,
+notas_pre_por_rueda_mediana,29.0,
+sd_tono_pre_anormal,7.58,
+sd_ret_apertura_pct,1.06,
+sd_ret_sesion_pct,2.1,
+corr_tono_pre_ret_anterior,0.42,el tono de la noche refleja el cierre del día
+todas las ruedas|mercado (promedio de las 47)|ret_apertura,0.000239,p=0.1066; p_bh=0.2132; efecto por desvío 0.181%; n=224
+todas las ruedas|panel de las 17 empresas|ret_apertura,9.2e-05,p=0.1048; p_bh=0.2132; efecto por desvío 0.073%; n=3808
+todas las ruedas|mercado (promedio de las 47)|ret_sesion,0.000265,p=0.2672; p_bh=0.3563; efecto por desvío 0.201%; n=224
+todas las ruedas|panel de las 17 empresas|ret_sesion,5.1e-05,p=0.6559; p_bh=0.6559; efecto por desvío 0.041%; n=3808
+sin días electorales|mercado (promedio de las 47)|ret_apertura,7.8e-05,p=0.1541; p_bh=0.5342; efecto por desvío 0.059%; n=222
+sin días electorales|panel de las 17 empresas|ret_apertura,2.9e-05,p=0.3911; p_bh=0.5342; efecto por desvío 0.023%; n=3774
+sin días electorales|mercado (promedio de las 47)|ret_sesion,0.000196,p=0.4006; p_bh=0.5342; efecto por desvío 0.148%; n=222
+sin días electorales|panel de las 17 empresas|ret_sesion,2e-05,p=0.8608; p_bh=0.8608; efecto por desvío 0.016%; n=3774
+empresas_p05_sin_corregir,1.0,de 34
+empresas_bh,0.0,
+placebo_pct_p05,4.7,600 pruebas
+controles_ok,6.0,de 6

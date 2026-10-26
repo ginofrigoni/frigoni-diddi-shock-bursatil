@@ -1,0 +1,35 @@
+metrica,valor,detalle
+ruedas_ventana_bursatil,323.0,2025-01-02 a 2026-04-30
+articulos_corpus,14012.0,
+articulos_fecha_cambia_por_huso,95.0,fecha tomada de los primeros 10 caracteres vs. fecha en hora argentina
+pct_publicadas_tras_cierre,27.9,publicadas a las 17:00 o más tarde
+articulos_cambian_de_dia_al_alinear,5595.0,fecha de rueda distinta de la fecha calendario
+pct_cambian_de_dia_al_alinear,40.2,
+articulos_hora_por_defecto,1881.0,ambito 00:00; ambito 07:00; clarin 04:00; clarin 06:01; clarin 07:00; clarin 07:05; clarin 07:08; clarin 09:00; iprofesional 07:00; lanacion 01:05; lanacion 02:00; tn 05:44; tn 05:48; tn 05:55
+pct_hora_por_defecto,13.4,
+articulos_ene_abr_2025,11.0,cobertura casi nula antes de mayo 2025
+ruedas_ventana_comun,244.0,2025-05-05 a 2026-04-30
+ruedas_comun_sin_noticias,0.0,
+articulos_por_rueda_min,12.0,
+articulos_por_rueda_mediana,55.0,
+articulos_por_rueda_max,145.0,
+shocks_serie_actual,36.0,
+shocks_en_rueda,18.0,
+shocks_en_dia_sin_mercado,18.0,
+shocks_sin_mercado_min_articulos,6.0,
+dias_sin_mercado_con_noticias,125.0,
+sent_neto_medio_fuente_min,-0.0,ambito_finanzas
+sent_neto_medio_fuente_max,30.7,tn_economia
+iprofesional_mar_2026,512.0,
+iprofesional_abr_2026,3.0,
+tickers_con_var_propio,17.0,al menos 90 ruedas con noticias
+tickers_sin_ninguna_mencion,3.0,
+tickers_menos_de_10_ruedas,16.0,
+dias_calmo_ventana_comun,177.0,alcanza para VAR
+dias_moderado_ventana_comun,18.0,NO alcanza para VAR (n<20)
+dias_tenso_ventana_comun,49.0,alcanza para VAR
+dias_tenso_perdidos_ene_abr,16.0,Tenso de abril 2025 queda fuera de la ventana común
+shocks_rueda_regla_gino_pct,12.6,azar: 10.7%
+shocks_rueda_sin_dia_7d_2s_pct,12.2,azar: 11.1%
+shocks_rueda_sin_dia_20d_2s_pct,8.0,azar: 6.6%
+autocorrelacion_sentimiento_rueda,0.47,rezago de 1 rueda

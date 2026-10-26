@@ -1,0 +1,8 @@
+control,pasa
+El z de una rueda usa solo las 30 ruedas previas (recalculado a mano),True
+Todos los eventos tienen ventanas de estimación y de evento completas,True
+"Ruedas seguidas con shock cuentan como un solo evento (mercado, versión principal)",True
+Ningún evento de empresa se solapa con el anterior de la misma empresa,True
+Todos los eventos de empresa tienen al menos 3 artículos en la rueda,True
+Las notas pre-apertura nunca superan a las de la rueda (mercado y cada empresa),True
+Retornos anormales de fechas al azar promedian cerca de 0 (mercado y empresas),True

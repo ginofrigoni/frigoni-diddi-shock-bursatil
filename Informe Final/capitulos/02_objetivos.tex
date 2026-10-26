@@ -1,0 +1,274 @@
+% =====================================================================
+\chapter{Objetivos}
+\label{cap:objetivos}
+
+% ---------------------------------------------------------------------
+\section{Problemática observada}
+
+En la conversación cotidiana sobre la bolsa argentina está muy extendida la idea de que «las
+noticias mueven las acciones»: un titular negativo sobre el dólar o sobre una empresa
+precedería a una caída de su cotización, y una buena noticia, a una suba. La observación tiene
+sustento intuitivo, porque los días de noticias grandes, como los posteriores a una elección,
+son también días de movimientos fuertes del S\&P~Merval. Pero esa coincidencia no dice qué
+vino primero. Es posible que las noticias muevan al mercado, y también que los medios cuenten
+lo que el mercado ya hizo, con un tono que acompaña la suba o la baja. El problema de este
+trabajo es separar esas dos posibilidades con datos: ordenar en el tiempo el tono y la
+cantidad de las noticias económicas y el precio y el volumen de las acciones, y ver cuál
+anticipa a cuál.
+
+% ---------------------------------------------------------------------
+\section{Hipótesis de investigación}
+
+El plan de trabajo define el \textit{shock informativo} como un aumento anormal del volumen
+de noticias publicadas por medios digitales argentinos sobre temas económico-financieros, y
+plantea las siguientes hipótesis:
+
+\begin{quote}
+\textbf{Hipótesis alternativa (H1).} «El shock informacional tiene un impacto medible y
+estadísticamente significativo sobre el comportamiento bursátil —precio y/o volumen de
+transacciones— de las empresas argentinas que cotizan en bolsa.»
+
+\textbf{Hipótesis nula (H0).} «El shock informacional no tiene un impacto estadísticamente
+significativo sobre el comportamiento bursátil de las empresas argentinas.»
+\end{quote}
+
+Para contrastarlas, el shock se midió de dos maneras complementarias: por su \textit{tono}
+(días en que las noticias son mucho más positivas o negativas que lo habitual) y por su
+\textit{cantidad} (días con muchas más notas que lo habitual, la definición literal del plan).
+La dirección que interesa es noticias \flecha{} mercado: que el shock preceda al movimiento
+del precio o del volumen. Si los datos muestran la dirección contraria, o ninguna, la
+hipótesis no se sostiene, y ese también es un resultado.
+
+% ---------------------------------------------------------------------
+\section{Objetivo general}
+
+\begin{itemize}
+  \item Modelar y cuantificar el impacto de shocks informativos provenientes de portales de
+        noticias argentinos sobre el comportamiento bursátil —precio y volumen de
+        transacciones— de empresas argentinas que cotizan en bolsa.
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Objetivos específicos}
+
+\begin{enumerate}
+  \item Construir y consolidar un corpus de noticias de economía y finanzas de los
+        principales portales digitales argentinos, estructurado como serie temporal por
+        portal y fecha.
+  \item Diseñar e implementar un modelo de análisis de sentimiento financiero en español,
+        adaptando la arquitectura FinBERT mediante el ajuste fino de BETO sobre noticias
+        financieras argentinas.
+  \item Integrar datos de \textit{trending topics} de X/Twitter como variable complementaria
+        para la detección y validación de shocks informativos.
+  \item Definir y cuantificar variables de shock informativo: volumetría de publicaciones,
+        temperatura del sentimiento agregado y presencia de entidades en el flujo noticioso.
+  \item Agrupar las empresas del mercado accionario argentino en conjuntos significativos,
+        considerando la clasificación sectorial y la sensibilidad al flujo informativo.
+  \item Modelar la relación entre las variables de shock informativo y las variables
+        bursátiles, incorporando desfases temporales para capturar el impacto diferido del
+        flujo de noticias.
+\end{enumerate}
+
+La tabla~\ref{tab:objetivos} resume cómo se cumplió cada objetivo y en qué parte del
+documento se desarrolla. El objetivo~3 no se realizó: los datos de X/Twitter no llegaron a
+integrarse al análisis y quedan como trabajo futuro. En el objetivo~6, el plan preveía también
+un modelo de rezagos distribuidos (DLM); se cumplió con un VAR, que ya incorpora los efectos
+rezagados, y el DLM queda como línea futura.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}C{0.6cm}YL{1.9cm}L{2.3cm}@{}}
+\toprule
+\textbf{Obj.} & \textbf{Qué se hizo} & \textbf{Estado} & \textbf{Dónde} \\
+\midrule
+1 & 14.012 notas de 7 portales, depuradas y asignadas a ruedas con la regla de las 17:00 & Cumplido & §\ref{sec:recoleccion}, §\ref{sec:alineacion} \\
+2 & FinBETO, 4 clases; F1 macro de 0,685 en noticias no vistas, por encima del modelo de referencia & Cumplido & §\ref{sec:finbeto-modelo} \\
+3 & Los datos de X/Twitter no se integraron & No realizado & §\ref{sec:futuro} \\
+4 & Atención anormal (cantidad de notas), tono anormal, ruedas de tono extremo, tono propio de cada empresa y shock de cantidad según el plan & Cumplido & §\ref{sec:tono-rueda}, §\ref{sec:res-u7b} \\
+5 & Clustering de las 47 acciones y análisis por sector y por empresa & Cumplido & §\ref{sec:multivariado} \\
+6 & VAR, Granger, impulso-respuesta, estudios de eventos y análisis por régimen; el DLM queda como trabajo futuro & Cumplido (con VAR) & cap.~\ref{cap:resultados} \\
+\bottomrule
+\end{tabularx}
+\caption{Estado de los objetivos específicos. Fuente: elaboración propia.}
+\label{tab:objetivos}
+\end{table}
+
+% ---------------------------------------------------------------------
+\section{Antecedentes}
+\label{sec:antecedentes}
+
+\subsection{Noticias y precios: ¿anticipan o reflejan?}
+
+El antecedente central es \citet{tetlock2007}, que midió el pesimismo de una columna diaria
+del \textit{Wall Street Journal} y encontró dos cosas: el pesimismo anticipa una baja de los
+precios que luego se revierte, y los retornos bajos anticipan más pesimismo en la columna. Es
+decir, la relación existe en las dos direcciones. \citet{garcia2013}, con columnas
+financieras del \textit{New York Times} entre 1905 y 2005, mostró que el tono anticipa los
+retornos casi solo en las recesiones, lo que sugiere que el efecto depende del estado del
+mercado. Otros trabajos separaron el efecto de la cobertura del de su contenido:
+\citet{fang2009} encontraron que las acciones sin cobertura de medios rinden más que las muy
+cubiertas, \citet{engelberg2011} usaron la cobertura local de un mismo hecho para identificar
+un efecto causal de los medios sobre el volumen operado, y \citet{dougal2012} mostraron que la
+identidad del periodista que escribe la columna predice el retorno del día siguiente.
+\citet{da2011} propusieron medir la atención de los inversores con las búsquedas en internet,
+una variable de cantidad y no de tono.
+
+Trabajos más recientes retoman la pregunta de fondo de esta tesina. \citet{verma2026} usan el
+shock de 2020 para preguntar si las noticias influyen en el precio o reflejan información que
+el precio ya tiene; \citet{jazbec2020} miden cuánta información pasa de las noticias de la web
+a los precios con medidas de transferencia de información; \citet{kargarzadeh2026} estudian en
+qué momento el precio incorpora una noticia —antes, el mismo día o después—, y
+\citet{glasserman2025} se preguntan si las noticias publicadas de noche explican el retorno
+entre el cierre y la apertura. \citet{knuteson2020} documenta que el retorno nocturno y el del
+día se comportan de forma muy distinta, lo que justifica separarlos. Sobre la cantidad de
+noticias, \citet{cao2025hype} construyen un índice de atención mediática por acción, y
+\citet{guo2017} muestran que dos empresas que aparecen en una misma noticia comparten
+atención y movimientos de precio. \citet{ardia2022} usan el \textit{tono anormal} de los
+medios —el tono comparado con lo habitual— en estudios de eventos alrededor de anuncios de
+resultados, y \citet{chen2025topics} critican resumir el sentimiento de un día en un solo
+número sin separar los temas.
+
+\subsection{Medición del sentimiento con procesamiento de lenguaje natural}
+
+La medición del tono pasó de los diccionarios de palabras a los modelos de lenguaje. El
+diccionario financiero de \citet{loughran2011} mostró que las listas de palabras generales
+clasifican mal el lenguaje financiero (por ejemplo, «pasivo» no es negativo en un balance).
+\citet{malo2014phrasebank} publicaron el \textit{Financial PhraseBank}, un conjunto de
+oraciones financieras etiquetadas por personas, y \citet{araci2019finbert} ajustó sobre él un
+modelo BERT \citep{devlin2019bert} para clasificar sentimiento financiero en inglés
+(FinBERT). Para el español, \citet{canete2020beto} entrenaron BETO, el BERT en español de la
+Universidad de Chile, y \citet{gutierrez2022maria} la familia MarIA del Barcelona
+Supercomputing Center. \citet{perez2021pysentimiento} publicaron pysentimiento, con modelos de
+sentimiento en español entrenados con tuits. En el dominio financiero en español, la
+competencia FinancES 2023 \citep{marin2023finances} y los trabajos de \citet{pan2023peerj},
+\citet{garciadiaz2023ieee} y \citet{rodriguezgarcia2023} evaluaron modelos tipo BERT sobre
+titulares y tuits económicos; en la comparación de \citet{pan2023peerj}, BETO y MarIA son los
+de mejor desempeño.
+
+Sobre cómo pasar de oraciones a series de tiempo, \citet{mavillonio2026} construyen índices
+diarios de sentimiento con modelos tipo BERT frase por frase y los comparan con los de
+diccionario; \citet{stan2026} y \citet{carbo2026} muestran que la serie es ruidosa cuando hay
+días con pocas noticias y proponen darles menos peso, y \citet{correarocha2026} documenta que
+el tono de las noticias económicas es muy persistente. A nivel de empresa,
+\citet{tang2023finentity} y \citet{sinha2023sentfin} clasifican el sentimiento hacia cada
+entidad nombrada en una noticia, ya que una misma nota puede ser buena para una empresa y mala
+para otra.
+
+\subsection{Argentina y Latinoamérica}
+
+En la región los antecedentes son pocos. \citet{brana2016} clasificaron frases de noticias
+financieras argentinas como positivas, negativas o neutras, sin cruzarlas con precios.
+\citet{galdi2018} midieron el tono de 1.237 ediciones del diario \textit{Valor Econômico} y
+encontraron que las palabras de incertidumbre se asocian con menor rentabilidad de la bolsa
+brasileña. \citet{cruzmontana2025} cruzaron el tono de noticias financieras con el índice
+COLCAP de Colombia. \citet{coronado2022,coronado2023} probaron la causalidad de Granger
+desde índices de noticias sobre el COVID-19 hacia las bolsas latinoamericanas, Argentina
+incluida, pero con cantidad de noticias y no con tono. \citet{rojas2015} estudiaron la
+causalidad entre retorno y volumen en las bolsas de la región, y \citet{chniguir2022} la
+causalidad entre sentimiento y retornos en Marruecos y Túnez, dos mercados emergentes chicos
+como el argentino. \citet{mukherjee2025} y \citet{wu2026} aplican pruebas de Granger y redes
+de contagio del sentimiento entre noticias y redes sociales. Para Argentina,
+\citet{calandroni2026} estudió el efecto de las elecciones sobre el Merval entre 2011 y 2023
+con un estudio de eventos, y \citet{amburgey2025} mostró, para Estados Unidos, que un mismo
+shock electoral mueve a los sectores en direcciones distintas.
+
+\subsection{El vacío que cubre este trabajo}
+
+No se encontró un trabajo que cruce el tono de la prensa económica argentina con el precio y
+el volumen de las acciones de BYMA. Los antecedentes en español clasifican el sentimiento sin
+cruzarlo con el mercado; los latinoamericanos que sí lo cruzan son de Brasil y Colombia, o
+usan cantidad de noticias y no tono. Esta tesina aporta ese cruce para Argentina, con un
+modelo de sentimiento propio, tono por empresa, pruebas en las dos direcciones y una prueba
+que usa la hora de publicación de cada nota para ordenar noticias y precios en el tiempo.
+
+% ---------------------------------------------------------------------
+\section{Metodología}
+\label{sec:metodologia}
+
+\textbf{Tipo de estudio.} Es un estudio observacional, longitudinal y correlacional: no
+interviene sobre las variables, las sigue en el tiempo (244 ruedas) y analiza su relación y su
+orden temporal. La población es el conjunto de acciones de empresas argentinas que cotizan en
+BYMA; la muestra son 47 acciones que cumplen criterios de cobertura y liquidez, 17 de ellas
+con noticias suficientes para medir su tono propio. El corpus son las notas de las secciones
+de economía y finanzas de siete portales nacionales.
+
+El trabajo se organizó como un \textit{pipeline} de tres partes, siguiendo las fases del
+proceso CRISP-DM \citep{wirth2000crispdm}:
+
+\begin{itemize}
+  \item \textbf{Lado bursátil.} Selección del panel de acciones a partir de Yahoo Finance,
+        clustering, volatilidad realizada del mercado (VIX argentino), pruebas de
+        estacionariedad, volatilidad por acción y régimen de mercado con un modelo de cambio
+        de régimen de Markov.
+  \item \textbf{Lado de noticias.} Recolección del corpus (Wayback Machine y mapas del sitio),
+        depuración, etiquetado de oraciones con un modelo de lenguaje, entrenamiento de
+        FinBETO, serie diaria de sentimiento y reconocimiento de entidades (NER) para medir el
+        tono de cada empresa.
+  \item \textbf{Unión.} Alineación de cada nota con la rueda en la que el mercado pudo
+        reaccionar (regla de las 17:00), series de tono y atención por rueda y por empresa,
+        datasets unificados, estacionariedad, VAR con pruebas de Granger e impulso-respuesta,
+        prueba con las notas publicadas con el mercado cerrado, estudios de eventos y
+        robustez.
+\end{itemize}
+
+Dos especificaciones (la prueba pre-apertura y el estudio de eventos del shock de cantidad)
+se escribieron y guardaron antes de correr los cálculos, y todas las familias de pruebas se
+corrigieron por comparaciones múltiples. El detalle de cada paso está en los
+capítulos~\ref{cap:tecnicas} y~\ref{cap:desarrollo}.
+
+% ---------------------------------------------------------------------
+\section{Impacto esperado}
+
+\textbf{Científico.} El trabajo aporta evidencia sobre la relación entre medios y mercado en un
+mercado emergente y en español, donde casi no la hay, y un conjunto de oraciones de prensa
+económica argentina etiquetadas por sentimiento, que no existía. El método es replicable:
+cada paso tiene su script, sus controles automáticos y su documentación.
+
+\textbf{Práctico.} Para inversores y analistas, el resultado indica si el tono de los medios
+es una señal que se adelanta al mercado o un reflejo de él. Para reguladores, ofrece una forma
+de medir cómo la cobertura mediática acompaña la actividad bursátil.
+
+\textbf{Metodológico.} El \textit{pipeline} es reproducible de punta a punta: un solo comando
+rehace toda la unión y verifica que los 64 archivos de resultados salgan idénticos y que los
+66 controles automáticos pasen.
+
+\textbf{Por qué de a dos.} La tesina combina dos campos con técnicas propias: el
+procesamiento de lenguaje natural (recolectar y depurar miles de notas, entrenar y evaluar un
+modelo de sentimiento, reconocer entidades) y la econometría financiera (armar y depurar un
+panel de acciones, medir volatilidad y regímenes, modelar series de tiempo). La carga de
+trabajo de cada lado justifica un equipo de dos. La división fue la siguiente: el lado de
+noticias (corpus, sentimiento y NER) estuvo a cargo de Gino Frigoni; el lado bursátil
+(panel, clustering, volatilidad, estacionariedad y régimen), de Nicolás Diddi. La unión de
+los dos lados, que responde la pregunta de la tesina, integra el trabajo de ambos.
+
+% ---------------------------------------------------------------------
+\section{Cronograma}
+
+El plan de trabajo se presentó en mayo de 2026. A partir de entonces el trabajo avanzó por
+lados: cada uno cerró sus resultados con su propia documentación y recién después se unieron.
+La tabla~\ref{tab:cronograma} registra los hitos documentados del proceso.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}L{3.4cm}YL{2.6cm}@{}}
+\toprule
+\textbf{Etapa} & \textbf{Hito} & \textbf{Fecha} \\
+\midrule
+Plan de trabajo & Presentación del proyecto (hipótesis, objetivos y metodología) & Mayo de 2026 \\
+Corpus de noticias & Recolección de notas publicadas hasta el 3 de mayo de 2026 & Hasta mayo de 2026 \\
+Lado bursátil & Panel de 47 acciones, VIX, ADF, volatilidad y régimen; revisión cerrada & Octubre de 2026 \\
+Lado de noticias & Auditoría del corpus, nueva medición de FinBETO y cruce con el NER; versión final & 18/10/2026 \\
+Unión & Alineación, datasets, VAR y Granger, estudios de eventos y robustez (U1 a U9) & 17 al 24/10/2026 \\
+Actualización del plan & Estado de los objetivos y corrección del apellido de un autor (versión 3) & Octubre de 2026 \\
+Informe final & Redacción de esta tesina & Octubre de 2026 \\
+\bottomrule
+\end{tabularx}
+\caption{Hitos del trabajo. Fuente: elaboración propia a partir de la documentación de cada
+etapa.}
+\label{tab:cronograma}
+\end{table}
+
+Respecto de lo planificado hubo tres cambios. Los datos de X/Twitter no se integraron
+(objetivo~3). El DLM se reemplazó por el VAR, que ya trabaja con rezagos. Y se sumaron
+pruebas que el plan no preveía: el tono propio de cada empresa, la prueba con las notas
+publicadas con el mercado cerrado y las doce variantes de robustez.

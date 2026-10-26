@@ -1,0 +1,14 @@
+feature,diferencia_desvios
+corr_merval,-2.1
+vol_anormal,2.001
+vol_std,1.792
+ret_mean,-1.545
+kurtosis,1.385
+beta,-1.182
+max_drawdown,-1.005
+volatilidad,0.913
+vol_mean,-0.812
+skewness,-0.764
+corr_vol_ret,0.394
+momentum_20d,0.362
+momentum_50d,-0.049

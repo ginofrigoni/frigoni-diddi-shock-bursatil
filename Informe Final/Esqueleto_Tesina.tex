@@ -1,0 +1,990 @@
+% =====================================================================
+%  Esqueleto de Tesina
+%  Mapa de contenidos y guía de redacción a partir de
+%  Gauna y Pasinato (2024), "Clasificación de microclimas de la ciudad
+%  de Posadas a partir de algoritmos de web scraping y aprendizaje
+%  automático supervisado".
+%  Compilar con XeLaTeX o Tectonic:  tectonic Esqueleto_Tesina.tex
+% =====================================================================
+\documentclass[12pt,a4paper,oneside]{report}
+
+% ---------- Idioma y fuentes ----------
+\usepackage{fontspec}
+\usepackage[spanish,es-tabla,es-noshorthands]{babel}
+\usepackage[autostyle]{csquotes}
+\usepackage{microtype}
+
+% ---------- Página ----------
+\usepackage[left=3cm,right=2.5cm,top=2.8cm,bottom=2.5cm,headheight=15pt]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parskip}{0.35em}
+
+% ---------- Paquetes ----------
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{lastpage}
+\usepackage[hidelinks,bookmarksnumbered,bookmarksopen]{hyperref}
+
+% ---------- Colores ----------
+\definecolor{acento}{HTML}{0D6D64}   % verde azulado: el ejemplo
+\definecolor{ambar}{HTML}{9A5B12}    % ámbar: tu plantilla
+\definecolor{alerta}{HTML}{8A3B1C}   % ladrillo: atención
+\definecolor{gris}{HTML}{5B6472}
+\definecolor{bar1}{HTML}{0D6D64}
+\definecolor{bar2}{HTML}{4F8F87}
+\definecolor{bar3}{HTML}{9A5B12}
+\definecolor{bar4}{HTML}{C99A5A}
+\definecolor{bar5}{HTML}{6B7280}
+\definecolor{bar6}{HTML}{A7ADB5}
+
+% ---------- Títulos ----------
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}
+  {\large\scshape\color{gris}\chaptertitlename\ \thechapter}{8pt}
+  {\Huge}[\vspace{2pt}{\color{gris}\titlerule[0.6pt]}]
+\titlespacing*{\chapter}{0pt}{10pt}{28pt}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.8em}{}
+\titlespacing*{\section}{0pt}{20pt}{8pt}
+\titlespacing*{\subsection}{0pt}{16pt}{6pt}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+% ---------- Encabezado y pie ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhead[L]{\small\itshape\color{gris}Esqueleto de Tesina}
+\fancyhead[R]{\small\color{gris}\leftmark}
+\fancyfoot[C]{\small Pág. \thepage\ de \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\small Pág. \thepage\ de \pageref*{LastPage}}\renewcommand{\headrulewidth}{0pt}}
+
+% ---------- Listas ----------
+\setlist{itemsep=2pt,topsep=4pt,parsep=0pt}
+
+% ---------- Entornos de la ficha ----------
+\tcbset{fichabase/.style={enhanced,breakable,arc=0pt,outer arc=0pt,
+  left=8pt,right=8pt,top=5pt,bottom=6pt,before skip=8pt,after skip=8pt,
+  fonttitle=\small\sffamily\bfseries,toptitle=2pt,bottomtitle=2pt}}
+
+\newtcolorbox{ejemplo}{fichabase,
+  colback=acento!5,colframe=acento!60,boxrule=0.5pt,
+  colbacktitle=acento!14,coltitle=acento!80!black,
+  title={Lo que hicieron los autores}}
+
+\newtcolorbox{plantilla}{fichabase,
+  colback=ambar!4,frame hidden,
+  borderline={0.7pt}{0pt}{ambar,dashed},
+  colbacktitle=ambar!14,coltitle=ambar!75!black,
+  title={Plantilla para tu tesina}}
+
+\newtcolorbox{ojo}{fichabase,
+  colback=alerta!5,colframe=alerta!55,boxrule=0.5pt,leftrule=2.5pt,
+  colbacktitle=alerta!5,coltitle=alerta,
+  title={Atención}}
+
+% Línea de metadatos: nivel/página y categoría académica
+\newcommand{\meta}[2]{%
+  \par\noindent{\small\sffamily\color{gris}#1}\hspace{1.2em}%
+  {\small\sffamily\bfseries\color{acento}#2}\par\smallskip}
+% Función de la sección
+\newcommand{\funcion}[1]{\par\noindent\textbf{Función.} #1\par}
+% Extensión, dentro del recuadro de plantilla
+\newcommand{\extension}[2]{\par\smallskip\noindent{\small\sffamily\color{ambar!80!black}%
+  Extensión — original: #1 \quad·\quad tuya: #2}}
+% Términos clave
+\newcommand{\terminos}[1]{\par\noindent{\small\textbf{Términos clave:} \textit{#1}}\par}
+\newcommand{\cod}[1]{\texttt{\small #1}}
+
+% =====================================================================
+\begin{document}
+
+% ---------------- PORTADA ----------------
+\pagenumbering{Alph}
+\begin{titlepage}
+  \begin{center}
+    {\large\scshape Seminario de Trabajo Final\par}
+    \vspace{2pt}
+    {\large Licenciatura en Ciencia de Datos\par}
+    \vspace{1.2cm}
+    {\color{gris}\rule{\linewidth}{0.6pt}}\par
+    \vspace{1.2cm}
+    {\Huge\bfseries Esqueleto de Tesina\par}
+    \vspace{0.6cm}
+    {\Large Mapa de contenidos y guía de redacción\par}
+    \vspace{1.2cm}
+    \begin{minipage}{0.86\linewidth}
+      \centering\normalsize
+      Elaborado a partir del Trabajo Final de Grado\\[4pt]
+      \textit{«Clasificación de microclimas de la ciudad de Posadas a partir de
+      algoritmos de web scraping y aprendizaje automático supervisado»}\\[4pt]
+      Briant Alcides Gauna y Fabricio Pasinato (Rosario, 2024)
+    \end{minipage}
+    \vfill
+    {\large Documento de trabajo para la tesina de\par}
+    \vspace{6pt}
+    {\Large Gino Frigoni \quad·\quad Nicolás Diddi\par}
+    \vspace{1.6cm}
+    {\color{gris}\rule{\linewidth}{0.6pt}}\par
+    \vspace{6pt}
+    {\large Octubre de 2026\par}
+  \end{center}
+\end{titlepage}
+
+% ---------------- MATERIA PRELIMINAR ----------------
+\pagenumbering{roman}
+\setcounter{page}{2}
+
+\chapter*{Guía de uso}
+\addcontentsline{toc}{chapter}{Guía de uso}
+\markboth{Guía de uso}{}
+
+Este documento desarma, título por título, el Trabajo Final de Grado de Gauna y
+Pasinato (59 páginas A4). Conserva su jerarquía, su orden y su formato reales, que se
+midieron directamente sobre el PDF, y para cada sección indica qué función cumple, qué
+escribieron los autores y cómo redactar la tuya.
+
+\begin{itemize}
+  \item \textbf{Numeración.} El original \emph{no} numera sus títulos. Los números de
+        capítulo y sección de este documento pertenecen a la guía y sirven solo para
+        navegarla.
+  \item \textbf{Nivel y página.} Debajo de cada título se indica el nivel que tenía en
+        el original (N1 = Arial 16, N2 = Arial 13, N3 = Arial 12) y la página donde
+        empieza, junto con la categoría académica estándar a la que corresponde.
+  \item \textbf{Recuadro verde.} \emph{Lo que hicieron los autores}: síntesis fiel de su
+        tesina sobre microclimas. Es un ejemplo de cómo queda la sección resuelta, no
+        contenido para copiar.
+  \item \textbf{Recuadro punteado ámbar.} \emph{Plantilla para tu tesina}: qué escribir
+        en esa misma sección, con ejemplos de tu trabajo (shocks informativos y
+        S\&P~Merval) y la extensión del original frente a la sugerida.
+  \item \textbf{Recuadro rojo.} \emph{Atención}: errores o inconsistencias del original
+        que conviene no heredar.
+\end{itemize}
+
+La Parte~I recorre los capítulos del original en su orden. La Parte~II reúne dos
+guías transversales: el formato tipográfico del documento y los elementos que le faltan
+o tiene débiles frente a una tesina de licenciatura convencional.
+
+\tableofcontents
+
+% ---------------- CUERPO ----------------
+\cleardoublepage
+\pagenumbering{arabic}
+
+\part{Mapa del documento original}
+
+% =====================================================================
+\chapter{Portada e índice}
+\meta{Páginas 1–3 · sin título en el índice}{Preliminares}
+
+% ---------------------------------------------------------------------
+\section{Portada}
+\meta{Pág. 1}{Preliminares · carátula institucional}
+\funcion{Identifica formalmente el trabajo ante la institución: qué título se busca,
+quiénes son los autores, el lugar y la fecha, y deja lugar para la firma. No argumenta
+nada, pero la exige el reglamento.}
+\begin{ejemplo}
+Logo institucional arriba y, en Arial negrita 12, centrado: «TRABAJO FINAL DE GRADO /
+Presentado para lograr el TÍTULO de / LICENCIADO EN CIENCIA DE DATOS», el título entre
+comillas, los dos autores con su DNI, lugar (Rosario), fecha (28/06/2024) y «Firma
+autores». Sin encabezado ni pie.
+\end{ejemplo}
+\begin{plantilla}
+Mismo bloque de campos, en el mismo orden: título · Gino Frigoni y Nicolás Diddi, con
+DNI · lugar · fecha · firma. Revisá que «Diddi» lleve doble \textit{d} en todos lados.
+\extension{1 pág.}{1 pág., formato fijo}
+\end{plantilla}
+\terminos{Trabajo Final de Grado · autoría · firma}
+
+% ---------------------------------------------------------------------
+\section{Índice}
+\meta{Págs. 2–3}{Preliminares · tabla de contenidos}
+\funcion{Sirve para ubicar cualquier sección y deja ver de un vistazo el peso relativo
+de cada parte del trabajo.}
+\begin{ejemplo}
+Índice de tres niveles con sangría (los niveles 2 y 3 van más corridos a la derecha),
+líneas de puntos y número de página. Ocupa 1 página y 4 renglones de la siguiente. No
+incluye índice de figuras ni de tablas.
+\end{ejemplo}
+\begin{plantilla}
+Generalo automáticamente con \cod{\textbackslash tableofcontents} (o con la tabla de
+contenido del procesador de texto). Sumá \cod{\textbackslash listoffigures} y
+\cod{\textbackslash listoftables} (ver capítulo~\ref{cap:faltantes}).
+\extension{1 1/4 pág.}{1–2 págs.}
+\end{plantilla}
+\terminos{tabla de contenido · estilos de título}
+
+% =====================================================================
+\chapter{Resumen}
+\meta{N1 · pág. 4}{Resumen / abstract}
+\funcion{Es la carta de presentación del trabajo. Cuenta en pocas líneas el problema,
+el método y el hallazgo para que el lector decida si sigue leyendo. Se escribe último
+aunque vaya primero.}
+\begin{ejemplo}
+La página repite el título completo en Arial 16 y debajo va «Resumen»: un único
+párrafo de unas 13 líneas con el objeto (dos barrios de Posadas), la fuente (estaciones
+de la OPAD, 2022--2023), el método (scraping, EDA y Random Forest) y el marco (Isla de
+Calor Urbana). Cierra con «Palabras clave» y «Temática de Interés en Ciencia de Datos»,
+ambas en cursiva.
+\end{ejemplo}
+\begin{plantilla}
+\begin{itemize}
+  \item Título repetido arriba.
+  \item Un párrafo (150--250 palabras): pregunta, datos (corpus de noticias y 47
+        acciones, mayo 2025--abril 2026), método (FinBETO, VAR/Granger, event study) y
+        hallazgo (el tono de los medios sigue al retorno de esa misma noche, no lo
+        anticipa).
+  \item De 4 a 6 palabras clave más la temática de interés.
+\end{itemize}
+\extension{1 pág. (1/2 de texto)}{1/2–1 pág.}
+\end{plantilla}
+\begin{ojo}
+El resumen está escrito en futuro («Los datos a analizar serán…») aunque el trabajo ya
+está hecho. El tuyo va en pasado.
+\end{ojo}
+\terminos{palabras clave · temática de interés}
+
+% =====================================================================
+\chapter{Introducción}
+\meta{N1 · pág. 5}{Introducción · contexto y relevancia}
+\funcion{Sitúa el tema, recorta el estudio y dice por qué importa, sin entrar todavía
+en el método.}
+\begin{ejemplo}
+Tres párrafos. El primero presenta el fenómeno general (las ciudades crean
+microclimas; el Efecto Isla de Calor). El segundo, el recorte: dos barrios con estación
+de la OPAD, temperaturas 2022--2023. El tercero, la relevancia: mitigación, confort
+térmico, ahorro de energía y golpes de calor.
+\end{ejemplo}
+\begin{plantilla}
+\begin{itemize}
+  \item Párrafo 1: los medios económicos y la formación de precios.
+  \item Párrafo 2: tu recorte: qué portales, qué acciones y qué ventana (244 ruedas).
+  \item Párrafo 3: por qué importa (inversores, eficiencia de mercado, uso del
+        sentimiento como señal).
+\end{itemize}
+\extension{1/3 pág.}{1/2–1 pág.}
+\end{plantilla}
+\terminos{microclima · relevancia · recorte del estudio}
+
+% =====================================================================
+\chapter{Objetivos}
+\meta{N1 · págs. 5–7 · 8 subtítulos N2}{Proyecto de investigación}
+
+Es el capítulo que más contiene: debajo de «Objetivos» cuelga todo el proyecto
+original (problema, hipótesis, objetivos, antecedentes, metodología, impacto y
+cronograma). El título no tiene texto propio; arranca directo con el primer subtítulo.
+
+% ---------------------------------------------------------------------
+\section{Problemática observada}
+\meta{N2 · pág. 5}{Planteamiento del problema}
+\funcion{Pone en palabras la observación que dispara el trabajo, antes de formalizarla
+como hipótesis.}
+\begin{ejemplo}
+Dos oraciones: la ciudad se vive como «un horno» y, al alejarse del centro, la
+temperatura baja y el clima se siente más agradable.
+\end{ejemplo}
+\begin{plantilla}
+Un párrafo corto con la intuición inicial: la idea extendida de que las noticias mueven
+las acciones argentinas, y la pregunta de si eso se ve en los datos.
+\extension{3 líneas}{5–8 líneas}
+\end{plantilla}
+\terminos{problema de investigación · observación disparadora}
+
+% ---------------------------------------------------------------------
+\section{Hipótesis de Investigación}
+\meta{N2 · pág. 5}{Hipótesis}
+\funcion{Convierte el problema en un enunciado que los datos puedan confirmar o
+refutar.}
+\begin{ejemplo}
+Una sola oración entre comillas: «Las condiciones del clima a lo largo de la ciudad son
+heterogéneos.» No nombra variables ni dice cómo se va a contrastar.
+\end{ejemplo}
+\begin{plantilla}
+Una oración entre comillas que nombre las variables y la dirección del efecto.
+Ejemplo: «Los shocks de tono en los medios económicos argentinos anticipan cambios en
+el retorno y el volumen de las acciones del S\&P~Merval.» Que tu resultado la rechace
+también es un resultado válido.
+\extension{1 línea}{1–3 líneas}
+\end{plantilla}
+\terminos{hipótesis · enunciado refutable}
+
+% ---------------------------------------------------------------------
+\section{Objetivo General}
+\meta{N2 · pág. 5}{Objetivo general}
+\funcion{Dice en una oración, con verbo en infinitivo, el propósito global. Tiene que
+coincidir con el título y con la hipótesis.}
+\begin{ejemplo}
+Una viñeta ($\bullet$): «Clasificar microclimas de la ciudad de Posadas a partir de
+algoritmos de Ciencia de Datos.»
+\end{ejemplo}
+\begin{plantilla}
+Una viñeta con verbo en infinitivo + objeto + enfoque. Ejemplo: «Analizar la relación
+entre el sentimiento de los medios económicos argentinos y el comportamiento de las
+acciones del S\&P~Merval.»
+\extension{1 viñeta}{1 viñeta}
+\end{plantilla}
+\terminos{infinitivo · alcance}
+
+% ---------------------------------------------------------------------
+\section{Objetivos Específicos}
+\meta{N2 · pág. 5}{Objetivos específicos}
+\funcion{Parte el objetivo general en pasos verificables y ordenados. Cada uno debería
+corresponder a una sección del desarrollo y retomarse en las conclusiones.}
+\begin{ejemplo}
+Tres viñetas, en el mismo orden que el desarrollo: adquirir datos por web scraping,
+describir el dataset y aplicar clasificación supervisada. Las cuatro conclusiones
+responden justamente a estos tres.
+\end{ejemplo}
+\begin{plantilla}
+Entre 4 y 6 viñetas en el orden del pipeline: armar el corpus, medir el sentimiento
+(FinBETO), caracterizar el mercado (volatilidad y regímenes), unir noticias y ruedas, y
+testear la relación (VAR/Granger y event study). Usá los objetivos de tu plan de
+trabajo y marcá cuáles no se cumplieron (por ejemplo, el DLM).
+\extension{3 viñetas}{4–6 viñetas}
+\end{plantilla}
+\terminos{operacionalización · trazabilidad objetivo $\rightarrow$ sección}
+
+% ---------------------------------------------------------------------
+\section{Antecedentes}
+\meta{N2 · pág. 6}{Estado del arte (preliminar)}
+\funcion{Muestra qué se sabe del tema y qué hueco viene a llenar el trabajo. Es lo que
+justifica la pregunta.}
+\begin{ejemplo}
+Cuatro párrafos breves con citas autor-año: San Cristóbal Sebastián (2011), Vázquez
+(2016), Fuentes Pérez (2014), Sangines Coral (2013) y López Martínez (2013), sobre
+ciudad, isla de calor y energía. Cierran con la intuición propia sobre Posadas y la
+mención de datos oficiales, sin citar estudios previos sobre ese caso.
+\end{ejemplo}
+\begin{plantilla}
+De 3 a 6 párrafos por subtema (noticias y retornos; sentimiento con NLP; Argentina y
+LatAm). Cerrá con el vacío: en español casi no hay cruces entre tono y precio.
+Material: Tetlock (2007), Garcia (2013), Galdi y Gonçalves (2018, Brasil) y Glasserman
+et al.\ (2025), todos en tu carpeta \cod{10\_papers\_union}.
+\extension{2/3 pág.}{1 1/2–3 págs.}
+\end{plantilla}
+\terminos{estado del arte · vacío de conocimiento · cita autor-año}
+
+% ---------------------------------------------------------------------
+\section{Metodología}
+\meta{N2 · pág. 6}{Diseño metodológico (anticipado)}
+\funcion{Adelanta el camino que se va a seguir. El detalle va después, en Desarrollo
+Experimental.}
+\begin{ejemplo}
+Cuatro párrafos en futuro, uno por etapa: armar la base con web scraping en un
+servidor, limpiar (unidades y nulos), hacer el análisis exploratorio con comparación
+pareada y aplicar aprendizaje supervisado para clasificar y caracterizar.
+\end{ejemplo}
+\begin{plantilla}
+Un párrafo por etapa: lado bursátil, lado noticias y unión (alineación nota
+$\rightarrow$ rueda con corte a las 17:00, dataset unificado, VAR/Granger, event study y
+robustez). Agregá el tipo de estudio, que el modelo no declara: observacional,
+longitudinal, correlacional.
+\extension{1/2 pág.}{1/2–1 pág.}
+\end{plantilla}
+\terminos{pipeline · etapas}
+
+% ---------------------------------------------------------------------
+\section{Impacto esperado}
+\meta{N2 · pág. 7}{Justificación e impacto}
+\funcion{Argumenta por qué el trabajo vale la pena (impacto científico, social y
+económico) y, en este caso, por qué se hace de a dos.}
+\begin{ejemplo}
+Un párrafo por impacto: científico (método replicable, posible publicación), social
+(planificación urbana, salud, energía) y económico (construcción, turismo). Cierran con
+la justificación del equipo de dos: complejidad, carga de trabajo y experiencia laboral
+de ambos con datos de clima.
+\end{ejemplo}
+\begin{plantilla}
+Lo mismo aplicado a tu tema: científico (cruce tono-precio en español), práctico
+(inversores y reguladores) y metodológico (pipeline reproducible). Como ustedes también
+son dos, conservá el párrafo del equipo y explicá la división real: lado bursátil
+(Nicolás) y lado noticias (Gino).
+\extension{4/5 pág.}{1/2–1 pág.}
+\end{plantilla}
+\terminos{justificación · impacto · equipo}
+
+% ---------------------------------------------------------------------
+\section{Cronograma}
+\meta{N2 · pág. 7}{Planificación}
+\funcion{Lleva el plan al calendario y muestra que el alcance era realista.}
+\begin{ejemplo}
+«Tabla 1. Cronograma de Actividades. Fuente: Elaboración Propia.» Siete actividades en
+filas y meses de marzo a julio en columnas, con celdas sombreadas.
+\end{ejemplo}
+\begin{plantilla}
+Un Gantt simple con tus etapas reales. Si la cátedra lo permite, mostrá lo planificado
+y lo real, porque el plan cambió (de v2 a v3 y la unión).
+\extension{1/2 pág.}{1/2–1 pág.}
+\end{plantilla}
+\terminos{Gantt · hitos}
+
+% =====================================================================
+\chapter{El crecimiento de las ciudades. Caso de estudio: Posadas, Misiones}
+\chaptermark{El crecimiento de las ciudades}
+\meta{N1 · págs. 8–13 · 3 subtítulos}{Marco teórico y contextual}
+
+Es el marco teórico y contextual del fenómeno: primero el concepto y después el lugar.
+Para vos equivale a un capítulo como «Noticias, sentimiento y mercado: el caso del
+S\&P~Merval».
+
+% ---------------------------------------------------------------------
+\section{Texto de apertura del capítulo}
+\meta{N1 · pág. 8}{Marco teórico · introducción al fenómeno}
+\funcion{Antes de los subtítulos, unos párrafos que llevan al lector desde la
+experiencia cotidiana hasta el concepto técnico.}
+\begin{ejemplo}
+Tres párrafos sin citas: las ciudades crecen, el centro se siente más caliente, la
+construcción absorbe calor y frena el viento. Así presentan la Isla de Calor Urbana
+(ICU) y explican su mecánica (radiación, cañón urbano, viento, humedad).
+\end{ejemplo}
+\begin{plantilla}
+Dos o tres párrafos de puente: de «las noticias mueven la bolsa» al concepto de shock
+informativo y de eficiencia de mercado. Si afirmás algo que no es obvio, citá la
+fuente.
+\extension{2/3 pág.}{1/2 pág.}
+\end{plantilla}
+\terminos{ICU · cañón urbano · actividad antrópica}
+
+% ---------------------------------------------------------------------
+\section{El efecto isla de calor urbano}
+\meta{N2 · pág. 8}{Marco teórico · concepto central}
+\funcion{Define con autores de referencia el concepto que después sirve para
+interpretar los resultados.}
+\begin{ejemplo}
+Historia del concepto (Howard 1820, Renou 1855, «Mandey» 1958, citados vía Ortega Núñez
+2018). Definen clima urbano (Romero et al., 2010) y presentan la Tabla 2 con población
+urbana y rural (INDEC 2010; 91\,\% urbana). La definición de ICU es de Oke (1987), con
+la Imagen 1 (Oke, 1976) y la Imagen 2 con los factores (Voogt, 2000).
+\end{ejemplo}
+\begin{plantilla}
+Definí con autores canónicos: shock informativo, hipótesis de mercados eficientes
+(Fama), sentimiento del inversor (Tetlock), causalidad de Granger (Granger, 1969) y
+estudio de eventos (MacKinlay, 1997). Sumá una figura o tabla que resuma los
+mecanismos.
+\extension{1 1/2 pág.}{2–4 págs.}
+\end{plantilla}
+\begin{ojo}
+Oke es el autor central de la sección y no figura en la Bibliografía. Antes de
+entregar, cruzá cada cita del texto con tu lista de referencias.
+\end{ojo}
+\terminos{clima urbano · Isla de Calor Urbana · Oke}
+
+% ---------------------------------------------------------------------
+\section{Caracterización de la ciudad de Posadas}
+\meta{N2 · pág. 10}{Marco contextual · caso de estudio}
+\funcion{Describe el escenario concreto donde se aplica la teoría.}
+\begin{ejemplo}
+Dos párrafos (ubicación, coordenadas del mástil, capital de Misiones, Ordenanza de
+Ordenamiento Territorial 2013 con edificios de hasta 20 pisos) y cinco imágenes:
+satelital, foto aérea de 1934, la esquina Colón y Bolívar antes y ahora, y una vista
+aérea actual.
+\end{ejemplo}
+\begin{plantilla}
+El mercado argentino en tu ventana: qué es el S\&P~Merval, liquidez, el contexto macro
+(elecciones del 07/09 y 26/10/2025, con los saltos del 08/09 y del 27/10) y por qué ese
+período es interesante. Usá figuras propias (la serie del Merval y el VIX argentino) en
+lugar de fotos.
+\extension{2 págs. (casi todo imágenes)}{1–2 págs.}
+\end{plantilla}
+\terminos{caso de estudio · contexto}
+
+% ---------------------------------------------------------------------
+\section{Caracterización de los microclimas el Centro y de Itaembé Miní}
+\meta{N2 · pág. 12}{Marco contextual · unidades de análisis}
+\funcion{Describe las unidades que se comparan y anticipa las diferencias que el
+análisis debería encontrar.}
+\begin{ejemplo}
+Un párrafo por barrio (límites, uso del suelo y ubicación de la estación), con capturas
+de mapa y Street View (Imágenes 8 y 9). Cierran con la «Tabla 3. Comparación
+categórica»: espacio verde, tipo de construcción, densidad, actividad antropogénica y
+viento.
+\end{ejemplo}
+\begin{plantilla}
+Describí tus unidades: las 47 acciones del panel, las 17 con sentimiento propio y los
+portales del corpus. Una tabla resumen con cantidad de notas, liquidez y sector.
+\extension{1 1/2 pág.}{1–2 págs.}
+\end{plantilla}
+\terminos{unidad de análisis · tabla comparativa}
+
+% =====================================================================
+\chapter{Técnicas de Ciencia de Datos}
+\meta{N1 · págs. 14–17 · 3 subtítulos}{Marco teórico-metodológico}
+
+Es el marco teórico de las herramientas: antes de usarlas, las define con bibliografía
+técnica. El patrón se repite en cada subtítulo: definición propia, dos o tres citas
+textuales de manuales y por qué sirve para este trabajo.
+
+% ---------------------------------------------------------------------
+\section{Texto de apertura del capítulo}
+\meta{N1 · pág. 14}{Marco teórico-metodológico · encuadre}
+\funcion{Define el campo general antes de bajar a cada técnica.}
+\begin{ejemplo}
+Citas textuales que definen Big Data (Ortega Candel, 2022) y Python (Sarasa
+Cabezuelo, 2017), la «Imagen 10. Mapa de Proceso en Big Data» y una definición propia
+de Ciencia de Datos (programación, estadística y conocimiento del dominio).
+\end{ejemplo}
+\begin{plantilla}
+Un párrafo de encuadre (por ejemplo, CRISP-DM como hilo del trabajo) y una figura con
+tu pipeline completo: tenés el mapa de la tesis en \cod{09\_entrega\_final}.
+\extension{1/2 pág.}{1/2 pág.}
+\end{plantilla}
+\terminos{Big Data · Python · Ciencia de Datos}
+
+% ---------------------------------------------------------------------
+\section{El web scraping como herramienta de adquisición de datos}
+\meta{N2 · pág. 14}{Marco técnico · adquisición}
+\funcion{Define la técnica de obtención de datos y presenta el proceso que después se
+aplica.}
+\begin{ejemplo}
+Una definición propia, tres citas en inglés con capítulo y libro (Mitchell; Kazil y
+Jarmul; Hajba) y la «Imagen 11. Procesos y definiciones para el algoritmo de web
+scraping».
+\end{ejemplo}
+\begin{plantilla}
+El mismo esquema para tu adquisición: el scraping de portales (lado de Gino) y la
+descarga de precios de Yahoo Finance, con sus límites (correcciones por eventos
+corporativos y horas en UTC).
+\extension{1 pág.}{1/2–1 pág.}
+\end{plantilla}
+\terminos{web scraping · BeautifulSoup}
+
+% ---------------------------------------------------------------------
+\section{El análisis de datos exploratorio (EDA)}
+\meta{N2 · pág. 15}{Marco técnico · análisis descriptivo}
+\funcion{Fundamenta el análisis descriptivo y fija con qué gráfico se trata cada tipo
+de variable.}
+\begin{ejemplo}
+Tres citas (Tukey; McKinney; Bruce y Bruce) y una lista de viñetas en dos niveles
+($\bullet$ y $\circ$): gráficos univariados, bivariados y multivariados, cada uno
+separado en variables cualitativas y cuantitativas.
+\end{ejemplo}
+\begin{plantilla}
+En tu caso esto incluye las series de tiempo: estacionariedad (ADF y KPSS), volatilidad
+(VIX casero) y regímenes (HMM). Definí cada herramienta con una o dos citas.
+\extension{1 pág.}{1–2 págs.}
+\end{plantilla}
+\terminos{EDA · univariado / bivariado / multivariado}
+
+% ---------------------------------------------------------------------
+\section{El aprendizaje automático supervisado como herramienta de clasificación}
+\meta{N2 · pág. 16}{Marco técnico · modelado}
+\funcion{Define el modelo principal y justifica por qué se lo eligió.}
+\begin{ejemplo}
+Tres citas sobre machine learning (Bishop; Murphy; Géron), una oración que justifica
+elegir Random Forest «por su claridad y síntesis» y tres citas más sobre Random Forest
+(Hastie et al.; James et al.; Kuhn y Johnson).
+\end{ejemplo}
+\begin{plantilla}
+Un subtítulo por modelo central: FinBETO (BETO, preentrenamiento adicional y ajuste
+fino), VAR y Granger, event study. Justificá cada elección frente a alternativas, algo
+que el ejemplo hace en una sola línea.
+\extension{1 1/3 pág.}{2–3 págs.}
+\end{plantilla}
+\terminos{aprendizaje supervisado · Random Forest · bagging}
+
+% =====================================================================
+\chapter{Desarrollo Experimental}
+\meta{N1 · págs. 18–38 · 2 subtítulos N2 · 5 N3}{Metodología aplicada y resultados}
+
+Es el capítulo más largo (20 páginas). El título no tiene texto propio. Adentro tiene
+dos subtítulos de nivel 2: «Materiales y Métodos», con 5 de nivel 3, y «Resultados y
+Discusión». En este modelo, \textbf{los resultados son parte del desarrollo} y no un
+capítulo aparte.
+
+% ---------------------------------------------------------------------
+\section{Materiales y Métodos}
+\meta{N2 · pág. 18}{Metodología · fuentes y herramientas}
+\funcion{Lista exactamente qué se usó (datos con URL, software, librerías, equipo) para
+que otra persona pueda repetir el trabajo.}
+\begin{ejemplo}
+La fuente: OPAD, con las URLs de Wunderground de las dos estaciones (IPOSAD6 e
+IPOSAD12) y la «Imagen 12» con su ubicación. Una lista de recursos: datos web, Google
+Colab, librerías (scikit, BeautifulSoup, matplotlib, pandas, numpy), PC e internet.
+\end{ejemplo}
+\begin{plantilla}
+Una tabla de fuentes (portales, Yahoo Finance, \textasciicircum MERV) con su rango de
+fechas, el entorno (Python, versiones fijadas como statsmodels 0.13.5 y numpy 1.23.5) y
+cómo se reproduce todo (\cod{correr\_todo.py}: 64/64 CSV idénticos).
+\extension{2/3 pág.}{1/2–1 pág.}
+\end{plantilla}
+\terminos{reproducibilidad · fuente primaria}
+
+% ---------------------------------------------------------------------
+\subsection{Algoritmo de web scraping}
+\meta{N3 · pág. 18}{Metodología · recolección}
+\funcion{Cuenta cómo se obtuvieron los datos en la práctica y remite al código.}
+\begin{ejemplo}
+Dos líneas de texto (se programó en Colab y terminó corriendo en un servidor), la
+«Imagen 13. Infografía resumen» de la experiencia y la remisión al ANEXO~1.
+\end{ejemplo}
+\begin{plantilla}
+Volumen obtenido (14.667 artículos de 7 portales; 47 acciones), problemas y cómo se
+resolvieron, y «ver Anexo~X».
+\extension{2/3 pág.}{1/2–1 pág.}
+\end{plantilla}
+\terminos{recolección · remisión a anexo}
+
+% ---------------------------------------------------------------------
+\subsection{Metodología de limpieza de datos}
+\meta{N3 · pág. 19}{Metodología · preprocesamiento}
+\funcion{Documenta qué transformaciones se aplicaron a los datos crudos.}
+\begin{ejemplo}
+Los datos venían como texto con la unidad pegada. Hay un diccionario en viñetas de las
+12 columnas (nombre, qué mide, unidad: °F, mph, in, \%), la aclaración de que no hubo
+nulos y la «Imagen 14» con la cabecera de la tabla.
+\end{ejemplo}
+\begin{plantilla}
+El diccionario de variables (ya tenés \cod{diccionario\_variables.csv}, con 38
+entradas), las reglas de limpieza (nota $\rightarrow$ rueda con corte a las 17:00, horas
+en UTC, correcciones de SEMI y AGRO) y el tamaño final (244 ruedas; panel de 11.468
+filas).
+\extension{1/2 pág.}{1–2 págs.}
+\end{plantilla}
+\begin{ojo}
+El texto dice «no se han presentado datos perdidos o nulos», pero el código del anexo
+reemplaza «\texttt{-{}-}» por nulo y hace \cod{dropna()}. Tu texto tiene que coincidir
+con lo que hace tu código.
+\end{ojo}
+\terminos{diccionario de variables · valores faltantes}
+
+% ---------------------------------------------------------------------
+\subsection{Análisis univariado de datos}
+\meta{N3 · pág. 20}{Resultados exploratorios · univariado}
+\funcion{Describe cada variable por separado (rango, centro, dispersión, forma y
+atípicos) antes de cruzarlas.}
+\begin{ejemplo}
+Primero, la serie de temperatura a 2 años, 6 meses y 4 días (Imagen 15) y la brecha de
+hasta 10~°F entre estaciones (Imagen 16). Después, «367.563 elementos» y los
+estadísticos (Imagen 17). Para cada una de las \textbf{12 variables} (10 cuantitativas
+y 2 categóricas) repiten el mismo molde en negrita: variabilidad, cuartiles, media y
+desvío, forma de la distribución, más una figura de boxplot, histograma y densidad.
+Cierran con el \textbf{ANOVA}: todas las variables difieren entre estaciones, salvo
+\cod{fecha\_hora}.
+\end{ejemplo}
+\begin{plantilla}
+Copiá el molde fijo por variable, que es lo mejor de este modelo, para tus variables
+clave: retorno, volumen anormal, tono, cantidad de notas y VIX. Si son muchas, poné una
+tabla resumen en el cuerpo y las figuras en un anexo.
+\extension{8 págs.}{3–6 págs.}
+\end{plantilla}
+\begin{ojo}
+En el original la temperatura va «desde 33,6~°F a 110,3~°C» (mezcla unidades) y el
+punto de rocío también. Revisá las unidades de cada cifra.
+\end{ojo}
+\terminos{cuartiles · media $\pm$ desvío · multimodal · outliers · ANOVA}
+
+% ---------------------------------------------------------------------
+\subsection{Análisis multivariado de datos}
+\meta{N3 · pág. 28}{Resultados exploratorios · bivariado y multivariado}
+\funcion{Cruza variables para ver relaciones y diferencias entre grupos, y prepara la
+selección de variables del modelo.}
+\begin{ejemplo}
+Una regla de qué gráfico corresponde a cada par de tipos de variable y 10 figuras de
+histograma y densidad por estación (Imágenes 30 a 39). También la tabla de contingencia
+de dirección del viento por estación (Imagen 40), la tabla de correlaciones (Imagen 41)
+y el pairplot (Imagen 42). Prácticamente no interpretan en el texto: dicen que la
+interpretación «se tendrá en cuenta» en el modelo.
+\end{ejemplo}
+\begin{plantilla}
+Correlaciones entre tono, retorno y volumen, comparación por régimen (Calmo/Tenso) y por
+empresa. A diferencia del ejemplo, escribí dos o tres líneas de interpretación debajo de
+cada figura.
+\extension{5 págs.}{2–3 págs.}
+\end{plantilla}
+\terminos{tabla de contingencia · correlación de Pearson · pairplot}
+
+% ---------------------------------------------------------------------
+\subsection{Algoritmo de aprendizaje supervisado}
+\meta{N3 · pág. 33}{Metodología y resultados · modelado}
+\funcion{Explica cómo se pasó del análisis exploratorio al modelo: qué variables se
+descartaron, qué hiperparámetros se usaron y cómo se eligió el modelo final.}
+\begin{ejemplo}
+Descartan ráfaga e intensidad solar por estar muy correlacionadas con otras. La «Tabla
+4. Importancia de cada variable» va de dirección del viento (45,2\,\%) a ratio de
+precipitaciones (0,03\,\%), y eliminan las menores al 1\,\%. Suben la profundidad de 3 a
+6 hasta superar el 80\,\% en las métricas y «podan» los árboles para leerlos. Las
+Imágenes 43 a 46 muestran cada profundidad, original y recortada, más la matriz de
+confusión. Las páginas 35 a 37 van en horizontal.
+\end{ejemplo}
+\begin{plantilla}
+Especificación del VAR (variables, rezagos, interacción con régimen), corrección
+Benjamini-Hochberg, placebo y la especificación previa del U6b escrita antes de correr.
+Es tu punto fuerte frente al ejemplo: dejalo explícito.
+\extension{5 págs. (3 apaisadas)}{3–5 págs.}
+\end{plantilla}
+\begin{ojo}
+Según el Anexo~3, la búsqueda en grilla (con \cod{cv=2}) prueba profundidades de 3 a 5,
+pero después se entrena el bosque original con \cod{max\_depth=6}, no el mejor
+encontrado. Las variables con menos del 1\,\% no se sacan del modelo en el código. El
+árbol que se dibuja es uno solo del bosque (\cod{estimators\_[0]}).
+\end{ojo}
+\terminos{feature importance · profundidad · poda · matriz de confusión}
+
+% ---------------------------------------------------------------------
+\section{Resultados y Discusión}
+\meta{N2 · pág. 38}{Resultados + discusión}
+\funcion{Traduce lo que dio el modelo a lenguaje claro y lo conecta con el marco
+teórico.}
+\begin{ejemplo}
+Media página. Reglas en viñetas para cada microclima, con umbrales de velocidad y
+dirección del viento y radiación UV. Un párrafo de discusión: como el viento y su
+dirección «explican más del 80\,\%», la diferencia viene del cañón urbano. Es la única
+vez que el resultado vuelve a la teoría, y lo hace sin citar a ningún autor.
+\end{ejemplo}
+\begin{plantilla}
+Hacelo capítulo propio, porque es tu aporte. Separá lo que encontraste (retorno
+$\rightarrow$ tono en 39/47 empresas; noticias $\rightarrow$ mercado sin efecto; U6b
+$p \approx 0{,}11$) de lo que significa (los medios reflejan el mercado esa misma noche;
+ver U8). Contrastalo con autores: Tetlock (2007) coincide y Galdi y Gonçalves (2018) no.
+\extension{1/2 pág.}{3–6 págs.}
+\end{plantilla}
+\begin{ojo}
+Según su propia Tabla~4, dirección (45,2\,\%) más velocidad del viento (26,6\,\%) suman
+71,8\,\%, no «más del 80\,\%». Además, las reglas usan UV y no presión, que era la
+tercera variable más importante (18\,\%).
+\end{ojo}
+\terminos{reglas de decisión · discusión con la literatura}
+
+% =====================================================================
+\chapter{Conclusiones}
+\meta{N1 · pág. 38}{Conclusiones + líneas futuras (embebidas)}
+\funcion{Responde a los objetivos y a la hipótesis, resume el aporte y deja abiertas
+líneas futuras.}
+\begin{ejemplo}
+Empieza en la misma página que Resultados, sin salto. Tiene cuatro viñetas: los
+microclimas son diferentes y clasificables; el scraping funciona pero es costoso; el EDA
+se hizo en sus tres niveles; Random Forest logra «acc=82\,\%». Cierra con una oración de
+trabajo futuro: probar otros clasificadores o redes neuronales.
+\end{ejemplo}
+\begin{plantilla}
+\begin{itemize}
+  \item Una conclusión por objetivo específico, con su estado.
+  \item Un párrafo que nombre la hipótesis y diga si se sostiene: no, y lo que aparece
+        es la causalidad inversa.
+  \item Un subtítulo «Limitaciones»: ventana de un año, una sola fuente de sentimiento,
+        horas sospechosas, iliquidez.
+  \item Un subtítulo «Líneas futuras»: DLM, Twitter, dólar CCL.
+\end{itemize}
+\extension{1/3 pág.}{1 1/2–2 1/2 págs.}
+\end{plantilla}
+\terminos{respuesta a objetivos · limitaciones · trabajo futuro}
+
+% =====================================================================
+\chapter{Bibliografía}
+\meta{N1 · págs. 39–40}{Referencias}
+\funcion{Permite verificar cada cita y da crédito. El formato también se evalúa.}
+\begin{ejemplo}
+\textbf{33 referencias} en viñetas, sin orden alfabético: primero las fuentes de datos,
+después libros y papers del tema, y al final los manuales técnicos. Estilos mezclados:
+unas con ISBN o DOI, otras solo con un link, otras con «consultado el…».
+\end{ejemplo}
+\begin{plantilla}
+Orden alfabético, un solo estilo (APA~7) y solo lo que citás. Ya tenés el material:
+\cod{referencias\_papers.md} y los \cod{.bib} de \cod{10\_papers\_union} y
+\cod{11\_papers\_lado\_noticias}. En LaTeX, cargalos con \cod{biblatex} y
+\cod{style=apa}; así el formato sale solo.
+\extension{2 págs.}{2–4 págs.}
+\end{plantilla}
+\begin{ojo}
+No coincide con el cuerpo. Oke (1976, 1987) se cita y no aparece. Chang (Química),
+Canavos, Spiegel, PSPP y Rizwan aparecen y no se citan. Las fuentes de datos dicen
+«consultado en junio de 2022», pero los datos llegan a 2023.
+\end{ojo}
+\terminos{APA 7 · correspondencia cita--referencia}
+
+% =====================================================================
+\chapter{Anexos}
+\meta{N1 · págs. 41–59}{Apéndices · código}
+\funcion{Guarda el material extenso que respalda el trabajo (aquí, el código) sin
+cortar la lectura.}
+\begin{ejemplo}
+\begin{itemize}
+  \item \textbf{ANEXO 1: Algoritmo de Web Scraping en Python} (pág. 41): recorre
+        Wunderground día por día y exporta a Excel. Incluye un sub-bloque sin numerar,
+        «Algoritmo de Limpieza de los Datos» (pág. 43), que une las dos estaciones y
+        arma \cod{fecha\_hora}.
+  \item \textbf{ANEXO 2: Preprocesamiento de los datos} (pág. 46): importaciones, carga
+        del Excel y conversión de tipos.
+  \item \textbf{ANEXO 3 LENGUAJE PARA EL ANÁLISIS EXPLORATORIO DE DATOS} (pág. 49): los
+        gráficos uni, bi y multivariados, ANOVA y correlación, y también todo el modelo
+        (Random Forest, búsqueda en grilla, árbol y métricas), aunque el título no lo
+        dice.
+\end{itemize}
+Los rótulos de los anexos van en el cuerpo de texto (Georgia 11), no como títulos, y el
+código en Courier New 11.
+\end{ejemplo}
+\begin{plantilla}
+Un anexo por etapa, con un título que diga lo que contiene. Por ejemplo: A.~Diccionario
+de variables · B.~Alineación nota $\rightarrow$ rueda · C.~VAR/Granger · D.~Robustez ·
+E.~Especificación previa del U6b. No pegues miles de líneas: poné los fragmentos clave
+más el enlace al repositorio y el comando \cod{correr\_todo.py}. Cada anexo tiene que
+estar mencionado en el cuerpo. En LaTeX, usá \cod{\textbackslash appendix} y el paquete
+\cod{listings} para el código.
+\extension{19 págs.}{lo necesario}
+\end{plantilla}
+\begin{ojo}
+El cuerpo menciona el Anexo~1 y el Anexo~3, pero nunca el Anexo~2.
+\end{ojo}
+\terminos{código fuente · remisión «ver Anexo»}
+
+% =====================================================================
+\part{Guías transversales}
+
+\chapter{Formato del documento}
+\label{cap:formato}
+\meta{Medido sobre el PDF}{Convenciones tipográficas}
+
+Lo que hay que replicar para que tu documento siga el modelo. Las fuentes y tamaños se
+leyeron del PDF. Si tu cátedra tiene una plantilla oficial, esa manda.
+
+\begin{table}[h]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}l X@{}}
+\toprule
+\normalfont\textsc{Elemento} & \textsc{En el original} \\
+\midrule
+Papel & A4 vertical; páginas 35 a 37 en horizontal para los árboles grandes. Margen
+izquierdo $\approx$ 2,5~cm. \\
+Encabezado & Título completo del trabajo en Arial Narrow cursiva 11, en todas las
+páginas salvo la portada. \\
+Pie de página & «Autores: Briant Alcides Gauna + Fabricio Pasinato» y «Pág. 5 de 59»,
+en Arial Narrow 11. \\
+Títulos & Sin numerar. Nivel 1: Arial 16 · Nivel 2: Arial 13 · Nivel 3: Arial 12. Los
+capítulos no empiezan en página nueva. \\
+Cuerpo & Georgia 11, interlineado $\approx$ 1,15. Negrita solo para las cifras del
+análisis univariado. \\
+Viñetas & $\bullet$ para el primer nivel y $\circ$ para el segundo. \\
+Figuras & Se llaman «Imagen» y van numeradas de corrido del 1 al 46. Epígrafe debajo,
+en Georgia cursiva 9: «Imagen 16. Descripción. Fuente: Elaboración Propia.» \\
+Tablas & Numeradas del 1 al 4, con el mismo formato de epígrafe debajo: «Tabla 3. …
+Fuente: Elaboración Propia.» \\
+Citas & Autor-año entre paréntesis: (Fuentes Pérez, 2014). Las citas textuales van
+entre comillas; las de manuales, en inglés con capítulo y título. \\
+Resumen & Título repetido arriba en Arial 16. «Palabras clave» y «Temática de Interés»
+en cursiva. \\
+Código & Courier New 11, solo en los anexos. \\
+\bottomrule
+\end{tabularx}
+\caption{Convenciones de formato del documento original.}
+\label{tab:formato}
+\end{table}
+
+\section{Distribución de las 59 páginas}
+
+Más de la mitad del documento son desarrollo y anexos; resultados y conclusiones
+comparten una sola página (la 38). Cada segmento de la figura~\ref{fig:paginas} es
+proporcional a la cantidad de páginas.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[x=0.25cm,y=1cm]
+  % segmentos: inicio, ancho (páginas), color
+  \foreach \ini/\anc/\col in {0/3/bar6, 3/4/bar5, 7/6/bar2, 13/4/bar4, 17/20/bar1,
+                              37/1/bar3, 38/2/bar5, 40/19/bar6}{
+    \fill[\col] (\ini,0) rectangle ++(\anc-0.12,0.8);
+  }
+  \foreach \p in {0,10,20,30,40,50,59}{
+    \draw[gris] (\p,-0.08) -- (\p,-0.2) node[below,font=\scriptsize,text=gris]{\p};
+  }
+\end{tikzpicture}
+
+\vspace{6pt}
+\small
+\begin{tabular}{@{}l l r@{\qquad}l l r@{}}
+\textcolor{bar6}{\rule{8pt}{8pt}} & Portada e índice & 3 &
+\textcolor{bar1}{\rule{8pt}{8pt}} & Desarrollo Experimental & 20 \\
+\textcolor{bar5}{\rule{8pt}{8pt}} & Resumen, Introducción y Objetivos & 4 &
+\textcolor{bar3}{\rule{8pt}{8pt}} & Resultados y Conclusiones & 1 \\
+\textcolor{bar2}{\rule{8pt}{8pt}} & El crecimiento de las ciudades & 6 &
+\textcolor{bar5}{\rule{8pt}{8pt}} & Bibliografía & 2 \\
+\textcolor{bar4}{\rule{8pt}{8pt}} & Técnicas de Ciencia de Datos & 4 &
+\textcolor{bar6}{\rule{8pt}{8pt}} & Anexos & 19 \\
+\end{tabular}
+\caption{Páginas por capítulo en el documento original (total: 59).}
+\label{fig:paginas}
+\end{figure}
+
+% =====================================================================
+\chapter{Qué le falta al modelo}
+\label{cap:faltantes}
+\meta{14 puntos}{Diagnóstico frente a una tesina convencional}
+
+Lo que una tesina de licenciatura suele tener y este ejemplo no tiene, o tiene débil,
+más los errores internos que aparecieron al cruzar el texto con el código. Sirve para no
+heredarlos.
+
+\newcommand{\falta}[3]{\item \textbf{#1}\par #2\par\noindent\textcolor{alerta}{\textbf{Para la tuya:}} #3}
+
+\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=*,itemsep=8pt]
+  \falta{Resultados y discusión casi inexistentes.}
+    {Media página, metida dentro de Desarrollo Experimental y sin citar a ningún autor.
+    Es la parte que más pesa en una defensa.}
+    {capítulo propio, de 3 a 6 páginas, que contraste tus hallazgos con la literatura.}
+  \falta{La hipótesis no se retoma.}
+    {Las conclusiones nunca dicen «la hipótesis se confirma».}
+    {nombrala de forma explícita y decí si se sostiene. La tuya no se sostiene, y eso
+    hay que escribirlo con claridad.}
+  \falta{Sin apartado de limitaciones.}
+    {No mencionan las limitaciones de los datos (2 estaciones, 2 años) ni las del
+    modelo.}
+    {un subtítulo propio. Ya tenés la lista en el documento de la entrega final, en la
+    carpeta \cod{09\_entrega\_final}.}
+  \falta{Líneas futuras en una sola oración.}
+    {Aparecen al final de las conclusiones, sin desarrollo.}
+    {de 2 a 4 líneas justificadas: DLM, Twitter, CCL, validación humana del etiquetado.}
+  \falta{Estado del arte flojo.}
+    {Cuatro párrafos cortos con 5 citas generales (una es sobre arquitectura virreinal
+    de Lima) y ningún estudio previo del caso.}
+    {de 1 1/2 a 3 páginas con los papers de \cod{10\_papers\_union}, cerrando con el
+    vacío que llenás.}
+  \falta{No declara el diseño de investigación.}
+    {Falta el tipo de estudio, el diseño y la definición de población y muestra.}
+    {un párrafo al inicio de la metodología: observacional, longitudinal, correlacional;
+    población S\&P~Merval; muestra de 47 y 17 acciones en 244 ruedas.}
+  \falta{Validación del modelo débil e inconsistente con el código.}
+    {Un solo split 80/20, búsqueda en grilla con \cod{cv=2} sin usar el resultado,
+    escalado antes de dividir y un único árbol presentado como el bosque.}
+    {que lo que dice el texto coincida con lo que hace el código. Tus controles
+    (\cod{correr\_todo}, placebo, BH) son el argumento.}
+  \falta{Cifras que no cierran.}
+    {Un «80\,\%» que suma 71,8\,\%, temperaturas mezcladas en °C y °F y «no hubo nulos»
+    cuando el código hace \cod{dropna()}.}
+    {antes de entregar, revisá que cada número del texto salga de un CSV.}
+  \falta{La bibliografía no coincide con el cuerpo.}
+    {Falta Oke, sobran 5 referencias y los estilos están mezclados.}
+    {un solo estilo, en orden alfabético, y un control cruzado entre citas y
+    referencias.}
+  \falta{Sin índice de figuras y tablas.}
+    {Tiene 46 imágenes y 4 tablas, sin un índice propio.}
+    {generalo automáticamente a partir de los epígrafes (\cod{\textbackslash
+    listoffigures}, \cod{\textbackslash listoftables}).}
+  \falta{Sin glosario de siglas.}
+    {ICU, OPAD, EDA y ANOVA no se definen en un solo lugar.}
+    {tus siglas son más: VAR, IRF, HMM, ADF, KPSS, CAR, BH, NER, MLM.}
+  \falta{Sin aclaración sobre datos de terceros.}
+    {No dice nada de los términos de uso de Wunderground, la fuente que scrapearon.}
+    {dos o tres líneas sobre el uso académico de las notas periodísticas y de los datos
+    de Yahoo.}
+  \falta{Erratas y remanentes.}
+    {«web scrapping», «son heterogéneos», «Mandey» en lugar de Manley y «procesamiento
+    de lenguaje natural» como requisito, aunque nunca se usa. Además, el Anexo~2 no se
+    menciona en el texto.}
+    {una lectura final solo para erratas, separada de la revisión de contenido.}
+  \falta{Sin agradecimientos.}
+    {Es una sección opcional, pero habitual.}
+    {si la incluís, va entre la portada y el resumen.}
+\end{enumerate}
+
+\end{document}

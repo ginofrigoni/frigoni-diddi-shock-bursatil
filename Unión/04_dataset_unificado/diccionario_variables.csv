@@ -1,0 +1,41 @@
+variable,dataset,descripcion,unidad,origen
+rueda,ambos,Día de bolsa (BYMA),fecha,Lado Bursatil/03_vix_argentino (calendario de ^MERV)
+merv_cierre,mercado,Cierre del índice Merval,puntos,Lado Bursatil/03_vix_argentino
+ret_merval,ambos,Retorno diario del Merval,"proporción (0,01 = 1%)",Lado Bursatil/03_vix_argentino
+vix_arg,ambos,"VIX argentino: volatilidad realizada de 20 ruedas, anualizada",%,Lado Bursatil/03_vix_argentino
+regimen,ambos,"Régimen de mercado (HMM, probabilidades suavizadas): Calmo, Moderado o Tenso",categoría,Lado Bursatil/06_hmm_regimen_mercado
+regimen_filtrado,ambos,Régimen con probabilidades filtradas (solo usa información hasta ese día),categoría,Lado Bursatil/06_hmm_regimen_mercado
+prob_tenso,ambos,Probabilidad suavizada del régimen Tenso,0 a 1,Lado Bursatil/06_hmm_regimen_mercado
+prob_tenso_filtrada,mercado,Probabilidad filtrada del régimen Tenso,0 a 1,Lado Bursatil/06_hmm_regimen_mercado
+monto_operado,mercado,"Cierre × volumen, sumado sobre las 47 acciones",pesos,Lado Bursatil/01_scraping_acciones (U4)
+monto_anormal,mercado,log(monto) − promedio de log(monto) de las 20 ruedas previas,log (0 = habitual),U4
+n_notas,ambos,Notas que recibe la rueda (regla de las 17:00),notas,U1
+dias_cubiertos,mercado,"Días de calendario que junta la rueda (1 normal, 3 un lunes, 4+ tras feriado)",días,U2
+atencion_anormal,ambos,Atención de los medios: notas comparadas con lo habitual para ese tipo de rueda y las 20 previas,log (0 = habitual),U2
+sent_neto,ambos,Tono de las noticias: promedio del sentimiento neto de las notas de la rueda,puntos (−100 a +100),U2 (sentimiento de Gino)
+sent_neto_portal,ambos,Tono ajustado por portal (a cada nota se le resta el promedio de su portal),puntos,U2
+sent_anormal,ambos,Tono anormal: tono de la rueda − promedio del tono de las 20 ruedas previas. Variable de tono del VAR,puntos (0 = habitual),U4 (decisión de U5)
+sent_portal_anormal,ambos,Lo mismo con el tono ajustado por portal,puntos (0 = habitual),U4 (decisión de U5)
+"pct_pos, pct_neg, pct_neu, pct_mixto",mercado,Porcentaje promedio de oraciones de cada clase en las notas de la rueda,%,U2
+z_shock,mercado,"Distancia del tono a lo habitual, en veces el error esperable por la cantidad de notas",veces,U2
+"shock, shock_pos, shock_neg",ambos,"Rueda de tono extremo (|z| > 2,5), total, positiva y negativa",0/1,U2
+evento_id,ambos,Número de evento (shocks del mismo signo en ruedas seguidas = un evento); 0 si no hay,número,U2
+dia_electoral,ambos,Rueda posterior a una elección (08/09/2025 y 27/10/2025),texto,U2
+eco_electoral,ambos,Rueda dentro de las 20 posteriores a un día electoral (eco en el VIX y el régimen),0/1,U4
+abril_2026,ambos,Rueda de abril de 2026 (hueco de iProfesional en el corpus),0/1,U4
+"ticker, empresa, sector, oficial",panel,Identificación de la acción; oficial = está en el S&P Merval,texto,Lado Bursatil/01_scraping_acciones
+grupo_baja_liquidez,panel,"Integra el grupo de 8 del clustering, explicado por baja liquidez",0/1,Lado Bursatil/02_clustering_acciones
+cuatro_iliquidas,panel,"Es una de las 4 acciones con más días sin operar (GCDI, RIGO, GRIM, GARO)",0/1,Lado Bursatil/02_clustering_acciones
+cierre,panel,Precio de cierre ajustado,pesos,Lado Bursatil/01_scraping_acciones
+retorno,panel,Retorno diario de la acción (pct_change sobre la serie completa),proporción,U4 (misma definición que la carpeta 04)
+volumen,panel,Acciones operadas en la rueda,acciones,Lado Bursatil/01_scraping_acciones
+monto,panel,Cierre × volumen,pesos,U4
+vol_anormal,panel,log(1 + volumen) − promedio de log(1 + volumen) de las 20 ruedas previas,log (0 = habitual),U4
+sin_operar,panel,La acción no operó (volumen 0),0/1,U4
+precio_quieto,panel,El cierre es igual al de la rueda anterior,0/1,U4
+hubo_noticia,panel,Al menos una oración de las notas de la rueda menciona a la empresa,0/1,U3
+sentimiento_propio,panel,La empresa tiene noticias en al menos 90 ruedas y usa su propio sentimiento,0/1,U3
+"n_articulos_empresa, n_oraciones_empresa",panel,Notas y oraciones de la rueda que mencionan a la empresa,cantidad,U3
+sent_neto_empresa,panel,Tono de las oraciones que mencionan a la empresa; vacío si no hubo noticia,puntos,U3 (cruce de Gino)
+peso_tono_propio,panel,"Cuánto se confía en las oraciones de la empresa: n / (n + K), con K estimado de los datos",0 a 1,U4 (decisión de U6)
+tono_propio,panel,Tono propio: peso × (tono de la empresa − tono del mercado); 0 si no hubo noticia. Variable de empresa del VAR,puntos (0 = como el mercado),U4 (decisión de U6)

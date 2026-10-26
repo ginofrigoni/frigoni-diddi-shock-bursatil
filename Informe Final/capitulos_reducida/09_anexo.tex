@@ -1,0 +1,64 @@
+% =====================================================================
+\appendix
+\addto\captionsspanish{\renewcommand{\appendixname}{Anexo}}
+\renewcommand{\appendixname}{Anexo}
+\chapter{Reproducibilidad y organización del proyecto}
+\label{anx:repro}
+
+El proyecto tiene tres partes que no se modifican entre sí. Cada paso es una carpeta con su
+script, sus resultados en CSV, sus controles automáticos y un PDF que lo documenta
+(tabla~\ref{tab:carpetas}).
+
+{\footnotesize
+\begin{longtable}{@{}L{5.6cm}L{8.2cm}@{}}
+\toprule
+\textbf{Carpeta} & \textbf{Qué contiene} \\
+\midrule
+\endhead
+\multicolumn{2}{@{}l}{\textit{Lado Bursatil}} \\
+\carpeta{00_mapa_lado_bursatil} & Mapa del lado bursátil \\
+\carpeta{01_scraping_acciones} & Selección del panel y precios diarios de las 47 acciones \\
+\carpeta{02_clustering_acciones} & Clustering y análisis del grupo de baja liquidez \\
+\carpeta{03_vix_argentino} & VIX argentino y ventana de fechas \\
+\carpeta{04_adf} & Estacionariedad de precios y retornos \\
+\carpeta{05_volatilidad_ranking} & Volatilidad por acción, ranking y picos propios \\
+\carpeta{06_hmm_regimen_mercado} & Regímenes de mercado \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Lado Noticias}} \\
+\carpeta{noticias} & Recolección, auditoría y depuración del corpus \\
+\carpeta{sentimiento_finbert} & Etiquetado, FinBETO, medición de calidad y serie diaria \\
+\carpeta{ner_entidades} & Reconocimiento de entidades y cruce con el sentimiento \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Unión}} \\
+\carpeta{00_pipeline_union} & Pipeline, diagnóstico del cruce y decisiones previas \\
+\carpeta{01_alineacion_noticias_ruedas} & Cada nota a su rueda (10 controles) \\
+\carpeta{02_sentimiento_por_rueda} & Tono, atención y ruedas de tono extremo (7 controles) \\
+\carpeta{03_sentimiento_por_empresa} & Tono de cada empresa por rueda (7 controles) \\
+\carpeta{04_dataset_unificado} & Datasets y diccionario de variables (8 controles) \\
+\carpeta{05_adf_union} & Estacionariedad en la ventana de la unión (5 controles) \\
+\carpeta{06_var_granger} & VAR, Granger e impulso-respuesta (6 controles) \\
+\carpeta{06b_noticias_preapertura} & Notas con el mercado cerrado (6 controles) \\
+\carpeta{07_event_study} & Estudio de eventos de tono extremo (5 controles) \\
+\carpeta{07b_shock_volumen_noticias} & Shock de cantidad de noticias (7 controles) \\
+\carpeta{08_robustez} & Robustez (5 controles) \\
+\carpeta{09_entrega_final} & Mapa de la tesis, plan actualizado y \texttt{correr\_todo.py} \\
+\carpeta{10_papers_union} & Papers relacionados con cada prueba de la unión \\
+\carpeta{11_papers_lado_noticias} & Papers del corpus, el sentimiento y el NER \\
+\bottomrule
+\caption{Organización del proyecto. Fuente: elaboración propia.}
+\label{tab:carpetas}
+\end{longtable}
+}
+
+\textbf{Cómo se rehace.} Desde \carpeta{Unión/09_entrega_final}, el comando
+\texttt{python correr\_todo.py} corre la unión completa en orden (unos dos minutos y medio),
+verifica que pasen los 66 controles automáticos y compara la huella de cada uno de los 64
+archivos de resultados con la corrida anterior: los 64 salen idénticos. Esta tesina se compila
+desde \carpeta{Informe Final} con \texttt{python compilar\_reducida.py}.
+
+\textbf{Material de detalle.} La versión completa de la tesina
+(\carpeta{Informe Final/Tesina_Final.pdf}) reúne las tablas de detalle que esta versión resume:
+el panel de acciones con la liquidez, la volatilidad y la cobertura de noticias de cada una; el
+diccionario de las 40 variables de los datasets; las horas sospechosas y los controles de la
+alineación; las pruebas de Granger empresa por empresa y por sector; el texto completo de las
+especificaciones escritas antes de los resultados, y la bibliografía agrupada por tema.

@@ -1,0 +1,76 @@
+nivel,unidad,rezagos,estable,n
+mercado,Merval,4,True,220
+empresa,AGRO.BA,2,True,222
+empresa,ALUA.BA,1,True,223
+propio,ALUA.BA,1,True,223
+empresa,AUSO.BA,4,True,220
+empresa,BBAR.BA,4,True,220
+propio,BBAR.BA,1,True,223
+empresa,BHIP.BA,4,True,220
+empresa,BMA.BA,1,True,223
+propio,BMA.BA,1,True,223
+empresa,BOLT.BA,2,True,222
+empresa,BPAT.BA,1,True,223
+empresa,BYMA.BA,3,True,221
+propio,BYMA.BA,1,True,223
+empresa,CAPX.BA,2,True,222
+empresa,CELU.BA,1,True,223
+empresa,CEPU.BA,4,True,220
+propio,CEPU.BA,1,True,223
+empresa,CGPA2.BA,3,True,221
+empresa,COME.BA,1,True,223
+empresa,CRES.BA,1,True,223
+propio,CRES.BA,1,True,223
+empresa,CTIO.BA,2,True,222
+empresa,CVH.BA,1,True,223
+empresa,DGCU2.BA,1,True,223
+empresa,EDN.BA,1,True,223
+propio,EDN.BA,1,True,223
+empresa,FIPL.BA,1,True,223
+empresa,GARO.BA,1,True,223
+empresa,GBAN.BA,1,True,223
+empresa,GCDI.BA,1,True,223
+empresa,GGAL.BA,1,True,223
+propio,GGAL.BA,1,True,223
+empresa,GRIM.BA,1,True,223
+empresa,HAVA.BA,1,True,223
+empresa,IRSA.BA,1,True,223
+propio,IRSA.BA,1,True,223
+empresa,LEDE.BA,1,True,223
+empresa,LOMA.BA,2,True,222
+propio,LOMA.BA,1,True,223
+empresa,LONG.BA,1,True,223
+empresa,METR.BA,4,True,220
+propio,METR.BA,1,True,223
+empresa,MIRG.BA,2,True,222
+empresa,MOLI.BA,1,True,223
+empresa,MORI.BA,2,True,222
+empresa,OEST.BA,1,True,223
+empresa,PAMP.BA,1,True,223
+propio,PAMP.BA,1,True,223
+empresa,RIGO.BA,1,True,223
+empresa,SAMI.BA,2,True,222
+empresa,SEMI.BA,3,True,221
+empresa,SUPV.BA,1,True,223
+propio,SUPV.BA,1,True,223
+empresa,TECO2.BA,1,True,223
+empresa,TGNO4.BA,1,True,223
+empresa,TGSU2.BA,1,True,223
+propio,TGSU2.BA,1,True,223
+empresa,TRAN.BA,1,True,223
+propio,TRAN.BA,1,True,223
+empresa,TXAR.BA,1,True,223
+propio,TXAR.BA,1,True,223
+empresa,VALO.BA,1,True,223
+empresa,YPFD.BA,1,True,223
+propio,YPFD.BA,1,True,223
+sector,Comunicaciones (2),1,True,223
+sector,Conglomerado (3),3,True,221
+sector,Consumo (9),1,True,223
+sector,Energía (4),1,True,223
+sector,Financiero (8),4,True,220
+sector,Industrial (3),4,True,220
+sector,Materiales (6),2,True,222
+sector,Real Estate (3),1,True,223
+sector,Tecnología (1),2,True,222
+sector,Utilities (8),4,True,220

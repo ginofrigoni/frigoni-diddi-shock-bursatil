@@ -1,0 +1,7 @@
+control,pasa
+Ninguna nota pre-apertura se publicó durante la sesión de su rueda (11:00 a 17:00),True
+Ninguna nota pre-apertura tiene hora sospechosa,True
+Todas las ruedas tienen notas pre-apertura,True
+Los modelos principales usan 224 ruedas (mercado) con todas las ruedas,True
+El panel tiene las 17 empresas,True
+"Calibración: con el tono mezclado al azar, entre 2% y 9% de p < 0,05 (dio 4.7%)",True

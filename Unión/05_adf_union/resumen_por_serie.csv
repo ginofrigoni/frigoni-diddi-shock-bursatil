@@ -1,0 +1,17 @@
+ambito,grupo,Estacionaria,Estacionaria (ADF),Inconclusa,No estacionaria,total
+mercado,atencion_anormal,1,0,0,0,1
+mercado,monto_anormal,1,0,0,0,1
+mercado,n_notas,0,1,0,0,1
+mercado,ret_merval,1,0,0,0,1
+mercado,sent_anormal,1,0,0,0,1
+mercado,sent_neto,0,0,1,0,1
+mercado,sent_neto (cambio de tono),1,0,0,0,1
+mercado,sent_neto_portal,0,0,1,0,1
+mercado,sent_neto_portal (cambio de tono),1,0,0,0,1
+mercado,sent_portal_anormal,1,0,0,0,1
+mercado,vix_arg,0,0,1,0,1
+panel,retorno,47,0,0,0,47
+panel,sent_neto_empresa (completada),16,1,0,0,17
+panel,sent_neto_empresa (solo días con noticia),16,1,0,0,17
+panel,tono_propio,14,3,0,0,17
+panel,vol_anormal,46,1,0,0,47
