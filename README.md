@@ -33,8 +33,8 @@ La unión de los dos lados, que responde la pregunta de la tesina, es trabajo de
 
 ## Docentes
 
-- **Alejandro Mario Hernandez** — Docente
-- **Briant Alcides Gauna** — Docente
+- **Alejandro Mario Hernandez**
+- **Briant Alcides Gauna**
 - **Jorge Manuel Fernández Acuña**
 
 ---
