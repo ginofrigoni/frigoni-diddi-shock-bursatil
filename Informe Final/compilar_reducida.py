@@ -1,11 +1,12 @@
-"""Compila Tesina_Reducida.pdf (la versión reducida de la tesina).
+"""Compila Informe_Final_NicolasDiddi-GinoFrigoni.pdf, la tesina de entrega.
 
 1. Copia a figuras/ las figuras de la versión completa y las que suma la reducida, y genera
    las tres que la reducida rehace (figuras_reducida.py).
 2. Arma bibliografia_reducida.tex con solo las referencias que cita la versión reducida,
    tomadas tal cual de bibliografia.tex (que arma generar_bibliografia.py para la versión
    completa y no se modifica).
-3. Corre tectonic sobre Tesina_Reducida.tex y verifica los enlaces a los papers.
+3. Corre tectonic sobre Informe_Final_NicolasDiddi-GinoFrigoni.tex y verifica los enlaces a
+   los papers.
 
 Uso:  python compilar_reducida.py   (desde "Informe Final")
 """
@@ -16,13 +17,15 @@ import sys
 
 from compilar_tesina import AQUI, FIGURAS, RAIZ, TECTONIC, arreglar_enlaces
 
+DOCUMENTO = "Informe_Final_NicolasDiddi-GinoFrigoni"
+
 FIGURAS_EXTRA = [
     "Lado Bursatil/06_hmm_regimen_mercado/bic_curva.png",
 ]
 
 
 def claves_citadas():
-    textos = [AQUI / "Tesina_Reducida.tex"] + sorted((AQUI / "capitulos_reducida").glob("*.tex"))
+    textos = [AQUI / f"{DOCUMENTO}.tex"] + sorted((AQUI / "capitulos_reducida").glob("*.tex"))
     claves = set()
     for f in textos:
         texto = re.sub(r"(?<!\\)%.*", "", f.read_text(encoding="utf-8"))
@@ -59,8 +62,8 @@ def main():
     print(f"{len(FIGURAS) + len(FIGURAS_EXTRA)} figuras copiadas")
     subprocess.run([sys.executable, str(AQUI / "figuras_reducida.py")], check=True)
     armar_bibliografia()
-    subprocess.run([str(TECTONIC), "Tesina_Reducida.tex"], cwd=AQUI, check=True)
-    arreglar_enlaces(AQUI / "Tesina_Reducida.pdf")
+    subprocess.run([str(TECTONIC), f"{DOCUMENTO}.tex"], cwd=AQUI, check=True)
+    arreglar_enlaces(AQUI / f"{DOCUMENTO}.pdf")
 
 
 if __name__ == "__main__":

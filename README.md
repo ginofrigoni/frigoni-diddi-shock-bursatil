@@ -16,7 +16,7 @@ Universidad del Gran Rosario · Seminario de Trabajo Final
 ![statsmodels](https://img.shields.io/badge/statsmodels-VAR%20%C2%B7%20Granger%20%C2%B7%20HMM-1F4E79)
 ![LaTeX](https://img.shields.io/badge/LaTeX-tectonic-008080?logo=latex&logoColor=white)
 
-[**Leer la tesina (PDF)**](Informe%20Final/Tesina_Reducida.pdf) · [Versión completa](Informe%20Final/Tesina_Final.pdf)
+[**Leer la tesina (PDF)**](Informe%20Final/Informe_Final_NicolasDiddi-GinoFrigoni.pdf)
 
 </div>
 
@@ -94,7 +94,7 @@ Cada carpeta tiene su propio README con el detalle. En los PDF de la tesina, deb
 | **Lado de noticias** | Entorno Python 3.13 desde `Lado Noticias/requirements.txt` (ver `Lado Noticias/README.md`). La recolección usa credenciales de Internet Archive en `Lado Noticias/noticias/.env`, que no se sube: copiar `.env.example` y completarlo |
 | **Lado bursátil** | Cada carpeta tiene un script de Python; los PDF de documentación se generan con Node desde `Lado Bursatil/99_generadores_documentacion` (`npm install`) |
 | **Unión** | Desde `Unión/09_entrega_final`, `python correr_todo.py` rehace todos los pasos, verifica los 66 controles automáticos y compara los 64 archivos de resultados con la corrida anterior |
-| **Tesina** | Desde `Informe Final`, `python compilar_reducida.py` (versión de entrega) o `python compilar_tesina.py` (versión completa), con [tectonic](https://tectonic-typesetting.github.io/) en `~/tools/tectonic/tectonic.exe` |
+| **Tesina** | Desde `Informe Final`, `python compilar_reducida.py` genera `Informe_Final_NicolasDiddi-GinoFrigoni.pdf`, con [tectonic](https://tectonic-typesetting.github.io/) en `~/tools/tectonic/tectonic.exe` |
 
 ### Un archivo comprimido
 
