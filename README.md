@@ -18,6 +18,8 @@ Universidad del Gran Rosario · Seminario de Trabajo Final
 
 [**Leer la tesina (PDF)**](Informe%20Final/Informe_Final_NicolasDiddi-GinoFrigoni.pdf)
 
+[**Ver la presentación (PPTX)**](Informe%20Final/Presentacion_Tesina.pptx)
+
 </div>
 
 ---
