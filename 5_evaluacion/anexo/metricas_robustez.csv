@@ -1,0 +1,10 @@
+metrica,valor,detalle
+principal_reproduce_4_modelado,sí,
+noticias_a_precio_variantes_que_aportan_logistica,0 de 9,
+noticias_a_precio_variantes_que_aportan_rf,0 de 9,
+noticias_a_precio_delta_auc_min_logistica,-0.0212,sin_abril_2026
+noticias_a_precio_delta_auc_max_logistica,0.0053,corte_2026_03
+precio_a_sentimiento_variantes_que_aportan_logistica,6 de 9,
+precio_a_sentimiento_variantes_que_aportan_rf,5 de 9,
+precio_a_sentimiento_delta_auc_min_logistica,0.0424,ventana_10
+precio_a_sentimiento_delta_auc_max_logistica,0.1544,con_regimen

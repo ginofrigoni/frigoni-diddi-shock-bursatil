@@ -1,0 +1,9 @@
+parte,resultado,cumple
+1. FinBETO supera a la referencia,F1 macro 0.697 contra 0.542 (+15.5 puntos),sí
+2a. Noticias → precio,ΔAUC logística -0.012 [-0.054; +0.036]; RF -0.036 [-0.089; +0.024],no
+2b. Precio → sentimiento,ΔAUC logística +0.152 [+0.074; +0.267]; RF +0.158 [+0.059; +0.323],sí
+2. Al menos una dirección,precio → sentimiento,sí
+Robustez precio → sentimiento,aporta en 6 de 9 variantes (ΔAUC entre +0.042 y +0.154),—
+Robustez noticias → precio,aporta en 0 de 9 variantes,—
+Verificación clásica (Granger),retorno → sentimiento en 14 de 17 empresas; sentimiento → retorno en 0 de 17,—
+VEREDICTO,Se rechaza H0: se acepta H1,sí
