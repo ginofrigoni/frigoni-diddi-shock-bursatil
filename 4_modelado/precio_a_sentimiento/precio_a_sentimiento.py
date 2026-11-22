@@ -62,7 +62,8 @@ metr.round(4).to_csv(SALIDAS / "metricas_test.csv", index=False, encoding="utf-8
 delta.round(4).to_csv(SALIDAS / "delta_auc.csv", index=False, encoding="utf-8")
 hiper.round(4).to_csv(SALIDAS / "hiperparametros.csv", index=False, encoding="utf-8")
 imps.round(4).to_csv(SALIDAS / "importancias.csv", index=False, encoding="utf-8")
-preds.to_csv(SALIDAS / "predicciones_test.csv", index=False, encoding="utf-8")
+# redondeo a 10 decimales: el random forest suma en paralelo y el último decimal varía entre corridas (~1e-16)
+preds.round(10).to_csv(SALIDAS / "predicciones_test.csv", index=False, encoding="utf-8")
 
 # ── Controles ────────────────────────────────────────────────────────────
 alt = d["ret_merval"].copy(); alt.iloc[100] += 1
