@@ -1,0 +1,57 @@
+paso,control,pasa
+3_preparacion_de_los_datos/dataset_unificado,"Mercado: 244 ruedas, sin repetidas, las mismas del calendario bursátil",True
+3_preparacion_de_los_datos/dataset_unificado,"Merval, retorno y VIX idénticos a vix_argentino",True
+3_preparacion_de_los_datos/dataset_unificado,"Panel: 17 empresas × 244 ruedas = 4.148 filas, sin repetidos",True
+3_preparacion_de_los_datos/dataset_unificado,"Sin faltantes en retorno, volumen anormal, VIX, sentimiento propio y hubo_noticia",True
+3_preparacion_de_los_datos/dataset_unificado,El sentimiento inesperado falta solo en las primeras 20 ruedas,True
+3_preparacion_de_los_datos/dataset_unificado,Las notas suman lo mismo que en la regla de las 17:00,True
+3_preparacion_de_los_datos/dataset_unificado,Sentimiento de la empresa presente ⇔ hubo noticia,True
+3_preparacion_de_los_datos/dataset_unificado,Cada rueda del panel tiene el mismo sentimiento de mercado que el dataset de mercado,True
+3_preparacion_de_los_datos/dataset_unificado,K se estimó solo con ruedas de entrenamiento,True
+3_preparacion_de_los_datos/dataset_unificado,Todas las columnas de los dos datasets están en el diccionario,True
+3_preparacion_de_los_datos/dataset_unificado,"Retorno, volumen anormal y VIX idénticos a los de la 5.0 en las 17 empresas",True
+3_preparacion_de_los_datos/dataset_unificado,hubo_noticia idéntico al de la 5.0,True
+3_preparacion_de_los_datos/regla_17,Cada nota tiene una rueda o un motivo para no tenerla,True
+3_preparacion_de_los_datos/regla_17,Ninguna nota va a una rueda anterior a su publicación,True
+3_preparacion_de_los_datos/regla_17,Ninguna nota publicada tras el cierre queda en la rueda del mismo día,True
+3_preparacion_de_los_datos/regla_17,Todas las ruedas de la ventana tienen noticias,True
+3_preparacion_de_los_datos/regla_17,La ventana tiene 244 ruedas,True
+3_preparacion_de_los_datos/regla_17,nota_a_rueda.csv es idéntico al de la 5.0,True
+3_preparacion_de_los_datos/regla_17,notas_por_rueda.csv es idéntico al de la 5.0,True
+3_preparacion_de_los_datos/sentimiento_por_empresa,"Agrupando por fecha se reproduce ner_sentimiento_diario.csv del cruce, fila por fila",True
+3_preparacion_de_los_datos/sentimiento_por_empresa,La cobertura del cruce coincide con su reporte,True
+3_preparacion_de_los_datos/sentimiento_por_empresa,Todas las notas con menciones están en U1,True
+3_preparacion_de_los_datos/sentimiento_por_empresa,Ninguna oración se pierde al pasar de fecha a rueda (mismas notas de la ventana),True
+3_preparacion_de_los_datos/sentimiento_por_empresa,El panel tiene 47 acciones × 244 ruedas sin repetidos,True
+3_preparacion_de_los_datos/sentimiento_por_empresa,Sin noticia ⇔ sentimiento vacío,True
+3_preparacion_de_los_datos/sentimiento_por_empresa,Todos los tickers de las menciones están entre las 47 acciones,True
+3_preparacion_de_los_datos/sentimiento_por_empresa,Las empresas con cobertura son las mismas 17 de la 5.0,True
+3_preparacion_de_los_datos/sentimiento_por_empresa,hubo_noticia es igual al de la 5.0 en cada acción y rueda (no depende de la etiqueta),True
+3_preparacion_de_los_datos/sentimiento_por_rueda,"La serie tiene las 244 ruedas, sin huecos",True
+3_preparacion_de_los_datos/sentimiento_por_rueda,Las notas por rueda coinciden con la regla de las 17:00,True
+3_preparacion_de_los_datos/sentimiento_por_rueda,El ajuste por portal deja en 0 el promedio de cada portal,True
+3_preparacion_de_los_datos/sentimiento_por_rueda,El sentimiento inesperado está vacío solo en las primeras 20 ruedas,True
+3_preparacion_de_los_datos/sentimiento_por_rueda,El sentimiento inesperado usa solo ruedas anteriores (cambiar la rueda t no cambia el valor de t−1),True
+3_preparacion_de_los_datos/sentimiento_por_rueda,Con las etiquetas de la 5.0 se reproduce el sentimiento por rueda de la 5.0,True
+3_preparacion_de_los_datos/sentimiento_por_rueda,Con las etiquetas de la 5.0 se reproduce el sent_anormal de la 5.0,True
+4_modelado/noticias_a_precio,Los rezagos usan solo ruedas anteriores de la misma acción,True
+4_modelado/noticias_a_precio,El objetivo de cada fila es el retorno de la rueda siguiente de la misma acción,True
+4_modelado/noticias_a_precio,Entrenamiento y test no comparten ruedas,True
+4_modelado/noticias_a_precio,El test empieza en febrero de 2026,True
+4_modelado/noticias_a_precio,17 empresas en entrenamiento y en test,True
+4_modelado/noticias_a_precio,Sin faltantes en las variables de los modelos,True
+4_modelado/precio_a_sentimiento,Los rezagos usan solo ruedas anteriores,True
+4_modelado/precio_a_sentimiento,El objetivo es el sentimiento inesperado de la rueda siguiente,True
+4_modelado/precio_a_sentimiento,Entrenamiento y test no comparten ruedas,True
+4_modelado/precio_a_sentimiento,El test empieza en febrero de 2026,True
+4_modelado/precio_a_sentimiento,Sin faltantes en las variables de los modelos,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),no_queda_ninguna_MIXTO,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),solo_3_clases,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),sin_label_id_vacios,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),entrada_10855_oraciones,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),train_mismas_oraciones_que_5.0,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),train_etiqueta_original_igual_5.0,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),val_mismas_oraciones_que_5.0,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),val_etiqueta_original_igual_5.0,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),test_mismas_oraciones_que_5.0,True
+3_preparacion_de_los_datos/sentimiento_finbeto (dataset),test_etiqueta_original_igual_5.0,True
