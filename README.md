@@ -19,7 +19,7 @@ Universidad del Gran Rosario · Seminario de Trabajo Final
 
 [**Leer la tesina (PDF)**](6_despliegue/informe/Informe_Final_NicolasDiddi-GinoFrigoni.pdf)
 
-[**Ver la presentación**](6_despliegue/presentacion/) · [**Guion de la presentación**](6_despliegue/presentacion/GUION_PRESENTACION.md)
+[**Ver la presentación (PPTX)**](6_despliegue/presentacion/Presentacion_Tesina.pptx) · [PDF](6_despliegue/presentacion/Presentacion_Tesina.pdf) · [**Guion**](6_despliegue/presentacion/GUION_PRESENTACION.md)
 
 <sub>Versión 6.0. La versión anterior (5.0) está en la rama <a href="https://github.com/ginofrigoni/frigoni-diddi-shock-bursatil/tree/version-5"><code>version-5</code></a>.</sub>
 
@@ -96,7 +96,7 @@ Cada fase de CRISP-DM es una carpeta, y adentro hay una subcarpeta por tema. Cad
 | 📂 [`3_preparacion_de_los_datos/`](3_preparacion_de_los_datos/) | Regla de las 17:00 · FinBETO · sentimiento por rueda y por empresa · VIX argentino · dataset unificado |
 | 📂 [`4_modelado/`](4_modelado/) | Modelo A contra B: noticias → precio y precio → sentimiento |
 | 📂 [`5_evaluacion/`](5_evaluacion/) | Veredicto sobre la hipótesis · robustez · VAR y Granger |
-| 📂 [`6_despliegue/`](6_despliegue/) | La tesina en LaTeX (con los papers citados) y la presentación |
+| 📂 [`6_despliegue/`](6_despliegue/) | La tesina en LaTeX (con los papers citados) y la presentación (PPTX, PDF y guion) |
 
 Ningún número de la tesina se escribe a mano: `6_despliegue/informe/numeros.py` los toma de los resultados al compilar. En el PDF, debajo de cada referencia está la ruta del paper dentro de este repositorio; con un lector de escritorio, la ruta abre el archivo.
 
