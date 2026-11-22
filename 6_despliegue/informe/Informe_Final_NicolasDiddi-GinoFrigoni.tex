@@ -105,9 +105,9 @@
 \makeatletter\g@addto@macro{\UrlBreaks}{\do\_}\makeatother
 
 % ---------- Atajos ----------
-% Archivo de un paper o carpeta del proyecto, relativo a la carpeta raíz de la tesis;
+% Archivo de un paper, relativo a la carpeta del informe (papers/);
 % el enlace abre el archivo desde el PDF (lectores de PDF de escritorio).
-\newcommand{\archivo}[1]{\href{run:../#1}{\nolinkurl{#1}}}
+\newcommand{\archivo}[1]{\href{run:#1}{\nolinkurl{#1}}}
 \newcommand{\carpeta}[1]{\nolinkurl{#1}}
 \newcommand{\var}[1]{\texttt{#1}}
 \newcommand{\flecha}{$\rightarrow$}

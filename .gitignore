@@ -23,3 +23,9 @@ Thumbs.db
 ~$*
 *.tmp.pdf
 3_preparacion_de_los_datos/sentimiento_finbeto/datos/oraciones_corpus.csv
+
+# Salidas intermedias de LaTeX
+*.log
+*.xdv
+*.aux
+*.tmp.pdf

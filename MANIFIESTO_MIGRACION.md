@@ -150,3 +150,4 @@ En la columna "Qué se hace": *tal cual* = se copia sin cambios; *adaptar* = se 
 |---|---|---|---|---|
 | 1 | `3_preparacion_de_los_datos/sentimiento_finbeto/datos/oraciones_corpus.csv` | `Lado Noticias/sentimiento_finbert/beto_oraciones_finetuned.csv` | se copian las columnas fuente, url, fecha, autor, titulo, or_idx y oracion, **sin la etiqueta vieja**: mismas oraciones que usa el NER; **no va a GitHub** (> 100 MB) | ver registro |
 | 2 | ~~`3_preparacion_de_los_datos/sentimiento_finbeto/serie_completa_finetuned.py`~~ | — | **se sacó**: lo reemplaza `sentimiento_por_nota.py`, que hace el mismo cálculo (reproduce la 5.0 exacto) sin la parte de inferencia vieja | — |
+| 3 | `6_despliegue/informe/papers/` (35 PDF) | los papers citados en `bibliografia.tex`, de `Unión/10_papers_union`, `Unión/11_papers_lado_noticias` y `Lado Bursatil/*/papers` | tal cual (verificados con MD5); solo los que cita el informe | 36.5 MB |
