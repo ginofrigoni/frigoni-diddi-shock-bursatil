@@ -1,0 +1,21 @@
+<section id="finbeto">
+<div class="head">
+<p class="eyebrow">Preparación · FinBETO</p>
+<h2>FinBETO: un modelo que aprendió el idioma de la prensa económica</h2>
+</div>
+<div class="flow">
+<div class="card"><p class="tag">Punto de partida</p><h3>BETO</h3><p>Un BERT preentrenado en español general.</p></div>
+<x-shape kind="arrow-right" class="arrow" style="background:#1F6FA3;"></x-shape>
+<div class="card"><p class="tag">Paso 1 · Aprende el idioma</p><h3>Preentrenamiento</h3><p>Adivina palabras ocultas en el texto del corpus.</p></div>
+<x-shape kind="arrow-right" class="arrow" style="background:#1F6FA3;"></x-shape>
+<div class="card"><p class="tag">Paso 2 · Aprende a clasificar</p><h3>Ajuste fino</h3><p>Con las oraciones de Gemma, en <b>3 clases</b>: positiva, negativa y neutra.</p></div>
+<x-shape kind="arrow-right" class="arrow" style="background:#1F6FA3;"></x-shape>
+<div class="card hl"><p class="tag">Resultado</p><h3>FinBETO</h3><p>Clasifica las 413.515 oraciones del corpus.</p></div>
+</div>
+<div class="row">
+<div class="card" style="flex:1.2;"><p class="tag">La prueba del idioma</p><p style="font-size:28px;color:#13202F;">«La [MASK] llegó al 3 % mensual según el INDEC» → <b>«inflación»</b> (0,81)</p></div>
+<div class="card"><p class="tag" style="color:#B5700F;">De 4 clases a 3</p><p>MIXTO pasó a NEU: las dos aportaban 0 al sentimiento neto, y así la escala queda ordenada (−1, 0, +1).</p></div>
+</div>
+<p class="pg"></p>
+<aside>GINO. Dos pasos: primero aprende el idioma, después a clasificar. Explicar la decisión de MIXTO: no se podía justificar una clase que se trataba igual que la neutra. Se usaron exactamente las mismas oraciones de antes y solo cambió la etiqueta.</aside>
+</section>

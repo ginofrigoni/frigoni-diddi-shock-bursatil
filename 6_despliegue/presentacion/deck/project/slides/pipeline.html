@@ -1,0 +1,25 @@
+<section id="pipeline" style="gap:36px;">
+<div class="head">
+<p class="eyebrow">Metodología · El pipeline</p>
+<h2>De las noticias y los precios a un modelo evaluado</h2>
+</div>
+<div style="position:relative;width:1664px;height:660px;">
+<div class="card" style="position:absolute;left:0;top:0;width:230px;height:230px;box-sizing:border-box;padding:22px 24px;gap:8px;"><h3 style="font-size:28px;">Noticias</h3><p style="font-size:24px;">7 portales · 14.012 notas</p></div>
+<div class="card" style="position:absolute;left:280px;top:0;width:230px;height:230px;box-sizing:border-box;padding:22px 24px;gap:8px;"><h3 style="font-size:28px;">FinBETO</h3><p style="font-size:24px;">sentimiento de cada oración</p></div>
+<div class="card" style="position:absolute;left:560px;top:0;width:230px;height:230px;box-sizing:border-box;padding:22px 24px;gap:8px;"><h3 style="font-size:28px;">Sentimiento</h3><p style="font-size:24px;">inesperado por rueda y propio por empresa</p></div>
+<div class="card" style="position:absolute;left:0;top:430px;width:230px;height:230px;box-sizing:border-box;padding:22px 24px;gap:8px;"><h3 style="font-size:28px;color:#B5700F;">Precios</h3><p style="font-size:24px;">acciones de BYMA y el Merval</p></div>
+<div class="card" style="position:absolute;left:280px;top:430px;width:510px;height:230px;box-sizing:border-box;padding:22px 24px;gap:8px;"><h3 style="font-size:28px;color:#B5700F;">Retorno, volumen y VIX</h3><p style="font-size:24px;">cuánto se movió cada acción y qué tan nervioso estaba el mercado</p></div>
+<div class="card hl" style="position:absolute;left:850px;top:215px;width:220px;height:230px;box-sizing:border-box;padding:22px 24px;gap:8px;"><h3 style="font-size:28px;">Dataset unificado</h3><p style="font-size:24px;">17 empresas × 244 ruedas</p></div>
+<div class="card hl" style="position:absolute;left:1120px;top:215px;width:260px;height:230px;box-sizing:border-box;padding:22px 24px;gap:8px;"><h3 style="font-size:28px;">Modelo A contra B</h3><p style="font-size:24px;">en las dos direcciones</p></div>
+<div class="card" style="position:absolute;left:1430px;top:215px;width:234px;height:230px;box-sizing:border-box;padding:22px 24px;gap:8px;"><h3 style="font-size:28px;color:#1F6FA3;">Evaluación</h3><p style="font-size:24px;">ruedas no vistas · ΔAUC y matriz de confusión</p></div>
+<x-connector x1="230" y1="115" x2="280" y2="115" head="end" style="color:#1F6FA3;border-width:3px;"></x-connector>
+<x-connector x1="510" y1="115" x2="560" y2="115" head="end" style="color:#1F6FA3;border-width:3px;"></x-connector>
+<x-connector x1="230" y1="545" x2="280" y2="545" head="end" style="color:#B5700F;border-width:3px;"></x-connector>
+<x-connector x1="790" y1="115" x2="850" y2="330" head="end" route="elbow" style="color:#1F6FA3;border-width:3px;"></x-connector>
+<x-connector x1="790" y1="545" x2="850" y2="330" head="end" route="elbow" style="color:#B5700F;border-width:3px;"></x-connector>
+<x-connector x1="1070" y1="330" x2="1120" y2="330" head="end" style="color:#13202F;border-width:3px;"></x-connector>
+<x-connector x1="1380" y1="330" x2="1430" y2="330" head="end" style="color:#13202F;border-width:3px;"></x-connector>
+</div>
+<p class="pg"></p>
+<aside>NICOLÁS. Arriba, el camino de las noticias (lado de Gino); abajo, el del mercado (lado de Nicolás). Se juntan en el dataset unificado, que alimenta al modelo con y sin la información del otro lado, y se evalúa en ruedas que el modelo nunca vio.</aside>
+</section>

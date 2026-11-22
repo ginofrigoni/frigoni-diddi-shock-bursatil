@@ -1,0 +1,29 @@
+<section id="finbetoeval">
+<div class="head">
+<p class="eyebrow">Preparación · Evaluación de FinBETO</p>
+<h2>FinBETO acierta el sentimiento de noticias que nunca vio</h2>
+</div>
+<div class="row" style="gap:48px;">
+<div class="col" style="flex:1;gap:34px;">
+<div class="row" style="gap:28px;">
+<div class="stat"><p class="num">0,697</p><p class="lab">F1 macro de FinBETO (± 0,012, 3 semillas)</p></div>
+<div class="stat"><p class="num amber">0,542</p><p class="lab">modelo de referencia, entrenado con tuits</p></div>
+</div>
+<p style="font-size:30px;color:#13202F;"><b>+15,5 puntos.</b> El de referencia dice «neutra» en 493 de las 786 oraciones: no entiende el lenguaje económico.</p>
+<p class="small">Prueba: 786 oraciones de 39 noticias que el modelo no vio. Se divide por noticia, no por oración: si no, el modelo ve otras oraciones de la misma nota y el F1 sale inflado.</p>
+</div>
+<div class="card" style="flex:0 0 560px;gap:12px;">
+<p class="tag">Matriz de confusión · filas: Gemma · columnas: FinBETO</p>
+<div style="display:grid;grid-template-columns:80px 1fr 1fr 1fr;gap:10px;">
+<p style="font-size:20px;color:#4A5568;"></p><p style="font-size:22px;font-weight:600;text-align:center;color:#4A5568;">POS</p><p style="font-size:22px;font-weight:600;text-align:center;color:#4A5568;">NEG</p><p style="font-size:22px;font-weight:600;text-align:center;color:#4A5568;">NEU</p>
+<p style="font-size:22px;font-weight:600;color:#4A5568;align-self:center;">POS</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#1F6FA3;color:#F6F5F1;font-weight:700;">172</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#EEF1F5;color:#13202F;">20</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#EEF1F5;color:#13202F;">48</p>
+<p style="font-size:22px;font-weight:600;color:#4A5568;align-self:center;">NEG</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#EEF1F5;color:#13202F;">14</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#1F6FA3;color:#F6F5F1;font-weight:700;">136</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#EEF1F5;color:#13202F;">32</p>
+<p style="font-size:22px;font-weight:600;color:#4A5568;align-self:center;">NEU</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#EEF1F5;color:#13202F;">56</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#EEF1F5;color:#13202F;">55</p><p style="padding:14px 10px;text-align:center;font-size:26px;border-radius:10px;background:#1F6FA3;color:#F6F5F1;font-weight:700;">253</p>
+</div>
+<p style="font-size:22px;">Casi nunca confunde positivo con negativo: los errores son con la clase neutra.</p>
+</div>
+</div>
+<p class="src">Primera parte del criterio de H1: cumplida · Capítulo 4</p>
+<p class="pg"></p>
+<aside>GINO. El F1 macro promedia el F1 de cada clase y no premia acertar solo la más frecuente. En las mismas 662 oraciones de la versión de cuatro clases, FinBETO da 0,731 contra 0,546: pasar a tres clases no lo empeoró.</aside>
+</section>

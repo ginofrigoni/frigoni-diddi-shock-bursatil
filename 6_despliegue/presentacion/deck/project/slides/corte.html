@@ -1,0 +1,20 @@
+<section id="corte">
+<div class="head">
+<p class="eyebrow">Modelado · Diseño de la evaluación</p>
+<h2>Entrenar con el pasado, evaluar una sola vez con el futuro</h2>
+</div>
+<div class="col" style="gap:12px;">
+<div class="bar">
+<div style="width:74%;background:#1F6FA3;"><p style="color:#F6F5F1;">Entrenamiento · 165 ruedas · 2.805 filas</p></div>
+<div style="width:26%;background:#B5700F;"><p style="color:#F6F5F1;">Test · 58 ruedas · 986 filas</p></div>
+</div>
+<div class="row" style="justify-content:space-between;"><p class="small">02/06/2025</p><p class="small">corte: 01/02/2026</p><p class="small">29/04/2026</p></div>
+</div>
+<div class="row">
+<div class="card" style="padding:22px 30px;"><p class="tag">Validación temporal</p><p>Dentro del entrenamiento, 5 cortes que se extienden en el tiempo, para elegir hiperparámetros.</p></div>
+<div class="card" style="padding:22px 30px;"><p class="tag">Métricas, fijadas antes</p><p>AUC, balanced accuracy, F1, matriz de confusión y ΔAUC (B − A) con IC 95 %.</p></div>
+<div class="card" style="padding:22px 30px;"><p class="tag">Intervalo de confianza</p><p>Bootstrap por bloques de 5 ruedas: se sortean días, no filas.</p></div>
+</div>
+<p class="pg"></p>
+<aside>NICOLÁS. Por qué temporal: en la práctica solo se conoce el pasado. Mezclar fechas al azar inflaría las métricas. Se sortean ruedas y no filas porque las acciones de un mismo día se mueven juntas. Pasa la palabra a Gino.</aside>
+</section>

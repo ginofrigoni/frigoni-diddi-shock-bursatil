@@ -1,0 +1,22 @@
+<section id="etiquetado" style="gap:28px;">
+<div class="head">
+<p class="eyebrow">Datos · Etiquetado</p>
+<h2>Cómo Gemma etiquetó 11.605 oraciones, paso a paso</h2>
+</div>
+<div class="flow">
+<div class="card" style="padding:22px 26px;"><p class="tag">1 · Selección</p><p style="font-size:23px;">408 noticias, una por fuente por tanda (45 o 46 por fuente)</p></div>
+<x-shape kind="arrow-right" class="arrow" style="background:#1F6FA3;"></x-shape>
+<div class="card" style="padding:22px 26px;"><p class="tag">2 · Contexto</p><p style="font-size:23px;">Lee título, bajada y 3.000 caracteres; escribe tema, actores y sentimiento general</p></div>
+<x-shape kind="arrow-right" class="arrow" style="background:#1F6FA3;"></x-shape>
+<div class="card" style="padding:22px 26px;"><p class="tag">3 · Oración por oración</p><p style="font-size:23px;">Etiqueta y escribe una <b>razón</b> para cada oración</p></div>
+<x-shape kind="arrow-right" class="arrow" style="background:#1F6FA3;"></x-shape>
+<div class="card hl" style="padding:22px 26px;"><p class="tag">4 · Limpieza</p><p style="font-size:23px;">Saca repetidas y relleno: quedan 10.855</p></div>
+</div>
+<div class="row" style="gap:22px;">
+<div class="card" style="padding:22px 28px;gap:8px;"><p class="tag">POS · acierto de FinBETO</p><p style="font-size:23px;color:#13202F;">«…las acciones que podrían recibir más dinero si MSCI habilita una futura reclasificación.»</p><p style="font-size:21px;"><b>Razón:</b> identifica una potencial entrada de capitales, una señal favorable.</p></div>
+<div class="card" style="padding:22px 28px;gap:8px;"><p class="tag" style="color:#B5700F;">Era MIXTO → ahora NEU</p><p style="font-size:23px;color:#13202F;">«Aunque Höli Haus no brinda financiación directa, … existen bancos dispuestos a otorgar créditos…»</p><p style="font-size:21px;"><b>Razón:</b> una señal negativa compensada por una positiva.</p></div>
+</div>
+<p class="src">Gemma 4 (26B), temperatura 0,1, ejecutado localmente · sin revisión humana (es una limitación) · Capítulo 4</p>
+<p class="pg"></p>
+<aside>GINO. Es la principal crítica del docente: contar el proceso con ejemplos. Los ejemplos se eligieron al azar, con semilla fija, entre noticias que FinBETO no vio. Decir con claridad que no hubo revisión humana: el F1 mide el acuerdo con Gemma.</aside>
+</section>
