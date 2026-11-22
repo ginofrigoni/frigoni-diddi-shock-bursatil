@@ -1,0 +1,85 @@
+% =====================================================================
+\chapter{Conclusiones}
+\label{cap:conclusiones}
+
+\section{Respuesta a los objetivos}
+
+Se cumplieron cinco de los seis objetivos específicos (tabla~\ref{tab:objetivos}): el corpus, el
+modelo de sentimiento, las variables de shock, el agrupamiento de las empresas —que mostró que no
+hay familias de comportamiento más allá de la liquidez— y el modelado con desfases. No se
+integraron los \textit{trending topics} de X/Twitter, y el DLM previsto quedó reemplazado por el
+VAR, que ya incorpora los efectos rezagados.
+
+\section{La hipótesis}
+
+La hipótesis H1 sostenía que el shock informativo tiene un impacto medible y significativo
+sobre el precio o el volumen de las acciones argentinas. \textbf{Con el tono de las noticias,
+no se sostiene}: el tono no anticipó el retorno ni el volumen en el mercado, en las empresas,
+en los sectores ni en ningún régimen, ni siquiera con la prueba más favorable, que usa solo las
+notas publicadas antes de la apertura. Lo que apareció con claridad es la \textbf{relación
+inversa}: el retorno del S\&P~Merval anticipa el tono de las notas siguientes, en 39 de las 47
+empresas y en 15 de las 17 con tono propio, y el efecto se concentra en las notas publicadas la
+misma noche, después del cierre. Los medios económicos argentinos, en el período estudiado,
+contaron lo que el mercado ya había hecho.
+
+Con la definición de shock del plan —muchas más notas que lo habitual— H1 encuentra un
+\textbf{apoyo parcial, en el volumen}: cuando una empresa aparece en muchas más notas, ese día
+su acción se opera más. Ese mayor volumen no viene con una dirección en el precio, no se
+arrastra a los días siguientes y no se anticipa con las notas de la noche. La cantidad de
+cobertura acompaña a la actividad del mercado, pero no la anticipa.
+
+% ---------------------------------------------------------------------
+\section{Los instrumentos}
+
+Para llegar a esa respuesta hubo que construir cuatro instrumentos que no existían para el
+mercado argentino, y cada uno es un aporte en sí mismo:
+
+\begin{itemize}
+  \item \textbf{El corpus de noticias:} 14.012 notas de siete portales, recolectadas con la
+        Wayback Machine y los mapas del sitio, auditadas y depuradas, con cada nota asignada a
+        la primera rueda en la que el mercado pudo reaccionar a ella.
+  \item \textbf{FinBETO:} un termómetro del tono de la prensa económica argentina, con un F1
+        macro de 0,685 en cuatro clases sobre noticias no vistas, 17,7 puntos por encima del
+        modelo de referencia en tres clases, y un conjunto de oraciones etiquetadas por
+        sentimiento. Combinado con el NER, permitió medir por primera vez el tono de cada
+        empresa descontando el clima general.
+  \item \textbf{El VIX argentino:} un índice diario de tensión del mercado, construido con
+        volatilidad realizada, que identifica sin ambigüedad los shocks del período —la salida
+        del cepo y las dos elecciones de 2025— y los ordena por tamaño.
+  \item \textbf{Los regímenes de mercado:} una clasificación de cada rueda en Calmo, Moderado y
+        Tenso, estable ante distintas semillas, que muestra que al estrés se entra de golpe y
+        se sale de a poco.
+\end{itemize}
+
+El experimento que los usa es, a su vez, un \textit{pipeline} reproducible de punta a punta,
+con controles automáticos, especificaciones escritas antes de correr los análisis y corrección
+por pruebas múltiples. Que los instrumentos funcionen es lo que da peso al resultado: el
+termómetro responde con claridad a la suba del mercado, de modo que si no anticipa los precios
+no es porque no mida.
+
+% ---------------------------------------------------------------------
+\section{Limitaciones}
+
+\begin{itemize}
+  \item \textbf{Un año de datos y datos diarios.} Con 224 ruedas, un efecto chico de las
+        noticias podría no detectarse; y los datos diarios no ordenan lo que pasa dentro de una
+        rueda (algunas acciones cotizan también en Nueva York después del cierre local).
+  \item \textbf{Medición del tono.} El F1 mide el acuerdo de FinBETO con las etiquetas de Gemma;
+        el tono de una empresa es el de las oraciones que la mencionan, y muchas ruedas se apoyan
+        en una o dos.
+  \item \textbf{Corpus y precios.} La cobertura depende de qué capturó la Wayback Machine, el
+        13,4\% de las notas tiene horas por defecto y los precios están en pesos nominales.
+  \item \textbf{VIX y eventos.} El VIX argentino es simétrico y conserva un shock durante 20
+        ruedas, y los estudios de eventos del mercado tienen entre 5 y 16 eventos.
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Líneas futuras}
+
+Integrar los \textit{trending topics} de X/Twitter, como preveía el plan; implementar el DLM como
+complemento del VAR; repetir los modelos con precios intradiarios y en dólares contado con
+liquidación; reemplazar la media de 20 ruedas del VIX por una media exponencial
+\citep{riskmetrics1996}; ampliar el etiquetado con una muestra anotada por personas y probar MarIA
+como modelo base \citep{gutierrez2022maria}; separar las noticias por tema; y extender la ventana
+a varios años, para probar si el tono anticipa al mercado en las recesiones, como encontró
+\citet{garcia2013}.

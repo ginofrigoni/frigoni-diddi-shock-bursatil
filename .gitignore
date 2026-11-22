@@ -1,0 +1,25 @@
+# Secretos: nunca se suben
+.env
+*.env
+!.env.example
+
+# Entornos y dependencias (se reinstalan desde requirements.txt y package.json)
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Archivos de más de 100 MB, el límite de GitHub
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_further_pretrained/model.safetensors
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/pytorch_model.bin
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_finetuned_3clases/
+3_preparacion_de_los_datos/sentimiento_finbeto/salidas/beto_oraciones_finetuned.csv
+3_preparacion_de_los_datos/sentimiento_por_empresa/datos/ner_oraciones.csv
+
+# Temporales del sistema y de Office
+desktop.ini
+Thumbs.db
+~$*
+*.tmp.pdf
+3_preparacion_de_los_datos/sentimiento_finbeto/datos/oraciones_corpus.csv

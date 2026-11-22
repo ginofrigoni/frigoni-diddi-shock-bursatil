@@ -1,0 +1,69 @@
+{
+  "seed": 2,
+  "minutos": 1.3,
+  "historial_val": [
+    {
+      "epoca": 1,
+      "val_f1_macro": 0.7508,
+      "val_loss": 0.5862
+    },
+    {
+      "epoca": 2,
+      "val_f1_macro": 0.7753,
+      "val_loss": 0.5465
+    },
+    {
+      "epoca": 3,
+      "val_f1_macro": 0.7793,
+      "val_loss": 0.5892
+    },
+    {
+      "epoca": 4,
+      "val_f1_macro": 0.7713,
+      "val_loss": 0.7463
+    },
+    {
+      "epoca": 5,
+      "val_f1_macro": 0.7708,
+      "val_loss": 0.8552
+    }
+  ],
+  "mejor_epoca": 3,
+  "test": {
+    "f1_macro": 0.6925,
+    "accuracy": 0.6985,
+    "balanced_accuracy": 0.6978,
+    "f1_POS": 0.6697,
+    "f1_NEG": 0.6834,
+    "f1_NEU": 0.7243,
+    "n": 786
+  },
+  "orden_matriz": [
+    "POS",
+    "NEG",
+    "NEU"
+  ],
+  "matriz_confusion": [
+    [
+      149,
+      24,
+      67
+    ],
+    [
+      12,
+      136,
+      34
+    ],
+    [
+      44,
+      56,
+      264
+    ]
+  ],
+  "textos_de_test_en_train": 0,
+  "ex_mixto_predichas_como": {
+    "POS": 14,
+    "NEG": 26,
+    "NEU": 84
+  }
+}

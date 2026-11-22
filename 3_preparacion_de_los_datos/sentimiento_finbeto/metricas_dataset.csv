@@ -1,0 +1,15 @@
+metrica,valor
+oraciones_train,6528
+oraciones_val,754
+oraciones_test,786
+train_POS,1920
+train_NEG,1892
+train_NEU,2716
+val_POS,199
+val_NEG,240
+val_NEU,315
+test_POS,240
+test_NEG,182
+test_NEU,364
+mixto_pasadas_a_neu,995
+controles_dataset_ok,10 de 10

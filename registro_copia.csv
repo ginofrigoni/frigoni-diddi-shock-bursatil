@@ -1,0 +1,90 @@
+destino,origen_5.0,que_se_hace,bytes,verificacion_md5
+2_comprension_de_los_datos/noticias/datos/ambito_economia.jsonl,Lado Noticias/noticias/resultados/ambito_economia.jsonl,tal cual,2269736,idéntico
+2_comprension_de_los_datos/noticias/datos/ambito_finanzas.jsonl,Lado Noticias/noticias/resultados/ambito_finanzas.jsonl,tal cual,890493,idéntico
+2_comprension_de_los_datos/noticias/datos/clarin_economia.jsonl,Lado Noticias/noticias/resultados/clarin_economia.jsonl,tal cual,1270808,idéntico
+2_comprension_de_los_datos/noticias/datos/clarin_sitemap.jsonl,Lado Noticias/noticias/resultados/clarin_sitemap.jsonl,tal cual,16758119,idéntico
+2_comprension_de_los_datos/noticias/datos/eleconomista_sitemap.jsonl,Lado Noticias/noticias/resultados/eleconomista_sitemap.jsonl,tal cual,13221020,idéntico
+2_comprension_de_los_datos/noticias/datos/infobae_economia.jsonl,Lado Noticias/noticias/resultados/infobae_economia.jsonl,tal cual,3247722,idéntico
+2_comprension_de_los_datos/noticias/datos/iprofesional_sitemap.jsonl,Lado Noticias/noticias/resultados/iprofesional_sitemap.jsonl,tal cual,34234243,idéntico
+2_comprension_de_los_datos/noticias/datos/lanacion_economia.jsonl,Lado Noticias/noticias/resultados/lanacion_economia.jsonl,tal cual,2775545,idéntico
+2_comprension_de_los_datos/noticias/datos/tn_economia.jsonl,Lado Noticias/noticias/resultados/tn_economia.jsonl,tal cual,676340,idéntico
+2_comprension_de_los_datos/noticias/datos/reporte_dedup_semantico.json,Lado Noticias/noticias/analisis_duplicados/reporte_dedup_semantico.json,tal cual (lo usa la regla de las 17:00),36205,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/noticias_historico_v3.py,Lado Noticias/noticias/scripts/noticias_historico_v3.py,documentación (no se corre),26139,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/noticias_sitemap.py,Lado Noticias/noticias/scripts/noticias_sitemap.py,documentación (no se corre),22891,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/noticias_diario.py,Lado Noticias/noticias/scripts/noticias_diario.py,documentación (no se corre),23933,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/recuperar_metadatos.py,Lado Noticias/noticias/scripts/recuperar_metadatos.py,documentación (no se corre),3988,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/depurar_corpus.py,Lado Noticias/noticias/scripts/depurar_corpus.py,documentación (no se corre),4873,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/depurar_plantillas.py,Lado Noticias/noticias/scripts/depurar_plantillas.py,documentación (no se corre),5348,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/dedup_semantico_qwen.py,Lado Noticias/noticias/scripts/dedup_semantico_qwen.py,documentación (no se corre),14030,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/dedup_utils.py,Lado Noticias/noticias/scripts/dedup_utils.py,documentación (no se corre),6418,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/calidad_utils.py,Lado Noticias/noticias/scripts/calidad_utils.py,documentación (no se corre),5762,idéntico
+2_comprension_de_los_datos/noticias/scripts_recoleccion/env_utils.py,Lado Noticias/noticias/scripts/env_utils.py,documentación (no se corre),1667,idéntico
+2_comprension_de_los_datos/noticias/.env.example,Lado Noticias/noticias/.env.example,tal cual (plantilla sin claves),175,idéntico
+2_comprension_de_los_datos/noticias/documentacion/AUDITORIA_CORPUS.md,Lado Noticias/noticias/AUDITORIA_CORPUS.md,documentación,16880,idéntico
+2_comprension_de_los_datos/noticias/documentacion/DEPURACION_CALIDAD.md,Lado Noticias/noticias/DEPURACION_CALIDAD.md,documentación,12674,idéntico
+2_comprension_de_los_datos/noticias/documentacion/RESOLUCION_DUPLICADOS.md,Lado Noticias/noticias/RESOLUCION_DUPLICADOS.md,documentación,6444,idéntico
+2_comprension_de_los_datos/mercado/datos/precios_diarios_47_acciones.csv,Lado Bursatil/01_scraping_acciones/precios_diarios_47_acciones.csv,tal cual,3847219,idéntico
+2_comprension_de_los_datos/mercado/datos/panel_acciones_final.csv,Lado Bursatil/01_scraping_acciones/panel_acciones_final.csv,tal cual,4472,idéntico
+2_comprension_de_los_datos/mercado/datos/cobertura_53_candidatas.csv,Lado Bursatil/01_scraping_acciones/cobertura_53_candidatas.csv,tal cual,4957,idéntico
+2_comprension_de_los_datos/mercado/datos/descartadas_por_cobertura.csv,Lado Bursatil/01_scraping_acciones/descartadas_por_cobertura.csv,tal cual,581,idéntico
+2_comprension_de_los_datos/mercado/scraping_acciones.py,Lado Bursatil/01_scraping_acciones/scraping_acciones.py,documentación (no se corre),19940,idéntico
+3_preparacion_de_los_datos/regla_17/alinear_noticias_ruedas.py,Unión/01_alineacion_noticias_ruedas/alinear_noticias_ruedas.py,adaptar rutas; quitar el control contra 00_pipeline_union,13289,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/etiquetado_gemma/checkpoint.jsonl,Lado Noticias/sentimiento_finbert/dataset_etiquetado/checkpoint.jsonl,tal cual,15124423,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/etiquetado_gemma/checkpoint_limpio.jsonl,Lado Noticias/sentimiento_finbert/dataset_etiquetado/checkpoint_limpio.jsonl,tal cual,16237933,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/etiquetado_gemma/limpieza_reporte.json,Lado Noticias/sentimiento_finbert/dataset_etiquetado/limpieza_reporte.json,tal cual,1421,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/etiquetado_gemma/limpieza_filas_eliminadas.csv,Lado Noticias/sentimiento_finbert/dataset_etiquetado/limpieza_filas_eliminadas.csv,tal cual,343148,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/etiquetado_gemma/indice_procesados.json,Lado Noticias/sentimiento_finbert/dataset_etiquetado/indice_procesados.json,tal cual,51315,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/etiquetado_gemma/etiquetado_gemma.ipynb,Lado Noticias/sentimiento_finbert/etiquetado_gemma.ipynb,documentación (no se corre),483324,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/limpiar_etiquetado.py,Lado Noticias/sentimiento_finbert/limpiar_etiquetado.py,tal cual,5778,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/preparar_dataset_v2.py,Lado Noticias/sentimiento_finbert/preparar_dataset_v2.py,adaptar: MIXTO → NEU y balanceo con 3 clases,5496,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/fase3_reentrenar_para_medir.py,Lado Noticias/sentimiento_finbert/fase3_reentrenar_para_medir.py,adaptar: 3 clases y guardar el modelo final,8094,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/comparar_baseline.py,Lado Noticias/sentimiento_finbert/comparar_baseline.py,adaptar: 3 contra 3,4752,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/serie_completa_finetuned.py,Lado Noticias/sentimiento_finbert/serie_completa_finetuned.py,adaptar rutas y clases,26219,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_further_pretrained/config.json,Lado Noticias/sentimiento_finbert/beto_further_pretrained/config.json,tal cual,734,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_further_pretrained/generation_config.json,Lado Noticias/sentimiento_finbert/beto_further_pretrained/generation_config.json,tal cual,95,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_further_pretrained/model.safetensors,Lado Noticias/sentimiento_finbert/beto_further_pretrained/model.safetensors,tal cual; **no va a GitHub** (> 100 MB),439557376,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_further_pretrained/special_tokens_map.json,Lado Noticias/sentimiento_finbert/beto_further_pretrained/special_tokens_map.json,tal cual,732,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_further_pretrained/tokenizer.json,Lado Noticias/sentimiento_finbert/beto_further_pretrained/tokenizer.json,tal cual,729619,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_further_pretrained/tokenizer_config.json,Lado Noticias/sentimiento_finbert/beto_further_pretrained/tokenizer_config.json,tal cual,1293,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/beto_further_pretrained/vocab.txt,Lado Noticias/sentimiento_finbert/beto_further_pretrained/vocab.txt,tal cual,241796,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/README.md,Lado Noticias/sentimiento_finbert/baseline_finiteautomata/README.md,tal cual,1674,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/added_tokens.json,Lado Noticias/sentimiento_finbert/baseline_finiteautomata/added_tokens.json,tal cual,67,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/config.json,Lado Noticias/sentimiento_finbert/baseline_finiteautomata/config.json,tal cual,841,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/pytorch_model.bin,Lado Noticias/sentimiento_finbert/baseline_finiteautomata/pytorch_model.bin,tal cual; **no va a GitHub** (> 100 MB),439512342,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/special_tokens_map.json,Lado Noticias/sentimiento_finbert/baseline_finiteautomata/special_tokens_map.json,tal cual,112,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/tokenizer.json,Lado Noticias/sentimiento_finbert/baseline_finiteautomata/tokenizer.json,tal cual,480713,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/tokenizer_config.json,Lado Noticias/sentimiento_finbert/baseline_finiteautomata/tokenizer_config.json,tal cual,528,idéntico
+3_preparacion_de_los_datos/sentimiento_finbeto/modelos/baseline_finiteautomata/vocab.txt,Lado Noticias/sentimiento_finbert/baseline_finiteautomata/vocab.txt,tal cual,241796,idéntico
+3_preparacion_de_los_datos/sentimiento_por_rueda/sentimiento_por_rueda.py,Unión/02_sentimiento_por_rueda/sentimiento_por_rueda.py,adaptar: solo sentimiento inesperado (sin atención ni shocks) y renombres,18025,idéntico
+3_preparacion_de_los_datos/sentimiento_por_empresa/datos/ner_oraciones.csv,Lado Noticias/ner_entidades/resultados_ner/ner_oraciones.csv,tal cual (entrada del cruce); **no va a GitHub** (> 100 MB),231215325,idéntico
+3_preparacion_de_los_datos/sentimiento_por_empresa/ner_analisis.ipynb,Lado Noticias/ner_entidades/ner_analisis.ipynb,documentación (cómo se generó ner_oraciones.csv),956929,idéntico
+3_preparacion_de_los_datos/sentimiento_por_empresa/cruce_ner_sentimiento.py,Lado Noticias/ner_entidades/cruce_ner_sentimiento.py,adaptar: 3 clases,7566,idéntico
+3_preparacion_de_los_datos/sentimiento_por_empresa/equivalencias_indicadores.py,Lado Noticias/ner_entidades/equivalencias_indicadores.py,tal cual (lo importa el cruce),2761,idéntico
+3_preparacion_de_los_datos/sentimiento_por_empresa/sentimiento_por_empresa.py,Unión/03_sentimiento_por_empresa/sentimiento_por_empresa.py,adaptar rutas y renombres,14237,idéntico
+3_preparacion_de_los_datos/sentimiento_por_empresa/datos/cobertura_por_ticker.csv,Unión/00_pipeline_union/cobertura_por_ticker.csv,tal cual (lo lee el script),2982,idéntico
+3_preparacion_de_los_datos/vix_argentino/calcular_vix_arg.py,Lado Bursatil/03_vix_argentino/calcular_vix_arg.py,documentación (no se vuelve a correr),5860,idéntico
+3_preparacion_de_los_datos/vix_argentino/salidas/vix_arg.csv,Lado Bursatil/03_vix_argentino/vix_arg.csv,tal cual,19915,idéntico
+3_preparacion_de_los_datos/regimen_hmm/hmm_regimen_mercado.py,Lado Bursatil/06_hmm_regimen_mercado/hmm_regimen_mercado.py,documentación (no se reentrena),13597,idéntico
+3_preparacion_de_los_datos/regimen_hmm/salidas/hmm_regimen_mercado.csv,Lado Bursatil/06_hmm_regimen_mercado/hmm_regimen_mercado.csv,tal cual,33338,idéntico
+3_preparacion_de_los_datos/regimen_hmm/salidas/bic_por_k.csv,Lado Bursatil/06_hmm_regimen_mercado/bic_por_k.csv,tal cual,421,idéntico
+3_preparacion_de_los_datos/regimen_hmm/salidas/matriz_transicion.csv,Lado Bursatil/06_hmm_regimen_mercado/matriz_transicion.csv,tal cual,86,idéntico
+3_preparacion_de_los_datos/dataset_unificado/construir_datasets.py,Unión/04_dataset_unificado/construir_datasets.py,"adaptar: 17 empresas, renombres, sin clustering ni atención",22281,idéntico
+5_evaluacion/anexo/var_granger.py,Unión/06_var_granger/var_granger.py,adaptar a las columnas nuevas,18972,idéntico
+6_despliegue/informe/Informe_Final_NicolasDiddi-GinoFrigoni.tex,Informe Final/Informe_Final_NicolasDiddi-GinoFrigoni.tex,tal cual (base),12866,idéntico
+6_despliegue/informe/bibliografia.tex,Informe Final/bibliografia.tex,tal cual (base),23395,idéntico
+6_despliegue/informe/logo_ugr.png,Informe Final/logo_ugr.png,tal cual (base),21744,idéntico
+6_despliegue/informe/compilar_tesina.py,Informe Final/compilar_tesina.py,tal cual (base),3613,idéntico
+6_despliegue/informe/figuras.py,Informe Final/figuras.py,tal cual (base),8800,idéntico
+6_despliegue/informe/capitulos/01_introduccion.tex,Informe Final/capitulos/01_introduccion.tex,base para reescribir,9598,idéntico
+6_despliegue/informe/capitulos/02_marco_teorico.tex,Informe Final/capitulos/02_marco_teorico.tex,base para reescribir,4600,idéntico
+6_despliegue/informe/capitulos/03_corpus.tex,Informe Final/capitulos/03_corpus.tex,base para reescribir,10216,idéntico
+6_despliegue/informe/capitulos/04_finbeto.tex,Informe Final/capitulos/04_finbeto.tex,base para reescribir,14462,idéntico
+6_despliegue/informe/capitulos/05_vix.tex,Informe Final/capitulos/05_vix.tex,base para reescribir,10827,idéntico
+6_despliegue/informe/capitulos/06_hmm.tex,Informe Final/capitulos/06_hmm.tex,base para reescribir,6838,idéntico
+6_despliegue/informe/capitulos/07_var_granger.tex,Informe Final/capitulos/07_var_granger.tex,base para reescribir,20632,idéntico
+6_despliegue/informe/capitulos/08_conclusiones.tex,Informe Final/capitulos/08_conclusiones.tex,base para reescribir,5461,idéntico
+6_despliegue/informe/capitulos/09_anexo.tex,Informe Final/capitulos/09_anexo.tex,base para reescribir,3755,idéntico
+6_despliegue/presentacion/SIMULACION_PRESENTACION.md,Informe Final/SIMULACION_PRESENTACION.md,base para actualizar,17333,idéntico
+correr_todo.py,Unión/09_entrega_final/correr_todo.py,reescribir con el orden nuevo,3280,idéntico
+requirements.txt,Lado Noticias/requirements.txt,revisar y sumar scikit-learn,1136,idéntico
+.gitignore,.gitignore,adaptar rutas,718,idéntico

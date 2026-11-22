@@ -1,0 +1,54 @@
+ticker,empresa,sector,oficial,dias,fecha_inicio,fecha_fin,pct_dias_con_volumen,vol_prom,estado
+AGRO.BA,Agrometal,Industrial,False,731,2023-05-03,2026-04-30,100.0,2492873.0,descargada
+ALUA.BA,Aluar,Materiales,True,731,2023-05-03,2026-04-30,100.0,1122885.0,descargada
+AUSO.BA,Autopistas del Sol,Industrial,False,731,2023-05-03,2026-04-30,100.0,37897.0,descargada
+BBAR.BA,BBVA Banco Francés,Financiero,True,731,2023-05-03,2026-04-30,100.0,316023.0,descargada
+BHIP.BA,Banco Hipotecario,Financiero,False,731,2023-05-03,2026-04-30,100.0,770971.0,descargada
+BMA.BA,Banco Macro,Financiero,True,731,2023-05-03,2026-04-30,100.0,387474.0,descargada
+BOLT.BA,Boldt,Tecnología,False,731,2023-05-03,2026-04-30,99.7,790133.0,descargada
+BPAT.BA,Banco Patagonia,Financiero,False,731,2023-05-03,2026-04-30,100.0,29514.0,descargada
+BYMA.BA,Bolsas y Mercados Argentinos,Financiero,True,731,2023-05-03,2026-04-30,100.0,6302228.0,descargada
+CAPX.BA,CAPEX SA,Energía,False,731,2023-05-03,2026-04-30,100.0,6257.0,descargada
+CELU.BA,Celulosa Argentina,Materiales,False,731,2023-05-03,2026-04-30,100.0,290763.0,descargada
+CEPU.BA,Central Puerto,Utilities,True,731,2023-05-03,2026-04-30,100.0,1142206.0,descargada
+CGPA2.BA,Camuzzi Gas Pampeana,Utilities,False,731,2023-05-03,2026-04-30,100.0,25841.0,descargada
+COME.BA,Sociedad Comercial del Plata,Conglomerado,True,731,2023-05-03,2026-04-30,100.0,11387258.0,descargada
+CRES.BA,Cresud,Conglomerado,True,731,2023-05-03,2026-04-30,100.0,434181.0,descargada
+CTIO.BA,Consultatio,Real Estate,False,731,2023-05-03,2026-04-30,100.0,26622.0,descargada
+CVH.BA,Cablevision Holding,Comunicaciones,True,731,2023-05-03,2026-04-30,100.0,15391.0,descargada
+DGCU2.BA,Distribuidora de Gas Cuyana,Utilities,False,731,2023-05-03,2026-04-30,100.0,120014.0,descargada
+EDN.BA,Edenor,Utilities,True,731,2023-05-03,2026-04-30,100.0,641299.0,descargada
+FIPL.BA,Fiplasto,Materiales,False,731,2023-05-03,2026-04-30,99.9,74893.0,descargada
+GARO.BA,Garovaglio y Zorraquín,Conglomerado,False,731,2023-05-03,2026-04-30,97.0,27231.0,descargada
+GBAN.BA,Naturgy BAN,Utilities,False,731,2023-05-03,2026-04-30,100.0,11419.0,descargada
+GCDI.BA,GCDI S.A. (ex TGLT),Real Estate,False,731,2023-05-03,2026-04-30,94.9,398215.0,descargada
+GGAL.BA,Grupo Financiero Galicia,Financiero,True,731,2023-05-03,2026-04-30,100.0,2737286.0,descargada
+GRIM.BA,Grimoldi,Consumo,False,731,2023-05-03,2026-04-30,96.9,4076.0,descargada
+HARG.BA,Holcim Argentina,Materiales,False,731,2023-05-03,2026-04-30,67.2,26464.0,descargada
+HAVA.BA,Havanna Holding,Consumo,False,731,2023-05-03,2026-04-30,100.0,8416.0,descargada
+IRSA.BA,IRSA Inversiones y Representaciones,Real Estate,False,731,2023-05-03,2026-04-30,100.0,262920.0,descargada
+LEDE.BA,Ledesma,Consumo,False,731,2023-05-03,2026-04-30,100.0,65836.0,descargada
+LOMA.BA,Loma Negra,Materiales,False,731,2023-05-03,2026-04-30,100.0,449421.0,descargada
+LONG.BA,Longvie,Consumo,False,731,2023-05-03,2026-04-30,100.0,378506.0,descargada
+METR.BA,MetroGas,Utilities,False,731,2023-05-03,2026-04-30,100.0,625783.0,descargada
+MIRG.BA,Mirgor,Consumo,True,731,2023-05-03,2026-04-30,100.0,7602.0,descargada
+MOLI.BA,Molinos Río de la Plata,Consumo,False,731,2023-05-03,2026-04-30,100.0,17879.0,descargada
+MORI.BA,Morixe Hermanos,Consumo,False,731,2023-05-03,2026-04-30,100.0,3700719.0,descargada
+OEST.BA,Grupo Concesionario del Oeste,Industrial,False,731,2023-05-03,2026-04-30,99.7,18140.0,descargada
+PAMP.BA,Pampa Energía,Utilities,True,731,2023-05-03,2026-04-30,100.0,1436478.0,descargada
+POLL.BA,Polledo,Conglomerado,False,731,2023-05-03,2026-04-30,50.2,977.0,descargada
+RIGO.BA,Rigolleau,Materiales,False,731,2023-05-03,2026-04-30,95.8,2256.0,descargada
+ROSE.BA,Instituto Rosenbusch,Salud,False,731,2023-05-03,2026-04-30,87.3,55772.0,descargada
+SAMI.BA,San Miguel,Consumo,False,731,2023-05-03,2026-04-30,100.0,116157.0,descargada
+SEMI.BA,Molinos Juan Semino,Consumo,False,731,2023-05-03,2026-04-30,100.0,2995441.0,descargada
+SUPV.BA,Supervielle,Financiero,True,731,2023-05-03,2026-04-30,100.0,870175.0,descargada
+TECO2.BA,Telecom Argentina,Comunicaciones,True,731,2023-05-03,2026-04-30,100.0,203271.0,descargada
+TGNO4.BA,Transportadora de Gas del Norte,Energía,True,731,2023-05-03,2026-04-30,100.0,302818.0,descargada
+TGSU2.BA,Transportadora de Gas del Sur,Energía,True,731,2023-05-03,2026-04-30,100.0,315652.0,descargada
+TRAN.BA,Transener,Utilities,True,731,2023-05-03,2026-04-30,100.0,585960.0,descargada
+TXAR.BA,Ternium Argentina,Materiales,True,731,2023-05-03,2026-04-30,100.0,1577451.0,descargada
+VALO.BA,Banco de Valores,Financiero,True,731,2023-05-03,2026-04-30,100.0,1865460.0,descargada
+YPFD.BA,YPF SA,Energía,True,731,2023-05-03,2026-04-30,100.0,4121973.0,descargada
+CARC.BA,Carboclor,Materiales,False,462,2024-06-10,2026-04-30,39.0,16248.0,descargada
+NQNO.BA,NII Holdings (Nextel),Comunicaciones,False,0,,,,,sin_datos
+TGLT.BA,TGLT SA (hoy GCDI),Real Estate,False,0,,,,,sin_datos

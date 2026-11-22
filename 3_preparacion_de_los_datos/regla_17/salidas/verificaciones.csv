@@ -1,0 +1,8 @@
+control,pasa
+Cada nota tiene una rueda o un motivo para no tenerla,True
+Ninguna nota va a una rueda anterior a su publicación,True
+Ninguna nota publicada tras el cierre queda en la rueda del mismo día,True
+Todas las ruedas de la ventana tienen noticias,True
+La ventana tiene 244 ruedas,True
+nota_a_rueda.csv es idéntico al de la 5.0,True
+notas_por_rueda.csv es idéntico al de la 5.0,True

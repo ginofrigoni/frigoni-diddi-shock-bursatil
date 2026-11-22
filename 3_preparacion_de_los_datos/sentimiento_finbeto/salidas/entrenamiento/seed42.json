@@ -1,0 +1,70 @@
+{
+  "seed": 42,
+  "minutos": 1.31,
+  "historial_val": [
+    {
+      "epoca": 1,
+      "val_f1_macro": 0.7341,
+      "val_loss": 0.6422
+    },
+    {
+      "epoca": 2,
+      "val_f1_macro": 0.7586,
+      "val_loss": 0.5757
+    },
+    {
+      "epoca": 3,
+      "val_f1_macro": 0.7591,
+      "val_loss": 0.6717
+    },
+    {
+      "epoca": 4,
+      "val_f1_macro": 0.7754,
+      "val_loss": 0.7818
+    },
+    {
+      "epoca": 5,
+      "val_f1_macro": 0.7703,
+      "val_loss": 0.8533
+    }
+  ],
+  "mejor_epoca": 4,
+  "test": {
+    "f1_macro": 0.7106,
+    "accuracy": 0.7137,
+    "balanced_accuracy": 0.7197,
+    "f1_POS": 0.7137,
+    "f1_NEG": 0.6921,
+    "f1_NEU": 0.726,
+    "n": 786
+  },
+  "orden_matriz": [
+    "POS",
+    "NEG",
+    "NEU"
+  ],
+  "matriz_confusion": [
+    [
+      172,
+      20,
+      48
+    ],
+    [
+      14,
+      136,
+      32
+    ],
+    [
+      56,
+      55,
+      253
+    ]
+  ],
+  "textos_de_test_en_train": 0,
+  "ex_mixto_predichas_como": {
+    "POS": 19,
+    "NEG": 27,
+    "NEU": 78
+  },
+  "modelo_guardado_en": "modelos\\beto_finetuned_3clases"
+}

@@ -1,0 +1,6 @@
+control,pasa
+Los rezagos usan solo ruedas anteriores,True
+El objetivo es el sentimiento inesperado de la rueda siguiente,True
+Entrenamiento y test no comparten ruedas,True
+El test empieza en febrero de 2026,True
+Sin faltantes en las variables de los modelos,True

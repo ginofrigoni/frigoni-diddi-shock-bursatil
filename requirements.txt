@@ -1,0 +1,32 @@
+# Entorno de tesis 4.0 (Python 3.13).
+# Instalar:  python -m venv .venv  &&  .venv\Scripts\pip install --no-cache-dir -r requirements.txt
+# (en este equipo pip se cuelga al escribir su cache: usar siempre --no-cache-dir)
+
+# noticias/scripts (scrapers, dedup, depuracion)
+requests==2.34.2
+beautifulsoup4==4.15.0
+lxml==6.1.3
+trafilatura==2.3.1
+
+# ner_entidades y sentimiento_finbert (--solo-serie)
+spacy==3.8.16
+nltk==3.10.3
+pandas==3.0.6
+tqdm==4.70.1
+
+# Ejecutar el notebook sin abrir Jupyter (nbconvert)
+ipykernel==7.4.0
+nbconvert==7.17.1
+nbformat==5.11.1
+
+# Despues de instalar:
+#   python -m spacy download es_core_news_lg        (3.8.0)
+#   python -m nltk.downloader punkt punkt_tab
+#   python -m ipykernel install --user --name tesis4-venv --display-name "Tesis 4.0 venv"
+
+# Modelo de sentimiento (sentimiento_finbert/fase3_reentrenar_para_medir.py; inferencia de FinBETO).
+# torch con CUDA se instala desde el indice de PyTorch:
+#   .venv\Scripts\pip install --no-cache-dir torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+transformers==5.20.1
+accelerate==1.15.0
+scikit-learn==1.9.1

@@ -1,0 +1,48 @@
+ticker,empresa,sector,oficial,ruedas_con_noticias,articulos,pct_ruedas,var_propio
+YPFD.BA,YPF SA,Energía,True,236.0,1026.0,96.7,True
+BBAR.BA,BBVA Banco Francés,Financiero,True,227.0,686.0,93.0,True
+SUPV.BA,Supervielle,Financiero,True,222.0,633.0,91.0,True
+EDN.BA,Edenor,Utilities,True,207.0,457.0,84.8,True
+GGAL.BA,Grupo Financiero Galicia,Financiero,True,201.0,420.0,82.4,True
+CEPU.BA,Central Puerto,Utilities,True,194.0,360.0,79.5,True
+TGSU2.BA,Transportadora de Gas del Sur,Energía,True,189.0,359.0,77.5,True
+BMA.BA,Banco Macro,Financiero,True,189.0,407.0,77.5,True
+IRSA.BA,IRSA Inversiones y Representaciones,Real Estate,False,176.0,302.0,72.1,True
+LOMA.BA,Loma Negra,Materiales,False,175.0,294.0,71.7,True
+PAMP.BA,Pampa Energía,Utilities,True,169.0,343.0,69.3,True
+CRES.BA,Cresud,Conglomerado,True,156.0,228.0,63.9,True
+BYMA.BA,Bolsas y Mercados Argentinos,Financiero,True,148.0,238.0,60.7,True
+TRAN.BA,Transener,Utilities,True,116.0,170.0,47.5,True
+METR.BA,MetroGas,Utilities,False,110.0,164.0,45.1,True
+TXAR.BA,Ternium Argentina,Materiales,True,101.0,137.0,41.4,True
+ALUA.BA,Aluar,Materiales,True,97.0,149.0,39.8,True
+TGNO4.BA,Transportadora de Gas del Norte,Energía,True,80.0,106.0,32.8,False
+COME.BA,Sociedad Comercial del Plata,Conglomerado,True,70.0,87.0,28.7,False
+BPAT.BA,Banco Patagonia,Financiero,False,56.0,65.0,23.0,False
+TECO2.BA,Telecom Argentina,Comunicaciones,True,54.0,71.0,22.1,False
+VALO.BA,Banco de Valores,Financiero,True,47.0,61.0,19.3,False
+BHIP.BA,Banco Hipotecario,Financiero,False,47.0,58.0,19.3,False
+CTIO.BA,Consultatio,Real Estate,False,38.0,40.0,15.6,False
+HAVA.BA,Havanna Holding,Consumo,False,29.0,31.0,11.9,False
+MIRG.BA,Mirgor,Consumo,True,29.0,31.0,11.9,False
+CGPA2.BA,Camuzzi Gas Pampeana,Utilities,False,21.0,25.0,8.6,False
+GRIM.BA,Grimoldi,Consumo,False,20.0,20.0,8.2,False
+MOLI.BA,Molinos Río de la Plata,Consumo,False,13.0,14.0,5.3,False
+CELU.BA,Celulosa Argentina,Materiales,False,12.0,14.0,4.9,False
+LEDE.BA,Ledesma,Consumo,False,12.0,12.0,4.9,False
+AUSO.BA,Autopistas del Sol,Industrial,False,9.0,9.0,3.7,False
+CVH.BA,Cablevision Holding,Comunicaciones,True,8.0,8.0,3.3,False
+MORI.BA,Morixe Hermanos,Consumo,False,7.0,7.0,2.9,False
+DGCU2.BA,Distribuidora de Gas Cuyana,Utilities,False,5.0,5.0,2.0,False
+GBAN.BA,Naturgy BAN,Utilities,False,4.0,4.0,1.6,False
+RIGO.BA,Rigolleau,Materiales,False,4.0,4.0,1.6,False
+SAMI.BA,San Miguel,Consumo,False,2.0,2.0,0.8,False
+AGRO.BA,Agrometal,Industrial,False,2.0,2.0,0.8,False
+OEST.BA,Grupo Concesionario del Oeste,Industrial,False,1.0,1.0,0.4,False
+GCDI.BA,GCDI S.A. (ex TGLT),Real Estate,False,1.0,1.0,0.4,False
+SEMI.BA,Molinos Juan Semino,Consumo,False,1.0,1.0,0.4,False
+GARO.BA,Garovaglio y Zorraquín,Conglomerado,False,1.0,1.0,0.4,False
+BOLT.BA,Boldt,Tecnología,False,1.0,1.0,0.4,False
+LONG.BA,Longvie,Consumo,False,0.0,0.0,0.0,False
+CAPX.BA,CAPEX SA,Energía,False,0.0,0.0,0.0,False
+FIPL.BA,Fiplasto,Materiales,False,0.0,0.0,0.0,False

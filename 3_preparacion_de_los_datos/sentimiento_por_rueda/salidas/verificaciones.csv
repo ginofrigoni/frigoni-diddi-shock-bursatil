@@ -1,0 +1,8 @@
+control,pasa
+"La serie tiene las 244 ruedas, sin huecos",True
+Las notas por rueda coinciden con la regla de las 17:00,True
+El ajuste por portal deja en 0 el promedio de cada portal,True
+El sentimiento inesperado está vacío solo en las primeras 20 ruedas,True
+El sentimiento inesperado usa solo ruedas anteriores (cambiar la rueda t no cambia el valor de t−1),True
+Con las etiquetas de la 5.0 se reproduce el sentimiento por rueda de la 5.0,True
+Con las etiquetas de la 5.0 se reproduce el sent_anormal de la 5.0,True

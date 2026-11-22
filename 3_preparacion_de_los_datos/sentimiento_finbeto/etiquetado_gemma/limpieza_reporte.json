@@ -1,0 +1,66 @@
+{
+  "filas_originales": 11605,
+  "filas_eliminadas": 750,
+  "filas_limpias": 10855,
+  "eliminadas_por_motivo": {
+    "texto_repetido": 288,
+    "reproceso_mismo_label": 281,
+    "relleno": 73,
+    "reproceso_conflicto": 72,
+    "texto_repetido_conflicto": 36
+  },
+  "eliminadas_por_motivo_y_clase": {
+    "relleno": {
+      "NEU": 73
+    },
+    "reproceso_conflicto": {
+      "NEU": 30,
+      "NEG": 19,
+      "POS": 14,
+      "MIXTO": 9
+    },
+    "reproceso_mismo_label": {
+      "NEU": 151,
+      "NEG": 66,
+      "POS": 38,
+      "MIXTO": 26
+    },
+    "texto_repetido": {
+      "NEU": 258,
+      "POS": 18,
+      "NEG": 9,
+      "MIXTO": 3
+    },
+    "texto_repetido_conflicto": {
+      "NEU": 17,
+      "POS": 9,
+      "NEG": 7,
+      "MIXTO": 3
+    }
+  },
+  "noticias_originales": 408,
+  "noticias_limpias": 408,
+  "clases_originales": {
+    "NEU": 5390,
+    "POS": 2763,
+    "NEG": 2416,
+    "MIXTO": 1036
+  },
+  "clases_limpias": {
+    "NEU": 4861,
+    "POS": 2684,
+    "NEG": 2315,
+    "MIXTO": 995
+  },
+  "filas_con_marcas_de_relleno_quitadas": 361,
+  "textos_repetidos_en_limpio": 0,
+  "marcas_relleno": [
+    "\\bPUBLICIDAD\\b",
+    "Sobre la firma",
+    "Mir[aá] tambi[eé]n",
+    "Newsletter Clar[ií]n",
+    "Tags relacionados",
+    "Segu[ií] las cotizaciones en esta cobertura minuto a minuto de Clar[ií]n\\.?"
+  ],
+  "min_letras": 20
+}

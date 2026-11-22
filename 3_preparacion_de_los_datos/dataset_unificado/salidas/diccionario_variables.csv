@@ -1,0 +1,33 @@
+variable,dataset,descripcion,unidad,origen
+rueda,ambos,Día de bolsa (BYMA),fecha,vix_argentino (calendario del Merval)
+periodo,ambos,entrenamiento (antes del 2026-02-01) o test (desde esa fecha),texto,dataset_unificado
+merv_cierre,mercado,Cierre del índice Merval,puntos,vix_argentino
+ret_merval,ambos,Retorno diario del Merval,"proporción (0,01 = 1%)",vix_argentino
+vix_arg,ambos,"VIX argentino: volatilidad realizada de 20 ruedas, anualizada",%,vix_argentino
+regimen,ambos,"Régimen de mercado (HMM, probabilidades suavizadas): Calmo, Moderado o Tenso. Solo anexo",categoría,regimen_hmm
+regimen_filtrado,ambos,Régimen con probabilidades filtradas (solo usa información hasta ese día). Solo anexo,categoría,regimen_hmm
+prob_tenso,ambos,Probabilidad suavizada del régimen Tenso,0 a 1,regimen_hmm
+prob_tenso_filtrada,mercado,Probabilidad filtrada del régimen Tenso,0 a 1,regimen_hmm
+n_notas,ambos,"Notas que recibe la rueda (regla de las 17:00). Descriptivo, no entra al modelo",notas,regla_17
+dias_cubiertos,mercado,"Días de calendario que junta la rueda (1 normal, 3 un lunes, 4+ tras feriado)",días,sentimiento_por_rueda
+sent_neto,ambos,Sentimiento de las noticias: promedio del sentimiento neto (% POS − % NEG) de las notas de la rueda,puntos (−100 a +100),sentimiento_por_rueda
+sent_neto_portal,ambos,Sentimiento ajustado por portal (a cada nota se le resta el promedio de su portal),puntos,sentimiento_por_rueda
+sentimiento_inesperado,ambos,Sentimiento de la rueda − promedio de las 20 ruedas anteriores. Variable de noticias del modelo B,puntos (0 = habitual),sentimiento_por_rueda
+sentimiento_inesperado_portal,ambos,Lo mismo con el sentimiento ajustado por portal (anexo),puntos (0 = habitual),sentimiento_por_rueda
+"pct_pos, pct_neg, pct_neu",mercado,Porcentaje promedio de oraciones de cada clase en las notas de la rueda,%,sentimiento_por_rueda
+dia_electoral,ambos,Rueda posterior a una elección (08/09/2025 y 27/10/2025),texto,sentimiento_por_rueda
+eco_electoral,ambos,Rueda dentro de las 20 posteriores a un día electoral (eco en el VIX),0/1,dataset_unificado
+abril_2026,ambos,Rueda de abril de 2026 (hueco de iProfesional en el corpus),0/1,dataset_unificado
+"ticker, empresa, sector, oficial",panel,Identificación de la acción; oficial = está en el S&P Merval,texto,mercado
+cierre,panel,Precio de cierre ajustado,pesos,mercado
+retorno,panel,Retorno diario de la acción (pct_change sobre la serie completa),proporción,dataset_unificado
+volumen,panel,Acciones operadas en la rueda,acciones,mercado
+vol_anormal,panel,log(1 + volumen) − promedio de log(1 + volumen) de las 20 ruedas previas,log (0 = habitual),dataset_unificado
+sin_operar,panel,La acción no operó (volumen 0),0/1,dataset_unificado
+precio_quieto,panel,El cierre es igual al de la rueda anterior,0/1,dataset_unificado
+hubo_noticia,panel,Al menos una oración de las notas de la rueda menciona a la empresa,0/1,sentimiento_por_empresa
+"n_articulos_empresa, n_oraciones_empresa",panel,Notas y oraciones de la rueda que mencionan a la empresa,cantidad,sentimiento_por_empresa
+sent_neto_empresa,panel,Sentimiento de las oraciones que mencionan a la empresa; vacío si no hubo noticia,puntos,sentimiento_por_empresa
+peso_sentimiento_propio,panel,"Cuánto se confía en las oraciones de la empresa: n / (n + K), K estimado con el período de entrenamiento",0 a 1,dataset_unificado
+sentimiento_propio,panel,peso × (sentimiento de la empresa − sentimiento del mercado); 0 si no hubo noticia. Variable de empresa del modelo B,puntos (0 = como el mercado),dataset_unificado
+sentimiento_propio_k_todas,panel,"Lo mismo con K estimado con las 244 ruedas, como en la 5.0 (control)",puntos,dataset_unificado

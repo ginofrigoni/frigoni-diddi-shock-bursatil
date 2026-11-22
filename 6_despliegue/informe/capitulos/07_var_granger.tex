@@ -1,0 +1,323 @@
+% =====================================================================
+\chapter{El experimento: VAR y causalidad de Granger}
+\chaptermark{VAR y causalidad de Granger}
+\label{cap:var}
+
+Con los cuatro instrumentos construidos, la pregunta de la tesina se puede contrastar: ¿el tono
+de las noticias anticipa el precio y el volumen de las acciones, o es al revés? Este capítulo
+une los dos lados, prepara las series, presenta el modelo y sus resultados, y resume las pruebas
+complementarias y la robustez.
+
+% ---------------------------------------------------------------------
+\section{La unión de los instrumentos}
+\label{sec:union}
+
+Los dos lados se unieron en la ventana en la que ambos tienen datos: 244 ruedas, del
+05/05/2025 al 30/04/2026. Todo quedó en dos tablas: una por rueda (el mercado) y otra por acción
+y rueda (11.468 filas). Del lado de las noticias, las variables son el tono anormal, la atención
+anormal y el tono propio de las 17 empresas (capítulo~\ref{cap:finbeto}). Del lado del mercado,
+el retorno diario del S\&P~Merval y de cada acción, y el \textit{volumen anormal}:
+$\log(1+\text{volumen}_t)$ menos su promedio en las 20 ruedas previas, para que sea comparable
+entre acciones y no crezca con la inflación. El régimen del capítulo~\ref{cap:hmm} marca cada
+rueda, y se marcaron aparte los dos días electorales, su eco y abril de 2026. En la ventana, el
+retorno del S\&P~Merval promedió 0,16\% diario con un desvío de 2,79\%, y sus extremos son los
+dos días electorales ($-13{,}25\%$ y $+21{,}77\%$).
+
+\textbf{Estacionariedad.} Un VAR necesita series estacionarias, que oscilen alrededor de un nivel
+estable: si no, dos variables con tendencia parecen relacionadas aunque no lo estén. Se usaron dos
+pruebas que preguntan al revés: la ADF \citep{dickey1979}, cuya hipótesis nula es que la serie no
+es estacionaria, y la KPSS \citep{kpss1992}, cuya nula es que sí lo es. En el lado bursátil, con
+tres años de datos, 46 de los 47 precios no son estacionarios y los 47 retornos sí: por eso los
+modelos usan retornos y no precios \citep{zablotsky2002}. En la ventana de la unión se probaron
+156 series: retornos, volúmenes anormales, atención y tono propio son estables. El tono en nivel
+dio \textit{inconcluso}, porque cambia en ciclos de meses (promedio trimestral de $+7{,}5$, $+0{,}5$,
+$+7{,}6$, $+3{,}7$ y $-2{,}9$), un rasgo conocido de las series de tono \citep{correarocha2026}; por
+eso el modelo usa el \textit{tono anormal}, que es estable sin discusión. El VIX también dio
+inconcluso y entra a los modelos solo a través del régimen.
+
+% ---------------------------------------------------------------------
+\section{El modelo}
+
+Un VAR con $p$ rezagos explica el vector de variables de hoy, $y_t$, con sus valores de las $p$
+ruedas anteriores:
+\begin{equation}
+y_t = c + A_1\, y_{t-1} + A_2\, y_{t-2} + \dots + A_p\, y_{t-p} + \varepsilon_t .
+\end{equation}
+Cuántas ruedas hacia atrás mira el modelo (los \textit{rezagos}) se eligió automáticamente entre
+1 y 5 con el criterio de Akaike \citep{lutkepohl2005}, que busca el equilibrio entre ajustar bien
+los datos y no complicar el modelo de más.
+
+La prueba de Granger \citep{granger1969} responde una pregunta concreta: ¿conocer el tono de las
+ruedas anteriores mejora la predicción del retorno de hoy, más allá de lo que ya predicen los
+retornos anteriores? Si la mejora es estadísticamente significativa, el tono \textit{anticipa} al
+retorno. La misma pregunta se hace al revés, para ver si el retorno anticipa al tono. La función
+de impulso-respuesta, además, muestra cómo responde cada variable, rueda a rueda, a un golpe en
+otra.
+
+Se usaron 224 ruedas, del 02/06/2025 al 30/04/2026: las primeras 20 de la ventana quedan afuera
+porque no tienen 20 ruedas previas con las que calcular el tono anormal. La prueba se repitió en
+cinco niveles —el mercado, cada una de las 47 empresas, las 17 con tono propio, los 10 sectores y
+los regímenes—, en las dos direcciones y con precio y volumen: 304 pruebas en total. Todos los
+modelos resultaron estables, es decir, el efecto de un golpe se apaga con el tiempo en lugar de
+crecer.
+
+\textbf{Pruebas múltiples.} Con tantas pruebas, algunas salen significativas por azar: con 100
+pruebas al 5\%, se esperan unas 5 aunque no haya ningún efecto \citep{harvey2016}. Por eso los
+p-valores se corrigieron con Benjamini-Hochberg \citep{bh1995}, que los «encarece» para no
+confundir casualidades con efectos; en todas las tablas, «significativo» quiere decir $p$
+\textit{corregido} menor a 0,05. Como control, la prueba por empresa se repitió con el tono
+mezclado al azar, lo que rompe cualquier relación real: el test debería indicar un efecto, por
+error, en alrededor del 5\% de las pruebas, y dio 6,9\%. El método no encuentra efectos donde no
+los hay.
+
+% ---------------------------------------------------------------------
+\section{¿Quién anticipa a quién?}
+\label{sec:res-u6}
+
+\subsection{El mercado}
+
+De las ocho pruebas del VAR del mercado, una sola es significativa, y es fuerte: el retorno del
+S\&P~Merval anticipa el tono anormal de las noticias ($p$ corregido 0,0003). Ninguna prueba en la
+dirección de las noticias hacia el mercado llega a ser significativa (tabla~\ref{tab:u6-mercado}).
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}llccc@{}}
+\toprule
+\textbf{Prueba} & \textbf{Dirección} & \textbf{p} & \textbf{p corregido} & \textbf{Significativo} \\
+\midrule
+tono \flecha{} retorno & Noticias \flecha{} mercado & 0,2119 & 0,4238 & No \\
+retorno \flecha{} tono & Mercado \flecha{} noticias & $<$0,0001 & 0,0003 & \textbf{Sí} \\
+tono \flecha{} volumen & Noticias \flecha{} mercado & 0,0632 & 0,2528 & No \\
+volumen \flecha{} tono & Mercado \flecha{} noticias & 0,3617 & 0,4823 & No \\
+atención \flecha{} retorno & Noticias \flecha{} mercado & 0,9293 & 0,9293 & No \\
+retorno \flecha{} atención & Mercado \flecha{} noticias & 0,1479 & 0,3944 & No \\
+atención \flecha{} volumen & Noticias \flecha{} mercado & 0,3377 & 0,4823 & No \\
+volumen \flecha{} atención & Mercado \flecha{} noticias & 0,5918 & 0,6764 & No \\
+\bottomrule
+\end{tabular}
+\caption{Pruebas de causalidad de Granger en el VAR del mercado (224 ruedas). Tono: tono anormal
+de las noticias de la rueda (tono menos el promedio de las 20 ruedas previas). Atención: cantidad
+de notas comparada con lo habitual. Volumen: monto operado anormal. Fuente: elaboración propia
+(\carpeta{Unión/06_var_granger}).}
+\label{tab:u6-mercado}
+\end{table}
+
+La impulso-respuesta dimensiona el efecto (figura~\ref{fig:irf}). Un día en que el S\&P~Merval
+sube un desvío (2,8\%), el tono anormal sube 1,84 puntos en la rueda siguiente y 1,23 en la
+segunda, ambos distintos de cero; a la tercera ya no se distingue de cero. Como un desvío del
+tono anormal son 6,0 puntos, la suba de la rueda siguiente es de un tercio de desvío. El tono y el
+retorno de una misma rueda también se mueven juntos (correlación 0,19), pero con datos diarios no
+se puede saber quién movió a quién dentro de la rueda. Desde la rueda siguiente, el efecto del
+tono sobre el retorno ya no se distingue de cero.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{u6_irf_mercado.png}
+\caption{Funciones de impulso-respuesta del VAR del mercado ante un golpe de un desvío, con
+banda del 95\%. Si la banda no toca el cero, la respuesta es distinta de cero. Fuente:
+elaboración propia (\carpeta{Unión/06_var_granger}).}
+\label{fig:irf}
+\end{figure}
+
+\subsection{Las empresas}
+
+El retorno de casi todas las empresas anticipa el tono de las noticias: 39 de 47, todas con
+signo positivo (tabla~\ref{tab:u6-empresas}). En este nivel el tono es el del mercado, y los
+retornos de las empresas se mueven con el índice, de modo que en buena parte es el mismo hallazgo
+del mercado repetido. En la dirección contraria, 7 de 94 pruebas dan $p<0{,}05$ sin corregir,
+menos de las 9,4 que se esperarían por azar; después de la corrección quedan dos, sin un patrón.
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Prueba} & \textbf{Pruebas} & \textbf{$p<0{,}05$ sin corregir} & \textbf{Significativas} & \textbf{Signo} \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{47 empresas, con el tono del mercado}} \\
+tono \flecha{} retorno & 47 & 1 & 0 & — \\
+tono \flecha{} volumen & 47 & 6 & 2 & 2 positivas \\
+retorno \flecha{} tono & 47 & 43 & \textbf{39} & 39 positivas \\
+volumen \flecha{} tono & 47 & 11 & 3 & 3 positivas \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{17 empresas, con su tono propio}} \\
+tono propio \flecha{} retorno & 17 & 0 & 0 & — \\
+tono propio \flecha{} volumen & 17 & 2 & 1 & 1 positiva \\
+retorno \flecha{} tono propio & 17 & 16 & \textbf{15} & 15 positivas \\
+volumen \flecha{} tono propio & 17 & 1 & 0 & — \\
+\bottomrule
+\end{tabular}
+\caption{Pruebas de Granger por empresa. «Significativas» cuenta las que siguen siéndolo
+después de la corrección. Fuente: elaboración propia (\carpeta{Unión/06_var_granger}).}
+\label{tab:u6-empresas}
+\end{table}
+
+La prueba más exigente es la del tono propio, que descuenta el clima general de las noticias. En
+15 de las 17 empresas, cuando la acción sube, en las ruedas siguientes se habla de ella mejor que
+del resto del mercado: BBAR, BMA, BYMA, CEPU, CRES, EDN, GGAL, IRSA, LOMA, METR, SUPV, TGSU2,
+TRAN, TXAR e YPFD (no aparece en ALUA ni en PAMP). Es el resultado más fuerte de la tesina,
+porque es específico de cada empresa (figura~\ref{fig:u6-empresas}). En la dirección contraria
+queda una sola prueba significativa (IRSA, tono propio \flecha{} volumen), aislada.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.42\linewidth]{u6_empresas.png}
+\caption{Pruebas de Granger por empresa. Cada fila es una empresa y cada columna una prueba;
+más oscuro, $p$ más chico; $\circ$ $p<0{,}05$ sin corregir; $\bullet$ significativo después
+de la corrección. Fuente: elaboración propia (\carpeta{Unión/06_var_granger}).}
+\label{fig:u6-empresas}
+\end{figure}
+
+\subsection{Los sectores y el régimen}
+
+\textbf{Sectores.} Se repitió el VAR con el promedio de las acciones de cada uno de los diez
+sectores. La dirección mercado \flecha{} noticias aparece en casi todos: en 9 de los 10, cuando el
+sector sube, el tono de las ruedas siguientes es más positivo. La excepción es Tecnología, que
+tiene una sola acción (BOLT). La dirección contraria aparece una sola vez: en Conglomerado el tono
+anticipa el volumen, pero con signo negativo (más tono, menos volumen), un resultado aislado.
+
+\textbf{Balance de todos los niveles.} Sumando mercado, empresas, tono propio y sectores, se
+hicieron 152 pruebas en la dirección noticias \flecha{} mercado. Solo 4 son significativas, que es
+lo que cabría esperar por azar con tantas pruebas, y no forman un patrón.
+
+\textbf{Régimen.} La pregunta es si la relación cambia según el estado del mercado: la literatura
+encuentra el efecto de las noticias sobre todo en los períodos de estrés \citep{garcia2013}. Con
+los regímenes del capítulo~\ref{cap:hmm} se estimó un solo modelo con todas las ruedas y una marca
+de día Tenso, para no pegar días que no son consecutivos; las 18 ruedas Moderado quedan afuera,
+de modo que se comparan 166 días Calmo con 40 Tenso. Para cada prueba se pregunta tres cosas: si
+hay efecto en los días Calmo, si hay efecto en los Tenso y si el efecto es distinto entre ambos.
+La tabla~\ref{tab:u6-regimen} muestra los $p$ corregidos: un número chico indica que hay efecto, y
+uno grande, que puede ser casualidad.
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}lcccY@{}}
+\toprule
+\textbf{Prueba} & \textbf{Días Calmo} & \textbf{Días Tenso} & \textbf{¿Cambia con el régimen?} & \textbf{Lectura} \\
+\midrule
+tono \flecha{} retorno & 0,42 & 0,92 & 0,95 & Nunca \\
+tono \flecha{} volumen & 0,12 & 0,42 & 0,42 & Nunca \\
+retorno \flecha{} tono & \textbf{0,007} & \textbf{0,007} & 0,81 & En los dos regímenes, igual \\
+volumen \flecha{} tono & 0,60 & \textbf{0,008} & 0,12 & Solo en Tenso, sin diferencia significativa con Calmo \\
+\bottomrule
+\end{tabularx}
+\caption{Pruebas de Granger según el régimen: $p$ corregido por Benjamini-Hochberg; en negrita,
+menor a 0,05. «¿Cambia con el régimen?» prueba si el efecto es distinto en los días Tenso que en
+los Calmo. Fuente: elaboración propia (\carpeta{Unión/06_var_granger}).}
+\label{tab:u6-regimen}
+\end{table}
+
+La lectura es directa. \textbf{El tono no anticipa al mercado en ningún régimen}, ni siquiera en
+los días de mayor estrés. \textbf{El retorno anticipa el tono en los dos regímenes y con la misma
+fuerza}: los medios siguen al mercado tanto en calma como en tensión. El volumen anticipa el tono
+solo en los días Tenso, pero la diferencia con los Calmo no llega a ser significativa: con 40 días
+Tenso, los datos no alcanzan para afirmar que el régimen cambie la relación.
+
+% ---------------------------------------------------------------------
+\section{Dónde está el efecto: las notas de la misma noche}
+
+La regla de las 17:00 manda las notas publicadas después del cierre a la rueda siguiente. Para
+ver dónde está el efecto del retorno sobre el tono, se separaron las notas según la franja en que
+se publicaron (tabla~\ref{tab:franjas}).
+
+\begin{table}[H]
+\centering\footnotesize
+\begin{tabular}{@{}lrcc@{}}
+\toprule
+\textbf{Franja de publicación} & \textbf{Notas} & \textbf{Efecto de un desvío del retorno} & \textbf{p} \\
+\midrule
+Noche del día de la rueda (17 a 24 h) & 3.451 & \textbf{+4,77 puntos de tono} & $<$0,0001 \\
+Día sin rueda & 2.142 & +3,11 & 0,1133 \\
+Madrugada y mañana siguientes (antes de las 11) & 4.331 & +0,54 & 0,5142 \\
+Sesión (11 a 17 h) & 4.001 & +1,26 & 0,1028 \\
+\bottomrule
+\end{tabular}
+\caption{Relación entre el retorno de una rueda y el tono de las notas según la franja en que
+se publicaron. Fuente: elaboración propia (\carpeta{Unión/08_robustez}).}
+\label{tab:franjas}
+\end{table}
+
+El efecto está en las notas publicadas entre las 17:00 y la medianoche del día de la rueda: un
+desvío del retorno sube su tono 4,8 puntos. En las notas de la madrugada y la mañana siguiente es
+casi nulo. Por eso en el VAR aparece como «el retorno de hoy anticipa el tono de mañana»: después
+del cierre, los medios cuentan cómo le fue al mercado y a cada empresa con un tono que acompaña la
+suba o la baja, y no hay un arrastre que dure días.
+
+% ---------------------------------------------------------------------
+\section{Pruebas complementarias}
+\label{sec:complementarias}
+
+El VAR se complementó con tres pruebas (tabla~\ref{tab:complementarias}). La primera usa solo
+las 8.069 notas publicadas con el mercado cerrado, que salen antes de cualquier operación de la
+rueda: si su tono anticipa el salto de apertura, eso es noticias \flecha{} mercado sin ambigüedad
+\citep{glasserman2025}. Las otras dos son estudios de eventos \citep{mackinlay1997}: alrededor
+de las ruedas de tono extremo del mercado (16 eventos) y de cada empresa (88), con el retorno
+normal estimado en las ruedas $[-25,-4]$ y el anormal medido antes, el día y después, contra
+5.000 sorteos de fechas al azar; y alrededor de los shocks de cantidad con la definición del
+plan ($z>2$ contra las 30 ruedas previas), medida por día de calendario porque la versión
+original marcaba casi solo lunes. Dos de estas pruebas se especificaron por escrito antes de ver
+los resultados.
+
+\begin{table}[H]
+\centering\footnotesize
+\begin{tabularx}{\linewidth}{@{}L{3.3cm}YL{3.2cm}@{}}
+\toprule
+\textbf{Prueba} & \textbf{Resultado} & \textbf{Lectura} \\
+\midrule
+Notas con el mercado cerrado y retorno de apertura & Con notas de la noche más positivas el mercado abre algo más arriba (+0,18\% por desvío), pero no es significativo ($p=0{,}107$). Sin los dos días electorales, +0,06\% & El indicio se apoya en las elecciones: lo que movió la apertura fue el resultado, no el tono \\
+Ruedas de tono extremo positivo (7 eventos) & El S\&P~Merval sube 2,01\% ese día (7 de 7; $p=0{,}018$ contra el azar) y ya venía subiendo 3,19\% en las 3 ruedas previas ($p=0{,}037$). Después, nada. Las negativas no muestran movimiento & El precio se mueve antes o junto con las noticias, no después \\
+Tono propio extremo positivo (62 eventos) & La acción ya había subido 1,24\% más que el mercado en las 3 ruedas previas ($p=0{,}029$); después, $-$0,14\% & Se habla bien de la empresa después de que sube \\
+Shock de cantidad en 17 empresas (105 eventos) & Volumen anormal del día 0,139 contra $-$0,054 de un día cualquiera ($p$ corregido 0,017); sin dirección en el precio, sin efecto después y sin efecto en la apertura & Apoyo parcial a H1 en el volumen: la cobertura acompaña a la actividad \\
+\bottomrule
+\end{tabularx}
+\caption{Pruebas complementarias al VAR. Fuente: elaboración propia
+(\carpeta{Unión/06b_noticias_preapertura}, \carpeta{07_event_study} y
+\carpeta{07b_shock_volumen_noticias}).}
+\label{tab:complementarias}
+\end{table}
+
+En los días electorales el caso es exactamente el que plantea la hipótesis: notas de la noche
+muy negativas tras las bonaerenses (tono anormal $-5{,}3$, apertura $-6{,}6\%$) y muy positivas
+tras las legislativas ($+8{,}5$, apertura $+13{,}4\%$). Pero lo que mueve al mercado es la
+elección, no el tono con que los medios la cuentan; fuera de esos días, el tono de la noche se
+relaciona con el cierre del día anterior (correlación 0,42) y no con la apertura. Lo mismo pasa en
+el mercado con el shock de cantidad: su único salto de apertura depende del anuncio del Tesoro de
+Estados Unidos del 24/09/2025. Un hecho grande genera muchas noticias y mueve el precio, pero lo
+que mueve al mercado es el hecho, no la cobertura.
+
+% ---------------------------------------------------------------------
+\section{Robustez}
+\label{sec:var-robustez}
+
+La robustez cambió una sola decisión por vez, en doce variantes: tono ajustado por portal, tono en
+nivel, sin notas de hora sospechosa, fecha de calendario en lugar de la regla de las 17:00, solo
+notas del día antes del cierre, sin abril de 2026, días electorales como control, sin las acciones
+ilíquidas, régimen filtrado, Calmo contra No calmo y dos umbrales para las ruedas de tono extremo.
+De 106 comparaciones, 93 mantienen la conclusión. Dos resultados se sostienen
+en todas: \textbf{en ninguna variante el tono anticipa el retorno}, ni en el mercado ni en ninguna
+empresa, y el mercado anticipa al tono con cualquier medida de tono. Las únicas variantes en que
+el efecto del retorno sobre el tono desaparece son las que dejan afuera, o cambian de rueda, las
+notas publicadas después del cierre: la confirmación de que el efecto está en las notas de la
+misma noche.
+
+
+% ---------------------------------------------------------------------
+\section{Discusión}
+
+El resultado central coincide con uno de los dos hallazgos de \citet{tetlock2007}: los retornos
+anticipan el tono de la cobertura. Que se repita con medios argentinos, en otro idioma y con un
+modelo de sentimiento propio, lo hace más creíble; y la hora de publicación agrega una precisión
+que una columna diaria no podía dar: el efecto está en las notas que cuentan la jornada. Es
+consistente con \citet{verma2026}, para quienes buena parte de la cobertura refleja información
+que el precio ya incorporó.
+
+Que las noticias no anticipen al mercado difiere de \citet{tetlock2007} y de \citet{galdi2018},
+pero no contradice a la literatura: el efecto se concentra en las recesiones \citep{garcia2013} y
+la ventana es de un solo año. También es compatible con un mercado que incorpora la información
+rápido \citep{fama1970}: la salida del cepo, las elecciones y el anuncio del Tesoro se reflejaron
+de inmediato en el precio y en el VIX argentino. Que una empresa con muchas más notas se opere más
+ese día está en línea con la literatura de atención \citep{da2011,engelberg2011}. Y el hallazgo por
+empresa —después de que una acción sube, se habla de ella mejor que del resto— respalda medir el
+sentimiento a nivel de entidad \citep{tang2023finentity}, algo que solo fue posible con el cruce
+entre FinBETO y el NER. La corrección por pruebas múltiples y las especificaciones escritas de
+antemano responden a la advertencia sobre la predictibilidad espuria \citep{nikolopoulos2026}.

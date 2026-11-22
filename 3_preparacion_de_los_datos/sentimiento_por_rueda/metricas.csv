@@ -1,0 +1,27 @@
+metrica,valor,detalle
+ruedas,244.0,
+notas,13925.0,
+sent_neto_media,1.23,
+sent_neto_desvio,7.22,
+sent_neto_min,-15.8,2025-09-19
+sent_neto_max,19.22,2025-11-14
+inesperado_desvio,6.26,
+inesperado_min,-14.5,2026-01-26
+inesperado_max,22.37,2025-09-24
+ruedas_con_inesperado,224.0,desde 2025-06-02
+autocorrelacion_sentimiento,0.49,
+pct_pos_media,26.4,
+pct_neg_media,25.2,
+pct_neu_media,48.5,
+portal_ambito_economia,2.4,497 notas
+portal_ambito_finanzas,-2.1,240 notas
+portal_clarin_economia,0.6,294 notas
+portal_clarin_sitemap,-0.1,3668 notas
+portal_eleconomista_sitemap,-2.4,2688 notas
+portal_infobae_economia,1.8,497 notas
+portal_iprofesional_sitemap,3.6,5455 notas
+portal_lanacion_economia,2.8,486 notas
+portal_tn_economia,30.5,100 notas
+correlacion_con_5.0_sent_neto,0.976,misma serie con FinBETO de 4 clases
+correlacion_con_5.0_inesperado,0.97,
+controles_ok,7.0,de 7

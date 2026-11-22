@@ -1,0 +1,3 @@
+test,n,referencia_f1_macro,referencia_accuracy,referencia_dice_neutro,finbeto_f1_macro,finbeto_desvio,finbeto_accuracy,ventaja_puntos,nota
+completo,786,0.5418,0.57,493,0.6967,0.0123,0.7027,15.5,media de 3 semillas
+como_la_5.0,662,0.5462,0.5529,411,0.7311,,0.7296,18.5,semilla 42 (la del modelo final)

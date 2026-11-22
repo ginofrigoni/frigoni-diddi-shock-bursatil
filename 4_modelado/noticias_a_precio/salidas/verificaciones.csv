@@ -1,0 +1,7 @@
+control,pasa
+Los rezagos usan solo ruedas anteriores de la misma acción,True
+El objetivo de cada fila es el retorno de la rueda siguiente de la misma acción,True
+Entrenamiento y test no comparten ruedas,True
+El test empieza en febrero de 2026,True
+17 empresas en entrenamiento y en test,True
+Sin faltantes en las variables de los modelos,True

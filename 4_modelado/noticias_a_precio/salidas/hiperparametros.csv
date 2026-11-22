@@ -1,0 +1,5 @@
+algoritmo,modelo,C,auc_validacion,max_depth,min_samples_leaf
+logistica,A,1.0,0.511,,
+logistica,B,0.01,0.5204,,
+random_forest,A,,0.5207,5.0,20.0
+random_forest,B,,0.5403,3.0,20.0

@@ -1,0 +1,10 @@
+control,pasa
+"Agrupando por fecha se reproduce ner_sentimiento_diario.csv del cruce, fila por fila",True
+La cobertura del cruce coincide con su reporte,True
+Todas las notas con menciones están en U1,True
+Ninguna oración se pierde al pasar de fecha a rueda (mismas notas de la ventana),True
+El panel tiene 47 acciones × 244 ruedas sin repetidos,True
+Sin noticia ⇔ sentimiento vacío,True
+Todos los tickers de las menciones están entre las 47 acciones,True
+Las empresas con cobertura son las mismas 17 de la 5.0,True
+hubo_noticia es igual al de la 5.0 en cada acción y rueda (no depende de la etiqueta),True

@@ -1,0 +1,13 @@
+control,pasa
+"Mercado: 244 ruedas, sin repetidas, las mismas del calendario bursátil",True
+"Merval, retorno y VIX idénticos a vix_argentino",True
+"Panel: 17 empresas × 244 ruedas = 4.148 filas, sin repetidos",True
+"Sin faltantes en retorno, volumen anormal, VIX, sentimiento propio y hubo_noticia",True
+El sentimiento inesperado falta solo en las primeras 20 ruedas,True
+Las notas suman lo mismo que en la regla de las 17:00,True
+Sentimiento de la empresa presente ⇔ hubo noticia,True
+Cada rueda del panel tiene el mismo sentimiento de mercado que el dataset de mercado,True
+K se estimó solo con ruedas de entrenamiento,True
+Todas las columnas de los dos datasets están en el diccionario,True
+"Retorno, volumen anormal y VIX idénticos a los de la 5.0 en las 17 empresas",True
+hubo_noticia idéntico al de la 5.0,True

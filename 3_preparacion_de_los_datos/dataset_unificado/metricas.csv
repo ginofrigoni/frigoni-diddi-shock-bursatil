@@ -1,0 +1,26 @@
+metrica,valor,detalle
+ruedas,244,
+filas_panel,4148,
+empresas,17,"ALUA, BBAR, BMA, BYMA, CEPU, CRES, EDN, GGAL, IRSA, LOMA, METR, PAMP, SUPV, TGSU2, TRAN, TXAR, YPFD"
+columnas_panel,32,
+columnas_mercado,21,
+corte_test,2026-02-01,
+ruedas_entrenamiento,185,
+ruedas_test,59,
+ruedas_calmo,177,
+ruedas_moderado,18,
+ruedas_tenso,49,
+ruedas_eco_electoral,40,
+ruedas_abril_2026,20,
+filas_con_noticia,2919,de 4148
+pct_filas_con_noticia,70.4,
+k_peso_entrenamiento,8.85,varianza de una oración 5843 / varianza entre días 660
+k_peso_todas_las_ruedas,10.4,como en la 5.0
+correlacion_sentimiento_propio_k_entrenamiento_vs_k_todas,0.9996,
+peso_con_1_oraciones,0.102,
+peso_con_2_oraciones,0.184,
+peso_con_5_oraciones,0.361,
+peso_con_10_oraciones,0.531,
+peso_con_30_oraciones,0.772,
+correlacion_sentimiento_propio_con_tono_propio_5.0,0.889,
+controles_ok,12,de 12

@@ -1,0 +1,150 @@
+{
+  "completo": {
+    "n_oraciones": 786,
+    "clases": {
+      "NEU": 364,
+      "POS": 240,
+      "NEG": 182
+    },
+    "referencia": {
+      "f1_macro": 0.5418,
+      "accuracy": 0.57,
+      "f1_POS": 0.4108,
+      "f1_NEG": 0.5797,
+      "f1_NEU": 0.6348,
+      "predicciones": {
+        "POS": 130,
+        "NEG": 163,
+        "NEU": 493
+      },
+      "matriz_confusion": [
+        [
+          76,
+          19,
+          145
+        ],
+        [
+          6,
+          100,
+          76
+        ],
+        [
+          48,
+          44,
+          272
+        ]
+      ]
+    },
+    "finbeto": {
+      "f1_macro_por_semilla": {
+        "1": 0.6871,
+        "2": 0.6925,
+        "42": 0.7106
+      },
+      "f1_macro_media": 0.6967,
+      "f1_macro_desvio": 0.0123,
+      "accuracy_media": 0.7027,
+      "semilla_42": {
+        "f1_macro": 0.7106,
+        "accuracy": 0.7137,
+        "f1_POS": 0.7137,
+        "f1_NEG": 0.6921,
+        "f1_NEU": 0.726,
+        "predicciones": {
+          "POS": 242,
+          "NEG": 211,
+          "NEU": 333
+        },
+        "matriz_confusion": [
+          [
+            172,
+            20,
+            48
+          ],
+          [
+            14,
+            136,
+            32
+          ],
+          [
+            56,
+            55,
+            253
+          ]
+        ]
+      }
+    }
+  },
+  "como_la_5.0": {
+    "n_oraciones": 662,
+    "clases": {
+      "POS": 240,
+      "NEU": 240,
+      "NEG": 182
+    },
+    "referencia": {
+      "f1_macro": 0.5462,
+      "accuracy": 0.5529,
+      "f1_POS": 0.4318,
+      "f1_NEG": 0.6231,
+      "f1_NEU": 0.5837,
+      "predicciones": {
+        "POS": 112,
+        "NEG": 139,
+        "NEU": 411
+      },
+      "matriz_confusion": [
+        [
+          76,
+          19,
+          145
+        ],
+        [
+          6,
+          100,
+          76
+        ],
+        [
+          30,
+          20,
+          190
+        ]
+      ]
+    },
+    "finbeto": {
+      "f1_macro_por_semilla": null,
+      "f1_macro_media": 0.7311,
+      "f1_macro_desvio": null,
+      "accuracy_media": 0.7296,
+      "semilla_42": {
+        "f1_macro": 0.7311,
+        "accuracy": 0.7296,
+        "f1_POS": 0.743,
+        "f1_NEG": 0.7432,
+        "f1_NEU": 0.7071,
+        "predicciones": {
+          "POS": 223,
+          "NEG": 184,
+          "NEU": 255
+        },
+        "matriz_confusion": [
+          [
+            172,
+            20,
+            48
+          ],
+          [
+            14,
+            136,
+            32
+          ],
+          [
+            37,
+            28,
+            175
+          ]
+        ]
+      }
+    }
+  }
+}

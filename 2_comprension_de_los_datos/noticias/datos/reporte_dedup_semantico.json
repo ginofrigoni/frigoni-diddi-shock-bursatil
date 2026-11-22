@@ -1,0 +1,695 @@
+{
+  "modelo": "qwen3.8",
+  "ventana_horas": 48,
+  "actualizado": "2026-10-10 21:05:15",
+  "grupos_evaluados": 33,
+  "grupos_marcados_duplicado": 14,
+  "urls_a_eliminar": [
+    "https://eleconomista.com.ar/economia/el-riesgo-pais-651-puntos-basicos-n84784",
+    "https://www.ambito.com/finanzas/el-dolar-cerro-el-mes-presion-los-bancos-supero-los-1400-pese-presuntas-ventas-oficiales-contenerlo-n6196485",
+    "https://www.clarin.com/economia/anses-fechas-cobro-jubilados-pensionados-febrero-2026_0_L5gMzaOnZv.html",
+    "https://www.clarin.com/economia/bancos-hoy-jueves-6-noviembre-2025_0_uiQ6ZmaSHC.html",
+    "https://www.clarin.com/economia/inflacion-abril-2025-28-indec-levantamiento-cepo-cambiario_0_dPYK4IAWPX.html",
+    "https://www.clarin.com/economia/inflacion-octubre-2025-hora-publicara-dato-indec_0_fyOCGvZbTV.html",
+    "https://www.clarin.com/economia/voucher-educativo-febrero-2026-saber-seguis-beneficiario-mirarlo_0_YtYu53he9u.html",
+    "https://www.iprofesional.com/economia/428815-dolares-del-colchon-bancos-y-supermercados-no-informaran-movimientos-de-sus-clientes",
+    "https://www.iprofesional.com/economia/433640-comer-afuera-es-cada-vez-mas-caro-cual-es-la-diferencia-con-una-comida-hecha-en-casa",
+    "https://www.iprofesional.com/economia/435775-el-gobierno-oficializa-el-pase-a-disponibilidad-de-personal-de-inta-inase-y-inv",
+    "https://www.iprofesional.com/economia/442091-extra-empleada-domestica-cuanto-cobra-sueldo-diciembre-2025-mas-aguinaldo-y-bono",
+    "https://www.iprofesional.com/economia/450240-aumento-del-boleto-de-colectivo-en-el-amba-cuanto-sale-viajar-desde-el-lunes",
+    "https://www.iprofesional.com/finanzas/429022-el-gobierno-explico-el-plan-para-usar-dolares-bajo-el-colchon-cuales-son-las-medidas",
+    "https://www.iprofesional.com/finanzas/442499-marina-dal-poggetto-y-el-dolar-seria-preferible-tener-un-tipo-de-cambio-mas-alto"
+  ],
+  "detalle": [
+    {
+      "titulo": "marina dal poggetto sobre el futuro del dólar: \"sería preferible tener un tipo de cambio más alto\"",
+      "articulos": [
+        {
+          "fuente": "ambito_economia",
+          "url": "https://www.ambito.com/economia/marina-dal-poggetto-el-futuro-del-dolar-seria-preferible-tener-un-tipo-cambio-mas-alto-n6216492",
+          "fecha": "2025-11-21T14:15:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/442499-marina-dal-poggetto-y-el-dolar-seria-preferible-tener-un-tipo-de-cambio-mas-alto",
+          "fecha": "2025-11-21T14:49:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos cubren exactamente la misma noticia sobre las bandas cambiarias y la declaración de Marina Dal Poggio, con el mismo contenido esencial publicado a solo 34 minutos de diferencia, siendo claramente la misma nota republicada por diferentes medios.",
+        "url_canonica": "https://www.ambito.com/economia/marina-dal-poggetto-el-futuro-del-dolar-seria-preferible-tener-un-tipo-cambio-mas-alto-n6216492"
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este viernes 31 de octubre",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-31-octubre-n90020",
+          "fecha": "2025-10-31T09:04:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-31-octubre-n6208418",
+          "fecha": "2025-10-31T15:53:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas distintas: la de El Economista describe el nuevo esquema cambiario con banda de $1.000-$1.400, mientras que la de Ámbito Financiero reporta la cotización real del día a $1.425-$1.475, con datos numéricos y enfoque completamente diferentes.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "el dólar cerró el mes bajo presión: en los bancos superó los $1.400, pese a fuerte intervención oficial para contenerlo",
+      "articulos": [
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-el-gobierno-apuesta-la-ultima-gran-liquidacion-del-agro-mientras-se-consolida-la-brecha-las-nuevas-restricciones-n6196485",
+          "fecha": "2025-09-30T16:54:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/el-dolar-cerro-el-mes-presion-los-bancos-supero-los-1400-pese-presuntas-ventas-oficiales-contenerlo-n6196485",
+          "fecha": "2025-09-30T16:54:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente la misma fecha, hora, contenido inicial y el mismo ID de artículo (n6196485) en la URL, lo que indica que es la misma nota publicada con dos títulos diferentes (cross-posting o scraping duplicado).",
+        "url_canonica": "https://www.ambito.com/finanzas/dolar-el-gobierno-apuesta-la-ultima-gran-liquidacion-del-agro-mientras-se-consolida-la-brecha-las-nuevas-restricciones-n6196485"
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este miércoles 19 de noviembre",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-19-noviembre-n90659",
+          "fecha": "2025-11-19T08:12:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-19-noviembre-n6215324",
+          "fecha": "2025-11-19T15:48:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Aunque ambos artículos tratan sobre la cotización del dólar el 19 de noviembre de 2025, provienen de fuentes distintas (El Economista vs. Ámbito), tienen estructuras y enfoques diferentes (uno explica el nuevo esquema cambiario sin cepo, el otro reporta cotizaciones específicas de BNA, BCRA y blue), y no son la misma nota republicada.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este viernes 13 de febrero",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-13-febrero-n92628",
+          "fecha": "2026-02-13T08:26:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-13-febrero-n6245451",
+          "fecha": "2026-02-13T15:33:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas de dos medios distintos (El Economista y Ámbito) que cubren el mismo tema del día (cotización del dólar el 13 de febrero) pero con enfoques y contenidos diferentes: una explica el nuevo esquema cambiario con bandas móviles y la otra reporta las cotizaciones específicas del día.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este lunes 21 de julio",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-21-julio-n86824",
+          "fecha": "2025-07-21T09:13:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-21-julio-n6169183",
+          "fecha": "2025-07-21T17:44:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas distintas: la de El Economista describe el nuevo esquema cambiario con banda de $1.000-$1.400, mientras que la de Ámbito reporta la cotización real del día ($1.250-$1.300) y el blue a $1.325, con enfoques y datos diferentes.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este viernes 28 de noviembre",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-28-noviembre-n90879",
+          "fecha": "2025-11-28T08:10:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-28-noviembre-n6218526",
+          "fecha": "2025-11-28T15:51:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas distintas: la de El Economista describe el nuevo esquema cambiario sin cepo y la banda de intervención, mientras que la de Ámbito Finanzas reporta las cotizaciones específicas del día (oficial, blue, mayorista).",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este miércoles 18 de junio",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-miercoles-18-junio-n85809",
+          "fecha": "2025-06-18T11:57:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-miercoles-18-junio-n6157554",
+          "fecha": "2025-06-18T19:09:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas distintas de medios diferentes (El Economista vs Ámbito) con enfoques distintos: una explica el nuevo esquema cambiario sin cepo y la otra reporta las cotizaciones del día, aunque comparten el mismo tema y fecha.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este lunes 2 de marzo",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-lunes-2-marzo-n92985",
+          "fecha": "2026-03-02T08:19:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-2-marzo-n6250948",
+          "fecha": "2026-03-02T15:58:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Aunque ambos artículos tratan el dólar del lunes 2 de marzo, el primero (El Economista) se enfoca en explicar el nuevo esquema cambiario con bandas móviles y los cambios regulatorios, mientras que el segundo (Ámbito) es una nota de cotización diaria con precios específicos de compra/venta en distintos segmentos.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este martes 9 de septiembre",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-9-septiembre-n88358",
+          "fecha": "2025-09-09T09:26:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-9-septiembre-n6188086",
+          "fecha": "2025-09-09T18:25:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas distintas de dos medios diferentes (El Economista y Ámbito) que cubren el mismo tema del dólar del 9 de septiembre pero con enfoques y datos distintos: el primero explica el nuevo esquema cambiario sin cepo, mientras que el segundo reporta las cotizaciones específicas del día.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este viernes 16 de enero",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-16-enero-n91987",
+          "fecha": "2026-01-16T08:04:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-16-enero-n6234929",
+          "fecha": "2026-01-16T16:56:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Aunque ambos artículos tratan el dólar del viernes 16 de enero, el primero (El Economista) se enfoca en explicar el nuevo esquema cambiario con bandas móviles y los cambios regulatorios, mientras que el segundo (Ámbito) es una nota de cotización diaria con precios específicos de compra/venta en distintos segmentos.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar blue hoy: a cuánto cotiza este miércoles 30 de julio",
+      "articulos": [
+        {
+          "fuente": "clarin_sitemap",
+          "url": "https://www.clarin.com/economia/dolar-blue-hoy-cotiza-miercoles-30-julio_0_Lt1uHJuiPT.html",
+          "fecha": "2025-07-30T07:00:03.000Z"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-cotiza-este-miercoles-30-julio-n6172553",
+          "fecha": "2025-07-30T16:07:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas de dos medios distintos (Clarín y Ámbito) con redacciones, estructura y enfoque diferentes, aunque cubren el mismo dato de cotización del dólar blue del 30 de julio de 2025.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este viernes 18 de julio",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-18-julio-n86756",
+          "fecha": "2025-07-18T09:32:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-18-julio-n6168458",
+          "fecha": "2025-07-18T15:44:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas distintas de dos medios diferentes (El Economista y Ámbito) que cubren el mismo tema del dólar del 18 de julio pero con enfoques y datos distintos: el primero explica el nuevo esquema cambiario sin cepo, mientras que el segundo reporta las cotizaciones específicas del día.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este martes 2 de septiembre",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-martes-2-septiembre-n88106",
+          "fecha": "2025-09-02T10:17:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-martes-2-septiembre-n6185392",
+          "fecha": "2025-09-02T15:45:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Aunque ambos artículos tratan sobre la cotización del dólar el 2 de septiembre de 2025, el primero (El Economista) se enfoca en el nuevo esquema cambiario sin cepo y la banda de fluctuación, mientras que el segundo (Ámbito) reporta las cotizaciones específicas del día (oficial, blue, mayorista) con datos numéricos distintos y enfoque informativo diferente.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este viernes 21 de noviembre",
+      "articulos": [
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-21-noviembre-n6216338",
+          "fecha": "2025-11-21T00:00:00-03:00"
+        },
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-viernes-21-noviembre-n90736",
+          "fecha": "2025-11-21T09:36:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Aunque comparten el tema del dólar del 21 de noviembre, el artículo de Ámbito es una cotización diaria rutinaria mientras que el de El Economista es una nota de análisis sobre el nuevo esquema cambiario sin cepo, con contenido sustancialmente diferente.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "dólar hoy: a cuánto cotiza este jueves 9 de octubre",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolar-hoy-cuanto-cotiza-jueves-9-octubre-n89339",
+          "fecha": "2025-10-09T07:53:00-03:00"
+        },
+        {
+          "fuente": "ambito_finanzas",
+          "url": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-jueves-9-octubre-n6199980",
+          "fecha": "2025-10-09T18:24:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son notas distintas: la de El Economista describe el nuevo esquema cambiario sin cepo (banda $1000-$1400), mientras que la de Ámbito informa el cierre del dólar oficial a $1.403,54/$1.459,28 y el blue a $1.475, con datos de cotización específicos del día.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "tras la salida del cepo, la inflación en abril fue 2,8% y está abajo del 50% anual",
+      "articulos": [
+        {
+          "fuente": "clarin_economia",
+          "url": "https://www.clarin.com/economia/hora-indec-publica-hoy-inflacion-abril-2025_0_xKkms5KCTI.html",
+          "fecha": "2025-05-14T19:00:39.000Z"
+        },
+        {
+          "fuente": "clarin_economia",
+          "url": "https://www.clarin.com/economia/inflacion-abril-2025-28-indec-levantamiento-cepo-cambiario_0_dPYK4IAWPX.html",
+          "fecha": "2025-05-14T19:00:39.000Z"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente el mismo contenido, misma fecha de publicación (2025-05-14T19:00:39.000Z), misma fuente, y solo difieren en la URL (slug diferente), lo que indica un cross-posting o doble captura del scraper.",
+        "url_canonica": "https://www.clarin.com/economia/hora-indec-publica-hoy-inflacion-abril-2025_0_xKkms5KCTI.html"
+      }
+    },
+    {
+      "titulo": "por qué no hay bancos hoy, jueves 6 de noviembre de 2025",
+      "articulos": [
+        {
+          "fuente": "clarin_economia",
+          "url": "https://www.clarin.com/economia/bancos-abiertos-jueves-6-noviembre_0_VbHmRGjtMk.html",
+          "fecha": "2025-11-06T12:33:51.000Z"
+        },
+        {
+          "fuente": "clarin_sitemap",
+          "url": "https://www.clarin.com/economia/bancos-hoy-jueves-6-noviembre-2025_0_uiQ6ZmaSHC.html",
+          "fecha": "2025-11-06T12:33:51.000Z"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente el mismo contenido, misma fecha de publicación (2025-11-06T12:33:51.000Z) y misma fuente (Clarin), solo difieren en la URL por el slug del artículo, lo que indica un cross-posting o doble captura del scraper.",
+        "url_canonica": "https://www.clarin.com/economia/bancos-abiertos-jueves-6-noviembre_0_VbHmRGjtMk.html"
+      }
+    },
+    {
+      "titulo": "voucher educativo 2026: ¿hay fecha de cobro en febrero? cómo consultar en anses y mi argentina si seguís como beneficiario",
+      "articulos": [
+        {
+          "fuente": "clarin_sitemap",
+          "url": "https://www.clarin.com/economia/voucher-educativo-2026-fecha-cobro-febrero-consultar-anses-argentina-seguis-beneficiario_0_EWWxFBudZb.html",
+          "fecha": "2026-02-09T18:21:37.000Z"
+        },
+        {
+          "fuente": "clarin_sitemap",
+          "url": "https://www.clarin.com/economia/voucher-educativo-febrero-2026-saber-seguis-beneficiario-mirarlo_0_YtYu53he9u.html",
+          "fecha": "2026-02-09T18:21:37.000Z"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente el mismo contenido, misma fecha de publicación (2026-02-09T18:21:37.000Z), misma fuente (clarin_sitemap), y solo difieren en la URL (slug diferente), lo que indica un cross-posting o doble captura del scraper.",
+        "url_canonica": "https://www.clarin.com/economia/voucher-educativo-2026-fecha-cobro-febrero-consultar-anses-argentina-seguis-beneficiario_0_EWWxFBudZb.html"
+      }
+    },
+    {
+      "titulo": "anses para jubilados: de cuánto es el bono de febrero y desde cuándo se cobra",
+      "articulos": [
+        {
+          "fuente": "clarin_sitemap",
+          "url": "https://www.clarin.com/economia/anses-jubilados-bono-febrero-cobra_0_XeM8Ui0pgN.html",
+          "fecha": "2026-02-02T09:31:03.000Z"
+        },
+        {
+          "fuente": "clarin_sitemap",
+          "url": "https://www.clarin.com/economia/anses-fechas-cobro-jubilados-pensionados-febrero-2026_0_L5gMzaOnZv.html",
+          "fecha": "2026-02-02T09:31:03.000Z"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente el mismo contenido, misma fecha de publicación (2026-02-02T09:31:03.000Z), misma fuente, y solo difieren en la URL (slug diferente), lo que indica un cross-posting o doble captura del scraper.",
+        "url_canonica": "https://www.clarin.com/economia/anses-jubilados-bono-febrero-cobra_0_XeM8Ui0pgN.html"
+      }
+    },
+    {
+      "titulo": "¿a qué hora sale hoy la inflación de octubre 2025? de cuánto será y todo sobre el dato del indec este miércoles 12 de noviembre",
+      "articulos": [
+        {
+          "fuente": "clarin_sitemap",
+          "url": "https://www.clarin.com/economia/inflacion-octubre-2025-hora-publicara-dato-indec_0_EnizST5MZn.html",
+          "fecha": "2025-11-12T12:12:00.000Z"
+        },
+        {
+          "fuente": "clarin_sitemap",
+          "url": "https://www.clarin.com/economia/inflacion-octubre-2025-hora-publicara-dato-indec_0_fyOCGvZbTV.html",
+          "fecha": "2025-11-12T12:12:00.000Z"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente el mismo contenido, título, fuente y fecha de publicación, con la única diferencia en el ID de la URL, lo que indica un cross-posting o doble captura del scraper.",
+        "url_canonica": "https://www.clarin.com/economia/inflacion-octubre-2025-hora-publicara-dato-indec_0_EnizST5MZn.html"
+      }
+    },
+    {
+      "titulo": "dólares del colchón: bancos y supermercados ya no deberán informar movimientos de sus clientes al fisco",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/dolares-colchon-bancos-supermercados-ya-deberan-informar-movimientos-sus-clientes-fisco-n84900",
+          "fecha": "2025-05-20T08:34:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/428815-dolares-del-colchon-bancos-y-supermercados-no-informaran-movimientos-de-sus-clientes",
+          "fecha": "2025-05-20T09:17:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos comparten exactamente el mismo contenido inicial (primer párrafo y cita de Caputo) con solo 43 minutos de diferencia, lo que indica que es la misma nota republicada por dos medios distintos.",
+        "url_canonica": "https://eleconomista.com.ar/economia/dolares-colchon-bancos-supermercados-ya-deberan-informar-movimientos-sus-clientes-fisco-n84900"
+      }
+    },
+    {
+      "titulo": "el riesgo país bajó a 651 puntos básicos",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/finanzas/el-riesgo-pais-651-puntos-basicos-n84783",
+          "fecha": "2025-05-15T18:04:00-03:00"
+        },
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/el-riesgo-pais-651-puntos-basicos-n84784",
+          "fecha": "2025-05-15T18:09:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Mismo contenido publicado 5 minutos después en dos secciones distintas (finanzas vs economia) del mismo sitio, con idéntico texto y solo una mínima diferencia de formato (guion vs punto).",
+        "url_canonica": "https://eleconomista.com.ar/finanzas/el-riesgo-pais-651-puntos-basicos-n84783"
+      }
+    },
+    {
+      "titulo": "plazos fijos en argentina: ¿cuánto están pagando estos 27 bancos?",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/plazos-fijos-argentina-cuanto-estan-pagando-estos-27-bancos-n89032",
+          "fecha": "2025-09-30T10:43:00-03:00"
+        },
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/plazos-fijos-argentina-cuanto-estan-pagando-estos-27-bancos-n89118",
+          "fecha": "2025-10-02T10:26:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son dos notas distintas publicadas en fechas diferentes (30/09 y 02/10) con tasas de interés actualizadas para cada día, no una republicación de la misma nota.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "plazos fijos en argentina: ¿cuánto están pagando estos 27 bancos?",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/plazos-fijos-argentina-cuanto-estan-pagando-estos-27-bancos-n90828",
+          "fecha": "2025-11-26T11:22:00-03:00"
+        },
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/economia/plazos-fijos-argentina-cuanto-estan-pagando-estos-27-bancos-n90884",
+          "fecha": "2025-11-28T10:25:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son dos notas distintas publicadas en días diferentes (miércoles 26 y viernes 28 de noviembre) con actualizaciones de tasas de interés correspondientes a cada día, no una republicación de la misma nota.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "todos los dólares operaron en alza",
+      "articulos": [
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/finanzas/todos-dolares-operaron-alza-n88472",
+          "fecha": "2025-09-11T17:30:00-03:00"
+        },
+        {
+          "fuente": "eleconomista_sitemap",
+          "url": "https://eleconomista.com.ar/finanzas/todos-dolares-operaron-alza-n88519",
+          "fecha": "2025-09-12T17:56:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son dos notas distintas de días diferentes (jueves 11 y viernes 12 de septiembre) con datos de cierre distintos, no una republicación.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "video | panorama económico financiero en menos de 2 minutos",
+      "articulos": [
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/449844-panorama-financiero-peso-argentino-resiste-crisis-medio-oriente-petroleo-complica-precios",
+          "fecha": "2026-03-10T14:00:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/449961-panorama-financiero-11-marzo-2026-rebote-mercado-argentino-precio-dolar-dolares-colchon-costos-campo",
+          "fecha": "2026-03-11T13:30:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son dos notas distintas: la primera (10/03) analiza la resistencia del peso ante la crisis de Medio Oriente, mientras que la segunda (11/03) cubre el rebote del mercado argentino en acciones y bonos con foco en el dólar y costos del campo.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "video | panorama económico financiero en menos de 90 segundos",
+      "articulos": [
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/450411-panorama-financiero-17-marzo-2026-suben-combustibles-mercado-mira-cuanto-dura-calma-dolar",
+          "fecha": "2026-03-17T13:30:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/450510-panorama-financiero-18-marzo-2026-calma-dolar-pero-bolsillo-precios-credito-siguen-bajo-presion",
+          "fecha": "2026-03-18T13:40:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/450613-panorama-financiero-19-marzo-2026-petroleo-llega-us114-dolar-calmo-rareza-argentina-crisis",
+          "fecha": "2026-03-19T13:45:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/450698-panorama-financiero-20-marzo-2026-luis-caputo-promete-alivio-pero-hoy-entran-menos-dolares-y-no-mejora-bolsillo",
+          "fecha": "2026-03-20T13:45:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": false,
+        "razon": "Son cuatro ediciones diarias distintas de la columna 'Panorama Financiero' (17, 18, 19 y 20 de marzo), cada una con contenido, fecha y URL diferentes, no son la misma nota republicada.",
+        "url_canonica": null
+      }
+    },
+    {
+      "titulo": "aumento del boleto de colectivo en el amba: ¿cuánto sale viajar desde el lunes?",
+      "articulos": [
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/450236-aumento-del-boleto-de-colectivo-en-el-amba-cuanto-costara-viajar-desde-el-lunes",
+          "fecha": "2026-03-16T07:00:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/450240-aumento-del-boleto-de-colectivo-en-el-amba-cuanto-sale-viajar-desde-el-lunes",
+          "fecha": "2026-03-16T07:00:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente el mismo contenido, misma fecha de publicación, misma fuente, y solo difieren en el slug de la URL (450236 vs 450240) y una mínima variación en el título ('cuanto-costara' vs 'cuanto-sale'), lo que indica que es la misma nota publicada dos veces.",
+        "url_canonica": "https://www.iprofesional.com/economia/450236-aumento-del-boleto-de-colectivo-en-el-amba-cuanto-costara-viajar-desde-el-lunes"
+      }
+    },
+    {
+      "titulo": "aguinaldo para empleada doméstica: cuándo lo cobra y cómo se calcula diciembre 2025",
+      "articulos": [
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/442091-aguinaldo-para-empleada-domestica-cuando-lo-cobra-y-como-se-calcula-diciembre-2025",
+          "fecha": "2025-12-18T17:07:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/442091-extra-empleada-domestica-cuanto-cobra-sueldo-diciembre-2025-mas-aguinaldo-y-bono",
+          "fecha": "2025-12-18T17:07:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente el mismo contenido, misma fecha de publicación (2025-12-18T17:07:00-03:00), misma fuente (iprofesional_sitemap) y solo difieren en la URL (slug diferente), lo que indica que es la misma nota publicada en dos secciones o bajada dos veces por el scraper.",
+        "url_canonica": "https://www.iprofesional.com/economia/442091-aguinaldo-para-empleada-domestica-cuando-lo-cobra-y-como-se-calcula-diciembre-2025"
+      }
+    },
+    {
+      "titulo": "más de 300 empleados de inta, inase y inv pasan a disponibilidad tras reestructuración",
+      "articulos": [
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/435774-el-gobierno-oficializa-el-pase-a-disponibilidad-de-personal-de-inta-inase-y-inv",
+          "fecha": "2025-08-22T12:40:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/435775-el-gobierno-oficializa-el-pase-a-disponibilidad-de-personal-de-inta-inase-y-inv",
+          "fecha": "2025-08-22T12:40:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen exactamente el mismo contenido, misma fecha, misma fuente, y solo difieren en el ID numérico de la URL (435774 vs 435775), lo que indica un cross-posting o doble captura del scraper.",
+        "url_canonica": "https://www.iprofesional.com/economia/435774-el-gobierno-oficializa-el-pase-a-disponibilidad-de-personal-de-inta-inase-y-inv"
+      }
+    },
+    {
+      "titulo": "comer afuera es cada vez más caro: cuál es la diferencia exacta con una comida hecha en casa",
+      "articulos": [
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/433639-comer-afuera-es-cada-vez-mas-caro-cual-es-la-diferencia-con-una-comida-hecha-en-casa",
+          "fecha": "2025-07-23T11:48:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/economia/433640-comer-afuera-es-cada-vez-mas-caro-cual-es-la-diferencia-con-una-comida-hecha-en-casa",
+          "fecha": "2025-07-23T11:50:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen el mismo contenido, misma fuente, y fueron publicados con solo 2 minutos de diferencia, siendo claramente la misma nota republicada dos veces con IDs consecutivos (433639 y 433640).",
+        "url_canonica": "https://www.iprofesional.com/economia/433639-comer-afuera-es-cada-vez-mas-caro-cual-es-la-diferencia-con-una-comida-hecha-en-casa"
+      }
+    },
+    {
+      "titulo": "las medidas que anunció el gobierno nacional para que la gente uso los dólares \"del colchón\"",
+      "articulos": [
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/429021-el-gobierno-explico-el-plan-para-usar-dolares-bajo-el-colchon-cuales-son-las-medidas",
+          "fecha": "2025-05-22T12:28:00-03:00"
+        },
+        {
+          "fuente": "iprofesional_sitemap",
+          "url": "https://www.iprofesional.com/finanzas/429022-el-gobierno-explico-el-plan-para-usar-dolares-bajo-el-colchon-cuales-son-las-medidas",
+          "fecha": "2025-05-22T12:28:00-03:00"
+        }
+      ],
+      "veredicto": {
+        "duplicado": true,
+        "razon": "Ambos artículos tienen el mismo título, misma fuente, misma fecha exacta, y contenido prácticamente idéntico con solo diferencias menores de formato (US$ vs u$s, 'una estimaciones' vs 'estimaciones'), lo que indica que es la misma nota publicada dos veces con IDs consecutivos (429021 y 429022).",
+        "url_canonica": "https://www.iprofesional.com/finanzas/429021-el-gobierno-explico-el-plan-para-usar-dolares-bajo-el-colchon-cuales-son-las-medidas"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "equivalencias_ind_eco_aplicadas": 24,
+  "oraciones_ner": 242312,
+  "unidas": 240811,
+  "sin_sentimiento_para_url_idx": 41,
+  "texto_distinto": 1460,
+  "cobertura_pct": 99.38,
+  "entidades_en_ner_sentimiento": 7570,
+  "filas_diario": 22513,
+  "min_oraciones": 5
+}
