@@ -1,0 +1,110 @@
+% =====================================================================
+\chapter{Modelado}
+\label{cap:modelado}
+
+Este capítulo corresponde a la cuarta fase de CRISP-DM: cómo se convierte la pregunta en un
+problema de clasificación, qué recibe y qué devuelve cada modelo, y cómo se diseñó la prueba.
+\textbf{Todo lo que se describe acá se fijó antes de ver los resultados}, y quedó escrito en
+\carpeta{4_modelado/README.md}.
+
+% ---------------------------------------------------------------------
+\section{La comparación: modelo A contra modelo B}
+
+Para saber si la información de un lado ayuda a predecir al otro, se entrenan dos modelos que
+predicen lo mismo:
+\begin{itemize}
+  \item el \textbf{modelo A} usa solo la información de su propio lado;
+  \item el \textbf{modelo B} usa lo mismo que A \textit{más} la información del otro lado.
+\end{itemize}
+Los dos se evalúan en las mismas ruedas, que ninguno vio al entrenar. Si B predice mejor que A, la
+información agregada aporta algo que el pasado del propio lado no tenía. Si no, no aporta. Esto se
+hace en las dos direcciones (tabla~\ref{tab:variables}).
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}L{2.3cm}YY@{}}
+\toprule
+ & \textbf{Noticias \flecha{} precio} & \textbf{Precio \flecha{} sentimiento} \\
+\midrule
+Pregunta & ¿El sentimiento ayuda a predecir si la acción sube mañana? & ¿El mercado ayuda a predecir el sentimiento de mañana? \\
+Unidad & Una acción en una rueda (\dato{dataset.empresas} empresas) & Una rueda \\
+Salida & 1 si el retorno de la acción en $t+1$ es mayor que 0 & 1 si el sentimiento inesperado de $t+1$ es mayor que 0 \\
+Modelo A & Retorno de la acción en $t$, $t-1$, $t-2$, $t-3$ y $t-4$; volumen anormal en $t$; VIX en $t$ & Sentimiento inesperado en $t$, $t-1$, $t-2$, $t-3$ y $t-4$ \\
+Modelo B & A $+$ sentimiento inesperado, sentimiento propio y \var{hubo\_noticia} en $t$ & A $+$ retorno del Merval en $t$ a $t-4$ $+$ VIX en $t$ \\
+\bottomrule
+\end{tabularx}
+\caption{Variables de entrada y de salida de los modelos. Fuente: elaboración propia
+(\carpeta{4_modelado}).}
+\label{tab:variables}
+\end{table}
+
+\textbf{Tipos de variables.} Todas las variables de entrada son numéricas continuas, salvo
+\var{hubo\_noticia}, que es binaria (0 o 1). Los retornos anteriores dan al modelo la inercia o el
+rebote de la acción; el volumen anormal y el VIX, cuán agitado está el mercado. Las salidas son
+binarias, y cada modelo devuelve la \textit{probabilidad} de la clase 1. No se usaron la cantidad de
+notas, porque depende de la recolección (sección~\ref{sec:recoleccion}), ni el régimen de mercado,
+porque se estima con el mismo VIX que ya está en el modelo: agregarlo sería duplicar información.
+Su efecto se prueba en el anexo de robustez.
+
+\textbf{Cuándo se conoce cada dato.} Todas las variables de la rueda $t$ se conocen al cierre de
+$t$, a las 17:00. La regla de las 17:00 manda a la rueda $t+1$ las notas publicadas después del
+cierre de $t$, de modo que una nota que comenta el cierre de hoy cuenta como noticia de mañana.
+Ningún modelo usa información posterior a lo que predice.
+
+% ---------------------------------------------------------------------
+\section{Algoritmos}
+
+\textbf{Regresión logística (principal).} Antes de entrenar, cada variable numérica se
+\textit{estandariza}: se le resta su media y se la divide por su desvío,
+$z = (x - \bar x)/s$, con la media y el desvío calculados \textbf{solo en el entrenamiento}. Así
+ninguna variable pesa más por estar en otra escala (un retorno se mide en centésimas; el VIX, en
+decenas), y el coeficiente de cada una se puede comparar con el de las otras. Se usó la versión con
+penalización L2, que achica los coeficientes para evitar el sobreajuste; la intensidad $C$ se eligió
+entre $\{0{,}001;\ 0{,}01;\ 0{,}1;\ 1;\ 10\}$.
+
+\textbf{Random forest (confirmatorio).} 500 árboles; profundidad máxima entre $\{3, 5, 8\}$ y mínimo
+de filas por hoja entre $\{20, 50, 100\}$. No necesita estandarizar, porque cada árbol solo compara
+valores dentro de una misma variable.
+
+% ---------------------------------------------------------------------
+\section{Diseño de la prueba}
+\label{sec:diseno}
+
+\textbf{Corte temporal.} Se entrena con el pasado y se evalúa con el futuro:
+\begin{itemize}
+  \item \textbf{Entrenamiento:} hasta el 30/01/2026, desde la primera rueda con todas las
+        variables disponibles. En la dirección noticias \flecha{} precio son
+        \dato{np.filas_entrenamiento} filas (\dato{np.ruedas_entrenamiento} ruedas); en la
+        dirección inversa, \dato{ps.ruedas_entrenamiento} ruedas.
+  \item \textbf{Prueba (test):} del 01/02/2026 al final de la ventana, es decir, los últimos tres
+        meses: \dato{np.filas_test} filas (\dato{np.ruedas_test} ruedas). Las ruedas quedan
+        repartidas \dato{np.pct_ruedas_entrenamiento}/\dato{np.pct_ruedas_test}, con un corte
+        fácil de explicar. \textbf{El test se usa una sola vez}, al final.
+\end{itemize}
+
+\textbf{Elección de hiperparámetros.} Dentro del entrenamiento, con validación cruzada temporal: el
+entrenamiento se corta en 5 tramos que se van extendiendo, separados por fecha; cada combinación de
+hiperparámetros se entrena con los tramos anteriores y se evalúa con el siguiente, y gana la de mayor
+AUC promedio. Con la combinación ganadora se reentrena con todo el entrenamiento. Las filas de una
+misma fecha nunca quedan repartidas entre entrenar y validar.
+
+% ---------------------------------------------------------------------
+\section{Métricas y criterio}
+\label{sec:criterio}
+
+En el test se informan el AUC, la balanced accuracy, el F1 de la clase 1, la exactitud y la matriz
+de confusión, con un umbral de 0,5 para pasar de probabilidad a clase. La \textbf{línea base} es
+predecir siempre la clase más frecuente en el entrenamiento: un modelo que no la supera no aprendió
+nada.
+
+La prueba de la hipótesis es la diferencia de AUC:
+\begin{equation}
+\Delta\text{AUC} = \text{AUC}(B) - \text{AUC}(A),
+\end{equation}
+con un intervalo de confianza del 95\% calculado por \textit{bootstrap} por bloques
+\citep{kunsch1989}: se arman 2.000 tests nuevos sorteando, con reposición, bloques de 5 ruedas
+consecutivas del test, y en cada uno se recalcula $\Delta$AUC. Se sortean \textit{ruedas} y no
+filas, porque las acciones de un mismo día se mueven juntas: sortear filas sueltas haría el
+intervalo artificialmente angosto. Las noticias (o el mercado) \textbf{aportan} en una dirección si
+el límite inferior del intervalo de la regresión logística es mayor que 0. El random forest
+confirma.

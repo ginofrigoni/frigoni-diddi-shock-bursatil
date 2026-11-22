@@ -125,6 +125,11 @@
   {\end{minipage}\end{lrbox}\fcolorbox{acento}{celda!45}{\usebox{\recuadrobox}}\par\vspace{4pt}}
 \newsavebox{\recuadrobox}
 
+% Números y tablas del informe, generados desde los resultados (numeros.py).
+% \tabla usa el \input primitivo, que funciona dentro de un tabular antes de \bottomrule.
+\input{generado/numeros}
+\makeatletter\newcommand{\tabla}[1]{\@@input generado/tablas/#1.tex }\makeatother
+
 \begin{document}
 
 % =====================================================================
@@ -181,31 +186,35 @@
 \end{center}
 \vspace{4pt}
 
-Este trabajo estudió si las noticias económicas publicadas por los medios digitales
-argentinos anticipan el precio y el volumen operado de las acciones que cotizan en Bolsas y
-Mercados Argentinos (BYMA). Para responderlo hubo que construir cuatro instrumentos que no
-existían para el mercado argentino. Del lado de las noticias, un corpus de 14.012 notas de
-siete portales, recolectado con la Wayback Machine y los mapas del sitio y depurado de
-duplicados, plantillas y contenido que no era noticia; y FinBETO, un modelo BETO adaptado a la
-prensa económica y ajustado para clasificar oraciones en cuatro clases, que funciona como un
-termómetro del tono de las noticias (F1 macro de 0,685 en noticias no vistas, contra 0,546 del
-modelo de referencia en tres clases). Del lado del mercado, un VIX argentino construido con la
-volatilidad realizada del S\&P~Merval, que reacciona con claridad a la salida del cepo y a las
-dos elecciones de 2025; y un modelo oculto de Markov que divide el período en tres regímenes
-(Calmo, Moderado y Tenso). Los cuatro instrumentos se unieron en 244 ruedas, de mayo de 2025 a
-abril de 2026, y se contrastaron con modelos VAR y pruebas de causalidad de Granger. El tono de
-las noticias no anticipó los precios ni el volumen, en ningún nivel ni régimen. Apareció, en
-cambio, la relación inversa: el retorno del S\&P~Merval anticipa el tono de las notas
-siguientes, en 39 de las 47 empresas y en 15 de las 17 con tono propio, con el efecto
-concentrado en las notas publicadas la misma noche, después del cierre. Los medios económicos
-argentinos, en el período estudiado, siguieron al mercado.
+Este trabajo construyó y evaluó una metodología de ciencia de datos para medir el sentimiento de
+las noticias económicas argentinas y relacionarlo con el comportamiento de las acciones que cotizan
+en Bolsas y Mercados Argentinos (BYMA), siguiendo las fases de CRISP-DM. Se recolectó un corpus de
+\dato{corpus.notas} notas de \dato{corpus.portales} portales, con la Wayback Machine y los mapas del
+sitio, depurado y con cada nota asignada a la primera rueda en la que el mercado pudo reaccionar a
+ella. Con oraciones etiquetadas por un modelo de lenguaje se entrenó FinBETO, un BETO adaptado a la
+prensa económica que clasifica cada oración como positiva, negativa o neutra: en noticias que no vio
+alcanza un F1 macro de \dato{fb.f1_macro_media@3}, contra \dato{fbcmp.completo.referencia_f1_macro@3}
+de un modelo de sentimiento en español ya existente. Con FinBETO y el reconocimiento de entidades se
+midieron el sentimiento inesperado de cada rueda y el sentimiento propio de \dato{dataset.empresas}
+empresas, que se unieron con el retorno, el volumen anormal y un VIX argentino de volatilidad
+realizada, en \dato{dataset.ruedas} ruedas de mayo de 2025 a abril de 2026. La relación se puso a
+prueba con un modelo predictivo, regresión logística y random forest, comparando un modelo sin la
+información del otro lado contra uno con ella, en los últimos tres meses, que ningún modelo vio al
+entrenar. El sentimiento no mejoró la predicción de si una acción sube al día siguiente
+($\Delta$AUC $=$ \dato{np.d.logistica.delta_auc@s3}), en ninguna de nueve variantes de robustez. El
+mercado, en cambio, sí mejoró la predicción del sentimiento de las noticias de la rueda siguiente
+($\Delta$AUC $=$ \dato{ps.d.logistica.delta_auc@s3}, intervalo del 95\% de
+\dato{ps.d.logistica.ic95_inf@s3} a \dato{ps.d.logistica.ic95_sup@s3}), y las pruebas de causalidad
+de Granger dan el mismo resultado. Se acepta la hipótesis: la metodología mide el sentimiento y lo
+relaciona con el mercado. La relación va en una sola dirección: en el período estudiado, los medios
+económicos argentinos siguieron al mercado.
 
 \vspace{6pt}
-\textit{Palabras clave:} \textit{web scraping; análisis de sentimiento; BETO; volatilidad
-realizada; modelos ocultos de Markov; causalidad de Granger; S\&P~Merval.}
+\textit{Palabras clave:} \textit{web scraping; análisis de sentimiento; BETO; aprendizaje
+supervisado; regresión logística; random forest; CRISP-DM; S\&P~Merval.}
 
 \textit{Temática de Interés en Ciencia de Datos:} \textit{procesamiento de lenguaje natural
-y econometría de series de tiempo aplicados a mercados financieros.}
+y aprendizaje automático aplicados a mercados financieros.}
 
 % =====================================================================
 %  ÍNDICE
@@ -222,31 +231,22 @@ y econometría de series de tiempo aplicados a mercados financieros.}
 \textbf{Sigla} & \textbf{Significado} \\
 \midrule
 \endhead
-ADF & Prueba de Dickey-Fuller aumentada (raíz unitaria). \\
-AIC / BIC & Criterios de información de Akaike y bayesiano (Schwarz). \\
+AUC & Área bajo la curva ROC: probabilidad de que el modelo ordene bien un caso positivo y uno negativo. \\
 BETO & Modelo BERT preentrenado en español (Universidad de Chile). \\
-BH & Corrección de Benjamini-Hochberg por pruebas múltiples. \\
 BYMA & Bolsas y Mercados Argentinos. \\
-CAR & Retorno anormal acumulado (\textit{cumulative abnormal return}). \\
-CCL & Dólar contado con liquidación. \\
-CRISP-DM & Proceso estándar para proyectos de minería de datos. \\
-DLM & Modelo de rezagos distribuidos (\textit{distributed lag model}). \\
-EWMA & Media móvil con ponderación exponencial. \\
+CRISP-DM & Proceso estándar para proyectos de ciencia de datos, en seis fases. \\
 F1 macro & Promedio simple del F1 de cada clase. \\
-FinBETO & BETO adaptado al dominio de la prensa económica y ajustado para sentimiento. \\
-HMM & Modelo oculto de Markov; aquí, modelo de cambio de régimen de Markov. \\
-IRF & Función de impulso-respuesta. \\
-KPSS & Prueba de estacionariedad de Kwiatkowski, Phillips, Schmidt y Shin. \\
-MLM & Modelado de lenguaje enmascarado (\textit{masked language modeling}). \\
-MST & Árbol de expansión mínima (\textit{minimum spanning tree}). \\
+FinBETO & BETO adaptado a la prensa económica y ajustado para clasificar sentimiento en tres clases. \\
+HMM & Modelo oculto de Markov; aquí, modelo de cambio de régimen (solo en el anexo). \\
 NER & Reconocimiento de entidades nombradas. \\
-OLS / MCO & Mínimos cuadrados ordinarios. \\
 Rueda & Día hábil de operación en BYMA (de 11:00 a 17:00). \\
-Tono & Sentimiento neto: \% de oraciones positivas menos \% de negativas. \\
-Tono anormal & Tono de la rueda menos el promedio de las 20 ruedas previas. \\
-Tono propio & Cuánto mejor o peor se habla de una empresa que del mercado, ponderado por la cantidad de oraciones. \\
+Sentimiento neto & Porcentaje de oraciones positivas menos porcentaje de negativas de una nota. \\
+Sentimiento inesperado & Sentimiento de la rueda menos el promedio de las 20 ruedas anteriores. \\
+Sentimiento propio & Cuánto mejor o peor se habla de una empresa que del mercado, ponderado por la cantidad de oraciones. \\
 VAR & Vector autorregresivo. \\
 VIX argentino & Volatilidad realizada del S\&P~Merval en 20 ruedas, anualizada. \\
+Volumen anormal & Logaritmo del volumen de la rueda menos el promedio de las 20 ruedas anteriores. \\
+$\Delta$AUC & AUC del modelo B (con la información del otro lado) menos AUC del modelo A. \\
 \bottomrule
 \end{longtable}
 
@@ -255,12 +255,11 @@ VIX argentino & Volatilidad realizada del S\&P~Merval en 20 ruedas, anualizada. 
 % =====================================================================
 \input{capitulos/01_introduccion}
 \input{capitulos/02_marco_teorico}
-\input{capitulos/03_corpus}
-\input{capitulos/04_finbeto}
-\input{capitulos/05_vix}
-\input{capitulos/06_hmm}
-\input{capitulos/07_var_granger}
-\input{capitulos/08_conclusiones}
+\input{capitulos/03_comprension_datos}
+\input{capitulos/04_preparacion}
+\input{capitulos/05_modelado}
+\input{capitulos/06_evaluacion}
+\input{capitulos/07_discusion_conclusiones}
 
 % =====================================================================
 %  BIBLIOGRAFÍA
@@ -268,16 +267,14 @@ VIX argentino & Volatilidad realizada del S\&P~Merval en 20 ruedas, anualizada. 
 \chapter*{Bibliografía}
 \addcontentsline{toc}{chapter}{Bibliografía}
 \markboth{Bibliografía}{}
-Referencias en estilo autor-año (APA), en orden alfabético. Debajo de cada una se indica el
-archivo PDF descargado, con su ruta dentro de la carpeta del proyecto; en el PDF de la tesina
-la ruta es un enlace que abre el archivo. Los trabajos sin copia gratuita oficial se citan con
-su enlace y el motivo por el que no se descargaron.
+Referencias en estilo autor-año (APA), en orden alfabético. Cuando el trabajo se descargó,
+debajo se indica el archivo PDF.
 \renewcommand{\bibsection}{}
 {\setstretch{1.0}\raggedright\input{bibliografia}}
 
 % =====================================================================
 %  ANEXO
 % =====================================================================
-\input{capitulos/09_anexo}
+\input{capitulos/08_anexo}
 
 \end{document}

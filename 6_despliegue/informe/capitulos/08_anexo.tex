@@ -1,0 +1,143 @@
+% =====================================================================
+\appendix
+\addto\captionsspanish{\renewcommand{\appendixname}{Anexo}}
+\renewcommand{\appendixname}{Anexo}
+\chapter{Reproducibilidad y organización del proyecto}
+\label{anx:repro}
+
+El proyecto está organizado según las fases de CRISP-DM: cada fase es una carpeta, y adentro hay una
+subcarpeta por tema (tabla~\ref{tab:carpetas}). Cada subcarpeta tiene siempre lo mismo: un
+\texttt{README.md} que dice qué hace, qué recibe y qué entrega; su script; una carpeta
+\texttt{salidas/} con los resultados; y un \texttt{metricas.csv} con los números que usan este
+informe y la presentación. Ningún número del informe se escribió a mano: el script
+\texttt{numeros.py} los toma de esos archivos al compilar.
+
+{\footnotesize
+\begin{longtable}{@{}L{5.4cm}L{8.4cm}@{}}
+\toprule
+\textbf{Carpeta} & \textbf{Qué contiene} \\
+\midrule
+\endhead
+\multicolumn{2}{@{}l}{\textit{1\_comprension\_del\_problema}} \\
+\carpeta{hipotesis_y_objetivos} & Hipótesis, criterio de aceptación y objetivos \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{2\_comprension\_de\_los\_datos}} \\
+\carpeta{noticias} & Corpus, scripts de recolección y auditoría \\
+\carpeta{mercado} & Precios de las acciones y selección del panel \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{3\_preparacion\_de\_los\_datos}} \\
+\carpeta{regla_17} & Cada nota a su rueda \\
+\carpeta{sentimiento_finbeto} & Etiquetado de Gemma, FinBETO de tres clases y clasificación del corpus \\
+\carpeta{sentimiento_por_rueda} & Sentimiento de cada rueda y sentimiento inesperado \\
+\carpeta{sentimiento_por_empresa} & Cruce de entidades con el sentimiento y sentimiento de cada empresa \\
+\carpeta{vix_argentino} & VIX argentino y su escala \\
+\carpeta{regimen_hmm} & Regímenes del mercado (solo para el anexo) \\
+\carpeta{dataset_unificado} & Las tablas que usan los modelos y el diccionario de variables \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{4\_modelado}} \\
+\carpeta{noticias_a_precio} & Modelo A contra B: ¿las noticias anticipan al precio? \\
+\carpeta{precio_a_sentimiento} & Modelo A contra B: ¿el precio anticipa al sentimiento? \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{5\_evaluacion}} \\
+\carpeta{veredicto_hipotesis} & El criterio de aceptación aplicado a los resultados \\
+\carpeta{anexo} & Robustez y verificación con VAR y Granger \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{6\_despliegue}} \\
+\carpeta{informe} & Este documento \\
+\carpeta{presentacion} & Guion de la presentación \\
+\bottomrule
+\caption{Organización del proyecto. Fuente: elaboración propia.}
+\label{tab:carpetas}
+\end{longtable}
+}
+
+Cada paso de la preparación verifica, además, que reproduce los resultados de la versión anterior
+cuando se le dan sus mismas entradas. Por ejemplo, con las etiquetas de cuatro clases, el
+sentimiento por rueda sale idéntico al anterior. Así se sabe que lo único que cambió es lo que se
+decidió cambiar.
+
+% =====================================================================
+\chapter{Hiperparámetros elegidos}
+\label{anx:hiper}
+
+La tabla~\ref{tab:hiper} muestra los hiperparámetros que eligió la validación cruzada temporal dentro
+del entrenamiento (sección~\ref{sec:diseno}), y el AUC promedio de esa validación.
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}llccc@{}}
+\toprule
+ & & \textbf{Logística} & \textbf{Random forest} & \textbf{AUC de validación} \\
+\textbf{Dirección} & \textbf{Modelo} & \textbf{$C$} & \textbf{profundidad / hoja} & \textbf{(logística)} \\
+\midrule
+Noticias \flecha{} precio & A & \dato{np.h.logistica.A.C} & \dato{np.h.random_forest.A.max_depth} / \dato{np.h.random_forest.A.min_samples_leaf} & \dato{np.h.logistica.A.auc_validacion@3} \\
+ & B & \dato{np.h.logistica.B.C} & \dato{np.h.random_forest.B.max_depth} / \dato{np.h.random_forest.B.min_samples_leaf} & \dato{np.h.logistica.B.auc_validacion@3} \\
+Precio \flecha{} sentimiento & A & \dato{ps.h.logistica.A.C} & \dato{ps.h.random_forest.A.max_depth} / \dato{ps.h.random_forest.A.min_samples_leaf} & \dato{ps.h.logistica.A.auc_validacion@3} \\
+ & B & \dato{ps.h.logistica.B.C} & \dato{ps.h.random_forest.B.max_depth} / \dato{ps.h.random_forest.B.min_samples_leaf} & \dato{ps.h.logistica.B.auc_validacion@3} \\
+\bottomrule
+\end{tabular}
+\caption{Hiperparámetros elegidos. Fuente: elaboración propia (\carpeta{4_modelado}).}
+\label{tab:hiper}
+\end{table}
+
+% =====================================================================
+\chapter{Los regímenes de mercado}
+\label{anx:hmm}
+
+El lado bursátil clasificó cada rueda en un régimen de mercado con un modelo oculto de Markov: un
+modelo que supone que el mercado pasa por unos pocos estados que no se observan directamente, con
+una media y una varianza del VIX propias, y que salta de uno a otro según una matriz de
+probabilidades de transición \citep{hamilton1989,kim1994,rabiner1989}. Se estimó con
+\texttt{MarkovRegression} de \texttt{statsmodels} sobre las \dato{hmm.ruedas_total} ruedas del VIX
+argentino. Como el régimen se estima con el mismo VIX que ya está en el modelo, en esta versión no
+entra en el modelo principal: se usa solo como prueba de robustez (sección~\ref{sec:robustez}), con
+la versión \textit{filtrada}, que solo usa información hasta cada día \citep{majumder2023}. Coincide
+con la suavizada en el \dato{hmm.coincidencia_filtrado_pct}\% de los días.
+
+El número de regímenes se eligió con el criterio bayesiano de información \citep{schwarz1978},
+descartando los ajustes que no convergen o que crean un régimen de menos de cinco días
+(tabla~\ref{tab:bic}). Con tres regímenes el BIC es el menor entre los ajustes válidos
+(tablas~\ref{tab:regimenes} y~\ref{tab:transicion}). Las \dato{np.ruedas_test} ruedas del período
+de prueba están todas en el régimen Calmo.
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+$k$ & \textbf{BIC} & \textbf{Convergió} & \textbf{Régimen más chico} & \textbf{Válido} \\
+\midrule
+\tabla{bic}
+\bottomrule
+\end{tabular}
+\caption{Selección del número de regímenes. Fuente: elaboración propia
+(\carpeta{3_preparacion_de_los_datos/regimen_hmm}).}
+\label{tab:bic}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Régimen} & \textbf{VIX promedio} & \textbf{Ruedas (total)} & \textbf{Ruedas de la ventana} & \textbf{Ruedas (filtrado)} \\
+\midrule
+\tabla{regimenes}
+\bottomrule
+\end{tabular}
+\caption{Los tres regímenes. Fuente: elaboración propia
+(\carpeta{3_preparacion_de_los_datos/regimen_hmm}).}
+\label{tab:regimenes}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{De \flecha{} a} & \textbf{Calmo} & \textbf{Moderado} & \textbf{Tenso} \\
+\midrule
+\tabla{transicion}
+\bottomrule
+\end{tabular}
+\caption{Probabilidad de pasar de un régimen (fila) a otro (columna) de una rueda a la siguiente.
+Fuente: elaboración propia (\carpeta{3_preparacion_de_los_datos/regimen_hmm}).}
+\label{tab:transicion}
+\end{table}

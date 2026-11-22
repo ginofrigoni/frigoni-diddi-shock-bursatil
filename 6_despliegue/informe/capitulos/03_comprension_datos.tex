@@ -1,0 +1,103 @@
+% =====================================================================
+\chapter{Comprensión de los datos}
+\label{cap:datos}
+
+Este capítulo corresponde a la segunda fase de CRISP-DM: qué datos hay, de dónde vienen y qué
+problemas tienen. Hay dos fuentes, las noticias y los precios, y cada una se trata en su
+carpeta del proyecto (\carpeta{2_comprension_de_los_datos/noticias} y
+\carpeta{2_comprension_de_los_datos/mercado}).
+
+% ---------------------------------------------------------------------
+\section{Las noticias}
+\label{sec:recoleccion}
+
+No existe un archivo público y ordenado de las notas de economía de los portales argentinos, así
+que el corpus se construyó con \textit{web scraping}: la extracción automática de información de
+páginas web. Se usaron dos caminos, según la disponibilidad de cada portal:
+
+\begin{itemize}
+  \item \textbf{Internet Archive.} Su \textit{Wayback Machine} guarda capturas de millones de
+        páginas, y su API permite listar las capturas de un sitio en un rango de fechas. Así se
+        reconstruye una ventana más larga que la que exponen los propios portales, a costa de
+        depender de qué capturó un tercero \citep{garg2025wayback}. Se usó para Ámbito Financiero,
+        Clarín (Economía), Infobae, La Nación y TN.
+  \item \textbf{Mapas del sitio.} Los portales publican archivos \texttt{sitemap.xml} para los
+        buscadores, que listan sus notas recientes. Se usaron para Clarín, El Economista e
+        iProfesional.
+\end{itemize}
+
+De cada página se separó el texto de la nota del «relleno» (menús, publicidad, firmas) con una
+estrategia en capas: los datos estructurados JSON-LD, las metaetiquetas Open Graph, la librería
+\texttt{trafilatura} \citep{barbaresi2021} y, como último recurso, reglas sobre el HTML. Cada nota
+se guardó con su portal, fecha y hora de publicación, título, bajada y contenido. El corpus final
+tiene \textbf{\dato{corpus.notas} notas} de \dato{corpus.portales} portales, recolectadas en
+\dato{corpus.fuentes} fuentes (tabla~\ref{tab:corpus}).
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{@{}llr@{}}
+\toprule
+\textbf{Portal} & \textbf{Método de recolección} & \textbf{Notas} \\
+\midrule
+\tabla{corpus}
+\bottomrule
+\end{tabular}
+\caption{Corpus de noticias por fuente, después de la depuración. Fuente: elaboración propia
+(\carpeta{2_comprension_de_los_datos/noticias}).}
+\label{tab:corpus}
+\end{table}
+
+\textbf{Auditoría y depuración.} Las herramientas de extracción de contenido fallan con frecuencia
+en el relleno y en los metadatos \citep{foley2026wcxb}, y los duplicados distorsionan cualquier
+modelo que se entrene con ese texto \citep{lee2021dedup}, por lo que un corpus web tiene que
+auditarse antes de usarse \citep{dodge2021c4}. La auditoría encontró cinco problemas, cada uno con
+su solución (tabla~\ref{tab:depuracion}).
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}L{3.2cm}YY@{}}
+\toprule
+\textbf{Problema} & \textbf{Qué se encontró} & \textbf{Solución} \\
+\midrule
+Duplicados exactos & 205 notas de Clarín descargadas dos veces, por la Wayback Machine y por el mapa del sitio & Una copia por URL \\
+Publicación cruzada & 208 grupos de título repetido; 33 grupos (68 notas) a menos de 48 horas & Verificación con el modelo de lenguaje Qwen3: 14 republicaciones reales, eliminadas \\
+Metadatos faltantes & 194 notas de El Economista sin fecha, por un error de lectura del JSON-LD & Lectura tolerante; 192 notas recuperaron su fecha \\
+Contenido que no es noticia & Páginas índice, de suscripción y notas fechadas por su última modificación & Se eliminaron \\
+Plantillas & Notas como «Dólar hoy», con texto fijo y un sentimiento constante que sesgaba el promedio diario & Se eliminaron 419 notas (2,9\%): el corpus pasó de 14.431 a \dato{corpus.notas} \\
+\bottomrule
+\end{tabularx}
+\caption{Problemas del corpus y cómo se resolvieron. Fuente: elaboración propia a partir de la
+auditoría del corpus (\carpeta{2_comprension_de_los_datos/noticias/documentacion}).}
+\label{tab:depuracion}
+\end{table}
+
+\textbf{Límites de la fuente.} La cobertura depende de qué capturó la Wayback Machine y de cuánto
+tiempo guardan los portales sus mapas del sitio. Por eso la \textit{cantidad} de notas de un día
+no es una medida confiable de cuánto se habló de economía ese día: depende también de la
+recolección. Abril de 2026, por ejemplo, no tiene notas de iProfesional, el portal más grande. Esta
+es la razón por la que la cantidad de notas no entra en los modelos: se usa solo el sentimiento,
+que es un promedio y depende mucho menos de cuántas notas hay. Las notas pertenecen a sus medios y
+se usaron con fines académicos: el análisis trabaja con medidas agregadas y no reproduce las
+notas, salvo oraciones sueltas como ejemplo.
+
+% ---------------------------------------------------------------------
+\section{El mercado}
+\label{sec:panel}
+
+Los precios diarios (apertura, máximo, mínimo, cierre y volumen) se descargaron de Yahoo Finance
+con \texttt{yfinance}. Se partió de \dato{mercado.candidatas} acciones candidatas del Panel General
+y del Panel Líderes de BYMA, y se exigieron dos condiciones en los tres años de datos
+(\dato{mercado.ruedas_3anos} ruedas): cobertura completa del calendario y al menos 90\% de días
+con volumen real, porque un día sin operaciones no es un faltante sino una fila con el precio
+pegado. Pasaron \textbf{\dato{mercado.acciones} acciones} de \dato{mercado.sectores} sectores,
+incluidas las \dato{mercado.en_merval} del S\&P~Merval. En la depuración se quitaron las filas que
+Yahoo agrega en los feriados (se usó como calendario de BYMA la lista de fechas del índice) y se
+corrigieron dos eventos corporativos mal ajustados: el \textit{split} de SEMI de diciembre de 2024
+y el dividendo en acciones de AGRO de noviembre de 2023, que mostraba una caída falsa de 88\%.
+
+\textbf{La ventana de estudio.} Las noticias empiezan en la práctica en mayo de 2025, porque tanto
+los mapas del sitio como las capturas de la Wayback Machine se concentran en los meses más
+recientes. La ventana común entre noticias y precios va del 05/05/2025 al 30/04/2026:
+\textbf{\dato{dataset.ruedas} ruedas}. De las \dato{mercado.acciones} acciones, el modelo usa las
+\dato{dataset.empresas} que tienen noticias en suficientes ruedas como para medir su sentimiento
+propio (sección~\ref{sec:propio}).

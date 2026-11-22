@@ -4,63 +4,106 @@
 
 Que «las noticias mueven la bolsa» mezcla dos ideas: que el precio cambia cuando llega
 información nueva, y que los medios son el vehículo de esa información. Pero los medios también
-informan sobre el propio mercado: una nota que cuenta que «el Merval subió 5\%» tiene tono
+informan sobre el propio mercado: una nota que cuenta que «el Merval subió 5\%» tiene sentimiento
 positivo, y su causa es el precio, no al revés. Este capítulo presenta los conceptos con los que
-se analiza esa doble relación.
+se analiza esa doble relación y las herramientas de ciencia de datos con las que se la pone a
+prueba.
+
+% ---------------------------------------------------------------------
+\section{Noticias, sentimiento y mercado}
 
 \textbf{Shock informativo y eficiencia.} Un \textit{shock informativo} es la llegada de
-información que se aparta de lo esperado. La cantidad de noticias capta la \textit{atención}
-\citep{da2011,fang2009}; el tono capta el \textit{contenido} \citep{tetlock2007,ardia2022}. La
-hipótesis de mercados eficientes \citep{fama1970} sostiene que la información pública se
-incorpora al precio tan rápido que no sirve para anticiparlo, y que el precio sigue un paseo
-aleatorio. La evidencia para Argentina y la región es mixta \citep{zablotsky2002}.
+información que se aparta de lo esperado. La hipótesis de mercados eficientes \citep{fama1970}
+sostiene que la información pública se incorpora al precio tan rápido que no sirve para
+anticiparlo; la evidencia para Argentina y la región es mixta \citep{zablotsky2002}. Con las
+noticias se puede medir la \textit{atención}, es decir, cuánto se habla \citep{da2011,fang2009}, o
+el \textit{contenido}, es decir, cómo se habla \citep{tetlock2007,ardia2022}. Esta tesina mide el
+contenido, por una razón práctica que se explica en el capítulo~\ref{cap:datos}: la cantidad de
+notas recolectadas depende de qué capturó un archivo web, no solo de cuánto publicaron los medios.
 
-\textbf{Sentimiento y tono de los medios.} El sentimiento del inversor es el optimismo o
-pesimismo que no se explica por los fundamentos. Un tono muy pesimista anticipa bajas
-transitorias \citep{tetlock2007}, sobre todo en las recesiones \citep{garcia2013}; pero el tono
-también puede ser un \textit{reflejo} del mercado \citep{verma2026}. La tabla~\ref{tab:mecanismos}
-resume cómo se reconoce cada dirección en los datos.
+\textbf{Sentimiento de los medios.} El sentimiento de una nota es el signo de lo que comunica:
+positivo, negativo o neutro. Un sentimiento muy pesimista anticipa bajas transitorias
+\citep{tetlock2007}, sobre todo en las recesiones \citep{garcia2013}; pero el sentimiento también
+puede ser un \textit{reflejo} del mercado \citep{verma2026}. La tabla~\ref{tab:mecanismos} resume
+cómo se reconoce cada dirección en los datos.
 
 \begin{table}[H]
 \centering\small
-\begin{tabularx}{\linewidth}{@{}L{2.8cm}YY@{}}
+\begin{tabularx}{\linewidth}{@{}L{3.2cm}YY@{}}
 \toprule
  & \textbf{Noticias \flecha{} mercado} & \textbf{Mercado \flecha{} noticias} \\
 \midrule
 Mecanismo & La nota trae información nueva o mueve el ánimo de los inversores & La nota cuenta lo que el mercado ya hizo \\
-Qué se espera ver & El tono anticipa el retorno o el volumen de las ruedas siguientes & El retorno anticipa el tono de las notas siguientes \\
-En un estudio de eventos & El retorno anormal aparece el día del evento o después & El retorno anormal aparece antes del evento \\
-Con notas de la noche & El tono de la noche anticipa el salto de apertura & El tono de la noche refleja el cierre del día \\
+Qué se espera ver & El sentimiento de hoy anticipa el retorno de mañana & El retorno de hoy anticipa el sentimiento de mañana \\
+En el modelo predictivo de esta tesina & Agregar el sentimiento mejora la predicción de si la acción sube & Agregar el retorno mejora la predicción del sentimiento \\
 \bottomrule
 \end{tabularx}
 \caption{Las dos direcciones de la relación entre noticias y mercado y cómo se reconoce cada
-una en los datos. Fuente: elaboración propia.}
+una. Fuente: elaboración propia.}
 \label{tab:mecanismos}
 \end{table}
 
-\textbf{Volatilidad y regímenes.} La volatilidad se agrupa en períodos de calma y de estrés, lo
-que para el S\&P~Merval está documentado con modelos GARCH \citep{segovia2022}; las caídas pesan
-más que las subas \citep{otuki2008}. Una forma de describir esa alternancia es suponer que el
-mercado pasa por unos pocos \textit{regímenes} y salta de uno a otro según una cadena de Markov
-\citep{hamilton1989,rabiner1989}, un enfoque aplicado también en Latinoamérica
-\citep{ataurima2016}. El régimen importa porque la relación entre noticias y precios podría
-cambiar según el mercado esté calmo o tenso \citep{garcia2013}.
+\textbf{Volatilidad.} La volatilidad mide cuánto se mueve un precio. En el S\&P~Merval se agrupa
+en períodos de calma y de estrés \citep{segovia2022}, y las caídas pesan más que las subas
+\citep{otuki2008}. El VIX de Chicago la mide con precios de opciones, como la volatilidad esperada
+de los próximos 30 días \citep{cboe_vix}; en Argentina no hay un mercado de opciones con esa
+liquidez, por lo que se usa la volatilidad realizada (sección~\ref{sec:vix}).
 
-\textbf{Causalidad de Granger y VAR.} Con datos observacionales no se prueba una causa, pero sí
-qué variable se mueve antes. $X$ \textit{causa en sentido de Granger} a $Y$ si el pasado de $X$
-mejora la predicción de $Y$ más allá de su propio pasado \citep{granger1969}. La prueba se hace
-dentro de un vector autorregresivo (VAR), que explica cada variable con los rezagos de todas y
-trata las dos direcciones de forma simétrica \citep{sims1980,lutkepohl2005}.
+% ---------------------------------------------------------------------
+\section{Aprendizaje supervisado para probar la relación}
+\label{sec:ml}
 
-\textbf{Estudios de eventos.} Miden qué hace el precio alrededor de un hecho puntual, comparado
-con lo que habría sido normal \citep{mackinlay1997}: si la noticia mueve el mercado, el retorno
-anormal aparece el día del evento o después; si lo refleja, aparece antes.
+La pregunta «¿las noticias ayudan a predecir al mercado?» se puede convertir en un problema de
+\textbf{clasificación supervisada}: se le da a un modelo los datos de hoy y tiene que predecir una
+clase de mañana (por ejemplo, «sube» o «no sube»). Si un modelo con noticias predice mejor que uno
+sin noticias en datos que no vio, las noticias contienen información útil sobre el mercado.
 
-\textbf{Unidades de análisis.} Las 47 acciones del panel pertenecen a diez sectores: Consumo (9),
-Financiero (8), Utilities (8), Materiales (6), Energía (4), Conglomerado, Industrial y Real Estate
-(3 cada uno), Comunicaciones (2) y Tecnología (1). Para medir el tono propio de una empresa hace
-falta que tenga noticias en buena parte de las ruedas; con un corte de 90 de las 244 ruedas
-quedan 17: YPFD, BBAR, SUPV, EDN, GGAL, CEPU, TGSU2, IRSA, BMA, LOMA, PAMP, CRES, BYMA, TRAN,
-METR, TXAR y ALUA (cualquier corte entre 75 y 94 da las mismas). Las noticias vienen de siete
-portales nacionales, cada uno con su propio tono promedio (de +30,4 puntos en TN a 0,0 en Ámbito
-Finanzas), lo que obliga a controlar la composición por portal.
+\textbf{Regresión logística.} Estima la probabilidad de la clase 1 como una función de una
+combinación lineal de las variables \citep{hosmer2013}:
+\begin{equation}
+P(y = 1 \mid x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \dots + \beta_k x_k)}}.
+\end{equation}
+Con las variables estandarizadas, el tamaño de cada coeficiente $\beta$ indica cuánto pesa esa
+variable, y su signo, en qué dirección. Es el modelo principal porque es interpretable.
+
+\textbf{Random forest.} Combina cientos de árboles de decisión, cada uno entrenado con una muestra
+distinta de los datos y de las variables \citep{breiman2001}. Capta relaciones no lineales e
+interacciones que la regresión logística no ve. Se usa como confirmación: si los dos modelos dicen
+lo mismo, el resultado no depende de la forma del modelo.
+
+\textbf{Evaluación con datos no vistos.} Un modelo se evalúa en datos que no usó para entrenar. Con
+series de tiempo, la división tiene que respetar el orden temporal: entrenar con el pasado y
+evaluar con el futuro. Si no, información del futuro se filtra al entrenamiento y las métricas
+salen infladas, el problema de \textit{fuga de información} \citep{kapoor2023leakage}, que con
+noticias cambia mucho el resultado \citep{xue2026temporal}.
+
+\textbf{Métricas.} Con una predicción binaria se arma la \textbf{matriz de confusión}: cuántos
+casos de cada clase real se predijeron en cada clase. De ella salen:
+\begin{itemize}
+  \item \textbf{Exactitud} (\textit{accuracy}): proporción de aciertos. Engaña si una clase es mucho
+        más frecuente que la otra.
+  \item \textbf{Balanced accuracy}: promedio de la proporción de aciertos dentro de cada clase real.
+        Un modelo que predice siempre lo mismo obtiene 0,5.
+  \item \textbf{F1}: media armónica entre la precisión (de lo que el modelo predijo como clase 1,
+        cuánto lo era) y la sensibilidad (de lo que era clase 1, cuánto encontró). El
+        \textbf{F1 macro} es el promedio simple del F1 de cada clase.
+  \item \textbf{AUC}: área bajo la curva ROC \citep{fawcett2006}. Es la probabilidad de que el
+        modelo le asigne más probabilidad a un caso de la clase 1 que a uno de la clase 0. Vale 0,5
+        si el modelo no distingue y 1 si distingue perfecto. No depende del umbral de 0,5, por lo
+        que es la métrica principal para comparar modelos.
+\end{itemize}
+
+\textbf{Intervalo de confianza con bootstrap.} Para saber si la diferencia de AUC entre dos modelos
+es real o del azar, se remuestrea el test muchas veces y se mira cómo varía la diferencia. Con
+series de tiempo se remuestrean \textit{bloques} de días consecutivos, para conservar la
+dependencia entre días cercanos \citep{kunsch1989}.
+
+% ---------------------------------------------------------------------
+\section{Verificación clásica: VAR y causalidad de Granger}
+
+Con datos observacionales no se prueba una causa, pero sí qué variable se mueve antes. $X$
+\textit{causa en sentido de Granger} a $Y$ si el pasado de $X$ mejora la predicción de $Y$ más allá
+de su propio pasado \citep{granger1969}. La prueba se hace dentro de un vector autorregresivo
+(VAR), que explica cada variable con los rezagos de todas \citep{sims1980,lutkepohl2005}. Es la
+misma idea del modelo predictivo, pero dentro de la muestra y con una prueba F: por eso se usa
+como verificación del resultado principal.

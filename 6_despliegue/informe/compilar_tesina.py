@@ -1,12 +1,12 @@
-"""Compila Informe_Final_NicolasDiddi-GinoFrigoni.pdf, la tesina.
+"""Compila Informe_Final_NicolasDiddi-GinoFrigoni.pdf, la tesina (versión 6.0).
 
-1. Copia a figuras/ las figuras que generan las carpetas de la tesis (no las modifica) y genera
-   las tres que rehace figuras.py.
-2. Verifica que cada cita del texto tenga su referencia en bibliografia.tex.
-3. Corre tectonic sobre Informe_Final_NicolasDiddi-GinoFrigoni.tex y verifica los enlaces a
-   los papers.
+1. numeros.py: genera generado/numeros.tex y generado/tablas/ desde los resultados del proyecto.
+2. Copia a figuras/ las figuras que generan las carpetas del proyecto (no las modifica) y corre
+   figuras.py, que hace la figura del pipeline con las fases de CRISP-DM.
+3. Verifica que cada cita del texto tenga su referencia en bibliografia.tex.
+4. Corre tectonic y revisa los enlaces a los papers (avisa si falta alguno, sin cortar).
 
-Uso:  python compilar_tesina.py   (desde "Informe Final")
+Uso:  python compilar_tesina.py   (desde 6_despliegue/informe)
 """
 import re
 import shutil
@@ -15,18 +15,20 @@ import sys
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
-RAIZ = AQUI.parent
+RAIZ = AQUI.parent.parent
 TECTONIC = Path.home() / "tools" / "tectonic" / "tectonic.exe"
 DOCUMENTO = "Informe_Final_NicolasDiddi-GinoFrigoni"
 
 FIGURAS = [
-    "Lado Bursatil/05_volatilidad_ranking/ranking_volatilidad.png",
-    "Lado Bursatil/06_hmm_regimen_mercado/bic_curva.png",
-    "Lado Bursatil/06_hmm_regimen_mercado/hmm_regimen_mercado.png",
-    "Unión/03_sentimiento_por_empresa/u3_cobertura.png",
-    "Unión/06_var_granger/u6_irf_mercado.png",
-    "Unión/06_var_granger/u6_empresas.png",
-    "Unión/09_entrega_final/mapa_tesis.png",
+    "3_preparacion_de_los_datos/regla_17/salidas/regla_17.png",
+    "3_preparacion_de_los_datos/sentimiento_por_rueda/salidas/sentimiento_por_rueda.png",
+    "3_preparacion_de_los_datos/sentimiento_por_empresa/salidas/cobertura_empresas.png",
+    "3_preparacion_de_los_datos/vix_argentino/salidas/vix_arg.png",
+    "3_preparacion_de_los_datos/dataset_unificado/salidas/panorama.png",
+    "4_modelado/noticias_a_precio/salidas/noticias_a_precio.png",
+    "4_modelado/precio_a_sentimiento/salidas/precio_a_sentimiento.png",
+    "5_evaluacion/anexo/salidas/robustez.png",
+    "5_evaluacion/anexo/salidas/var_granger.png",
 ]
 
 
@@ -41,10 +43,11 @@ def verificar_citas():
     claves = set(re.findall(r"\\bibitem(?:\[[^\]]*\])?\{([^}]+)\}", bibliografia))
     if citadas - claves:
         sys.exit(f"Citas sin referencia en bibliografia.tex: {sorted(citadas - claves)}")
-    print(f"{len(citadas)} citas, todas con su referencia")
+    print(f"{len(citadas)} citas, todas con su referencia; {len(claves - citadas)} referencias sin citar: {sorted(claves - citadas)}")
 
 
 def main():
+    subprocess.run([sys.executable, str(AQUI / "numeros.py")], check=True)
     destino = AQUI / "figuras"
     destino.mkdir(exist_ok=True)
     for f in FIGURAS:
@@ -52,15 +55,14 @@ def main():
     print(f"{len(FIGURAS)} figuras copiadas")
     subprocess.run([sys.executable, str(AQUI / "figuras.py")], check=True)
     verificar_citas()
-    subprocess.run([str(TECTONIC), f"{DOCUMENTO}.tex"], cwd=AQUI, check=True)
+    subprocess.run([str(TECTONIC), "--keep-logs", f"{DOCUMENTO}.tex"], cwd=AQUI, check=True)
     arreglar_enlaces(AQUI / f"{DOCUMENTO}.pdf")
 
 
 def arreglar_enlaces(pdf):
     """hyperref guarda la ruta de los enlaces a archivos (acción Launch) como bytes UTF-8,
-    que los lectores de PDF en Windows leen mal ("UniÃ³n"). Cada enlace se reescribe como una
-    especificación de archivo con la ruta también en UTF-16 (/UF), y se verifica que el
-    archivo exista."""
+    que los lectores de PDF en Windows leen mal. Cada enlace se reescribe como una especificación
+    de archivo con la ruta también en UTF-16 (/UF). Avisa si algún archivo no existe."""
     import pymupdf
     from urllib.parse import unquote
 
@@ -74,16 +76,14 @@ def arreglar_enlaces(pdf):
             total += 1
             if not (AQUI / ruta).resolve().exists():
                 faltan.append(ruta)
-            f = ruta.encode("cp1252").hex()
+            f = ruta.encode("cp1252", errors="replace").hex()
             uf = "FEFF" + ruta.encode("utf-16-be").hex()
             doc.xref_set_key(enlace["xref"], "A/F", f"<</Type/Filespec/F<{f}>/UF<{uf}>>>")
-    if faltan:
-        sys.exit(f"Enlaces a archivos que no existen: {sorted(set(faltan))}")
     temporal = pdf.with_suffix(".tmp.pdf")
     doc.save(temporal, garbage=3, deflate=True)
     doc.close()
     temporal.replace(pdf)
-    print(f"{total} enlaces a archivos verificados")
+    print(f"{total} enlaces a archivos; {len(set(faltan))} apuntan a papers que todavía no están en la 6.0")
 
 
 if __name__ == "__main__":

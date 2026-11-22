@@ -1,0 +1,118 @@
+% =====================================================================
+\chapter{Discusión y conclusiones}
+\label{cap:conclusiones}
+
+% ---------------------------------------------------------------------
+\section{La hipótesis}
+
+La hipótesis sostenía que es posible construir una metodología de ciencia de datos que mida el
+sentimiento de las noticias económicas argentinas y lo relacione con el comportamiento de las
+acciones. \textbf{Se acepta}: se cumplen las dos partes del criterio fijado de antemano.
+
+\begin{itemize}
+  \item \textbf{Medir.} FinBETO clasifica oraciones de noticias que nunca vio con un F1 macro de
+        \dato{fb.f1_macro_media@3}, \dato{fbcmp.completo.ventaja_puntos} puntos por encima de un
+        modelo de sentimiento en español ya existente, que confunde casi todo con neutro.
+  \item \textbf{Relacionar.} En ruedas que ningún modelo vio, el mercado mejora la predicción del
+        sentimiento de las noticias de la rueda siguiente ($\Delta\text{AUC} =
+        \dato{ps.d.logistica.delta_auc@s3}$). En la dirección contraria no hay nada: el
+        sentimiento no mejora la predicción del precio ($\Delta\text{AUC} =
+        \dato{np.d.logistica.delta_auc@s3}$), en ninguna de las nueve variantes de robustez.
+\end{itemize}
+
+La respuesta a la pregunta del título es, entonces, que en el período estudiado \textbf{los medios
+económicos argentinos siguieron al mercado}: contaron lo que el mercado ya había hecho, y no lo
+anticiparon. Coincide con lo que se esperaba, y con la parte de la evidencia internacional que
+encuentra que el sentimiento de los medios refleja los precios \citep{tetlock2007,verma2026}.
+
+% ---------------------------------------------------------------------
+\section{Los objetivos}
+
+\begin{table}[H]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}C{0.9cm}YC{1.8cm}@{}}
+\toprule
+\textbf{Obj.} & \textbf{Resultado obtenido} & \textbf{¿Se cumplió?} \\
+\midrule
+1 & Corpus de \dato{corpus.notas} notas de \dato{corpus.portales} portales, auditado, con \dato{regla17.notas_en_ventana_union} notas asignadas a las \dato{dataset.ruedas} ruedas de la ventana & Sí \\
+2 & FinBETO, de tres clases: F1 macro de \dato{fb.f1_macro_media@3} en noticias no vistas, contra \dato{fbcmp.completo.referencia_f1_macro@3} del modelo de referencia & Sí \\
+3 & Sentimiento inesperado, sentimiento propio de \dato{dataset.empresas} empresas, retorno, volumen anormal y VIX argentino con su escala, en un dataset de \dato{dataset.filas_panel} filas & Sí \\
+4 & Modelo predictivo evaluado en \dato{np.ruedas_test} ruedas no vistas: el mercado anticipa al sentimiento; el sentimiento no anticipa al mercado & Sí \\
+\bottomrule
+\end{tabularx}
+\caption{Cumplimiento de los objetivos específicos. Fuente: elaboración propia.}
+\label{tab:cumplimiento}
+\end{table}
+
+% ---------------------------------------------------------------------
+\section{Qué quiere decir el resultado}
+
+\textbf{Por qué el sentimiento no anticipa el precio.} Es lo que predice la hipótesis de mercados
+eficientes \citep{fama1970}: si una noticia trae información, el precio la incorpora el mismo día,
+antes de que sirva para predecir el día siguiente. Además, buena parte de lo que publican los
+medios económicos es la crónica del propio mercado.
+
+\textbf{Por qué el precio sí anticipa el sentimiento.} La variable que más pesa en el modelo es el
+retorno del Merval del mismo día. Por la regla de las 17:00, las notas publicadas después del cierre
+cuentan para la rueda siguiente, y son justamente las que cuentan cómo cerró el mercado: si el
+Merval subió, se escribe con un tono más positivo. La relación es el reflejo del mercado en la
+prensa, no un efecto de la prensa sobre el mercado.
+
+\textbf{Para qué sirve.} Para quien sigue el mercado argentino, leer el sentimiento de los medios
+económicos como una señal de lo que va a pasar es leer un reflejo de lo que ya pasó. Para la
+ciencia de datos, el trabajo deja un pipeline reproducible y un modelo de sentimiento para la
+prensa económica en español rioplatense, que no existían.
+
+% ---------------------------------------------------------------------
+\section{Desaciertos y límites}
+\label{sec:limites}
+
+\textbf{Lo que salió mal en el camino y se corrigió.}
+\begin{itemize}
+  \item \textbf{La primera evaluación de FinBETO estaba inflada.} Las oraciones se habían dividido
+        por oración y no por noticia, y había textos repetidos entre entrenamiento y prueba. Al
+        dividir por noticia, el F1 bajó a su valor honesto. Es el error de fuga de información más
+        común con texto \citep{kapoor2023leakage}.
+  \item \textbf{La clase MIXTO no se usaba.} Se había creado una cuarta clase que el sentimiento
+        neto trataba igual que la neutra. Se unió con NEU (sección~\ref{sec:tresclases}).
+  \item \textbf{La cantidad de notas no era confiable.} El plan original definía el shock
+        informativo como un aumento de la cantidad de noticias. Con un corpus recolectado de un
+        archivo web, esa cantidad depende de qué se capturó, y se la dejó afuera de los modelos.
+  \item \textbf{Demasiadas pruebas.} La versión anterior contrastó la hipótesis con cientos de
+        pruebas de Granger y correcciones por pruebas múltiples. Se reemplazaron por una sola
+        comparación predictiva, fijada de antemano, y Granger quedó como verificación.
+\end{itemize}
+
+\textbf{Los límites del resultado.}
+\begin{itemize}
+  \item \textbf{El test es corto y calmo.} Tiene \dato{np.ruedas_test} ruedas, y todas cayeron en
+        el régimen Calmo: el VIX promedió \dato{vix.vix_media_test}\% en el test, contra
+        \dato{vix.vix_media_entrenamiento}\% en el entrenamiento. El resultado vale para un mercado
+        tranquilo; \citet{garcia2013} encontró que el sentimiento anticipa los retornos sobre todo
+        en las recesiones, un período que esta ventana no tiene.
+  \item \textbf{El efecto se achica con el sentimiento ajustado por portal.} Si a cada nota se le
+        resta el promedio de su portal, el $\Delta$AUC de precio \flecha{} sentimiento baja a
+        \dato{rob.sentimiento_por_portal.ps.logistica.delta_auc@s3} y su intervalo incluye el 0.
+        Puede indicar que parte del efecto viene de \textit{qué} portales publican en cada rueda,
+        por ejemplo, de los que hacen la crónica del cierre. Es una hipótesis que no se verificó.
+  \item \textbf{El tamaño depende de la ventana.} Con 10 o con 60 ruedas el $\Delta$AUC sigue
+        siendo positivo, pero su intervalo incluye el 0.
+  \item \textbf{Las etiquetas no tienen revisión humana.} El F1 de FinBETO mide su acuerdo con Gemma,
+        no con un criterio humano.
+  \item \textbf{El corpus.} El \dato{regla17.pct_hora_sospechosa}\% de las notas tiene una hora
+        por defecto, que puede mandarla a la rueda equivocada; abril de 2026 no tiene notas de
+        iProfesional (sacarlo no cambia el resultado); y el sentimiento propio solo se pudo medir
+        en \dato{dataset.empresas} empresas.
+  \item \textbf{Los datos.} Un año de ruedas, datos diarios, que no ordenan lo que pasa dentro de
+        una rueda, y precios en pesos nominales.
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Líneas futuras}
+
+Etiquetar a mano una muestra de oraciones para medir el acuerdo de Gemma con personas; recuperar el
+matiz de las oraciones mixtas como una dimensión aparte; analizar el resultado portal por portal,
+para explicar por qué se achica con el ajuste por portal; extender la ventana a varios años, con
+períodos de crisis, para probar si el sentimiento anticipa al mercado cuando está tenso, como
+encontró \citet{garcia2013}; repetir el modelo con precios intradiarios y en dólares; e incorporar
+otras fuentes, como redes sociales.
