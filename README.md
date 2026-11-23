@@ -19,7 +19,7 @@ Universidad del Gran Rosario · Seminario de Trabajo Final
 
 [**Leer la tesina (PDF)**](6_despliegue/informe/Informe_Final_NicolasDiddi-GinoFrigoni.pdf)
 
-[**Ver la presentación (PPTX)**](6_despliegue/presentacion/Presentacion_Tesina.pptx) · [PDF](6_despliegue/presentacion/Presentacion_Tesina.pdf) · [**Guion**](6_despliegue/presentacion/GUION_PRESENTACION.md)
+[**Ver la presentación (PPTX)**](6_despliegue/presentacion/Presentaci%C3%B3n%20Tesina%20%E2%80%94%20versi%C3%B3n%206.0.pptx) · [PDF](6_despliegue/presentacion/Presentaci%C3%B3n%20Tesina%20%E2%80%94%20versi%C3%B3n%206.0.pdf) · [**Guion**](6_despliegue/presentacion/GUION_PRESENTACION.md)
 
 <sub>Versión 6.0. La versión anterior (5.0) está en la rama <a href="https://github.com/ginofrigoni/frigoni-diddi-shock-bursatil/tree/version-5"><code>version-5</code></a>.</sub>
 
